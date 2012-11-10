@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author murilodemoraestuvani
+ * @author Murilo
  */
 public class LineCnab240v060TrailerArquivoTest {
     
