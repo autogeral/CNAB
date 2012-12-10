@@ -1,15 +1,12 @@
 package br.com.jcomputacao.cnab.t240.v060.pagamentos;
 
-import br.com.jcomputacao.aristoteles.field.FieldDateFixedLengthArchetype;
-import br.com.jcomputacao.aristoteles.field.FieldDecimalFixedLengthArchetype;
-import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
-import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.line.LineArchetype;
 import br.com.jcomputacao.aristoteles.line.LineModel;
 import br.com.jcomputacao.cnab.t240.v060.LineCnab240v060ArquivoHeader;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -49,23 +46,34 @@ public class TestFile {
 
     @Test
     public void hello() {
-        File f = new File("./doc/exemplos/PB0111120047.rem");
-        if (f.exists()) {
-            try {
-                parseFile(f);
-            } catch (IOException ex) {
-                ex.printStackTrace(System.err);
-                System.err.flush();
-            } catch (ParseException ex) {
-                ex.printStackTrace(System.err);
-                System.err.flush();
+        //File f = new File("./doc/exemplos/PB0111120047.rem");
+        File dir = new File("./doc/exemplos/");
+        File[] fs = dir.listFiles(new FilenameFilter() {
+
+            public boolean accept(File dir, String name) {
+                return (name.toLowerCase().endsWith(".rem") || name.toLowerCase().endsWith("mov.txt"));
             }
-        } else {
-            fail("Arquivo " + f.getAbsolutePath() + " nao encontrado");
+            
+        });
+        for (File f : fs) {
+            if (f.exists()) {
+                try {
+                    parseFile(f);
+                } catch (IOException ex) {
+                    ex.printStackTrace(System.err);
+                    System.err.flush();
+                } catch (ParseException ex) {
+                    ex.printStackTrace(System.err);
+                    System.err.flush();
+                }
+            } else {
+                fail("Arquivo " + f.getAbsolutePath() + " nao encontrado");
+            }
         }
     }
 
     private void parseFile(File f) throws IOException, ParseException {
+        System.out.println("Parsing file : " + f.getAbsolutePath());
         FileReader fr = new FileReader(f);
         BufferedReader br = new BufferedReader(fr);
 
@@ -272,10 +280,11 @@ public class TestFile {
         String refernciaSacado = model.getFieldValueString(LineCnab240v060SegmentoJ.REFERENCIA_SACADO);
         String nossoNumero = model.getFieldValueString(LineCnab240v060SegmentoJ.NOSSO_NUMERO);
         System.out.println("Segemnto J : "+sequencial+
-                " Valor : " + valorTitulo + " Desconto : " + desconto + " Acrescimos : " + acrescimos + 
+                " Valor : " + valorTitulo + " Valor Pago : " + valorPgto + " Desconto : " + desconto + " Acrescimos : " + acrescimos +
                 " Data Pgto : " + dateTimeForUi(dataPgto) + " Data Vcto : " + dateTimeForUi(dataVencimento) +
                 " Nosso numero : "+nossoNumero + " Tipo movimento : "+tipoMovimento+" Codigo Movimento "+codigoMovimento +
-                " Codigo barras : "+codigoBarras+ " qtdMoeda : "+quantidadeMoeda+" refSacado : "+refernciaSacado);
+                " Codigo barras : "+codigoBarras+ " qtdMoeda : "+quantidadeMoeda+" refSacado : "+refernciaSacado +
+                " Nome do cedente : "+nomeCedente);
     }
 
     private String dateTimeForUi(Date geracao) {
