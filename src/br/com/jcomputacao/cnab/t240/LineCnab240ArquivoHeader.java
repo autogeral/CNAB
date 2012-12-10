@@ -94,7 +94,7 @@ public class LineCnab240ArquivoHeader extends LineArchetype {
      * DATA DE GERACAO DO ARQUIVO
      * POSICAO 144 151
      */
-    public static final String DATAHORA_GERACAO_ARQUIVO = "DATA_GERACAO_ARQUIVO";
+    public static final String DATAHORA_GERACAO_ARQUIVO = "DATAHORA_GERACAO_ARQUIVO";
     /**
      * NUMERO SEQUENCIAL DO ARQUIVO
      * POSICAO 158 163
@@ -146,9 +146,9 @@ public class LineCnab240ArquivoHeader extends LineArchetype {
         addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(10, ' '));
         addFieldArchetype(CODIGO_REM_RET, new FieldIntegerFixedLengthArchetype(1));
         //Obs: campos agrupados (Data Geração do Arquivo e Hora Geração do Arquivo)
-        addFieldArchetype(DATAHORA_GERACAO_ARQUIVO, new FieldDateFixedLengthArchetype("ddMMyyyyHHmmss"));
+        addFieldArchetype(DATAHORA_GERACAO_ARQUIVO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         addFieldArchetype(NUM_SEQUENCIAL_ARQUIVO, new FieldIntegerFixedLengthArchetype(6));
-        addFieldArchetype(VERSAO_LAYOUT, new FieldDefaultArchetype("085"));
+        addFieldArchetype(VERSAO_LAYOUT, new FieldStringFixedLengthArchetype(3));
         addFieldArchetype(DENSIDADE_GRAVACAO, new FieldIntegerFixedLengthArchetype(5));
         addFieldArchetype(RESERVADO_BANCO, new FieldFillerArchetype(20, ' '));
         addFieldArchetype(RESERVADO_EMPRESA, new FieldFillerArchetype(20, ' '));
