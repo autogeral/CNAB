@@ -74,11 +74,11 @@ public class LineCnab240SegmentoJ extends LineArchetype {
         addFieldArchetype(CODIGO_MOVIMENTO, new FieldIntegerFixedLengthArchetype(2));
         addFieldArchetype(CODIGO_BARRAS, new FieldStringFixedLengthArchetype(44));
         addFieldArchetype(NOME_CEDENTE, new FieldStringFixedLengthArchetype(30));
-        addFieldArchetype(DATA_VENCIMENTO, new FieldDateFixedLengthArchetype());
+        addFieldArchetype(DATA_VENCIMENTO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         addFieldArchetype(VALOR_TITULO, new FieldDecimalFixedLengthArchetype(15,2));
         addFieldArchetype(DESCONTO, new FieldDecimalFixedLengthArchetype(15,2));
         addFieldArchetype(ACRESCIMOS, new FieldDecimalFixedLengthArchetype(15,2));
-        addFieldArchetype(DATA_PAGAMENTO, new FieldDateFixedLengthArchetype());
+        addFieldArchetype(DATA_PAGAMENTO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         addFieldArchetype(VALOR_PAGAMENTO, new FieldDecimalFixedLengthArchetype(15,2));
         addFieldArchetype(QUANTIDADE_MOEDA, new FieldDecimalFixedLengthArchetype(15,5));
         addFieldArchetype(REFERENCIA_SACADO, new FieldStringFixedLengthArchetype(20));
