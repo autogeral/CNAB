@@ -1,5 +1,6 @@
 package br.com.jcomputacao.cnab.t240.v060.pagamentos;
 
+import br.com.jcomputacao.aristoteles.field.FieldArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
@@ -162,12 +163,15 @@ public class LineCnab240v060SegmentoB extends LineCnab240SegmentoB {
         removeFieldArchetype(USO_SIAPE);
         removeFieldArchetype(EXCLUSIVO_FEBRABAN_2);
         
-        FieldIntegerFixedLengthArchetype fa = new FieldIntegerFixedLengthArchetype(6);
+        FieldArchetype fa = new FieldIntegerFixedLengthArchetype(4);
         fa.setNullableRepresentation("    ");
         addFieldArchetype(HORARIO_ENVIO_TED, fa);
         addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(11, ' '));
         addFieldArchetype(CODIGO_HISTORICO, new FieldIntegerFixedLengthArchetype(4));
         addFieldArchetype(EXCLUSIVO_FEBRABAN_3, new FieldFillerArchetype(1, ' '));
-        addFieldArchetype(OCORRENCIAS_RETORNO, new FieldStringFixedLengthArchetype(10));
+        
+        fa = new FieldStringFixedLengthArchetype(10);
+        fa.setNullableRepresentation("          ");
+        addFieldArchetype(OCORRENCIAS_RETORNO, fa);
     }
 }
