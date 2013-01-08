@@ -1,0 +1,122 @@
+1                                                                                                                                    
+ 14/11/12 102625 000001 000001 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 14/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000030           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 003249921000180 TRELLEBORG AUTOMOTIVE DO BRASI           900001038              14/11/2012 14/11/2012        1.069,70   DOC     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 ADERALDO PAULO TULINO RODRIGUE           900001039              14/11/2012 14/11/2012        6.774,47   CIP     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 DISTRIBUIDORA AUTOMOTIVA SA              900001040              14/11/2012 14/11/2012          279,47   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 KSPG AUTOMOTIVE BRASIL LTDA              900001041              14/11/2012 14/11/2012        1.154,24   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 ALESSANDRO MEDEIROS B EPP                900001042              14/11/2012 14/11/2012        1.584,96   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 APS DISTR DE AUTOPECAS                   900001043              14/11/2012 14/11/2012        1.359,90   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 BAP AUTOMOTIVA LTDA                      900001044              14/11/2012 14/11/2012          426,87   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 CAOA CAMINHOES LTDA                      900001045              14/11/2012 14/11/2012          556,77   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 CENTER PECAS FABBRI LTDA                 900001046              14/11/2012 14/11/2012          147,20   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 CENTER PECAS FABBRI LTDA                 900001047              14/11/2012 14/11/2012          357,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 CENTER PECAS FABBRI LTDA                 900001048              14/11/2012 14/11/2012           29,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 CENTER PECAS FABBRI LTDA                 900001049              14/11/2012 14/11/2012           55,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 DIP DISTR DE PECAS LTDA                  900001050              14/11/2012 14/11/2012          526,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 DISTRIBUIDORA BRASUL DE AUTOPE           900001051              14/11/2012 14/11/2012       10.968,76   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 DISTRIBUIDORA BRASUL DE AUTOPE           900001052              14/11/2012 14/11/2012        1.939,40   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 DISTRIBUIDORA AUTOMOTIVA SA              900001053              14/11/2012 14/11/2012          860,54   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 DISTRIBUIDORA AUTOMOTIVA SA              900001054              14/11/2012 14/11/2012          281,68   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 OBB CONSULTORIA E PARTICIPACOE           900001055              14/11/2012 14/11/2012          395,15   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 BBL SISTEMAS OPERACIONAIS LTDA           900001056              14/11/2012 14/11/2012          272,95   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 FRAS-LE SA                               900001057              14/11/2012 14/11/2012        1.250,96   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 FW DISTRIBUIDORA LTDA                    900001058              14/11/2012 14/11/2012          328,74   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 JOFUND SA                                900001059              14/11/2012 14/11/2012        6.651,47   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 LNG IMP EXP DE AUTOPECAS LTDA            900001060              14/11/2012 14/11/2012          429,22   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 LX IND E COM DE AUTOPECAS LTDA           900001061              14/11/2012 14/11/2012          740,91   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 MORELATE DISTR AUTOPECAS LTDA            900001062              14/11/2012 14/11/2012          408,64   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 PELLEGRINO DISTR DE AUTOPECAS            900001063              14/11/2012 14/11/2012          228,40   COB     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 14/11/12 102625 000001 000002 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      2
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 14/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000030           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 012412056000132 PELLEGRINO DISTR DE AUTOPECAS            900001063              14/11/2012 14/11/2012          228,40   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 PELLEGRINO DISTR DE AUTOPECAS            900001064              14/11/2012 14/11/2012          570,83   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 PELLEGRINO DISTR DE AUTOPECAS            900001065              14/11/2012 14/11/2012          824,36   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 PETRONAS LUBRIFICANTES BRASIL            900001066              14/11/2012 14/11/2012          438,01   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 PECA MAIS COM DE AUTOPECAS LTD           900001067              14/11/2012 14/11/2012          309,84   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 PECAS AUTOMOTIVAS ZEENE LTDA             900001068              14/11/2012 14/11/2012          542,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 POLIPECAS COML E IMP LTDA                900001069              14/11/2012 14/11/2012        2.307,62   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 POLIPECAS COML E IMP LTDA                900001070              14/11/2012 14/11/2012          541,82   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 T-PARTS COML E IMP DE AUTOPECA           900001071              14/11/2012 14/11/2012          500,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 RODONAVES TRANSP E ENCOMENDAS            900001072              14/11/2012 14/11/2012           33,64   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 SICAP SIND COM ATAC IMP EXP E            900001073              14/11/2012 14/11/2012          400,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 SICAP SIND COM ATAC IMP EXP E            900001074              14/11/2012 14/11/2012          400,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012412056000132 SICAP SIND COM ATAC IMP EXP E            900001075              14/11/2012 14/11/2012          400,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+                                                                                                                                     
+ TOTAL DE ACEITOS:      38        46.346,02   TOTAL DE REJEITADOS:      00             0,00  TOTAL GERAL:      38        46.346,02   
+                                                                                                                                     
+1                                                                                                                                    
+ 14/11/12 102624 000001 000001 YLTCVJ16 YL3C1240 YLLSH036 CASH MANAGEMENT                                                            
+  YL-PAGAMENTO FORNECEDORES                                             DEST.: 00330001-CENTRAL                                      
+  YLLSH036-OCORRENCIAS NO RECEB.DE ARQUIVOS POR MEIO MAGNETICO                                                           PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 14/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA:              -                                                                                                             
+ CLIENTE: 000000000000 -                                                                             AMBIENTE:                       
+                                                                                                                                     
+ CD  RM            SERV                        DATA                                                                                  
+ RG  ID  REM-LIT   COD        SERV-LIT        GRAVACAO     REMESSA      IDENTIF.DA REMESSA   TIPO   OCORRENCIA                       
+  * NAO EXISTEM INFORMACOES A SEREM IMPRESSAS *                                                                                      

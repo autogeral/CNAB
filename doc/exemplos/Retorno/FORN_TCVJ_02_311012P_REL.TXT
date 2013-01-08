@@ -1,0 +1,124 @@
+1                                                                                                                                    
+ 31/10/12 104413 000001 000001 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 31/10/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000019           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 005437537000137 AUTO GERAL DE ITU LTDA                   900000578              31/10/2012 31/10/2012       75.002,66   DARFN   P   
+                                                                                                        REGISTRO ACEITO              
+ 005437537000137 AUTO GERAL DE ITU LTDA                   900000579              31/10/2012 31/10/2012      132.893,82   DARFN   P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 A. MASSARI DO BRASIL                     900000541              31/10/2012 31/10/2012        6.006,23   CIP     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 GUMP MOTORS COMPONENTES AUTOM            900000542              31/10/2012 31/10/2012          520,56   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 DISTRIBUIDORA AUTOMOTIVA S/A             900000543              31/10/2012 31/10/2012          481,96   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 POLIPECAS COML E IMP. LTDA               900000544              31/10/2012 31/10/2012        2.899,14   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 FRAS-LE S/A                              900000545              31/10/2012 31/10/2012        1.758,40   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 DISTPECAS P/AUTOS ANHEMBI LTDA           900000546              31/10/2012 31/10/2012        1.077,10   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 T-PARTS COMERCIAL E IMPORTADOR           900000547              31/10/2012 31/10/2012          500,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 CENTER PECAS FABBRI LTDA                 900000548              31/10/2012 31/10/2012          140,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 CENTER PECAS FABBRI LTDA                 900000549              31/10/2012 31/10/2012          189,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 CENTER PECAS FABBRI LTDA                 900000550              31/10/2012 31/10/2012           94,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 CENTER PECAS FABBRI LTDA                 900000551              31/10/2012 31/10/2012           16,80   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 METALURGICA SCHADEK LTDA                 900000552              31/10/2012 31/10/2012          721,23   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 DECAR AUTOPECAS LTDA                     900000553              31/10/2012 31/10/2012          522,96   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 DE NIGRIS DISTR DE VEIC LTDA             900000554              31/10/2012 31/10/2012          118,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 BAP AUTOMOTIVA LTDA                      900000555              31/10/2012 31/10/2012          517,55   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 DISTRIBUIDORA AUTOMOTIVA S/A             900000556              31/10/2012 31/10/2012          370,94   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 DISTRIBUIDORA AUTOMOTIVA S/A             900000557              31/10/2012 31/10/2012          234,74   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 DISTRIBUIDORA AUTOMOTIVA S/A             900000558              31/10/2012 31/10/2012           96,14   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 REAL MOTO PECAS LTDA                     900000559              31/10/2012 31/10/2012        1.017,04   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 GIRANDO COMERCIO DE PECAS LTDA           900000560              31/10/2012 31/10/2012          132,99   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 PELLEGRINO DISTR DE AUTO PECAS           900000561              31/10/2012 31/10/2012          339,34   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 DIP DISTR DE PECAS LTDA                  900000562              31/10/2012 31/10/2012          527,70   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 PELLEGRINO DISTR, DE AUTO PECA           900000563              31/10/2012 31/10/2012          472,72   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 PRV COMERCIO DE PECAS LTDA               900000564              31/10/2012 31/10/2012        2.406,64   COB     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 31/10/12 104413 000001 000002 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      2
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 31/10/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000019           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 012423674000188 PRV COMERCIO DE PECAS LTDA               900000564              31/10/2012 31/10/2012        2.406,64   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 ITAVEMA ITALIA VEICULOS E MAQU           900000565              31/10/2012 31/10/2012          154,69   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 JANCAP AUTO COMERCIAL LTDA               900000566              31/10/2012 31/10/2012          300,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 RR DONNELLEY MOORE EDT GR LTDA           900000567              31/10/2012 31/10/2012        2.781,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 VANUCCI IMPORTACAO EXPORT. E C           900000568              31/10/2012 31/10/2012          210,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 RPT DISTR DE AUTO PCS                    900000569              31/10/2012 31/10/2012          250,95   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 JANCAP AUTO COMERCIAL LTDA               900000570              31/10/2012 31/10/2012          828,95   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 ITAVEMA ITALIA VEICULOS E MAQU           900000571              31/10/2012 31/10/2012          308,94   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 OBB CONSULTORIA E PARTICIPACOE           900000572              31/10/2012 31/10/2012          395,15   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 PETROBRAS DISTRIB                        900000573              31/10/2012 31/10/2012          143,26   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 2AR INDUSTRIA E COMERCIO LTDA            900000574              31/10/2012 31/10/2012        2.884,99   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 W DISTRIBUIDORA LTDA                     900000575              31/10/2012 31/10/2012          647,53   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 SINDICATO DOS EMPREGADOS NO CO           900000576              31/10/2012 31/10/2012           28,53   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 012423674000188 SINDICATO DOS EMPREGADOS NO CO           900000577              31/10/2012 31/10/2012           28,53   COB     P   
+                                                                                                        REGISTRO ACEITO              
+                                                                                                                                     
+ TOTAL DE ACEITOS:      39       238.021,68   TOTAL DE REJEITADOS:      00             0,00  TOTAL GERAL:      39       238.021,68   
+                                                                                                                                     
+1                                                                                                                                    
+ 31/10/12 104412 000001 000001 YLTCVJ16 YL3C1240 YLLSH036 CASH MANAGEMENT                                                            
+  YL-PAGAMENTO FORNECEDORES                                             DEST.: 00330001-CENTRAL                                      
+  YLLSH036-OCORRENCIAS NO RECEB.DE ARQUIVOS POR MEIO MAGNETICO                                                           PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 31/10/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA:              -                                                                                                             
+ CLIENTE: 000000000000 -                                                                             AMBIENTE:                       
+                                                                                                                                     
+ CD  RM            SERV                        DATA                                                                                  
+ RG  ID  REM-LIT   COD        SERV-LIT        GRAVACAO     REMESSA      IDENTIF.DA REMESSA   TIPO   OCORRENCIA                       
+  * NAO EXISTEM INFORMACOES A SEREM IMPRESSAS *                                                                                      

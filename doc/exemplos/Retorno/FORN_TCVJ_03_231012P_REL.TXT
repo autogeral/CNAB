@@ -1,0 +1,100 @@
+1                                                                                                                                    
+ 23/10/12 132053 000001 000001 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 23/10/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000014           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 000000000000000 ROM COMERCIAL DE AUTO PECAS LT           900000332              24/10/2012 24/10/2012          340,20   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 CENTER PECAS FABBRI LTDA                 900000333              24/10/2012 24/10/2012           49,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 SORANA SUL                               900000334              24/10/2012 24/10/2012          311,80   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 EATON LTDA                               900000335              24/10/2012 24/10/2012        2.815,16   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 EATON LTDA                               900000336              24/10/2012 24/10/2012          210,86   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 PETROBRAS DISTRIBUIDORA                  900000337              24/10/2012 24/10/2012          976,38   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 PETROBRAS DISTRIBUIDORA                  900000338              24/10/2012 24/10/2012        4.251,74   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 PETROBRAS DISTRIBUIDORA                  900000339              24/10/2012 24/10/2012        8.259,62   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 PETROBRAS DISTRIBUIDORA                  900000340              24/10/2012 24/10/2012        1.313,03   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 PETROBRAS DISTRIBUIDORA                  900000341              24/10/2012 24/10/2012          269,46   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 OBB CONSULTORIA E PARTICIPACOE           900000342              24/10/2012 24/10/2012          395,15   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 MAGGI VEICULOS LTDA                      900000343              24/10/2012 24/10/2012        1.502,96   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 APS DISTRIBUIDORA DE AUTOPECAS           900000344              24/10/2012 24/10/2012          468,05   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 SK AUTOMOTIVE S/A DISTR AUTOPE           900000345              24/10/2012 24/10/2012          259,08   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 REAL MOTO PECAS LTDA                     900000346              24/10/2012 24/10/2012          412,65   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DISTRIBUIDORA AUTOMOTIVA S/A             900000347              24/10/2012 24/10/2012          168,66   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 VESPOR AUTOMOTIVE DIST DE AUTO           900000348              24/10/2012 24/10/2012        9.563,88   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DSITRIBUIDORA AUTOMOTIVA S.A.            900000349              24/10/2012 24/10/2012          411,94   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 VESPOR AUTOMOTIVE DIST DE AUTO           900000350              24/10/2012 24/10/2012        4.941,40   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 BAP AUTOMOTIVA LTDA                      900000351              24/10/2012 24/10/2012          219,42   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 PELLEGRINO DISTR DE AUTO PECAS           900000352              24/10/2012 24/10/2012        4.588,47   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 RCD COMERCIO  E INDUSTRIA LTDA           900000353              24/10/2012 24/10/2012        3.540,05   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DELPHI AUTOM SYSTEMS BR LTDA             900000354              24/10/2012 24/10/2012           14,71   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DELPHI AUTOM SYSTEMS BR LTDA             900000355              24/10/2012 24/10/2012        4.537,59   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 KOGA KOGA CIA LTDA                       900000356              24/10/2012 24/10/2012          500,73   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 VESPOR AUTOMOTIVE DIST DE AUTO           900000357              24/10/2012 24/10/2012        1.353,17   COB     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 23/10/12 132053 000001 000002 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      2
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 23/10/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000014           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 000000000000000 VESPOR AUTOMOTIVE DIST DE AUTO           900000357              24/10/2012 24/10/2012        1.353,17   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 CENTER PECAS FABBRI LTDA                 900000358              24/10/2012 24/10/2012          100,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+                                                                                                                                     
+ TOTAL DE ACEITOS:      27        51.776,16   TOTAL DE REJEITADOS:      00             0,00  TOTAL GERAL:      27        51.776,16   
+                                                                                                                                     
+1                                                                                                                                    
+ 23/10/12 132052 000001 000001 YLTCVJ16 YL3C1240 YLLSH036 CASH MANAGEMENT                                                            
+  YL-PAGAMENTO FORNECEDORES                                             DEST.: 00330001-CENTRAL                                      
+  YLLSH036-OCORRENCIAS NO RECEB.DE ARQUIVOS POR MEIO MAGNETICO                                                           PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 23/10/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA:              -                                                                                                             
+ CLIENTE: 000000000000 -                                                                             AMBIENTE:                       
+                                                                                                                                     
+ CD  RM            SERV                        DATA                                                                                  
+ RG  ID  REM-LIT   COD        SERV-LIT        GRAVACAO     REMESSA      IDENTIF.DA REMESSA   TIPO   OCORRENCIA                       
+  * NAO EXISTEM INFORMACOES A SEREM IMPRESSAS *                                                                                      

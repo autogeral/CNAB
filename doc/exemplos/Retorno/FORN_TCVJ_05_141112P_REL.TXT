@@ -1,0 +1,204 @@
+1                                                                                                                                    
+ 14/11/12 142144 000001 000001 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 14/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000031           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 043024991000155 F.CONFUORTO IND E COM DE PECAS           900001076              16/11/2012 16/11/2012          873,89   DOC     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 GUMP MOTORS COMP AUTOM LTDA              900001077              15/11/2012 16/11/2012          574,00   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 CAR CENTRAL DE AUTOPECAS E ROL           900001078              16/11/2012 16/11/2012        2.721,54   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 CAR CENTRAL DE AUTOPECAS E ROL           900001079              16/11/2012 16/11/2012        1.064,04   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 CAR CENTRAL DE AUTOPECAS E ROL           900001080              16/11/2012 16/11/2012          621,26   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 CAR CENTRAL DE AUTOPECAS E ROL           900001081              16/11/2012 16/11/2012        1.459,14   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 RADIO CIDADE DE ITU LTDA                 900001082              15/11/2012 16/11/2012        1.596,00   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 NOVA RADIO REGIONAL LTDA                 900001083              15/11/2012 16/11/2012        1.625,00   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 AVEBRAZ COM DE VEIC E PECAS LT           900001084              15/11/2012 16/11/2012          225,23   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 COMERCIAL AUTOMOTIVA SA                  900001085              15/11/2012 16/11/2012          707,61   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 CENTER PECAS FABBRI LTDA                 900001086              15/11/2012 16/11/2012           60,80   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 CINPAL CIA IND DE PECAS P/ AUT           900001087              15/11/2012 16/11/2012       10.146,70   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 COMDIP COML DISTR DE PECAS LTD           900001088              15/11/2012 16/11/2012          840,23   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 COMDIP COML DISTR DE PECAS LTD           900001089              15/11/2012 16/11/2012          475,27   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 COMDIP COML DISTR DE PECAS LTD           900001090              15/11/2012 16/11/2012          481,56   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 COMDIP COML DISTR DE PECAS LTD           900001091              15/11/2012 16/11/2012          350,47   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 OBB CONSULTORIA E PARTICIPACOE           900001092              15/11/2012 16/11/2012          302,73   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 EATON LTDA                               900001093              15/11/2012 16/11/2012           80,28   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 FELICIO VIGORITO FILHOS LTDA             900001094              15/11/2012 16/11/2012        1.088,52   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 INTERSMART COM IMP EXP EQUIP E           900001095              15/11/2012 16/11/2012        1.951,12   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 KT COMP AUTOMOTIVOS LTDA                 900001096              15/11/2012 16/11/2012        3.025,72   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 PIPO COM PECAS ROLAMENTOS LTDA           900001097              15/11/2012 16/11/2012        1.066,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 REAL MOTO PECAS LTDA                     900001098              15/11/2012 16/11/2012          566,20   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 RENOVA AUTO PECAS LTDA ME                900001099              15/11/2012 16/11/2012          241,57   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 ROCHESTER DISTR DE AUTOPECAS S           900001100              15/11/2012 16/11/2012          439,02   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 RPT DISTR DE AUTO PCS                    900001101              15/11/2012 16/11/2012          241,57   COB     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 14/11/12 142144 000001 000002 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      2
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 14/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000031           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 043024991000155 RPT DISTR DE AUTO PCS                    900001101              15/11/2012 16/11/2012          241,57   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 RPT DISTR DE AUTO PCS                    900001102              15/11/2012 16/11/2012          330,28   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 TONINI DISTRIBUIDORA LTDA                900001103              15/11/2012 16/11/2012          785,07   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 AGRAMDIESEL COM IMP E EXP LTDA           900001104              16/11/2012 16/11/2012          882,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 BANCO SAFRA S/A                          900001105              16/11/2012 16/11/2012          969,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 CENTER PECAS FABBRI LTDA                 900001106              16/11/2012 16/11/2012           99,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 CENTER PECAS FABBRI LTDA                 900001107              16/11/2012 16/11/2012           33,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 COMDIP COMERCIAL DISTR DE PECA           900001108              16/11/2012 16/11/2012          759,40   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 COML NV MILLENNIUN A P LT EPP            900001109              16/11/2012 16/11/2012          586,92   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 DAYCO POWER TRANSMISSION                 900001110              16/11/2012 16/11/2012        6.251,38   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 DELPHI  AUTOM SYSTEMS BR LTDA            900001111              16/11/2012 16/11/2012          586,16   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 DELPHI  AUTOM SYSTEMS BR LTDA            900001112              16/11/2012 16/11/2012        2.910,22   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 DISTRIBUIDORA ATOMOTIVA S.A              900001113              16/11/2012 16/11/2012          234,39   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 EATON  LTDA                              900001114              16/11/2012 16/11/2012          473,54   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 EATON  LTDA                              900001115              16/11/2012 16/11/2012          217,27   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 EATON  LTDA                              900001116              16/11/2012 16/11/2012           83,70   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 EATON  LTDA                              900001117              16/11/2012 16/11/2012           73,88   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 EATON  LTDA                              900001118              16/11/2012 16/11/2012           67,96   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 EATON  LTDA                              900001119              16/11/2012 16/11/2012          658,92   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 EATON  LTDA                              900001120              16/11/2012 16/11/2012          209,69   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 GIRANDO COMERCIO DE PECAS LTDA           900001121              16/11/2012 16/11/2012          358,83   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 GIRANDO COMERCIO DE PECAS LTDA           900001122              16/11/2012 16/11/2012          428,95   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 GIRANDO COMERCIO DE PECAS LTDA           900001123              16/11/2012 16/11/2012          253,99   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 GIRANDO COMERCIO DE PECAS LTDA           900001124              16/11/2012 16/11/2012          519,07   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 ITA PECAS PARA VEIC COM E SERV           900001125              16/11/2012 16/11/2012          373,17   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 JANCAP COMERCIO IMPORTACAO E E           900001126              16/11/2012 16/11/2012          607,91   COB     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 14/11/12 142144 000001 000003 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      3
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 14/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000031           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 043024991000155 JANCAP COMERCIO IMPORTACAO E E           900001126              16/11/2012 16/11/2012          607,91   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 PETRONAS LUBRIFICANTES BRASIL            900001127              16/11/2012 16/11/2012          409,03   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 PECAS AUTOMOTIVAS ZEENE LTDA             900001128              16/11/2012 16/11/2012          521,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 REAL MOTO PECAS LTDA                     900001129              16/11/2012 16/11/2012        1.443,46   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 REAL MOTO PECAS LTDA                     900001130              16/11/2012 16/11/2012        3.002,43   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 UNIVERSAL AUTOMOTIVE SYSTEMS             900001131              16/11/2012 16/11/2012          214,58   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 RADIO MODELO FM LTDA                     900001132              15/11/2012 16/11/2012        2.520,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 TV RECORD DE BAURU LTDA                  900001133              15/11/2012 16/11/2012        2.327,43   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 TV ALIANCA PAULISTA SA                   900001134              15/11/2012 16/11/2012        2.720,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 TV ALIANCA PAULISTA SA                   900001135              15/11/2012 16/11/2012        9.418,52   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 OPPORTUNITY COMUN MARK LTDA              900001136              15/11/2012 16/11/2012          680,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 OPPORTUNITY COMUN MARK LTDA              900001137              15/11/2012 16/11/2012        2.354,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 OPPORTUNITY COMUN MARK LTDA              900001138              15/11/2012 16/11/2012          581,86   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 INDUSTRIAS ROMI SA                       900001139              15/11/2012 16/11/2012        4.148,81   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 INDUSTRIAS ROMI SA                       900001140              15/11/2012 16/11/2012        4.148,81   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 INDUSTRIAS ROMI SA                       900001141              16/11/2012 16/11/2012          593,76   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 INDUSTRIAS ROMI SA                       900001142              16/11/2012 16/11/2012          593,76   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 RODONAVES TRANSP E ENCOMENDAS            900001143              16/11/2012 16/11/2012        1.275,28   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 RODONAVES TRANSP E ENCOMENDAS            900001144              16/11/2012 16/11/2012           80,16   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 PUBLICIDADE KLIMES SAO PAULO L           900001145              16/11/2012 16/11/2012        1.261,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 043024991000155 AUTO POSTO REI DA CASTELO PORT           900001146              16/11/2012 16/11/2012          944,15   COB     P   
+                                                                                                        REGISTRO ACEITO              
+                                                                                                                                     
+ TOTAL DE ACEITOS:      71        90.818,71   TOTAL DE REJEITADOS:      00             0,00  TOTAL GERAL:      71        90.818,71   
+                                                                                                                                     
+1                                                                                                                                    
+ 14/11/12 142144 000001 000001 YLTCVJ16 YL3C1240 YLLSH036 CASH MANAGEMENT                                                            
+  YL-PAGAMENTO FORNECEDORES                                             DEST.: 00330001-CENTRAL                                      
+  YLLSH036-OCORRENCIAS NO RECEB.DE ARQUIVOS POR MEIO MAGNETICO                                                           PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 14/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA:              -                                                                                                             
+ CLIENTE: 000000000000 -                                                                             AMBIENTE:                       
+                                                                                                                                     
+ CD  RM            SERV                        DATA                                                                                  
+ RG  ID  REM-LIT   COD        SERV-LIT        GRAVACAO     REMESSA      IDENTIF.DA REMESSA   TIPO   OCORRENCIA                       
+  * NAO EXISTEM INFORMACOES A SEREM IMPRESSAS *                                                                                      

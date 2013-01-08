@@ -1,0 +1,262 @@
+1                                                                                                                                    
+ 05/11/12 125322 000001 000001 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 05/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000022           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 003249921000180 TRELLEBORG AUTO DO BRASIL                900000766              05/11/2012 05/11/2012        2.052,62   DOC     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 JAMAICA MANGUEIRAS                       900000767              05/11/2012 05/11/2012        2.788,77   DOC     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DRIVEWAY IND BRASIL AUTO PECAS           1000022000300001       05/11/2012 05/11/2012          961,84   COB     P   
+                                                      34192550800000961841125275109300249809195000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 SDAP SOROCABA D A P LTDA ME              1000022000300002       05/11/2012 05/11/2012          317,52   COB     P   
+                                                      34195550800000317521570173841338073000898000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 PELLEGRINO DISTR DE AUTOPECAS            1000022000300003       05/11/2012 05/11/2012        2.025,37   COB     P   
+                                                      39999550800002025372696541359504540096965001  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 ODAPEL DISTRIBUIDORA DE AUTO P           1000022000300004       05/11/2012 05/11/2012        1.841,53   COB     P   
+                                                      23799550800001841532500090256566037900000340  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 ROCHESTER DISTRIBUIDORA DE AUT           1000022000300005       04/11/2012 05/11/2012          333,12   COB     P   
+                                                      23791550700000333123395061180232795000028140  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 EATON LTDA                               1000022000300006       05/11/2012 05/11/2012          165,36   COB     P   
+                                                      34191550800000165361122814467432938000052000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 EATON LTDA                               1000022000300007       05/11/2012 05/11/2012           16,58   COB     P   
+                                                      34192550800000016581122814463622938000052000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 TEMPO AUTOMOVEIS PECAS LTDA              1000022000300008       05/11/2012 05/11/2012          148,00   COB     P   
+                                                      34192550800000148001122924124032938069560000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 RPT DISTRIBUIDORA DE AUTO PECA           1000022000300009       05/11/2012 05/11/2012          393,33   COB     P   
+                                                      00191550800000393330000001244482993004997117  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 RPT DISTRIBUIDORA DE AUTO PECA           1000022000300010       05/11/2012 05/11/2012          631,20   COB     P   
+                                                      00191550800000631200000001244482993004986517  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 PETRONAS LUBRIFICANTES BRASIL            1000022000300011       05/11/2012 05/11/2012        5.279,93   COB     P   
+                                                      23793550800005279933484092247000075401129000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 MEMORIAL COMERCIO DE PECAS LTD           1000022000300012       05/11/2012 05/11/2012          600,00   COB     P   
+                                                      23799550800000600000136092255000004301269910  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 PETRONAS LUBRIFICANTES BRASIL            1000022000300013       05/11/2012 05/11/2012        7.338,77   COB     P   
+                                                      23795550800007338773484092275000074601129000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 PETRONAS LUBRIFICANTES BRASIL            1000022000300014       05/11/2012 05/11/2012        2.669,29   COB     P   
+                                                      23799550800002669293484092275000074901129000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 PETRONAS LUBRIFICANTES BRASIL            1000022000300015       05/11/2012 05/11/2012          275,51   COB     P   
+                                                      23791550800000275513484092275000122901129000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 MORELATE DISTRIBUIDORA DE AUTO           1000022000300016       05/11/2012 05/11/2012          587,24   COB     P   
+                                                      23795550800000587243394090000009383100324600  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 RENOVA AUTO PECAS LTDA ME                1000022000300017       05/11/2012 05/11/2012          243,20   COB     P   
+                                                      00199550800000243200000001244482976000628917  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DB DISTRIBUIDORA DE BATERIAS L           1000022000300018       05/11/2012 05/11/2012        3.791,65   COB     P   
+                                                      00198550800003791654584341656800370004790718  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DB DISTRIBUIDORA DE BATERIAS L           1000022000300019       05/11/2012 05/11/2012        6.157,59   COB     P   
+                                                      00194550800006157594584341656900370004790718  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DISTRIBUIDORA ATOMOTIVA S.A              1000022000300020       05/11/2012 05/11/2012          369,93   BLQ     P   
+                                                      35698550800000369930689070323410000004887743  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DISTRIBUIDORA ATOMOTIVA S.A              1000022000300021       05/11/2012 05/11/2012          308,72   BLQ     P   
+                                                      35694550800000308720689070323490000004887760  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DISTRIBUIDORA ATOMOTIVA S.A              1000022000300022       05/11/2012 05/11/2012        1.887,03   BLQ     P   
+                                                      35699550800001887030689070323420000004887544  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DISTRIBUIDORA ATOMOTIVA S.A              1000022000300023       05/11/2012 05/11/2012        2.157,18   BLQ     P   
+                                                      35694550800002157180689070323420000005549788  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DISTRIBUIDORA ATOMOTIVA S.A              1000022000300024       05/11/2012 05/11/2012          535,68   BLQ     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 05/11/12 125322 000001 000002 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      2
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 05/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000022           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 000000000000000 DISTRIBUIDORA ATOMOTIVA S.A              1000022000300024       05/11/2012 05/11/2012          535,68   BLQ     P   
+                                                      35692550800000535680689070323460000005549800  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DISTRIBUIDORA ATOMOTIVA S.A              1000022000300025       05/11/2012 05/11/2012          546,58   BLQ     P   
+                                                      35698550800000546580689070323480000004887563  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DISTRIBUIDORA ATOMOTIVA S.A              1000022000300026       05/11/2012 05/11/2012        2.054,31   BLQ     P   
+                                                      35691550800002054310689070323430000004887535  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DISTRIBUIDORA ATOMOTIVA S.A              1000022000300027       05/11/2012 05/11/2012          156,66   BLQ     P   
+                                                      35699550800000156660689070323440000004887690  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 EATON LTDA                               1000022000300028       05/11/2012 05/11/2012           50,66   COB     P   
+                                                      34199550800000050661124849120872938000052000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 METALURGICA SCHADEK LTDA                 1000022000300029       05/11/2012 05/11/2012        5.656,16   COB     P   
+                                                      23795550800005656163372092292000001305096800  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 ROCHESTER DISTRIBUIDORA DE AUT           1000022000300030       05/11/2012 05/11/2012        1.967,95   COB     P   
+                                                      23794550800001967953395061180232796100028140  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 MAHLE METAL LEVE S/A                     1000022000300031       05/11/2012 05/11/2012          342,11   COB     P   
+                                                      34196550800000342111125077156322938025125000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 BAP AUTOMOTIVA LTDA                      1000022000300032       05/11/2012 05/11/2012        2.341,77   COB     P   
+                                                      39996550800002341771762347130611960078237001  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 BAP AUTOMOTIVA LTDA                      1000022000300033       05/11/2012 05/11/2012        1.034,69   COB     P   
+                                                      39991550800001034691762347129211960078237001  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 BAP AUTOMOTIVA LTDA                      1000022000300034       05/11/2012 05/11/2012        1.058,62   COB     P   
+                                                      39993550800001058621762347128411960078237001  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 METALURGICA SCHADEK LTDA                 1000022000300035       05/11/2012 05/11/2012       11.887,08   COB     P   
+                                                      23799550800011887083372092292000001405096800  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 PELLEGRINO DISTRIBUIDORA DE AU           1000022000300036       05/11/2012 05/11/2012          660,99   COB     P   
+                                                      39994550800000660992696541352804540096965001  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 SK AUTOMOTIVE S/A DIST. AUTOPC           1000022000300037       05/11/2012 05/11/2012        1.071,10   COB     P   
+                                                      00197550800001071100000002175416000002534617  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 SK AUTOMOTIVE S/A DIST. AUTOPC           1000022000300038       05/11/2012 05/11/2012        1.348,56   COB     P   
+                                                      00199550800001348560000002175416000002532117  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 SK AUTOMOTIVE S/A DIST. AUTOPC           1000022000300039       05/11/2012 05/11/2012          338,47   COB     P   
+                                                      00191550800000338470000001451450000033038217  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 SK AUTOMOTIVE S/A DIST. AUTOPC           1000022000300040       05/11/2012 05/11/2012        1.548,38   COB     P   
+                                                      00194550800001548380000002175416000002534517  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 J M CHAVES CARBURADORES                  1000022000300041       05/11/2012 05/11/2012        1.140,40   COB     P   
+                                                      23793550800001140402044091322630347700193710  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 EATON LTDA                               1000022000300042       05/11/2012 05/11/2012           83,44   COB     P   
+                                                      34196550800000083441124849120792938000052000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 MAGGI CAMINHOES LTDA                     1000022000300043       05/11/2012 05/11/2012          100,36   COB     P   
+                                                      23798550800000100363372090000005460500584500  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 SAF DIESEL VEICULOS LTDA                 1000022000300044       05/11/2012 05/11/2012          245,90   COB     P   
+                                                      34195550800000245901090004690363048092666000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 BANCO SOFISA SA                          1000022000300045       05/11/2012 05/11/2012           46,18   COB     P   
+                                                      39991550800000046181761298485904540079149001  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 BANCO SOFISA SA                          1000022000300046       05/11/2012 05/11/2012          357,20   COB     P   
+                                                      39994550800000357201761298484004540079149001  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 SEBASTIAO PER XAVIER SOROC ME            1000022000300047       05/11/2012 05/11/2012          304,28   COB     P   
+                                                      34191550800000304281579903115088513169824000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 ITA PECAS PARA VEICULOS COM E            1000022000300048       04/11/2012 05/11/2012          370,90   BLQ     P   
+                                                      35692550700000370900409503986770000000232666  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 ELIVEL AUTOMOTORES LTDA                  1000022000300049       04/11/2012 05/11/2012        1.320,93   COB     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 05/11/12 125322 000001 000003 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      3
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 05/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000022           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 000000000000000 ELIVEL AUTOMOTORES LTDA                  1000022000300049       04/11/2012 05/11/2012        1.320,93   COB     P   
+                                                      34195550700001320931122977288372938107808000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 MORELATE DISTRIBUIDORA DE AUTO           1000022000300050       04/11/2012 05/11/2012          687,44   COB     P   
+                                                      23794550700000687443394090000009290700324600  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 MANDO MACHINERY LTDA                     1000022000300051       04/11/2012 05/11/2012        1.060,02   COB     P   
+                                                      34197550700001060021124653154098351016152000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 MANDO MACHINERY LTDA                     1000022000300052       04/11/2012 05/11/2012          810,00   COB     P   
+                                                      23791550700000810001286092277000004500121220  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 F CONFURTO IND COM PCS E ACESS           1000022000300053       04/11/2012 05/11/2012          742,68   COB     P   
+                                                      39992550700000742681761638775804570524809001  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 EATON LTDA                               1000022000300054       04/11/2012 05/11/2012        1.463,93   COB     P   
+                                                      34198550700001463931124369967902938000052000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 EATON LTDA                               1000022000300055       04/11/2012 05/11/2012          685,54   COB     P   
+                                                      34191550700000685541124369974912938000052000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 MORELATE DISTRIBUIDORA DE AUTO           1000022000300056       03/11/2012 05/11/2012          511,31   COB     P   
+                                                      23794550600000511313394090000009224300324600  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 PRV COMERCIO DE PECAS LTDA               1000022000300057       03/11/2012 05/11/2012          380,10   COB     P   
+                                                      00199550600000380100000002096856000001953517  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 EATON LTDA                               1000022000300058       03/11/2012 05/11/2012          119,37   COB     P   
+                                                      34191550600000119371124332367452938000052000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 EATON LTDA                               1000022000300059       03/11/2012 05/11/2012          161,42   COB     P   
+                                                      34191550600000161421124332367522938000052000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DE NIGRIS DISTR DE VEIC LTDA             1000022000300060       03/11/2012 05/11/2012           79,60   COB     P   
+                                                      23799550600000079603394093704061620100039600  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 IRMAOS FERRETI E CIA LTDA                1000022000300061       03/11/2012 05/11/2012          592,12   COB     P   
+                                                      34195550600000592121090000458188052016014000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 FORT LUB PRODUTOS AUT                    1000022000300062       03/11/2012 05/11/2012        3.999,00   COB     P   
+                                                      23795550600003999001440090000005466200033570  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 REAL MOTO PECAS LTDA                     1000022000300063       05/11/2012 05/11/2012        3.528,15   COB     P   
+                                                      39997550800003528152053151143405313093513001  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 KOGA KOGA CIA LTDA                       1000022000300064       05/11/2012 05/11/2012          261,96   COB     P   
+                                                      34191550800000261961125156441132395000033000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 MTE THOMSON IND COM LTDA                 1000022000300065       05/11/2012 05/11/2012        1.185,68   COB     P   
+                                                      34191550800001185681125126432090017328824000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 THOMSON C I COM PROD AUTO LTDA           1000022000300066       05/11/2012 05/11/2012        9.011,63   COB     P   
+                                                      34193550800009011631125126427970017697418000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 PACAEMBU AUTO PECAS LTDA                 1000022000300067       05/11/2012 05/11/2012          989,10   COB     P   
+                                                      34192000000000000001219762121271012365225000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 MTE THOMSON IND COM LTDA                 1000022000300068       05/11/2012 05/11/2012           88,31   COB     P   
+                                                      34195550800000088311125126432170017328824000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 THOMSON C I COM PROD AUT LTDA            1000022000300069       05/11/2012 05/11/2012        3.462,44   COB     P   
+                                                      34194550800003462441125126428050017697418000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 CENTAURO IND E COMERCIO LTDA             1000022000300070       03/11/2012 05/11/2012       11.109,93   COB     P   
+                                                      34192550600011109931125192748830046046249000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 ASTRO TECNOLOGIA I C LTDA                1000022000300071       05/11/2012 05/11/2012          902,50   COB     P   
+                                                      34193550800000902501124690667437460278760000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 GIANCAR DISTR AUTO PECAS LTDA            1000022000300072       05/11/2012 05/11/2012          961,00   COB     P   
+                                                      34191550800000961001124765165400765234976000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 PACAEMBU AUTO PECAS LTDA                 1000022000300073       05/11/2012 05/11/2012        2.433,70   COB     P   
+                                                      34197000000000000001219762120021012365225000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 INSTALADORA SAO MARCOS LTDA              1000022000300074       05/11/2012 05/11/2012        3.323,88   COB     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 05/11/12 125322 000001 000004 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      4
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 05/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000022           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 000000000000000 INSTALADORA SAO MARCOS LTDA              1000022000300074       05/11/2012 05/11/2012        3.323,88   COB     P   
+                                                      00197550800003323880441569141034120000204711  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 PACAEMBU AUTO PECAS LTDA                 1000022000300075       05/11/2012 05/11/2012        3.984,01   COB     P   
+                                                      34191000000000000001219762120361012365225000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 ELETROPAR AUTOPECAS LTDA                 1000022000300076       05/11/2012 05/11/2012          297,91   COB     P   
+                                                      34194550800000297911124818122070548006287000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 NOVA DISTRIBUIDORA DE VEICULOS           1000022000300077       04/11/2012 05/11/2012          445,99   COB     P   
+                                                      34198550700000445991122816861166676980086000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 FELICIO VIGORITO FILHOS LTDA             1000022000300078       04/11/2012 05/11/2012          837,29   COB     P   
+                                                      34193550700000837291122802238790046365078000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 ACCIOLY SA IMP E EXP                     1000022000300079       04/11/2012 05/11/2012          544,06   COB     P   
+                                                      34194550700000544061123879129520237417159000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 CENTER PECAS FABBRI LTDA                 1000022000300080       04/11/2012 05/11/2012           94,50   COB     P   
+                                                      34198550700000094501124686866080076000777000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 CENTER PECAS FABBRI LTDA                 1000022000300081       04/11/2012 05/11/2012          100,00   COB     P   
+                                                      34194550700000100001124686865660076000777000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 CENTER PECAS FABBRI LTDA                 1000022000300082       03/11/2012 05/11/2012          250,00   COB     P   
+                                                      34191550600000250001124686865580076000777000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 CENTER PECAS FABBRI LTDA                 1000022000300083       03/11/2012 05/11/2012          168,00   COB     P   
+                                                      34191550600000168001124686865820076000777000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 CENTER PECAS FABBRI LTDA                 1000022000300084       03/11/2012 05/11/2012          282,00   COB     P   
+                                                      34195550600000282001124686865740076000777000  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 NOVA DISTRIBUIDORA DE VEICULOS           1000022000300085       04/11/2012 05/11/2012          483,34   COB     P   
+                                                      00196550700000483340000001216979441384594331  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DIMAS MELO PIMENTA SIST PTO AC           1000022000300086       05/11/2012 05/11/2012          149,90   COB     P   
+                                                      00191550800000149900000001391585010835945317  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 DIMAS MELO PIMENTA SIST PTO AC           1000022000300087       05/11/2012 05/11/2012          257,00   COB     P   
+                                                      00192550800000257000000001391585010835835317  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 JOAO PAULO RODRIGUES PORTO FEL           1000022000300088       05/11/2012 05/11/2012          710,00   COB     P   
+                                                      00191550800000710000000002320802000000022717  070 COMPROMISSO JA CADASTRADO    
+ 000000000000000 CRISTIANE R A FERNANDES ME               1000022000300089       05/11/2012 05/11/2012          998,64   COB     P   
+                                                      34194550800000998641570189323250278683974000  070 COMPROMISSO JA CADASTRADO    
+ 062157094000164 DISTRIBUIDORA ATOMOTIVA S.A              1000022000200001       05/11/2012 05/11/2012          793,95   BLQ     P   
+                                                      03397550800001157579513931700000103175620101  070 COMPROMISSO JA CADASTRADO    
+                                                                                                                                     
+ TOTAL DE ACEITOS:      02         4.841,39   TOTAL DE REJEITADOS:      90       134.016,65  TOTAL GERAL:      92       138.858,04   
+                                                                                                                                     
+1                                                                                                                                    
+ 05/11/12 125322 000001 000001 YLTCVJ16 YL3C1240 YLLSH036 CASH MANAGEMENT                                                            
+  YL-PAGAMENTO FORNECEDORES                                             DEST.: 00330001-CENTRAL                                      
+  YLLSH036-OCORRENCIAS NO RECEB.DE ARQUIVOS POR MEIO MAGNETICO                                                           PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 05/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA:              -                                                                                                             
+ CLIENTE: 000000000000 -                                                                             AMBIENTE:                       
+                                                                                                                                     
+ CD  RM            SERV                        DATA                                                                                  
+ RG  ID  REM-LIT   COD        SERV-LIT        GRAVACAO     REMESSA      IDENTIF.DA REMESSA   TIPO   OCORRENCIA                       
+  * NAO EXISTEM INFORMACOES A SEREM IMPRESSAS *                                                                                      

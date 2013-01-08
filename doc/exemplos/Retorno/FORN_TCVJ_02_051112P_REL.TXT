@@ -1,0 +1,262 @@
+1                                                                                                                                    
+ 05/11/12 125101 000001 000001 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 05/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000022           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 003249921000180 TRELLEBORG AUTO DO BRASIL                900000674              05/11/2012 05/11/2012        2.052,62   DOC     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 JAMAICA MANGUEIRAS                       900000675              05/11/2012 05/11/2012        2.788,77   DOC     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DISTRIBUIDORA ATOMOTIVA S.A              900000676              05/11/2012 05/11/2012          793,95   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DRIVEWAY IND BRASIL AUTO PECAS           900000677              05/11/2012 05/11/2012          961,84   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 SDAP SOROCABA D A P LTDA ME              900000678              05/11/2012 05/11/2012          317,52   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 PELLEGRINO DISTR DE AUTOPECAS            900000679              05/11/2012 05/11/2012        2.025,37   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 ODAPEL DISTRIBUIDORA DE AUTO P           900000680              05/11/2012 05/11/2012        1.841,53   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 ROCHESTER DISTRIBUIDORA DE AUT           900000681              04/11/2012 05/11/2012          333,12   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 EATON LTDA                               900000682              05/11/2012 05/11/2012          165,36   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 EATON LTDA                               900000683              05/11/2012 05/11/2012           16,58   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 TEMPO AUTOMOVEIS PECAS LTDA              900000684              05/11/2012 05/11/2012          148,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 RPT DISTRIBUIDORA DE AUTO PECA           900000685              05/11/2012 05/11/2012          393,33   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 RPT DISTRIBUIDORA DE AUTO PECA           900000686              05/11/2012 05/11/2012          631,20   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 PETRONAS LUBRIFICANTES BRASIL            900000687              05/11/2012 05/11/2012        5.279,93   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 MEMORIAL COMERCIO DE PECAS LTD           900000688              05/11/2012 05/11/2012          600,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 PETRONAS LUBRIFICANTES BRASIL            900000689              05/11/2012 05/11/2012        7.338,77   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 PETRONAS LUBRIFICANTES BRASIL            900000690              05/11/2012 05/11/2012        2.669,29   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 PETRONAS LUBRIFICANTES BRASIL            900000691              05/11/2012 05/11/2012          275,51   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 MORELATE DISTRIBUIDORA DE AUTO           900000692              05/11/2012 05/11/2012          587,24   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 RENOVA AUTO PECAS LTDA ME                900000693              05/11/2012 05/11/2012          243,20   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DB DISTRIBUIDORA DE BATERIAS L           900000694              05/11/2012 05/11/2012        3.791,65   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DB DISTRIBUIDORA DE BATERIAS L           900000695              05/11/2012 05/11/2012        6.157,59   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DISTRIBUIDORA ATOMOTIVA S.A              900000696              05/11/2012 05/11/2012          369,93   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DISTRIBUIDORA ATOMOTIVA S.A              900000697              05/11/2012 05/11/2012          308,72   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DISTRIBUIDORA ATOMOTIVA S.A              900000698              05/11/2012 05/11/2012        1.887,03   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DISTRIBUIDORA ATOMOTIVA S.A              900000699              05/11/2012 05/11/2012        2.157,18   BLQ     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 05/11/12 125101 000001 000002 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      2
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 05/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000022           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 062157094000164 DISTRIBUIDORA ATOMOTIVA S.A              900000699              05/11/2012 05/11/2012        2.157,18   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DISTRIBUIDORA ATOMOTIVA S.A              900000700              05/11/2012 05/11/2012          535,68   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DISTRIBUIDORA ATOMOTIVA S.A              900000701              05/11/2012 05/11/2012          546,58   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DISTRIBUIDORA ATOMOTIVA S.A              900000702              05/11/2012 05/11/2012        2.054,31   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DISTRIBUIDORA ATOMOTIVA S.A              900000703              05/11/2012 05/11/2012          156,66   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 EATON LTDA                               900000704              05/11/2012 05/11/2012           50,66   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 METALURGICA SCHADEK LTDA                 900000705              05/11/2012 05/11/2012        5.656,16   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 ROCHESTER DISTRIBUIDORA DE AUT           900000706              05/11/2012 05/11/2012        1.967,95   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 MAHLE METAL LEVE S/A                     900000707              05/11/2012 05/11/2012          342,11   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 BAP AUTOMOTIVA LTDA                      900000708              05/11/2012 05/11/2012        2.341,77   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 BAP AUTOMOTIVA LTDA                      900000709              05/11/2012 05/11/2012        1.034,69   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 BAP AUTOMOTIVA LTDA                      900000710              05/11/2012 05/11/2012        1.058,62   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 METALURGICA SCHADEK LTDA                 900000711              05/11/2012 05/11/2012       11.887,08   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 PELLEGRINO DISTRIBUIDORA DE AU           900000712              05/11/2012 05/11/2012          660,99   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 SK AUTOMOTIVE S/A DIST. AUTOPC           900000713              05/11/2012 05/11/2012        1.071,10   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 SK AUTOMOTIVE S/A DIST. AUTOPC           900000714              05/11/2012 05/11/2012        1.348,56   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 SK AUTOMOTIVE S/A DIST. AUTOPC           900000715              05/11/2012 05/11/2012          338,47   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 SK AUTOMOTIVE S/A DIST. AUTOPC           900000716              05/11/2012 05/11/2012        1.548,38   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 J M CHAVES CARBURADORES                  900000717              05/11/2012 05/11/2012        1.140,40   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 EATON LTDA                               900000718              05/11/2012 05/11/2012           83,44   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 MAGGI CAMINHOES LTDA                     900000719              05/11/2012 05/11/2012          100,36   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 SAF DIESEL VEICULOS LTDA                 900000720              05/11/2012 05/11/2012          245,90   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 BANCO SOFISA SA                          900000721              05/11/2012 05/11/2012           46,18   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 BANCO SOFISA SA                          900000722              05/11/2012 05/11/2012          357,20   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 SEBASTIAO PER XAVIER SOROC ME            900000723              05/11/2012 05/11/2012          304,28   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 ITA PECAS PARA VEICULOS COM E            900000724              04/11/2012 05/11/2012          370,90   BLQ     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 05/11/12 125101 000001 000003 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      3
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 05/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000022           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 062157094000164 ITA PECAS PARA VEICULOS COM E            900000724              04/11/2012 05/11/2012          370,90   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 ELIVEL AUTOMOTORES LTDA                  900000725              04/11/2012 05/11/2012        1.320,93   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 MORELATE DISTRIBUIDORA DE AUTO           900000726              04/11/2012 05/11/2012          687,44   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 MANDO MACHINERY LTDA                     900000727              04/11/2012 05/11/2012        1.060,02   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 MANDO MACHINERY LTDA                     900000728              04/11/2012 05/11/2012          810,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 F CONFURTO IND COM PCS E ACESS           900000729              04/11/2012 05/11/2012          742,68   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 EATON LTDA                               900000730              04/11/2012 05/11/2012        1.463,93   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 EATON LTDA                               900000731              04/11/2012 05/11/2012          685,54   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 MORELATE DISTRIBUIDORA DE AUTO           900000732              03/11/2012 05/11/2012          511,31   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 PRV COMERCIO DE PECAS LTDA               900000733              03/11/2012 05/11/2012          380,10   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 EATON LTDA                               900000734              03/11/2012 05/11/2012          119,37   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 EATON LTDA                               900000735              03/11/2012 05/11/2012          161,42   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DE NIGRIS DISTR DE VEIC LTDA             900000736              03/11/2012 05/11/2012           79,60   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 IRMAOS FERRETI E CIA LTDA                900000737              03/11/2012 05/11/2012          592,12   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 FORT LUB PRODUTOS AUT                    900000738              03/11/2012 05/11/2012        3.999,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 REAL MOTO PECAS LTDA                     900000739              05/11/2012 05/11/2012        3.528,15   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 KOGA KOGA CIA LTDA                       900000740              05/11/2012 05/11/2012          261,96   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 MTE THOMSON IND COM LTDA                 900000741              05/11/2012 05/11/2012        1.185,68   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 THOMSON C I COM PROD AUTO LTDA           900000742              05/11/2012 05/11/2012        9.011,63   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 PACAEMBU AUTO PECAS LTDA                 900000743              05/11/2012 05/11/2012          989,10   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 MTE THOMSON IND COM LTDA                 900000744              05/11/2012 05/11/2012           88,31   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 THOMSON C I COM PROD AUT LTDA            900000745              05/11/2012 05/11/2012        3.462,44   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 CENTAURO IND E COMERCIO LTDA             900000746              03/11/2012 05/11/2012       11.109,93   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 ASTRO TECNOLOGIA I C LTDA                900000747              05/11/2012 05/11/2012          902,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 GIANCAR DISTR AUTO PECAS LTDA            900000748              05/11/2012 05/11/2012          961,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 PACAEMBU AUTO PECAS LTDA                 900000749              05/11/2012 05/11/2012        2.433,70   COB     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 05/11/12 125101 000001 000004 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      4
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 05/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000022           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 062157094000164 PACAEMBU AUTO PECAS LTDA                 900000749              05/11/2012 05/11/2012        2.433,70   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 INSTALADORA SAO MARCOS LTDA              900000750              05/11/2012 05/11/2012        3.323,88   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 PACAEMBU AUTO PECAS LTDA                 900000751              05/11/2012 05/11/2012        3.984,01   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 ELETROPAR AUTOPECAS LTDA                 900000752              05/11/2012 05/11/2012          297,91   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 NOVA DISTRIBUIDORA DE VEICULOS           900000753              04/11/2012 05/11/2012          445,99   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 FELICIO VIGORITO FILHOS LTDA             900000754              04/11/2012 05/11/2012          837,29   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 ACCIOLY SA IMP E EXP                     900000755              04/11/2012 05/11/2012          544,06   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 CENTER PECAS FABBRI LTDA                 900000756              04/11/2012 05/11/2012           94,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 CENTER PECAS FABBRI LTDA                 900000757              04/11/2012 05/11/2012          100,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 CENTER PECAS FABBRI LTDA                 900000758              03/11/2012 05/11/2012          250,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 CENTER PECAS FABBRI LTDA                 900000759              03/11/2012 05/11/2012          168,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 CENTER PECAS FABBRI LTDA                 900000760              03/11/2012 05/11/2012          282,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 NOVA DISTRIBUIDORA DE VEICULOS           900000761              04/11/2012 05/11/2012          483,34   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DIMAS MELO PIMENTA SIST PTO AC           900000762              05/11/2012 05/11/2012          149,90   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 DIMAS MELO PIMENTA SIST PTO AC           900000763              05/11/2012 05/11/2012          257,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 JOAO PAULO RODRIGUES PORTO FEL           900000764              05/11/2012 05/11/2012          710,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 062157094000164 CRISTIANE R A FERNANDES ME               900000765              05/11/2012 05/11/2012          998,64   COB     P   
+                                                                                                        REGISTRO ACEITO              
+                                                                                                                                     
+ TOTAL DE ACEITOS:      92       138.858,04   TOTAL DE REJEITADOS:      00             0,00  TOTAL GERAL:      92       138.858,04   
+                                                                                                                                     
+1                                                                                                                                    
+ 05/11/12 125100 000001 000001 YLTCVJ16 YL3C1240 YLLSH036 CASH MANAGEMENT                                                            
+  YL-PAGAMENTO FORNECEDORES                                             DEST.: 00330001-CENTRAL                                      
+  YLLSH036-OCORRENCIAS NO RECEB.DE ARQUIVOS POR MEIO MAGNETICO                                                           PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 05/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA:              -                                                                                                             
+ CLIENTE: 000000000000 -                                                                             AMBIENTE:                       
+                                                                                                                                     
+ CD  RM            SERV                        DATA                                                                                  
+ RG  ID  REM-LIT   COD        SERV-LIT        GRAVACAO     REMESSA      IDENTIF.DA REMESSA   TIPO   OCORRENCIA                       
+  * NAO EXISTEM INFORMACOES A SEREM IMPRESSAS *                                                                                      

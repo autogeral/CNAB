@@ -1,0 +1,114 @@
+1                                                                                                                                    
+ 06/11/12 120136 000001 000001 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 06/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000023           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 000000000000000 POLI FILTRO IND E COMERCIO LTD           900000768              06/11/2012 06/11/2012          292,70   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 MAZI AUTOMOTIVA LTDA                     900000769              06/11/2012 06/11/2012        6.696,87   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 ITA PECAS PARA VEICULOS COM. E           900000770              06/11/2012 06/11/2012          469,33   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 TONINI DISTRIBUIDORA LTDA                900000771              06/11/2012 06/11/2012          278,10   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 PORT ROYAL DISTR DE VEICULOS L           900000772              06/11/2012 06/11/2012          228,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 SCANI BENZ PECAS DIESEL LTDA             900000773              06/11/2012 06/11/2012          269,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 RAL MOTO PECAS LTDA                      900000774              06/11/2012 06/11/2012          296,24   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 COMPEL DISTR E COM DE AUTO PEC           900000775              06/11/2012 06/11/2012          851,67   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DISTRIBUIDORA AUTOMOTIVA LTDA            900000776              06/11/2012 06/11/2012          276,74   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 PELLEGRINO DISTR DE AUTO PECAS           900000777              06/11/2012 06/11/2012          616,70   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 COMPEL DISTR E COM DE AUTO PEC           900000778              06/11/2012 06/11/2012        1.112,17   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 GIRANDO COMERCIO DE PECAS LTDA           900000779              06/11/2012 06/11/2012        2.445,11   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FRAS LE S/A                              900000780              06/11/2012 06/11/2012        8.579,36   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FRAS LE S/A                              900000781              06/11/2012 06/11/2012        8.983,33   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 PECA MAIS COMERCIO DE AUTO PEC           900000782              06/11/2012 06/11/2012        1.465,70   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 GIRANDO COMERCIO DE PECAS LTDA           900000783              06/11/2012 06/11/2012          194,43   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 OBB CONSULTORIA E PARTICIPACOE           900000784              06/11/2012 06/11/2012          253,87   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DIP DISTRIBUIDORA DE PECAS LTD           900000785              06/11/2012 06/11/2012          310,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 POWER STOP INDUSTRIA E COMERCI           900000786              06/11/2012 06/11/2012          615,96   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 REAL MOTO PECAS LTDA                     900000787              06/11/2012 06/11/2012          857,89   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 REAL MOTO PECAS LTDA                     900000788              06/11/2012 06/11/2012          712,66   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 REAL MOTO PECAS LTDA                     900000789              06/11/2012 06/11/2012        3.417,83   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FRAS LE S/A                              900000790              06/11/2012 06/11/2012        1.280,18   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FELICIO VIGORITO FILHOS LTDA             900000791              06/11/2012 06/11/2012          270,77   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FRAS LE S/A                              900000792              06/11/2012 06/11/2012        2.226,39   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 COMERCIAL AUTOMOTIVA LTDA                900000793              06/11/2012 06/11/2012          318,07   COB     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 06/11/12 120136 000001 000002 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      2
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 06/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000023           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 000000000000000 COMERCIAL AUTOMOTIVA LTDA                900000793              06/11/2012 06/11/2012          318,07   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 TRELLEBORG AUTOMOTIVE DO BRASI           900000794              06/11/2012 06/11/2012          356,61   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 TRELLEBORG AUTOMOTIVE DO BRASI           900000795              06/11/2012 06/11/2012          280,27   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 TRELLEBORG AUTOMOTIVE DO BRASI           900000796              06/11/2012 06/11/2012          469,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 BAP AUTOMOTIVA LTDA                      900000797              06/11/2012 06/11/2012          372,05   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FREIOS CONTROIL LTDA                     900000798              06/11/2012 06/11/2012          106,66   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FREIOS CONTROIL LTDA                     900000799              06/11/2012 06/11/2012       17.084,96   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 IND. GRAFICA FM LTDA ME                  900000800              06/11/2012 06/11/2012        1.390,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 VIRTUAL EXPRESS TRANSPORTES E            900000801              06/11/2012 06/11/2012           78,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+                                                                                                                                     
+ TOTAL DE ACEITOS:      34        63.457,12   TOTAL DE REJEITADOS:      00             0,00  TOTAL GERAL:      34        63.457,12   
+                                                                                                                                     
+1                                                                                                                                    
+ 06/11/12 120136 000001 000001 YLTCVJ16 YL3C1240 YLLSH036 CASH MANAGEMENT                                                            
+  YL-PAGAMENTO FORNECEDORES                                             DEST.: 00330001-CENTRAL                                      
+  YLLSH036-OCORRENCIAS NO RECEB.DE ARQUIVOS POR MEIO MAGNETICO                                                           PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 06/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA:              -                                                                                                             
+ CLIENTE: 000000000000 -                                                                             AMBIENTE:                       
+                                                                                                                                     
+ CD  RM            SERV                        DATA                                                                                  
+ RG  ID  REM-LIT   COD        SERV-LIT        GRAVACAO     REMESSA      IDENTIF.DA REMESSA   TIPO   OCORRENCIA                       
+  * NAO EXISTEM INFORMACOES A SEREM IMPRESSAS *                                                                                      

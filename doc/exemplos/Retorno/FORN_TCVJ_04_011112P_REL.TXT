@@ -1,0 +1,142 @@
+1                                                                                                                                    
+ 01/11/12 163715 000001 000001 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 01/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000021           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 000000000000000 CAR CENTRAL DE AUTOPECAS E ROL           900000626              02/11/2012 05/11/2012          621,27   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 CAR CENTRAL DE AUTOPECAS E ROL           900000627              02/11/2012 05/11/2012        2.721,55   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 CAR CENTRAL DE AUTOPECAS E ROL           900000628              02/11/2012 05/11/2012        1.459,15   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 COMDIP COMERCIAL DISTRIBUIDORA           900000629              02/11/2012 05/11/2012        1.096,18   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 LANCE CAPITAL FACTORING E FOME           900000630              02/11/2012 05/11/2012        3.336,64   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 PRV COMERCIO DE PECAS LTDA               900000631              02/11/2012 05/11/2012          420,26   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 RPT DSITRIBUIDORA DE AUTO PCS            900000632              02/11/2012 05/11/2012          266,44   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 EATON LTDA                               900000633              02/11/2012 05/11/2012           90,52   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 EATON LTDA                               900000634              02/11/2012 05/11/2012           82,75   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DELPHI AUTOM SYSTEMS BR LTDA             900000635              02/11/2012 05/11/2012          585,97   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DELPHI AUTOM SYSTEMS BR LTDA             900000636              02/11/2012 05/11/2012        2.909,35   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 MORELATE DSITRIBUIDORA DE AUTO           900000637              02/11/2012 05/11/2012          436,56   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 EATON LTDA                               900000638              02/11/2012 05/11/2012          658,92   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 EATON LTDA                               900000639              02/11/2012 05/11/2012          473,55   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 COMDIP COMERCIAL DISTRIBUIDORA           900000640              02/11/2012 05/11/2012          759,40   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 EATON LTDA                               900000641              02/11/2012 05/11/2012           76,12   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 EATON LTDA                               900000642              02/11/2012 05/11/2012          223,86   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 EATON LTDA                               900000643              02/11/2012 05/11/2012           86,23   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 POLIPECAS DISTR AUTOMOTIVA LTD           900000644              02/11/2012 05/11/2012          892,27   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 RCD COMERCIO E INDUSTRIA LTDA            900000645              02/11/2012 05/11/2012          545,41   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 COML NV MILLENNIUM A P LTD EPP           900000646              02/11/2012 05/11/2012        1.174,86   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 PELLEGRINO DISTR DE AUTOPECAS            900000647              02/11/2012 05/11/2012          195,92   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 ROCHESTER DISTRIBUIDORA DE AUT           900000648              02/11/2012 05/11/2012        1.033,22   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 COMPEL DISTR. E COM DE AUTO PE           900000649              02/11/2012 05/11/2012          125,70   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 COMERCIAL AUTOMOTIVA LTDA                900000650              02/11/2012 05/11/2012          770,62   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 PELLEGRINO DISTR. DE AUTOPECAS           900000651              02/11/2012 05/11/2012        5.268,30   COB     P   
+                                                                                                                                     
+1                                                                                                                                    
+ 01/11/12 163715 000001 000002 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      2
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 01/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000021           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 000000000000000 PELLEGRINO DISTR. DE AUTOPECAS           900000651              02/11/2012 05/11/2012        5.268,30   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 ODAPEL DISTRIBUIDORA DE AUTO P           900000652              02/11/2012 05/11/2012        1.007,37   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 POLIPECAS DISTRIBUIDORA AUTOMO           900000653              02/11/2012 05/11/2012          462,91   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 COMERCIAL AUTOMOTIVA S.A.                900000654              02/11/2012 05/11/2012          413,85   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 EATON LTDA                               900000655              02/11/2012 05/11/2012          216,04   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 POLIPECAS DISTRIBUIDORA AUTOMO           900000656              02/11/2012 05/11/2012        1.087,85   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 POLIPECAS DISTRIBUIDORA AUTOMO           900000657              02/11/2012 05/11/2012        1.640,34   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 COMERCIAL AUTOMOTIVA S.A.                900000658              02/11/2012 05/11/2012          384,88   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 OBB CONSULTORIA E PARTICIPACOE           900000659              02/11/2012 05/11/2012          269,69   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 EATON LTDA                               900000660              02/11/2012 05/11/2012           82,75   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 VALCLEI IND E COM LTDA                   900000661              02/11/2012 05/11/2012        4.543,50   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 UNIVERSAL AUTOMOTIVE SYSTEMS S           900000662              02/11/2012 05/11/2012          214,57   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 NOVA DISTRIBUIDORA DE VEICULOS           900000663              02/11/2012 05/11/2012          637,03   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 REAL MOTO PECAS LTDA                     900000664              02/11/2012 05/11/2012          857,89   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 COBRA ROLAMENTOS AUTOPECAS LTD           900000665              02/11/2012 05/11/2012          282,52   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 COBRA ROLAMENTOS AUTOPECAS LTD           900000666              02/11/2012 05/11/2012        5.257,67   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 REAL MOTO PECAS LTDA                     900000667              02/11/2012 05/11/2012        2.205,21   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 REAL MOTO PECAS LTDA                     900000668              02/11/2012 05/11/2012        3.417,83   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DECAL LINE COM PREST SERV SILK           900000669              02/11/2012 05/11/2012          286,27   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FRAS-LE S/A                              900000670              02/11/2012 05/11/2012        2.805,53   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 UNIVERSAL AUTOMOTIVE SYSTEMS S           900000671              02/11/2012 05/11/2012        2.461,26   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 REAL MOTO PECAS LTDA                     900000672              02/11/2012 05/11/2012          502,13   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 POLIPECAS COML E IMP LTDA                900000673              02/11/2012 05/11/2012        1.370,91   COB     P   
+                                                                                                        REGISTRO ACEITO              
+                                                                                                                                     
+ TOTAL DE ACEITOS:      48        56.719,02   TOTAL DE REJEITADOS:      00             0,00  TOTAL GERAL:      48        56.719,02   
+                                                                                                                                     
+1                                                                                                                                    
+ 01/11/12 163715 000001 000001 YLTCVJ16 YL3C1240 YLLSH036 CASH MANAGEMENT                                                            
+  YL-PAGAMENTO FORNECEDORES                                             DEST.: 00330001-CENTRAL                                      
+  YLLSH036-OCORRENCIAS NO RECEB.DE ARQUIVOS POR MEIO MAGNETICO                                                           PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 01/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA:              -                                                                                                             
+ CLIENTE: 000000000000 -                                                                             AMBIENTE:                       
+                                                                                                                                     
+ CD  RM            SERV                        DATA                                                                                  
+ RG  ID  REM-LIT   COD        SERV-LIT        GRAVACAO     REMESSA      IDENTIF.DA REMESSA   TIPO   OCORRENCIA                       
+  * NAO EXISTEM INFORMACOES A SEREM IMPRESSAS *                                                                                      

@@ -1,0 +1,108 @@
+1                                                                                                                                    
+ 07/11/12 142309 000001 000001 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 07/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000024           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 000000000000000 GUMP MOTORS COMPONENTES AUTOMO           900000802              07/11/2012 07/11/2012          688,80   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 IND E COM AUTO PECAS REI LTDA            900000803              07/11/2012 07/11/2012       13.833,70   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 VALERIA DAVANSO AGUADO                   900000804              07/11/2012 07/11/2012        5.131,00   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 AVEBRAZ COMERCIO DE VEICULOS E           900000805              07/11/2012 07/11/2012          264,71   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 CENTER PECAS FABBRI LTDA                 900000806              07/11/2012 07/11/2012          430,40   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 CENTER PECAS FABBRI LTDA                 900000807              07/11/2012 07/11/2012           55,70   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DIP DISTRIBUIDORA DE PECAS LTD           900000808              07/11/2012 07/11/2012          526,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DISTRIBUIDORA AUTOMOTIVA LTDA            900000809              07/11/2012 07/11/2012          704,76   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 DISTRIBUIDORA AUTOMOTIVA LTDA            900000810              07/11/2012 07/11/2012          295,77   BLQ     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 OBB CONSULTORIA E PARTICIPACOE           900000811              07/11/2012 07/11/2012          395,15   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 OBB CONSULTORIA E PARTICIPACOE           900000812              07/11/2012 07/11/2012          272,96   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 ELETROPAR AUTOPECAS LTDA                 900000813              07/11/2012 07/11/2012          359,92   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 MEF SUL C I EXPORTACAO LTDA              900000814              07/11/2012 07/11/2012        2.280,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 MEMORIAL COMERCIO DE PECAS LTD           900000815              07/11/2012 07/11/2012          420,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 MULTGEAR I SERV USIN LTDA EPP            900000816              07/11/2012 07/11/2012          807,33   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 POLIPECAS COML E IMP LTDA                900000817              07/11/2012 07/11/2012        2.742,84   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 RPT DISTRIBUIDORA DE AUTO PECA           900000818              07/11/2012 07/11/2012          253,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 EDUARDO SARAIVA                          900000819              07/11/2012 07/11/2012          206,60   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 SHARK TRATORES E PECAS LTDA              900000820              07/11/2012 07/11/2012          350,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 SORANA SUL                               900000821              07/11/2012 07/11/2012          595,98   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 SORANA SUL                               900000822              07/11/2012 07/11/2012          178,91   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 T-PARTS COMERCIAL E IMPORTADOR           900000823              07/11/2012 07/11/2012          952,70   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 TWINGLASS VIDROS LTDA                    900000824              07/11/2012 07/11/2012        1.087,59   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 UNIVERSAL AUTOMOTIVE SYSTEMS S           900000825              07/11/2012 07/11/2012        2.608,84   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 SODEXO PASS DO BRASIL SERV E C           900000826              06/12/2012 07/11/2012           10,00   COB     P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FGTS GRF CONVENIO 0179                   900000827              07/11/2012 07/11/2012        5.183,56   FGTS    P   
+                                                                                                                                     
+1                                                                                                                                    
+ 07/11/12 142309 000001 000002 YLTCVJ16 YL3C1250 YLLSH037 CASH MANAGEMENT                                                            
+  YL-PAGAMENTOS FORNECEDORES                                            DEST.: 00330065-ITU                                          
+  YLLSH037-TRANSACOES RECEBIDAS POR MEIO MAGNETICO                                                                       PAG.:      2
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 07/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA: 0065         - ITU                                                                                                         
+ CLIENTE: 004900280503 - AUTO GERAL DE ITU LTDA                          NUM. REMESSA: 000024           AMBIENTE: PRODUCAO           
+                                                                                                                                     
+ COD-OPERACAO: C    COD-OCORR: 01 INCLUSAO DE COMPROMISSO                                                                            
+ FORNECEDOR      NOME                                        COMPROMISSO          DT-VENCTO   DT-PAGTO           VALOR  TP-PAG  AMB. 
+                                                      CONTEUDO COM ERRO                             OCORRENCIA                       
+                                                                                                                                     
+ 000000000000000 FGTS GRF CONVENIO 0179                   900000827              07/11/2012 07/11/2012        5.183,56   FGTS    P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FGTS GRF CONVENIO 0179                   900000828              07/11/2012 07/11/2012        1.099,37   FGTS    P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FGTS GRF CONVENIO 0179                   900000829              07/11/2012 07/11/2012        1.457,11   FGTS    P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FGTS GRF CONVENIO 0179                   900000830              07/11/2012 07/11/2012          709,85   FGTS    P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FGTS GRF CONVENIO 0179                   900000831              07/11/2012 07/11/2012        1.529,88   FGTS    P   
+                                                                                                        REGISTRO ACEITO              
+ 000000000000000 FGTS GRF CONVENIO 0179                   900000832              07/11/2012 07/11/2012          883,43   FGTS    P   
+                                                                                                        REGISTRO ACEITO              
+                                                                                                                                     
+ TOTAL DE ACEITOS:      31        46.315,86   TOTAL DE REJEITADOS:      00             0,00  TOTAL GERAL:      31        46.315,86   
+                                                                                                                                     
+1                                                                                                                                    
+ 07/11/12 142309 000001 000001 YLTCVJ16 YL3C1240 YLLSH036 CASH MANAGEMENT                                                            
+  YL-PAGAMENTO FORNECEDORES                                             DEST.: 00330001-CENTRAL                                      
+  YLLSH036-OCORRENCIAS NO RECEB.DE ARQUIVOS POR MEIO MAGNETICO                                                           PAG.:      1
+  PRAZO ARQUIVO: PROVISORIO                                                                               DATA GERACAO:  : 07/11/2012
+  EMPRESA: 0033 - BANCO SANTANDER (BRASIL) S.A.                                                                                      
++                                                                                                                                    
+ AGENCIA:              -                                                                                                             
+ CLIENTE: 000000000000 -                                                                             AMBIENTE:                       
+                                                                                                                                     
+ CD  RM            SERV                        DATA                                                                                  
+ RG  ID  REM-LIT   COD        SERV-LIT        GRAVACAO     REMESSA      IDENTIF.DA REMESSA   TIPO   OCORRENCIA                       
+  * NAO EXISTEM INFORMACOES A SEREM IMPRESSAS *                                                                                      
