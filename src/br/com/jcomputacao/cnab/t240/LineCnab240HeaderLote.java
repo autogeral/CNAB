@@ -233,7 +233,7 @@ public class LineCnab240HeaderLote extends LineArchetype {
 
      public LineCnab240HeaderLote() {
         addFieldArchetype(CODIGO_BANCO, new FieldStringFixedLengthArchetype(3));
-        addFieldArchetype(LOTE_SERVICO, new FieldStringFixedLengthArchetype(4));
+        addFieldArchetype(LOTE_SERVICO, new FieldIntegerFixedLengthArchetype(4));
         addFieldArchetype(TIPO_REGISTRO, new FieldDefaultArchetype("1"));
         addFieldArchetype(TIPO_OPERACAO, new FieldStringFixedLengthArchetype(1));
         addFieldArchetype(TIPO_SERVICO, new FieldStringFixedLengthArchetype(2));
@@ -244,10 +244,12 @@ public class LineCnab240HeaderLote extends LineArchetype {
         addFieldArchetype(NUM_INSCRICAO_EMPRESA, new FieldIntegerFixedLengthArchetype(14));
         addFieldArchetype(CODIGO_CONVENIO, new FieldStringFixedLengthArchetype(20));
         addFieldArchetype(AGENCIA_MANTENEDORA, new FieldIntegerFixedLengthArchetype(5));
-        addFieldArchetype(DIGITO_VER_AGENCIA, new FieldStringFixedLengthArchetype(1));
+        FieldStringFixedLengthArchetype fa = new FieldStringFixedLengthArchetype(1);
+        fa.setNullableRepresentation(" ");
+        addFieldArchetype(DIGITO_VER_AGENCIA, fa);
         addFieldArchetype(NUMERO_CONTA_COR, new FieldIntegerFixedLengthArchetype(12));
         addFieldArchetype(DIGITO_VER_CONTA, new FieldStringFixedLengthArchetype(1));
-        addFieldArchetype(DIGITO_VER_AG_CONTA, new FieldStringFixedLengthArchetype(1));
+        addFieldArchetype(DIGITO_VER_AG_CONTA, fa);
         addFieldArchetype(NOME_EMPRESA, new FieldStringFixedLengthArchetype(30));
         addFieldArchetype(INFORMACAO_1, new FieldFillerArchetype(40, ' '));
         addFieldArchetype(LOGRADOURO, new FieldStringFixedLengthArchetype(30));

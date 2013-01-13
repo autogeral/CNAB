@@ -1,5 +1,6 @@
 package br.com.jcomputacao.cnab.t240;
 
+import br.com.jcomputacao.aristoteles.field.FieldArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldDateFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldDecimalFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldDefaultArchetype;
@@ -80,12 +81,18 @@ public class LineCnab240SegmentoJ extends LineArchetype {
         addFieldArchetype(ACRESCIMOS, new FieldDecimalFixedLengthArchetype(15,2));
         addFieldArchetype(DATA_PAGAMENTO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         addFieldArchetype(VALOR_PAGAMENTO, new FieldDecimalFixedLengthArchetype(15,2));
-        addFieldArchetype(QUANTIDADE_MOEDA, new FieldDecimalFixedLengthArchetype(15,5));
+        FieldArchetype fa = new FieldDecimalFixedLengthArchetype(15,5);
+        fa.setNullableRepresentation("0");
+        addFieldArchetype(QUANTIDADE_MOEDA, fa);
         addFieldArchetype(REFERENCIA_SACADO, new FieldStringFixedLengthArchetype(20));
-        addFieldArchetype(NOSSO_NUMERO, new FieldStringFixedLengthArchetype(20));
+        fa = new FieldStringFixedLengthArchetype(20);
+        fa.setNullableRepresentation("                    ");
+        addFieldArchetype(NOSSO_NUMERO, fa);
         addFieldArchetype(CODIGO_MOEDA, new FieldIntegerFixedLengthArchetype(2));
         addFieldArchetype(CNAB, new FieldFillerArchetype(6, ' '));
-        addFieldArchetype(OCORRENCIAS, new FieldStringFixedLengthArchetype(10));
+        fa = new FieldStringFixedLengthArchetype(10);
+        fa.setAcceptNullable(true);
+        addFieldArchetype(OCORRENCIAS, fa);
     }
 
 }
