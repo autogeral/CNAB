@@ -5,6 +5,7 @@ import br.com.jcomputacao.aristoteles.field.FieldDefaultArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
+import br.com.jcomputacao.aristoteles.field.FieldVolatileArchetye;
 import br.com.jcomputacao.aristoteles.line.LineArchetype;
 
 /**
@@ -137,19 +138,27 @@ public class LineCnab240ArquivoHeader extends LineArchetype {
         addFieldArchetype(NUMERO_INSCRICAO, new FieldIntegerFixedLengthArchetype(14));
         addFieldArchetype(CODIGO_CONVENIO, new FieldStringFixedLengthArchetype(20));
         addFieldArchetype(AGENCIA_MANTENEDORA, new FieldIntegerFixedLengthArchetype(5));
-        addFieldArchetype(DIGITO_VER_AGENCIA, new FieldStringFixedLengthArchetype(1));
+        FieldVolatileArchetye fa = new FieldStringFixedLengthArchetype(1);
+        fa.setNullableRepresentation(" ");
+        addFieldArchetype(DIGITO_VER_AGENCIA, fa);
         addFieldArchetype(NUMERO_CONTA_COR, new FieldIntegerFixedLengthArchetype(12));
-        addFieldArchetype(DIGITO_VER_CONTA, new FieldStringFixedLengthArchetype(1));
-        addFieldArchetype(DIGITO_VER_AG_CONTA, new FieldStringFixedLengthArchetype(1));
+        fa = new FieldStringFixedLengthArchetype(1);
+        fa.setNullableRepresentation(" ");
+        addFieldArchetype(DIGITO_VER_CONTA, fa);
+        fa = new FieldStringFixedLengthArchetype(1);
+        fa.setNullableRepresentation(" ");
+        addFieldArchetype(DIGITO_VER_AG_CONTA, fa);
         addFieldArchetype(NOME_EMPRESA, new FieldStringFixedLengthArchetype(30));
         addFieldArchetype(NOME_BANCO, new FieldStringFixedLengthArchetype(30));
         addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(10, ' '));
         addFieldArchetype(CODIGO_REM_RET, new FieldIntegerFixedLengthArchetype(1));
         //Obs: campos agrupados (Data Geração do Arquivo e Hora Geração do Arquivo)
-        addFieldArchetype(DATAHORA_GERACAO_ARQUIVO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
+        addFieldArchetype(DATAHORA_GERACAO_ARQUIVO, new FieldDateFixedLengthArchetype("ddMMyyyyHHmmss"));
         addFieldArchetype(NUM_SEQUENCIAL_ARQUIVO, new FieldIntegerFixedLengthArchetype(6));
         addFieldArchetype(VERSAO_LAYOUT, new FieldStringFixedLengthArchetype(3));
-        addFieldArchetype(DENSIDADE_GRAVACAO, new FieldIntegerFixedLengthArchetype(5));
+        fa = new FieldIntegerFixedLengthArchetype(5);
+        fa.setNullableRepresentation("00000");
+        addFieldArchetype(DENSIDADE_GRAVACAO, fa);
         addFieldArchetype(RESERVADO_BANCO, new FieldFillerArchetype(20, ' '));
         addFieldArchetype(RESERVADO_EMPRESA, new FieldFillerArchetype(20, ' '));
         addFieldArchetype(EXCLUSIVO_FEBRABAN_3, new FieldFillerArchetype(29, ' '));

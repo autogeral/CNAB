@@ -7,5 +7,9 @@ import br.com.jcomputacao.cnab.t240.LineCnab240TraillerLotePagamentoDebito;
  * @author Murilo
  */
 public class LineCnab240v060TraillerLote extends LineCnab240TraillerLotePagamentoDebito {
+    
+    public LineCnab240v060TraillerLote() {
+        setName("CNAB 240v060 - Trailer Lote");
+    }
 
 }

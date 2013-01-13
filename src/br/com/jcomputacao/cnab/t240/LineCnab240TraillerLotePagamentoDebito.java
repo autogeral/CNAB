@@ -163,9 +163,13 @@ public class LineCnab240TraillerLotePagamentoDebito extends LineArchetype {
         addFieldArchetype(TIPO_REGISTRO, new FieldDefaultArchetype("5"));
         addFieldArchetype(EXCLUSIVO_FEBRABAN, new FieldFillerArchetype(9, ' '));
         addFieldArchetype(QTDE_REGISTROS_LOTE, new FieldIntegerFixedLengthArchetype(6));
-        addFieldArchetype(SOMATORIO_VALORES, new FieldDecimalFixedLengthArchetype(18, 2));
-        addFieldArchetype(SOMATORIO_QUANTIDADE_MOEDA, new FieldDecimalFixedLengthArchetype(15, 2));
-        FieldArchetype fa = new FieldIntegerFixedLengthArchetype(6);
+        FieldArchetype fa = new FieldDecimalFixedLengthArchetype(18, 2);
+        fa.setNullableRepresentation("");
+        addFieldArchetype(SOMATORIO_VALORES, fa);
+        fa = new FieldDecimalFixedLengthArchetype(15, 2);
+        fa.setNullableRepresentation("");
+        addFieldArchetype(SOMATORIO_QUANTIDADE_MOEDA, fa);
+        fa = new FieldIntegerFixedLengthArchetype(6);
         fa.setNullableRepresentation("      ");
         addFieldArchetype(NUMERO_AVISO_DEBITO, fa);
         addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(165, ' '));
