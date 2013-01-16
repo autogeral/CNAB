@@ -75,7 +75,7 @@ public class LineCnab240SegmentoN extends LineArchetype {
         addFieldArchetype(CODIGO_LOTE, new FieldIntegerFixedLengthArchetype(4));
         addFieldArchetype(TIPO_REGISTRO, new FieldDefaultArchetype("3"));
         addFieldArchetype(SEQUENCIAL_REGISTRO, new FieldIntegerFixedLengthArchetype(5));
-        addFieldArchetype(CODIGO_SEGMENTO, new FieldDefaultArchetype("S"));
+        addFieldArchetype(CODIGO_SEGMENTO, new FieldDefaultArchetype("N"));
         addFieldArchetype(SEU_NUMERO, new FieldStringFixedLengthArchetype(20));
         addFieldArchetype(NOSSO_NUMERO, new FieldStringFixedLengthArchetype(20));
         addFieldArchetype(CONTRIBUINTE, new FieldStringFixedLengthArchetype(20));

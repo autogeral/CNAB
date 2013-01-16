@@ -3,6 +3,7 @@ package br.com.jcomputacao.cnab.t240;
 import br.com.jcomputacao.aristoteles.field.FieldDateFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldDecimalFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
+import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
 
 /**
@@ -20,7 +21,7 @@ public class LineCnab240SegmentoN1 extends LineCnab240SegmentoN {
 
     public LineCnab240SegmentoN1() {
         setName("CNAB 240v084 - Segmento N1 GPS");
-        addFieldArchetype(IDENTIFICACAO_TRIBUTO, new FieldStringFixedLengthArchetype(2));
+        addFieldArchetype(IDENTIFICACAO_TRIBUTO, new FieldIntegerFixedLengthArchetype(2));
         addFieldArchetype(COMPETENCIA, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         addFieldArchetype(VALOR_TRIBUTO, new FieldDecimalFixedLengthArchetype(15, 2));
         addFieldArchetype(VALOR_OUTRAS_ENTIDADES, new FieldDecimalFixedLengthArchetype(15, 2));
