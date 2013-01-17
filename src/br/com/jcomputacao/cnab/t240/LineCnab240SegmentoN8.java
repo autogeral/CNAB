@@ -22,6 +22,7 @@ public class LineCnab240SegmentoN8 extends LineCnab240SegmentoN {
 
     public LineCnab240SegmentoN8() {
         setName("CNAB 240v084 - Segmento N8 DARJ");
+        removeFieldArchetype(IDENTIFICACAO_TRIBUTO);
         addFieldArchetype(IE_MUNICIPIO_DECLARACAO, new FieldIntegerFixedLengthArchetype(8));
         addFieldArchetype(ORIGEM, new FieldIntegerFixedLengthArchetype(16));
         addFieldArchetype(VALOR_PRINCIPAL, new FieldDecimalFixedLengthArchetype(15, 2));

@@ -26,7 +26,6 @@ public class LineCnab240SegmentoN7 extends LineCnab240SegmentoN {
 
     public LineCnab240SegmentoN7() {
         setName("CNAB 240v084 - Segmento N7 Licenciamento");
-        addFieldArchetype(IDENTIFICACAO_TRIBUTO, new FieldStringFixedLengthArchetype(2));
         addFieldArchetype(EXERCICIO, new FieldIntegerFixedLengthArchetype(2));
         addFieldArchetype(RENAVAM, new FieldIntegerFixedLengthArchetype(9));
         addFieldArchetype(UNIDADE_FEDERACAO, new FieldStringFixedLengthArchetype(2));

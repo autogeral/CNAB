@@ -22,7 +22,6 @@ public class LineCnab240SegmentoN6 extends LineCnab240SegmentoN {
     
     public LineCnab240SegmentoN6() {
         setName("CNAB 240v084 - Segmento N6 DPVAT");
-        addFieldArchetype(IDENTIFICACAO_TRIBUTO, new FieldStringFixedLengthArchetype(2));
         addFieldArchetype(EXERCICIO, new FieldIntegerFixedLengthArchetype(2));
         addFieldArchetype(RENAVAM, new FieldIntegerFixedLengthArchetype(9));
         addFieldArchetype(UNIDADE_FEDERACAO, new FieldStringFixedLengthArchetype(2));

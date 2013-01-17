@@ -126,10 +126,10 @@ public class LineCnab240SegmentoO extends LineArchetype {
         addFieldArchetype(NOME_CONCESSIONA_ORGAO_PUBLICO, new FieldStringFixedLengthArchetype(30));
         addFieldArchetype(DATA_VENCIMENTO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         addFieldArchetype(DATA_PAGAMENTO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
-        addFieldArchetype(VALOR_PAGAMENTO, new FieldDecimalFixedLengthArchetype(13, 2));
+        addFieldArchetype(VALOR_PAGAMENTO, new FieldDecimalFixedLengthArchetype(15, 2));
         addFieldArchetype(NUMERO_DOCUMENTO_CLINETE, new FieldStringFixedLengthArchetype(20));
         addFieldArchetype(NUMERO_DOCUMENTO_BANCO, new FieldStringFixedLengthArchetype(20));
-        addFieldArchetype(FILLER, new FieldFillerArchetype(1, ' '));
+        addFieldArchetype(FILLER, new FieldFillerArchetype(68, ' '));
         FieldStringFixedLengthArchetype fa = new FieldStringFixedLengthArchetype(10);
         fa.setNullableRepresentation("");
         addFieldArchetype(OCORRENCIAS_RETORNO, fa);

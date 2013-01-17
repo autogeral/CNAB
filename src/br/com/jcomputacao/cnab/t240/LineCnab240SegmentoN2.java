@@ -23,7 +23,6 @@ public class LineCnab240SegmentoN2 extends LineCnab240SegmentoN {
 
     public LineCnab240SegmentoN2() {
         setName("CNAB 240v084 - Segmento N2 DARF");
-        addFieldArchetype(IDENTIFICACAO_TRIBUTO, new FieldStringFixedLengthArchetype(2));
         addFieldArchetype(PERIODO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         addFieldArchetype(REFERENCIA, new FieldIntegerFixedLengthArchetype(17));
         addFieldArchetype(VALOR_PRINCIPAL, new FieldDecimalFixedLengthArchetype(15, 2));

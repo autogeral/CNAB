@@ -9,8 +9,8 @@ import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.line.LineArchetype;
 
 /**
- * Representa um registro de detalhe do tipo segmento A conforme layout definido na página 87 do
- * documento <b>Layout Padrão Febraban 240 posições V08.6</b>, que pode ser baixado em:
+ * Representa um registro de detalhe do tipo segmento A conforme layout definido na pagina 87 do
+ * documento <b>Layout Padrao Febraban 240 posicões V08.6</b>, que pode ser baixado em:
  * http://www.febraban.org.br/acervo.asp?id_pagina=173
  *
  * @author Alipio
@@ -33,13 +33,13 @@ public class LineCnab240SegmentoA extends LineArchetype {
     public static final String TIPO_MOVIMENTO = "TIPO_MOVIMENTO";
     /**
      * G061
-     * '00' = Inclusão de Registro Detalhe Liberado
-     * '09' = Inclusão do Registro Detalhe Bloqueado
-     * '10' = Alteração do Pagamento Liberado para Bloqueado (Bloqueio)
-     * '11' = Alteração do Pagamento Bloqueado para Liberado (Liberação)
-     * '19' = Alteração da Data de Pagamento
-     * '33' = Estorno por Devolução da Câmara Centralizadora (somente para Tipo de Movimento = '3')
-     * '99' = Exclusão do Registro Detalhe Incluído Anteriormente
+     * '00' = Inclusao de Registro Detalhe Liberado
+     * '09' = Inclusao do Registro Detalhe Bloqueado
+     * '10' = Alteracao do Pagamento Liberado para Bloqueado (Bloqueio)
+     * '11' = Alteracao do Pagamento Bloqueado para Liberado (Liberacao)
+     * '19' = Alteracao da Data de Pagamento
+     * '33' = Estorno por Devolucao da Câmara Centralizadora (somente para Tipo de Movimento = '3')
+     * '99' = Exclusao do Registro Detalhe Incluido Anteriormente
      */
     public static final String CODIGO_MOVIMENTO = "CODIGO_MOVIMENTO";
     /**
@@ -56,8 +56,23 @@ public class LineCnab240SegmentoA extends LineArchetype {
     public static final String SEU_NUMERO = "SEU_NUMERO";
     public static final String DATA_LANCAMENTO = "DATA_LANCAMENTO";
     /**
+     * 'BTN' = Bonus do Tesouro Nacional + TR 
      * 'BRL' = Real
-     * 'USD' = Dólar Americano
+     * 'USD' = Dolar Americano
+     * 'PTE' = Escudo Portugues
+     * 'FRF' = Franco Frances
+     * 'CHF' = Franco Suico
+     * 'JPY' = Ien Japones
+     * 'IGP' = Indice Geral de Precos
+     * 'IGM' = Indice Geral de Precos de Mercado
+     * 'GBP' = Libra Esterlina
+     * 'ITL' = Lira Italiana
+     * 'DEM' = Marco Alemao
+     * 'TRD' = Taxa Referencial Diaria
+     * 'UPC' = Unidade Padrao de Capital
+     * 'UPF' = Unidade Padrao de Financiamento
+     * 'UFR' = Unidade Fiscal de Referencia 
+     * 'XEU' = Unidade Monetaria Europeia
      */
     public static final String TIPO_MOEDA = "TIPO_MOEDA";
     public static final String QTDE_MOEDA = "QTDE_MOEDA";
@@ -79,7 +94,7 @@ public class LineCnab240SegmentoA extends LineArchetype {
     public static final String EXCLUSIVO_FEBRABAN_2 = "EXCLUSIVO_FEBRABAN_2";
     /**
      * P006
-     * '0' = Não Emite Aviso
+     * '0' = Nao Emite Aviso
      * '2' = Emite Aviso Somente para o Remetente
      * '5' = Emite Aviso Somente para o Favorecido
      * '6' = Emite Aviso para o Remetente e Favorecido

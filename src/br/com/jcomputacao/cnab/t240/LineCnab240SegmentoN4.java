@@ -25,7 +25,6 @@ public class LineCnab240SegmentoN4  extends LineCnab240SegmentoN {
 
     public LineCnab240SegmentoN4() {
         setName("CNAB 240v084 - Segmento N4 GARE-SP ICMS/DR/ITCMD");
-        addFieldArchetype(IDENTIFICACAO_TRIBUTO, new FieldStringFixedLengthArchetype(2));
         addFieldArchetype(VENCIMENTO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         addFieldArchetype(IE_MUNICIPIO_DECLARACAO, new FieldIntegerFixedLengthArchetype(12));
         addFieldArchetype(DIVIDA_ATIVA_ETIQUETA, new FieldIntegerFixedLengthArchetype(13));

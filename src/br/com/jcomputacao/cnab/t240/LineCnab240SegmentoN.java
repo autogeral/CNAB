@@ -36,6 +36,25 @@ public class LineCnab240SegmentoN extends LineArchetype {
      * POSICAO 014 014 CONTEUDO 'N'
      */
     public static final String CODIGO_SEGMENTO = "CODIGO_SEGMENTO";
+    /**
+     * G060
+     * '0' = Indica INCLUSAO
+     * '3' = Indica ESTORNO (somente para retorno)
+     * '5' = Indica ALTERACAO
+     * '9' = Indica EXCLUSAO
+     */    
+    public static final String TIPO_MOVIMENTO = "TIPO_MOVIMENTO";
+    /**
+     * G061
+     * '00' = Inclusao de Registro Detalhe Liberado
+     * '09' = Inclusao do Registro Detalhe Bloqueado
+     * '10' = Alteracao do Pagamento Liberado para Bloqueado (Bloqueio)
+     * '11' = Alteracao do Pagamento Bloqueado para Liberado (Liberacao)
+     * '19' = Alteracao da Data de Pagamento
+     * '33' = Estorno por Devolucao da Camara Centralizadora (somente para Tipo de Movimento = '3')
+     * '99' = Exclusao do Registro Detalhe Incluido Anteriormente
+     */
+    public static final String CODIGO_MOVIMENTO = "CODIGO_MOVIMENTO";
     public static final String SEU_NUMERO = "SEU_NUMERO";
     public static final String NOSSO_NUMERO = "NOSSO_NUMERO";
     public static final String CONTRIBUINTE = "CONTRIBUINTE";
@@ -76,13 +95,17 @@ public class LineCnab240SegmentoN extends LineArchetype {
         addFieldArchetype(TIPO_REGISTRO, new FieldDefaultArchetype("3"));
         addFieldArchetype(SEQUENCIAL_REGISTRO, new FieldIntegerFixedLengthArchetype(5));
         addFieldArchetype(CODIGO_SEGMENTO, new FieldDefaultArchetype("N"));
+        addFieldArchetype(TIPO_MOVIMENTO, new FieldIntegerFixedLengthArchetype(1));
+        addFieldArchetype(CODIGO_MOVIMENTO, new FieldIntegerFixedLengthArchetype(2));
         addFieldArchetype(SEU_NUMERO, new FieldStringFixedLengthArchetype(20));
         addFieldArchetype(NOSSO_NUMERO, new FieldStringFixedLengthArchetype(20));
-        addFieldArchetype(CONTRIBUINTE, new FieldStringFixedLengthArchetype(20));
+        addFieldArchetype(CONTRIBUINTE, new FieldStringFixedLengthArchetype(30));
         addFieldArchetype(DATA_PAGAMENTO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         addFieldArchetype(VALOR_PAGAMENTO, new FieldDecimalFixedLengthArchetype(15, 2));
+        //A definicao do N vai ate o valor do pagamento
         addFieldArchetype(RECEITA, new FieldStringFixedLengthArchetype(6));
         addFieldArchetype(TIPO_IDENTIFICACAO_CONTRIBUINTE, new FieldIntegerFixedLengthArchetype(2));
         addFieldArchetype(IDENTIFICACAO_CONTRIBUINTE, new FieldIntegerFixedLengthArchetype(14));
+        addFieldArchetype(IDENTIFICACAO_TRIBUTO, new FieldIntegerFixedLengthArchetype(2));
     }
 }
