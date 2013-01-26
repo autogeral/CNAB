@@ -24,6 +24,7 @@ public class LineCnab240SegmentoA extends LineArchetype {
     public static final String SEQUENCIAL_REGISTRO = "SEQUENCIAL_REGISTRO";
     public static final String CODIGO_SEGMENTO = "CODIGO_SEGMENTO";
     /**
+     * @see br.com.jcomputacao.cnab.CnabMovimentoTipo
      * G060
      * '0' = Indica INCLUSAO
      * '3' = Indica ESTORNO (somente para retorno)
@@ -32,6 +33,7 @@ public class LineCnab240SegmentoA extends LineArchetype {
      */    
     public static final String TIPO_MOVIMENTO = "TIPO_MOVIMENTO";
     /**
+     * @see br.com.jcomputacao.cnab.CnabMovimentoCodigo
      * G061
      * '00' = Inclusao de Registro Detalhe Liberado
      * '09' = Inclusao do Registro Detalhe Bloqueado
