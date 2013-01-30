@@ -119,7 +119,9 @@ public class LineCnab240SegmentoA extends LineArchetype {
         addFieldArchetype(CODIGO_CAMARA_CENTRALIZADORA, ccc);
         addFieldArchetype(CODIGO_BANCO_PAGADOR_FAVORECIDO, new FieldIntegerFixedLengthArchetype(3));
         addFieldArchetype(AGENCIA_MANTENEDORA_PAGADOR_FAVORECIDO, new FieldIntegerFixedLengthArchetype(5));
-        addFieldArchetype(DIGITO_VER_AGENCIA, new FieldStringFixedLengthArchetype(1));
+        ccc = new FieldStringFixedLengthArchetype(1);
+        ccc.setNullableRepresentation(" ");
+        addFieldArchetype(DIGITO_VER_AGENCIA, ccc);
         addFieldArchetype(NUMERO_CONTA_COR, new FieldIntegerFixedLengthArchetype(12));
         addFieldArchetype(DIGITO_VER_CONTA, new FieldStringFixedLengthArchetype(1));
         addFieldArchetype(DIGITO_VER_AGENCIA_CONTA, new FieldStringFixedLengthArchetype(1));
@@ -129,14 +131,19 @@ public class LineCnab240SegmentoA extends LineArchetype {
         addFieldArchetype(TIPO_MOEDA, new FieldStringFixedLengthArchetype(3));
         addFieldArchetype(QTDE_MOEDA, new FieldDecimalFixedLengthArchetype(15, 5));
         addFieldArchetype(VALOR_LANCAMENTO, new FieldDecimalFixedLengthArchetype(15, 2));
-        addFieldArchetype(NOSSO_NUMERO, new FieldStringFixedLengthArchetype(20));
+        ccc = new FieldStringFixedLengthArchetype(20);
+        ccc.setNullableRepresentation("");
+        addFieldArchetype(NOSSO_NUMERO, ccc);
         addFieldArchetype(DATA_REAL, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         addFieldArchetype(VALOR_REAL, new FieldDecimalFixedLengthArchetype(15, 2));
-        addFieldArchetype(INFORMACAO_2, new FieldStringFixedLengthArchetype(40));
+        ccc = new FieldStringFixedLengthArchetype(40);
+        ccc.setNullableRepresentation("");
+        addFieldArchetype(INFORMACAO_2, ccc);
         addFieldArchetype(COD_FINALIDADE_DOC, new FieldStringFixedLengthArchetype(2));
         addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(10, ' '));
         addFieldArchetype(AVISO_AO_PAGADOR_FAVORECIDO, new FieldIntegerFixedLengthArchetype(1));
-        addFieldArchetype(OCORRENCIAS, new FieldStringFixedLengthArchetype(10));
-
+        ccc = new FieldStringFixedLengthArchetype(10);
+        ccc.setNullableRepresentation("");
+        addFieldArchetype(OCORRENCIAS, ccc);
     }
 }
