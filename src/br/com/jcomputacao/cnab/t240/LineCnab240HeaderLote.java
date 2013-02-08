@@ -194,12 +194,12 @@ public class LineCnab240HeaderLote extends LineArchetype {
      */
     public static final String INFORMACAO_2 = "INFORMACAO_2";
 
-    /**
-     * NUM. REMESSA/RETORNO<br>
-     * POSIÇÃO: 184 a 191<br>
-     * FORMATO: NUM<br>
-     */
-     public static final String NUM_REMESSA_RETORNO = "NUM_REMESSA_RETORNO";
+//    /**
+//     * NUM. REMESSA/RETORNO<br>
+//     * POSIÇÃO: 184 a 191<br>
+//     * FORMATO: NUM<br>
+//     */
+//     public static final String NUM_REMESSA_RETORNO = "NUM_REMESSA_RETORNO";
 
     /**
      * DATA DE GRAVACAO REMESSA/RETORNO<br>
@@ -208,12 +208,12 @@ public class LineCnab240HeaderLote extends LineArchetype {
      */
      public static final String DATA_GRAVACAO_REMESSA_RETORNO = "DATA_GRAVACAO_REMESSA_RETORNO";
 
-    /**
-     * DATA DO CREDITO<br>
-     * POSIÇÃO: 200 a 207<br>
-     * FORMATO: NUM<br>
-     */
-     public static final String DATA_CREDITO = "DATA_CREDITO";
+//    /**
+//     * DATA DO CREDITO<br>
+//     * POSIÇÃO: 200 a 207<br>
+//     * FORMATO: NUM<br>
+//     */
+//     public static final String DATA_CREDITO = "DATA_CREDITO";
 
     /**
      * USO EXCLUSIVO DA FEBRABAN<br>
