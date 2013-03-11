@@ -20,7 +20,7 @@ public class LineCnab240v060ArquivoHeaderTest {
         LineCnab240v060ArquivoHeader archetype = new LineCnab240v060ArquivoHeader();
         LineModel model = archetype.createModel();
         model.setRepresentation(content);
-        Date dthrGeracao = model.getFieldValueDate(LineCnab240v060ArquivoHeader.DATAHORA_GERACAO_ARQUIVO);
+        Date dthrGeracao = model.getFieldValueDate(LineCnab240v060ArquivoHeader.DATA_GERACAO_ARQUIVO);
 
         System.out.println("Data/Hora arquivo : " + DateFormat.getDateTimeInstance().format(dthrGeracao));
         assertEquals(content, model.getRepresentation().toString());
