@@ -75,7 +75,7 @@ public class LineCnab240v040TrailerArquivo extends LineArchetype {
          //01
          addFieldArchetype(CODIGO_BANCO_COMPENSACAO, new FieldIntegerFixedLengthArchetype(3));
          //02
-         addFieldArchetype(NUM_LOTE, new FieldStringFixedLengthArchetype(4));
+         addFieldArchetype(NUM_LOTE, new FieldIntegerFixedLengthArchetype(4));
          //03
          addFieldArchetype(TIPO_REGISTRO, new FieldIntegerFixedLengthArchetype(1));
          //04
