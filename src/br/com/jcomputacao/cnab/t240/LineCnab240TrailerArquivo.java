@@ -67,11 +67,17 @@ public class LineCnab240TrailerArquivo extends LineArchetype{
 
     public LineCnab240TrailerArquivo(){
          addFieldArchetype(CODIGO_BANCO_COMPENSACAO, new FieldStringFixedLengthArchetype(3));
-         addFieldArchetype(LOTE_TIPO_REGISTRO, new FieldDefaultArchetype("99999"));
+         //new FieldDefaultArchetype("99999") - não é adequado para a leitura do arquivo
+         
+         FieldStringFixedLengthArchetype f02 = new FieldStringFixedLengthArchetype(5);
+         addFieldArchetype(LOTE_TIPO_REGISTRO, f02);
+         
          addFieldArchetype(EXCLUSIVO_FEBRABAN, new FieldFillerArchetype(9, ' '));
          addFieldArchetype(QTDE_LOTES_ARQUIVO, new FieldIntegerFixedLengthArchetype(6));
          addFieldArchetype(QTDE_REGISTROS_ARQUIVO, new FieldIntegerFixedLengthArchetype(6));
-         addFieldArchetype(QTDE_CONTAS_CONCIL, new FieldIntegerFixedLengthArchetype(6));
+         FieldIntegerFixedLengthArchetype fa = new FieldIntegerFixedLengthArchetype(6);
+         fa.setAcceptNullable(true);
+         addFieldArchetype(QTDE_CONTAS_CONCIL, fa);
          addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(205, ' '));
     }
 }
