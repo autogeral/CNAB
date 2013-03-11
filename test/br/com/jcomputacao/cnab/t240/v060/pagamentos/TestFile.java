@@ -204,7 +204,8 @@ public class TestFile {
         int remRet = model.getFieldValueNumber(LineCnab240v060ArquivoHeader.CODIGO_REM_RET).intValue();
         String verLayout = model.getFieldValueString(LineCnab240v060ArquivoHeader.VERSAO_LAYOUT);
         int sequencial = model.getFieldValueNumber(LineCnab240v060ArquivoHeader.NUM_SEQUENCIAL_ARQUIVO).intValue();
-        Date geracao = model.getFieldValueDate(LineCnab240v060ArquivoHeader.DATAHORA_GERACAO_ARQUIVO);
+        Date geracao = model.getFieldValueDate(LineCnab240v060ArquivoHeader.DATA_GERACAO_ARQUIVO);
+        Date horaGeracao = model.getFieldValueDate(LineCnab240v060ArquivoHeader.HORA_GERACAO_ARQUIVO);
         String banco = model.getFieldValueString(LineCnab240v060ArquivoHeader.NOME_BANCO);
         String emprea = model.getFieldValueString(LineCnab240v060ArquivoHeader.NOME_EMPRESA);
         System.out.println("******************************************************************************************************");
