@@ -18,7 +18,7 @@ public class LineCnab240ArquivoHeader extends LineArchetype {
      * CODIGO DO BANCO - DEFAULT 001
      * POSICAO 001 003
      */
-    public static final String CODIGO_BANCO = "CODIGO_BANCOS";
+    public static final String CODIGO_BANCO = "CODIGO_BANCO";
     /**
      * TIPOS DE REGISTRO
      * POSICAO 004 008 - DEFAULT ZEROS
@@ -95,7 +95,12 @@ public class LineCnab240ArquivoHeader extends LineArchetype {
      * DATA DE GERACAO DO ARQUIVO
      * POSICAO 144 151
      */
-    public static final String DATAHORA_GERACAO_ARQUIVO = "DATAHORA_GERACAO_ARQUIVO";
+    public static final String DATA_GERACAO_ARQUIVO = "DATA_GERACAO_ARQUIVO";
+    /**
+     * HORA DE GERACAO DO ARQUIVO
+     * POSICAO 152 157
+     */
+    public static final String HORA_GERACAO_ARQUIVO = "HORA_GERACAO_ARQUIVO";
     /**
      * NUMERO SEQUENCIAL DO ARQUIVO
      * POSICAO 158 163
@@ -130,37 +135,62 @@ public class LineCnab240ArquivoHeader extends LineArchetype {
 
     public LineCnab240ArquivoHeader() {
         setName("CNAB BB - Arquivo Header");
+        //01
         addFieldArchetype(CODIGO_BANCO, new FieldStringFixedLengthArchetype(3));
+        //02 e 03
         //Obs: campos agrupados (Lote e Tipo de Registro)
         addFieldArchetype(LOTE_TIPO_REGISTRO, new FieldDefaultArchetype("00000"));
+        //04
         addFieldArchetype(EXCLUSIVO_FEBRABAN, new FieldFillerArchetype(9, ' '));
+        //05
         addFieldArchetype(TIPO_INSCRICAO, new FieldIntegerFixedLengthArchetype(1));
+        //06
         addFieldArchetype(NUMERO_INSCRICAO, new FieldIntegerFixedLengthArchetype(14));
+        //07
         addFieldArchetype(CODIGO_CONVENIO, new FieldStringFixedLengthArchetype(20));
+        //08
         addFieldArchetype(AGENCIA_MANTENEDORA, new FieldIntegerFixedLengthArchetype(5));
+        //09
         FieldVolatileArchetye fa = new FieldStringFixedLengthArchetype(1);
         fa.setNullableRepresentation(" ");
         addFieldArchetype(DIGITO_VER_AGENCIA, fa);
+        //10
         addFieldArchetype(NUMERO_CONTA_COR, new FieldIntegerFixedLengthArchetype(12));
         fa = new FieldStringFixedLengthArchetype(1);
         fa.setNullableRepresentation(" ");
+        //11
         addFieldArchetype(DIGITO_VER_CONTA, fa);
         fa = new FieldStringFixedLengthArchetype(1);
         fa.setNullableRepresentation(" ");
+        //12
         addFieldArchetype(DIGITO_VER_AG_CONTA, fa);
+        //13
         addFieldArchetype(NOME_EMPRESA, new FieldStringFixedLengthArchetype(30));
+        //14
         addFieldArchetype(NOME_BANCO, new FieldStringFixedLengthArchetype(30));
+        //15
         addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(10, ' '));
+        //16
         addFieldArchetype(CODIGO_REM_RET, new FieldIntegerFixedLengthArchetype(1));
-        //Obs: campos agrupados (Data Geração do Arquivo e Hora Geração do Arquivo)
-        addFieldArchetype(DATAHORA_GERACAO_ARQUIVO, new FieldDateFixedLengthArchetype("ddMMyyyyHHmmss"));
+        //17
+        addFieldArchetype(DATA_GERACAO_ARQUIVO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
+        //18
+        FieldDateFixedLengthArchetype fd = new FieldDateFixedLengthArchetype("HHmmss");
+        fd.setAcceptNullable(true);
+        addFieldArchetype(HORA_GERACAO_ARQUIVO, fd);
+        //19
         addFieldArchetype(NUM_SEQUENCIAL_ARQUIVO, new FieldIntegerFixedLengthArchetype(6));
+        //20
         addFieldArchetype(VERSAO_LAYOUT, new FieldStringFixedLengthArchetype(3));
         fa = new FieldIntegerFixedLengthArchetype(5);
         fa.setNullableRepresentation("00000");
+        //21
         addFieldArchetype(DENSIDADE_GRAVACAO, fa);
+        //22
         addFieldArchetype(RESERVADO_BANCO, new FieldFillerArchetype(20, ' '));
+        //23
         addFieldArchetype(RESERVADO_EMPRESA, new FieldFillerArchetype(20, ' '));
+        //24
         addFieldArchetype(EXCLUSIVO_FEBRABAN_3, new FieldFillerArchetype(29, ' '));
 
     }
