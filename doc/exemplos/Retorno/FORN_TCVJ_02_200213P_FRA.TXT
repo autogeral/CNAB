@@ -1,0 +1,23 @@
+ BANCO SANTANDER (BRASIL) S.A.       AVISO DE MOVIMENTACAO - PAGAMENTO A FORNECEDORES                 DT.EMISSAO: 19/02/2013 02.21.21
+-------------------------------------------------------------------------------------------------------------------------------------
+ CLIENTE: 0033-0065-004900280503 - AUTO GERAL DE ITU LTDA         - 05.437.537/0001.37                                               
+ DADOS DO DEBITO: 0033-0065-000130033753                                                             No DO AVISO: 000000000  PAG: 001
+-------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                     
+ TOTAIS      FORMA PAGTO  QTDE     TOTAL FINANCEIRO(LIQUIDADO)                                                                       
+             TOTAL      000000                 0,00                                                                                  
+                                                                                                                                     
+                                                                                                                                     
+                                                                                                                                     
+ OCORRENCIAS:                                                                                                                        
+ *NUMERO DO COMPROMISSO ATRIBUIDO PELO CLIENTE OU NUMERO DO COMPROMISSO ATRIBUIDO PELO BANCO PARA OS CLIENTES QUE NAO ASSOCIAM       
+ NENHUM NUMERO A SEUS COMPROMISSOS                                                                                                   
+                                                                                                                                     
+ ADP - ALTERACAO DATA DE PAGAMENTO          ALF - ALTERACAO DE FORNECEDOR              AUT - AUTORIZACAO P/ PAGAMENTO                
+ DBL - DESBLOQUEADO P/ PAGAMENTO            VIS - VENCIDO NAO PAGO - INSUF. SALDO      DIS - DESBLOQUEIO POR INSUF. DE SALDO         
+ INA - INCLUIDO E AUTORIZADO                LIQ - LIQUIDADO                            DSE - DESBLOQUEIO DE SACADO ELETRONICO        
+ VNA - VENCIDO, NAO PAGO E NAO AUTORIZADO   ALN - ALTERACAO DE NOME                    EST - COMPROMISSO ESTORNADO                   
+ AFP - ALTERACAO EM FORMA DE PAGAMENTO      DEV - COMPROMISSO DEVOLVIDO                INF - INCLUSAO DE FORNECEDOR                  
+ AVR - ALTERACAO DE VALOR                   PNU - PAGTO. POSTERGADO - DIA NAO UTIL     IND - INCLUIDO                                
+ EXC - EXCLUIDO PELO CLIENTE                BLQ - BLOQUEADO P/ PAGAMENTO               EXF - EXCLUSAO POR FORNECEDOR                 
+ INS - AUTORIZADO - INSUF. DE SALDO         ALD - ALTERACAO DE DADOS DO CREDITO(BCO/AGE/CC)                                          
