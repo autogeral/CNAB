@@ -401,7 +401,7 @@ public class LineCnab240SegmentoE extends LineArchetype{
         //31
         addFieldArchetype(CATEGORIA_LANCAMENTO, new FieldIntegerFixedLengthArchetype(3));
         //32
-        addFieldArchetype(CODIGO_LANCAMENTO, new FieldStringFixedLengthArchetype(1));
+        addFieldArchetype(CODIGO_LANCAMENTO, new FieldStringFixedLengthArchetype(4));
         //33
         addFieldArchetype(HISTORICO_LANCAMENTO, new FieldStringFixedLengthArchetype(25));
         //34
