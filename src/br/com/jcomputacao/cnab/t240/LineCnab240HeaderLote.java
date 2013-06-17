@@ -97,6 +97,8 @@ public class LineCnab240HeaderLote extends LineArchetype {
      * ‘18’ = Tributo - DARF Simples
      * '41' = TED – Outra Titularidade (1)
      * '43' = TED – Mesma Titularidade (1)
+     * ou
+     * CNAB - usp exclusivo CNAB
      */
     public static final String FORMA_LANCAMENTO = "FORMA_LANCAMENTO";
 
@@ -222,6 +224,7 @@ public class LineCnab240HeaderLote extends LineArchetype {
      * DEFAULT: BRANCOS
      */
      public static final String EXCLUSIVO_FEBRABAN_2 = "EXCLUSIVO_FEBRABAN_2";
+     
      public static final String LOGRADOURO = "LOGRADOURO";
      public static final String NUMERO = "NUMERO";
      public static final String COMPLEMENTO = "COMPLEMENTO";
@@ -232,36 +235,64 @@ public class LineCnab240HeaderLote extends LineArchetype {
      public static final String OCORRENCIAS = "OCORRENCIAS";
 
      public LineCnab240HeaderLote() {
+         
+        //01
         addFieldArchetype(CODIGO_BANCO, new FieldStringFixedLengthArchetype(3));
+        //02
         addFieldArchetype(LOTE_SERVICO, new FieldIntegerFixedLengthArchetype(4));
+        //03
         addFieldArchetype(TIPO_REGISTRO, new FieldDefaultArchetype("1"));
+        //04
         addFieldArchetype(TIPO_OPERACAO, new FieldStringFixedLengthArchetype(1));
+        //05
         addFieldArchetype(TIPO_SERVICO, new FieldIntegerFixedLengthArchetype(2));
+        //06
         addFieldArchetype(FORMA_LANCAMENTO, new FieldIntegerFixedLengthArchetype(2));
+        //07
         addFieldArchetype(VERSAO_LAYOUT_LOTE, new FieldStringFixedLengthArchetype(3));
+        //08
         addFieldArchetype(EXCLUSIVO_FEBRABAN, new FieldDefaultArchetype(" "));
+        //09
         addFieldArchetype(TIPO_INSCRICAO_EMPRESA, new FieldIntegerFixedLengthArchetype(1));
+        //10
         addFieldArchetype(NUM_INSCRICAO_EMPRESA, new FieldIntegerFixedLengthArchetype(14));
+        //11
         addFieldArchetype(CODIGO_CONVENIO, new FieldStringFixedLengthArchetype(20));
+        //12
         addFieldArchetype(AGENCIA_MANTENEDORA, new FieldIntegerFixedLengthArchetype(5));
-        FieldStringFixedLengthArchetype fa = new FieldStringFixedLengthArchetype(1);
-        fa.setNullableRepresentation(" ");
-        addFieldArchetype(DIGITO_VER_AGENCIA, fa);
+        //13
+        FieldStringFixedLengthArchetype fa1 = new FieldStringFixedLengthArchetype(1);
+        fa1.setNullableRepresentation(" ");
+        addFieldArchetype(DIGITO_VER_AGENCIA, fa1);
+        //14
         addFieldArchetype(NUMERO_CONTA_COR, new FieldIntegerFixedLengthArchetype(12));
+        //15
         addFieldArchetype(DIGITO_VER_CONTA, new FieldStringFixedLengthArchetype(1));
-        addFieldArchetype(DIGITO_VER_AG_CONTA, fa);
+        //16
+        addFieldArchetype(DIGITO_VER_AG_CONTA, fa1);
+        //17
         addFieldArchetype(NOME_EMPRESA, new FieldStringFixedLengthArchetype(30));
+        //18
         addFieldArchetype(INFORMACAO_1, new FieldFillerArchetype(40, ' '));
+        //19
         addFieldArchetype(LOGRADOURO, new FieldStringFixedLengthArchetype(30));
+        //20
         addFieldArchetype(NUMERO, new FieldIntegerFixedLengthArchetype(5));
+        //21
         addFieldArchetype(COMPLEMENTO, new FieldStringFixedLengthArchetype(15));
+        //22
         addFieldArchetype(CIDADE, new FieldStringFixedLengthArchetype(20));
+        //23
         addFieldArchetype(CEP, new FieldIntegerFixedLengthArchetype(5));
+        //24
         FieldIntegerFixedLengthArchetype fif = new FieldIntegerFixedLengthArchetype(3);
         //fif.setNullableRepresentation("");
         addFieldArchetype(SUFIXO_CEP, fif);
+        //25
         addFieldArchetype(ESTADO, new FieldStringFixedLengthArchetype(2));
+        //26
         addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(8, ' '));
+        //27
         FieldStringFixedLengthArchetype ocorrencias = new FieldStringFixedLengthArchetype(10);
         ocorrencias.setNullableRepresentation("");
         addFieldArchetype(OCORRENCIAS, ocorrencias);
