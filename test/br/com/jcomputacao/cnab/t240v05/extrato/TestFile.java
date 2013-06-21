@@ -5,6 +5,7 @@ import br.com.jcomputacao.aristoteles.line.LineModel;
 import br.com.jcomputacao.cnab.t240.v05.extrato.*;
 import java.io.*;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.junit.*;
 
@@ -129,7 +130,7 @@ public class TestFile {
         int tipoIncricaoEmpresa = line.getFieldValueNumber(LineCnab240v05HeaderArquivoExtrato.TIPO_INSCRICAO).intValue();
         //06
         //--14
-        long numeroInscricaoEmpresa = line.getFieldValueNumber(LineCnab240v05HeaderArquivoExtrato.NUMERO_INSCRICAO).longValue();
+        String numeroInscricaoEmpresa = line.getFieldValueString(LineCnab240v05HeaderArquivoExtrato.NUMERO_INSCRICAO);
         //07
         //--15
         String brancos2 = line.getFieldValueString(LineCnab240v05HeaderArquivoExtrato.BRANCOS);
@@ -150,7 +151,7 @@ public class TestFile {
         String zeros2 = line.getFieldValueString(LineCnab240v05HeaderArquivoExtrato.ZEROS2);
         //13
         //--5
-        int numeroContaCorrente = line.getFieldValueNumber(LineCnab240v05HeaderArquivoExtrato.NUMERO_CONTA_COR).intValue();
+        String numeroContaCorrente = line.getFieldValueString(LineCnab240v05HeaderArquivoExtrato.NUMERO_CONTA_COR);
         //14
         //--1
         String brancos3 = line.getFieldValueString(LineCnab240v05HeaderArquivoExtrato.BRANCOS2);
@@ -190,30 +191,33 @@ public class TestFile {
         //26
         //--20
         String brancos5 = line.getFieldValueString(LineCnab240v05HeaderArquivoExtrato.BRANCOS4);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat sdf2 = new SimpleDateFormat("HH:MM:SS");
 
-//        System.out.println("01. Código do banco: " + codigoBanco);
+        System.out.println("\nHeader do arquivo");
+        System.out.println("01. Código do banco: " + codigoBanco);
 //        System.out.println("02. Código do lote: " + lote);
 //        System.out.println("03. Tipo de registro: " + tipoRegistro);
 //        System.out.println("04. Brancos: " + brancos);
-//        System.out.println("05. Tipo de inscrição: " + tipoIncricaoEmpresa);
-//        System.out.println("06. Número de inscrição: " + numeroInscricaoEmpresa);
+        System.out.println("05. Tipo de inscrição: " + tipoIncricaoEmpresa);
+        System.out.println("06. Número de inscrição: " + numeroInscricaoEmpresa);
 //        System.out.println("07. Brancos2: " + brancos2);
-//        System.out.println("08. Convênio: " + convenio);
+        System.out.println("08. Convênio: " + convenio);
 //        System.out.println("09. Zeros: " + zeros);
-//        System.out.println("10. Agência mantenedora: " + agenciaMantenedora);
-//        System.out.println("11. Dígito verificador da conta: " + digitoVerificadorConta);
+        System.out.println("10. Agência mantenedora: " + agenciaMantenedora);
+        System.out.println("11. Dígito verificador da conta: " + digitoVerificadorConta);
 //        System.out.println("12. Zeros2: " + zeros2);
-//        System.out.println("13. Número da conta corrente: " + numeroContaCorrente);
+        System.out.println("13. Conta corrente: " + numeroContaCorrente + " - " + digitoVerificadorAgenciaConta);
 //        System.out.println("14. Brancos3: " + brancos3);
 //        System.out.println("15. Dígito ver. ag./cta.: " + digitoVerificadorAgenciaConta);
-//        System.out.println("16. Nome da empresa: " + nomeEmpresa);
-//        System.out.println("17. Nome do Banco: " + nomeBanco);
+        System.out.println("16. Nome da empresa: " + nomeEmpresa);
+        System.out.println("17. Nome do Banco: " + nomeBanco);
 //        System.out.println("18. Brancos4: " + brancos4);
 //        System.out.println("19. Código remessa retorno: " + codigoRemessaRetorno);
-//        System.out.println("20. Data geração do arquivo: " + dataGeracaoArquivo);
-//        System.out.println("21. Hora geração do arquivo: " + horaGeracaoArquivo);
-//        System.out.println("22. Número sequencial arquivo: " + numSequencialArquivo);
-//        System.out.println("23. Versão do layout: " + numeroVersaoLayout);
+        System.out.println("20. Geração do arquivo: " + sdf.format(dataGeracaoArquivo) + " às " + sdf2.format(horaGeracaoArquivo));
+//        System.out.println("21. Hora geração do arquivo: " + sdf2.format(horaGeracaoArquivo));
+        System.out.println("22. Número sequencial arquivo: " + numSequencialArquivo);
+        System.out.println("23. Versão do layout: " + numeroVersaoLayout);
 //        System.out.println("24. Zeros: " + zeros3);
 //        System.out.println("25. Reservado uso banco: " + reservadoBanco);
 //        System.out.println("26. brancos3: " + brancos5);
@@ -278,7 +282,10 @@ public class TestFile {
         int sequenciaExtrato = line.getFieldValueNumber(LineCnab240v05HeaderLoteExtrato.SEQUENCIA_EXTRATO).intValue();
         //29
         String brancos5 = line.getFieldValueString(LineCnab240v05HeaderLoteExtrato.BRANCOS5);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat sdf2 = new SimpleDateFormat("HH:MM:SS");
 
+        System.out.println("\nHeader do lote");
 //        System.out.println("01. Código banco: " + codigoBanco);
 //        System.out.println("02. Lote: " + loteServico);
 //        System.out.println("03. Tipo registro: " + tipoRegistro);
@@ -301,10 +308,10 @@ public class TestFile {
 //        System.out.println("20. Dígito vertificador da agência/conta:" + digitoVerificadorAgConta);
 //        System.out.println("21. Nome da empresa: " + nomeEmpresa);
 //        System.out.println("22. Brancos4: " + brancos4);
-//        System.out.println("23. Data saldo inicial: " + dataInicial);
-//        System.out.println("24. Valor saldo inicial: " + valorSaldoInicial);
-//        System.out.println("25. Situação inicial: " + situacaoInicial);
-//        System.out.println("26. Status inicial: " + statusInicial);
+        System.out.println("23. Data saldo inicial: " + sdf.format(dataInicial));
+        System.out.println("24. Valor saldo inicial: " + valorSaldoInicial);
+        System.out.println("25. Situação inicial: " + situacaoInicial);
+        System.out.println("26. Status inicial: " + statusInicial);
 //        System.out.println("27. Tipo de moeda: " + tipoMoeda);
 //        System.out.println("28. Sequencia extrato: " + sequenciaExtrato);
 //        System.out.println("29. Brancos5: " + brancos5);
@@ -418,12 +425,16 @@ public class TestFile {
         //41
         String numeroDocumento = line.getFieldValueString(LineCnabv05SegmentoEExtrato.NUMERO_DOCUMENTO);
 
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat sdf2 = new SimpleDateFormat("HH:MM:SS");
+
+        System.out.println("\nSegmento 'E'");
 //        System.out.println("01. Código do banco: " + codigoBanco);
 //        System.out.println("02. Código do lote: " + codigoLote);
 //        System.out.println("03. Tipo de registro: " + tipoRegistro);
-//        System.out.println("04. Número do registro: " + numeroRegistro);
+        System.out.println("04. Número do registro: " + numeroRegistro);
 //        System.out.println("05. Segmento: " + codigoSegmento);
-//        System.out.println("06. Lançamento: " + identificacaoTipoLancamento);
+        System.out.println("06. Lançamento: " + identificacaoTipoLancamento);
 //        System.out.println("07. Brancos1: " + brancos);
 //        System.out.println("08. Tipo de inscrição do cliente: " + tipoInscricaoCliente);
 //        System.out.println("09. Número de inscrição do cliente: " + numeroInscricao);
@@ -438,19 +449,23 @@ public class TestFile {
 //        System.out.println("18. Dígito verificados da agência/conta: " + digitoVerificadosAgConta);
 //        System.out.println("19. Nome da empresa: " + nomeEmpresa);
 //        System.out.println("20. Reservado uso banco: " + reservadoUsoBranco);
-//        System.out.println("21. Natureza do lançamento: " + naturezaLancamento);
-//        System.out.println("22. Tipo do complemento: " + tipoComplementoLancamento);
-//        System.out.println("23. Banco origem do lançamento: " + bancoOrigemLancamento);
-//        System.out.println("24. Agência origem do lançamento: " + agenciaOrigemLancamento);
-//        System.out.println("25. Ag./Conta origem do lançamento: " + agenciaContaOrigemLancamento);
-//        System.out.println("26. Identificaçãoi de isenção de CPMF: " + idenfiticacaoIsencaoCpmf);
-//        System.out.println("27. Data contábil: " + dataContabil);
-//        System.out.println("28. Data lançamento: " + dataLancamento);
-//        System.out.println("29. Valor do lançamento: " + valorLancamento);
-//        System.out.println("30. Tipo do lançamento: " + tipoLancamento);
-//        System.out.println("31. Categoria do lançamento: " + categoriaLancamento);
-//        System.out.println("32. Código do lançamento: " + codigoLancamento);
-//        System.out.println("33. Histórico: " + historico);
+        System.out.println("21. Natureza do lançamento: " + naturezaLancamento);
+        System.out.println("22. Tipo do complemento: " + tipoComplementoLancamento);
+        System.out.println("23. Banco origem do lançamento: " + bancoOrigemLancamento);
+        System.out.println("24. Agência origem do lançamento: " + agenciaOrigemLancamento);
+        System.out.println("25. Ag./Conta origem do lançamento: " + agenciaContaOrigemLancamento);
+        System.out.println("26. Identificação de isenção de CPMF: " + idenfiticacaoIsencaoCpmf);
+        if (dataContabil != null) {
+            System.out.println("27. Data contábil: " + sdf.format(dataContabil));
+        } else {
+            System.out.println("27. Data contábil: " + dataContabil);
+        }
+        System.out.println("28. Data lançamento: " + sdf.format(dataLancamento));
+        System.out.println("29. Valor do lançamento: " + valorLancamento);
+        System.out.println("30. Tipo do lançamento: " + tipoLancamento);
+        System.out.println("31. Categoria do lançamento: " + categoriaLancamento);
+        System.out.println("32. Código do lançamento: " + codigoLancamento);
+        System.out.println("33. Histórico: " + historico);
 //        System.out.println("34. Agência de origem do lançamento: " + agenciaDeOrigemLancamento);
 //        System.out.println("35. Complemento de registro: " + complemento);
 //        System.out.println("36. Conta de origem do laçamento: " + contaDeOrigemLancamento);
@@ -519,6 +534,10 @@ public class TestFile {
         //28
         String brancos5 = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.BRANCOS5);
 
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat sdf2 = new SimpleDateFormat("HH:MM:SS");
+
+        System.out.println("\nTrailer do lote");
 //        System.out.println("01. Código do banco: " + codigoBanco);
 //        System.out.println("02. Código do lote: " + codigoLote);
 //        System.out.println("03. Tipo de registro: " + tipoRegistro);
@@ -535,17 +554,17 @@ public class TestFile {
 //        System.out.println("14. Brancos3: " + brancos3);
 //        System.out.println("15. Dígito verificador Ag./Cta.: " + digitoVerificadorAgConta);
 //        System.out.println("16. Brancos4: " + brancos4);
-//        System.out.println("17. Saldo bloqueado acima de 24h: " + saldoBloqueadoAcima24);
-//        System.out.println("18. Limite da conta: " + limiteConta);
-//        System.out.println("19. Saldo bloqueado até 24h: " + saldoBloqueadoAte24);
-//        System.out.println("20. Data final: " + dataFinal);
-//        System.out.println("21. Saldo final: " + saldoFinal);
-//        System.out.println("22. Situação do saldo final: " + situacaoSaldoFinal);
-//        System.out.println("23. Status do saldo final: " + statusSaldoFinal);
+        System.out.println("17. Saldo bloqueado acima de 24h: " + saldoBloqueadoAcima24);
+        System.out.println("18. Limite da conta: " + limiteConta);
+        System.out.println("19. Saldo bloqueado até 24h: " + saldoBloqueadoAte24);
+        System.out.println("20. Data final: " + sdf.format(dataFinal));
+        System.out.println("21. Saldo final: " + saldoFinal);
+        System.out.println("22. Situação do saldo final: " + situacaoSaldoFinal);
+        System.out.println("23. Status do saldo final: " + statusSaldoFinal);
 //        System.out.println("24. Quantidade de registros do lote: " + quantidadeRegistrosLote);
-//        System.out.println("25. Valor total débito: " + totalValorDebito);
-//        System.out.println("26. Valor total crédito: " + totalValorCredito);
-//        System.out.println("27. Total de valores não contábeis: " + totalValoresNaoContabeis);
+        System.out.println("25. Valor total débito: " + totalValorDebito);
+        System.out.println("26. Valor total crédito: " + totalValorCredito);
+        System.out.println("27. Total de valores não contábeis: " + totalValoresNaoContabeis);
 //        System.out.println("28. Brancos5: " + brancos5);
     }
 
@@ -566,14 +585,14 @@ public class TestFile {
         int quantidadeContasConcil = line.getFieldValueNumber(LineCnab240v05TrailerArquivoExtrato.QTDE_CONTAS_CONCIL).intValue();
         //08
         String reservadoUsoBanco2 = line.getFieldValueString(LineCnab240v05TrailerArquivoExtrato.EXCLUSIVO_FEBRABAN_2);
-
+        System.out.println("\nTrailer do arquivo");
 //        System.out.println("01. Código do banco: " + codigoBanco);
 //        System.out.println("02. Código do lote: " + codigoLote);
 //        System.out.println("03. Tipo de registro: " + tipoRegistro);
 //        System.out.println("04. Brancos: " + reservadoUsoBanco);
-//        System.out.println("05. Quantidade total de lotes: " + quantidadeLotesArquivo);
-//        System.out.println("06. Quantidade total de registros: " + quantidadeRegistrosArquivo);
-//        System.out.println("07. Quantidade de contas conciliação: " + quantidadeContasConcil);
+        System.out.println("05. Quantidade total de lotes: " + quantidadeLotesArquivo);
+        System.out.println("06. Quantidade total de registros: " + quantidadeRegistrosArquivo);
+        System.out.println("07. Quantidade de contas conciliação: " + quantidadeContasConcil);
 //        System.out.println("08. Brancos: " + reservadoUsoBanco2);
     }
 }
