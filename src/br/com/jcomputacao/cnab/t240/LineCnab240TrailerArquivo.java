@@ -1,6 +1,5 @@
 package br.com.jcomputacao.cnab.t240;
 
-import br.com.jcomputacao.aristoteles.field.FieldDefaultArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
@@ -66,18 +65,23 @@ public class LineCnab240TrailerArquivo extends LineArchetype{
      public static final String EXCLUSIVO_FEBRABAN_2 = "EXCLUSIVO_FEBRABAN_2";
 
     public LineCnab240TrailerArquivo(){
+        //01
          addFieldArchetype(CODIGO_BANCO_COMPENSACAO, new FieldStringFixedLengthArchetype(3));
          //new FieldDefaultArchetype("99999") - não é adequado para a leitura do arquivo
-         
+         //02 e 03
          FieldStringFixedLengthArchetype f02 = new FieldStringFixedLengthArchetype(5);
          addFieldArchetype(LOTE_TIPO_REGISTRO, f02);
-         
+         //04
          addFieldArchetype(EXCLUSIVO_FEBRABAN, new FieldFillerArchetype(9, ' '));
+         //05
          addFieldArchetype(QTDE_LOTES_ARQUIVO, new FieldIntegerFixedLengthArchetype(6));
+         //06
          addFieldArchetype(QTDE_REGISTROS_ARQUIVO, new FieldIntegerFixedLengthArchetype(6));
+         //07
          FieldIntegerFixedLengthArchetype fa = new FieldIntegerFixedLengthArchetype(6);
          fa.setAcceptNullable(true);
          addFieldArchetype(QTDE_CONTAS_CONCIL, fa);
+         //08
          addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(205, ' '));
     }
 }

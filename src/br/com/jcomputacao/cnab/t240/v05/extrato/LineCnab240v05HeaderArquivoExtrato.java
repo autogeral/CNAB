@@ -186,7 +186,7 @@ public class LineCnab240v05HeaderArquivoExtrato extends LineArchetype {
         //05
         addFieldArchetype(TIPO_INSCRICAO, new FieldIntegerFixedLengthArchetype(1));
         //06
-        addFieldArchetype(NUMERO_INSCRICAO, new FieldIntegerFixedLengthArchetype(14));
+        addFieldArchetype(NUMERO_INSCRICAO, new FieldStringFixedLengthArchetype(14));
         //07
         addFieldArchetype(BRANCOS1, new FieldFillerArchetype(15, ' '));
         //08
@@ -202,7 +202,7 @@ public class LineCnab240v05HeaderArquivoExtrato extends LineArchetype {
         //12
         addFieldArchetype(ZEROS2, new FieldDefaultArchetype("0000000"));
         //13
-        addFieldArchetype(NUMERO_CONTA_COR, new FieldIntegerFixedLengthArchetype(5));
+        addFieldArchetype(NUMERO_CONTA_COR, new FieldStringFixedLengthArchetype(5));
         //14
         addFieldArchetype(BRANCOS2, new FieldDefaultArchetype(" "));
         //15

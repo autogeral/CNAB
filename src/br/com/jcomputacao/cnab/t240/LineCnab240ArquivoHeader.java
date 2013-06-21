@@ -151,7 +151,7 @@ public class LineCnab240ArquivoHeader extends LineArchetype {
         //08
         addFieldArchetype(AGENCIA_MANTENEDORA, new FieldIntegerFixedLengthArchetype(5));
         //09
-        FieldVolatileArchetye fa = new FieldStringFixedLengthArchetype(1);
+        FieldStringFixedLengthArchetype fa = new FieldStringFixedLengthArchetype(1);
         fa.setNullableRepresentation(" ");
         addFieldArchetype(DIGITO_VER_AGENCIA, fa);
         //10
@@ -182,8 +182,8 @@ public class LineCnab240ArquivoHeader extends LineArchetype {
         addFieldArchetype(NUM_SEQUENCIAL_ARQUIVO, new FieldIntegerFixedLengthArchetype(6));
         //20
         addFieldArchetype(VERSAO_LAYOUT, new FieldStringFixedLengthArchetype(3));
-        fa = new FieldIntegerFixedLengthArchetype(5);
-        fa.setNullableRepresentation("00000");
+        FieldIntegerFixedLengthArchetype fc = new FieldIntegerFixedLengthArchetype(5);
+        fc.setNullableRepresentation("00000");
         //21
         addFieldArchetype(DENSIDADE_GRAVACAO, fa);
         //22
