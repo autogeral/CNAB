@@ -5,6 +5,7 @@ import br.com.jcomputacao.aristoteles.line.LineModel;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import static org.junit.Assert.assertEquals;
 import org.junit.*;
 
 /**
@@ -41,11 +42,11 @@ public class LineCnabSegmentoPRemessaTest {
         //01
         lm.setFieldValue(LineCnab240v040SegmentoPRemessa.CODIGO_BANCO_COMPENSACAO, "033");
         //02
-        lm.setFieldValue(LineCnab240v040SegmentoPRemessa.CODIGO_LOTE, 1);
+        lm.setFieldValue(LineCnab240v040SegmentoPRemessa.CODIGO_LOTE, 0001);
         //03
         lm.setFieldValue(LineCnab240v040SegmentoPRemessa.TIPO_REGISTRO, 3);
         //04
-        lm.setFieldValue(LineCnab240v040SegmentoPRemessa.SEQUENCIAL_REGISTRO, 4);
+        lm.setFieldValue(LineCnab240v040SegmentoPRemessa.SEQUENCIAL_REGISTRO, 00004);
         //05
         lm.setFieldValue(LineCnab240v040SegmentoPRemessa.CODIGO_SEGMENTO_REGISTRO, "P");
         //06
@@ -87,7 +88,7 @@ public class LineCnabSegmentoPRemessaTest {
         //24
         lm.setFieldValue(LineCnab240v040SegmentoPRemessa.AGENCIA_COBRADORA, 1234);
         //25
-        lm.setFieldValue(LineCnab240v040SegmentoPRemessa.DIGITO_VERIFICADOR_AGENCIA_CEDENTE, "5");
+        lm.setFieldValue(LineCnab240v040SegmentoPRemessa.DIGITO_VERIFICADOR_AGENCIA_CEDENTE, 5);
         //26
         lm.setFieldValue(LineCnab240v040SegmentoPRemessa.RESERVADO_USO_BANCO2, " ");
         //27
@@ -131,9 +132,9 @@ public class LineCnabSegmentoPRemessaTest {
         StringBuffer sb = lm.getRepresentation();
         System.out.println(sb);
 
-        String expected = "";
+        String expected = "0330001300004P 101234712345678911234567893  9999999999999013  1111111111111112606201301234567891231212345 10N2606201312606201312345678912311292310201323232323232321212121212121211245454545454541212345678911234567891abcde210101112           ";
         
         System.out.println(expected);
-//        assertEquals(expected, sb.toString());
+        assertEquals(expected, sb.toString());
     }
 }
