@@ -297,23 +297,23 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
         //02
         addFieldArchetype(CODIGO_LOTE, new FieldIntegerFixedLengthArchetype(4));
         //03
-        addFieldArchetype(TIPO_REGISTRO, new FieldDefaultArchetype("3"));//8
+        addFieldArchetype(TIPO_REGISTRO, new FieldDefaultArchetype("3"));
         //04
-        addFieldArchetype(SEQUENCIAL_REGISTRO, new FieldIntegerFixedLengthArchetype(5));//13
+        addFieldArchetype(SEQUENCIAL_REGISTRO, new FieldIntegerFixedLengthArchetype(5));
         //05
-        addFieldArchetype(CODIGO_SEGMENTO_REGISTRO, new FieldDefaultArchetype("P"));//14
+        addFieldArchetype(CODIGO_SEGMENTO_REGISTRO, new FieldDefaultArchetype("P"));
         //06
-        addFieldArchetype(EXCLUSIVO_FEBRABAN, new FieldDefaultArchetype(" "));//15
+        addFieldArchetype(EXCLUSIVO_FEBRABAN, new FieldDefaultArchetype(" "));
         //07
-        addFieldArchetype(CODIGO_MOVIMENTO_REMESSA, new FieldIntegerFixedLengthArchetype(2));//17
+        addFieldArchetype(CODIGO_MOVIMENTO_REMESSA, new FieldIntegerFixedLengthArchetype(2));
         //08
-        addFieldArchetype(AGENCIA_MANTENEDORA, new FieldIntegerFixedLengthArchetype(4));//22
+        addFieldArchetype(AGENCIA_MANTENEDORA, new FieldIntegerFixedLengthArchetype(4));
         //09
-        addFieldArchetype(DIGITO_VERIFICADOR_AGENCIA, new FieldStringFixedLengthArchetype(1));//23
+        addFieldArchetype(DIGITO_VERIFICADOR_AGENCIA, new FieldStringFixedLengthArchetype(1));
         //10
         addFieldArchetype(NUMERO_CONTA_COR, new FieldIntegerFixedLengthArchetype(9));
         //11
-        addFieldArchetype(DIGITO_VERIFICADOR_CONTA, new FieldStringFixedLengthArchetype(1));//36
+        addFieldArchetype(DIGITO_VERIFICADOR_CONTA, new FieldStringFixedLengthArchetype(1));
         //12
         addFieldArchetype(CONTA_COBRANCA, new FieldIntegerFixedLengthArchetype(9));
         //13
@@ -321,13 +321,13 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
         //14
         addFieldArchetype(RESERVADO_USO_BANCO, new FieldFillerArchetype(2, ' '));
         //15
-        addFieldArchetype(NOSSO_NUMERO, new FieldStringFixedLengthArchetype(13));//Nosso numero 57
+        addFieldArchetype(NOSSO_NUMERO, new FieldStringFixedLengthArchetype(13));
         //16
         addFieldArchetype(TIPO_DE_COBRANCA, new FieldIntegerFixedLengthArchetype(1));
         //17
-        addFieldArchetype(FORMA_CADASTRO_TITULO_BANCO, new FieldIntegerFixedLengthArchetype(1));//59
+        addFieldArchetype(FORMA_CADASTRO_TITULO_BANCO, new FieldIntegerFixedLengthArchetype(1));
         //18
-        addFieldArchetype(TIPO_DOCUMENTO, new FieldIntegerFixedLengthArchetype(1));//60
+        addFieldArchetype(TIPO_DOCUMENTO, new FieldIntegerFixedLengthArchetype(1));
         //19
         addFieldArchetype(RESERVADO_USO_BANCO2, new FieldFillerArchetype(1, ' '));
         //20
@@ -345,25 +345,25 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
         //26
         addFieldArchetype(RESERVADO_USO_BANCO4, new FieldFillerArchetype(1, ' '));
         //27
-        addFieldArchetype(ESPECIE_TITULO, new FieldIntegerFixedLengthArchetype(2));//108
+        addFieldArchetype(ESPECIE_TITULO, new FieldIntegerFixedLengthArchetype(2));
         //28
-        addFieldArchetype(TITULO_ACEITO, new FieldStringFixedLengthArchetype(1));//109
+        addFieldArchetype(TITULO_ACEITO, new FieldStringFixedLengthArchetype(1));
         //29
-        addFieldArchetype(DATA_EMISSAO_TITULO, new FieldDateFixedLengthArchetype("ddMMyyyy"));//117
+        addFieldArchetype(DATA_EMISSAO_TITULO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         //30
-        addFieldArchetype(CODIGO_JUROS_MORA, new FieldIntegerFixedLengthArchetype(1));//118
+        addFieldArchetype(CODIGO_JUROS_MORA, new FieldIntegerFixedLengthArchetype(1));
         //31
-        addFieldArchetype(DATA_JUROS_MORA, new FieldDateFixedLengthArchetype("ddMMyyyy"));//126
+        addFieldArchetype(DATA_JUROS_MORA, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         //32
-        addFieldArchetype(JUROS_MORA_POR_DIA, new FieldDecimalFixedLengthArchetype(15, 2));//141
+        addFieldArchetype(JUROS_MORA_POR_DIA, new FieldDecimalFixedLengthArchetype(15, 2));
         //33
-        addFieldArchetype(CODIGO_DESCONTO_1, new FieldIntegerFixedLengthArchetype(1));//142
+        addFieldArchetype(CODIGO_DESCONTO_1, new FieldIntegerFixedLengthArchetype(1));
         //34
-        addFieldArchetype(DATA_DESCONTO_1, new FieldIntegerFixedLengthArchetype(8));//150
+        addFieldArchetype(DATA_DESCONTO_1, new FieldIntegerFixedLengthArchetype(8));
         //35
-        addFieldArchetype(VALOR_PERCENTUAL_DESCONTO_1, new FieldDecimalFixedLengthArchetype(15, 2));//165
+        addFieldArchetype(VALOR_PERCENTUAL_DESCONTO_1, new FieldDecimalFixedLengthArchetype(15, 2));
         //36
-        addFieldArchetype(VALOR_IOF, new FieldDecimalFixedLengthArchetype(15, 2));//180
+        addFieldArchetype(VALOR_IOF, new FieldDecimalFixedLengthArchetype(15, 2));
         //37
         addFieldArchetype(VALOR_ABATIMENTO, new FieldDecimalFixedLengthArchetype(15, 2));
         //38
