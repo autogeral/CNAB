@@ -307,7 +307,7 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
         //07
         addFieldArchetype(CODIGO_MOVIMENTO_REMESSA, new FieldIntegerFixedLengthArchetype(2));//17
         //08
-        addFieldArchetype(AGENCIA_MANTENEDORA, new FieldIntegerFixedLengthArchetype(5));//22
+        addFieldArchetype(AGENCIA_MANTENEDORA, new FieldIntegerFixedLengthArchetype(4));//22
         //09
         addFieldArchetype(DIGITO_VERIFICADOR_AGENCIA, new FieldStringFixedLengthArchetype(1));//23
         //10
@@ -321,7 +321,7 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
         //14
         addFieldArchetype(RESERVADO_USO_BANCO, new FieldFillerArchetype(2, ' '));
         //15
-        addFieldArchetype(NOSSO_NUMERO, new FieldStringFixedLengthArchetype(20));//Nosso numero 57
+        addFieldArchetype(NOSSO_NUMERO, new FieldStringFixedLengthArchetype(13));//Nosso numero 57
         //16
         addFieldArchetype(TIPO_DE_COBRANCA, new FieldIntegerFixedLengthArchetype(1));
         //17
@@ -381,6 +381,6 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
         //45
         addFieldArchetype(CODIGO_MOEDA, new FieldIntegerFixedLengthArchetype(2));
         //46
-        addFieldArchetype(RESERVADO_USO_BANCO6, new FieldIntegerFixedLengthArchetype(11));
+        addFieldArchetype(RESERVADO_USO_BANCO6, new FieldFillerArchetype(11,' '));
     }
 }
