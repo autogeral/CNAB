@@ -1,6 +1,9 @@
 package br.com.jcomputacao.cnab.t240;
 
-import br.com.jcomputacao.aristoteles.field.*;
+import br.com.jcomputacao.aristoteles.field.FieldDefaultArchetype;
+import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
+import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
+import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.line.LineArchetype;
 
 /**
@@ -10,35 +13,49 @@ import br.com.jcomputacao.aristoteles.line.LineArchetype;
 public class LineCnab240TrailerLoteCobranca extends LineArchetype {
 
     /**
-     * CODIGO DO BANCO NA COMPENSAÇÃO<br> POSIÇÃO: 1 a 3<br> FORMATO: NUM<br>
+     * CODIGO DO BANCO NA COMPENSAÇÃO<br> 
+     * POSIÇÃO: 1 a 3<br> 
+     * FORMATO: NUM<br>
      * DEFAULT: '001'
      */
     public static final String CODIGO_BANCO = "CODIGO_BANCO";
     /**
-     * LOTE DE SERVICO<br> POSIÇÃO: 4 a 7<br> FORMATO: NUM
+     * LOTE DE SERVICO<br> 
+     * POSIÇÃO: 4 a 7<br> 
+     * FORMATO: NUM
      */
     public static final String LOTE_SERVICO = "LOTE_SERVICO";
     /**
-     * TIPO DE REGISTRO<br> POSIÇÃO: 8 a 8<br> FORMATO: NUM<br> DEFAULT: '5'
+     * TIPO DE REGISTRO<br> 
+     * POSIÇÃO: 8 a 8<br> 
+     * FORMATO: NUM<br> 
+     * DEFAULT: '5'
      */
     public static final String TIPO_REGISTRO = "TIPO_REGISTRO";
     /**
-     * USO EXCLUSIVO DA FEBRABAN<br> POSIÇÃO: 9 a 17<br> FORMATO: ALFA<br>
+     * USO EXCLUSIVO DA FEBRABAN<br> 
+     * POSIÇÃO: 9 a 17<br> 
+     * FORMATO: ALFA<br>
      * DEFAULT: BRANCOS
      */
     public static final String EXCLUSIVO_FEBRABAN = "EXCLUSIVO_FEBRABAN";
     /**
-     * QUANTIDADE DE REGISTROS NO LOTE POSIÇÃO: 18 a 23<br> FORMATO: NUM<br>
+     * QUANTIDADE DE REGISTROS NO LOTE<br> 
+     * POSIÇÃO: 18 a 23<br> 
+     * FORMATO: NUM<br>
      */
     public static final String QTDE_REGISTROS_LOTE = "QTDE_REGISTROS_LOTE";
     /**
-     * COBRANÇA SIMPLES - QUANTIDADE DE TÍTULOS POSIÇÃO: 24 a 29<br> FORMATO:
-     * NUM<br>
+     * COBRANÇA SIMPLES - QUANTIDADE DE TÍTULOS<br> 
+     * POSIÇÃO: 24 a 29<br> 
+     * FORMATO: NUM<br>
      */
     public static final String QTDE_TITULOS_COBRANCA_SIMPLES = "QTDE_TITULOS_COBRANCA_SIMPLES";
     /**
-     * COBRANÇA SIMPLES - VALOR TOTAL DOS TÍTULOS POSIÇÃO: 30 a 46<br> FORMATO:
-     * NUM<br> DEC: 2
+     * COBRANÇA SIMPLES - VALOR TOTAL DOS TÍTULOS<br> 
+     * POSIÇÃO: 30 a 46<br> 
+     * FORMATO: NUM<br> 
+     * DEC: 2 <br> 
      */
     public static final String VALOR_TOTAL_TITULOS_COBRANCA_SIMPLES = "VALOR_TOTAL_TITULOS_COBRANCA_SIMPLES";
     /**
