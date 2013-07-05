@@ -2,7 +2,7 @@ package br.com.jcomputacao.cnab.t240v05.extrato;
 
 import br.com.jcomputacao.aristoteles.line.LineArchetype;
 import br.com.jcomputacao.aristoteles.line.LineModel;
-import br.com.jcomputacao.cnab.t240.v05.extrato.LineCnab240v05TrailerLoteExtrato;
+import br.com.jcomputacao.cnab.t240.v05.extrato.LineCnab240v05TrailerLoteExtratoLayout031;
 import java.text.ParseException;
 import java.util.Date;
 import org.junit.*;
@@ -35,67 +35,67 @@ public class LineCnabTrailerLoteExtratoTest {
 
     @Test
     public void LineCnabTrailerLoteExtratoTest() throws ParseException {
-        LineArchetype la = new LineCnab240v05TrailerLoteExtrato();
+        LineArchetype la = new LineCnab240v05TrailerLoteExtratoLayout031();
         LineModel line = la.createModel();
         String aux = "34100015         212924343000121               34201002782000000090749 8                00000000000000000000000000000000000000000000000000000020052013000000000000005601CP0000030000000000000000000000000000000006010000000000000000000000000000";
         int tam = aux.length();
         line.setRepresentation(aux);
         //01
-        String codigoBanco = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.CODIGO_BANCO);
+        String codigoBanco = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.CODIGO_BANCO);
         //02
-        int codigoLote = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.LOTE_SERVICO).intValue();
+        int codigoLote = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.LOTE_SERVICO).intValue();
         //03
-        String tipoRegistro = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.TIPO_REGISTRO);
+        String tipoRegistro = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.TIPO_REGISTRO);
         //04
-        String brancos = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.BRANCOS);
+        String brancos = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.BRANCOS);
         //05
-        int tipoInscricaoEmpresa = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.TIPO_INSCRICAO).intValue();
+        int tipoInscricaoEmpresa = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.TIPO_INSCRICAO).intValue();
         //06
-        long inscricaoEmpresa = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.NUM_INSCRICAO_EMPRESA).longValue();
+        long inscricaoEmpresa = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.NUM_INSCRICAO_EMPRESA).longValue();
         //07
-        String brancos2 = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.BRANCOS2);
+        String brancos2 = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.BRANCOS2);
         //08
-        String convenio = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.CONVENIO);
+        String convenio = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.CONVENIO);
         //09
-        String zeros = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.ZEROS);
+        String zeros = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.ZEROS);
         //10
-        int agenciaMantenedora = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.AGENCIA_MANTENEDORA).intValue();
+        int agenciaMantenedora = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.AGENCIA_MANTENEDORA).intValue();
         //11
-        String digitoAgenciaCedente = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.DIGITO_VER_AGENCIA);
+        String digitoAgenciaCedente = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.DIGITO_VER_AGENCIA);
         //12
-        String zeros2 = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.ZEROS2);
+        String zeros2 = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.ZEROS2);
         //13
-        int numeroContaCorrente = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.NUMERO_CONTA_COR).intValue();
+        int numeroContaCorrente = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.NUMERO_CONTA_COR).intValue();
         //14
-        String brancos3 = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.BRANCOS3);
+        String brancos3 = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.BRANCOS3);
         //15
-        int digitoVerificadorAgConta = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.DIGITO_VER_AG_CONTA).intValue();
+        int digitoVerificadorAgConta = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.DIGITO_VER_AG_CONTA).intValue();
         //16
-        String brancos4 = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.BRANCOS4);
+        String brancos4 = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.BRANCOS4);
         //17
-        double saldoBloqueadoAcima24 = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.SALDO_BLOQUEADO_ACIMA_24).doubleValue();
+        double saldoBloqueadoAcima24 = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.SALDO_BLOQUEADO_ACIMA_24).doubleValue();
         //18
-        double limiteConta = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.LIMITE_CONTA).doubleValue();
+        double limiteConta = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.LIMITE_CONTA).doubleValue();
         //19
-        double saldoBloqueadoAte24 = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.SALDO_BLOQUEADO_ATE_24).doubleValue();
+        double saldoBloqueadoAte24 = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.SALDO_BLOQUEADO_ATE_24).doubleValue();
         //20
-        Date dataFinal = line.getFieldValueDate(LineCnab240v05TrailerLoteExtrato.DATA_FINAL);
+        Date dataFinal = line.getFieldValueDate(LineCnab240v05TrailerLoteExtratoLayout031.DATA_FINAL);
         //21
-        double saldoFinal = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.SALDO_FINAL).doubleValue();
+        double saldoFinal = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.SALDO_FINAL).doubleValue();
         //22
-        String situacaoSaldoFinal = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.SITUACAO_SALDO_FINAL);
+        String situacaoSaldoFinal = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.SITUACAO_SALDO_FINAL);
         //23
-        String statusSaldoFinal = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.STATUS_SALDO_FINAL);
+        String statusSaldoFinal = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.STATUS_SALDO_FINAL);
         //24
-        int quantidadeRegistrosLote = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.QTDE_REGISTROS_LOTE).intValue();
+        int quantidadeRegistrosLote = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.QTDE_REGISTROS_LOTE).intValue();
         //25
-        double totalValorDebito = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.TOTAL_VALOR_DEBITO).doubleValue();
+        double totalValorDebito = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.TOTAL_VALOR_DEBITO).doubleValue();
         //26
-        double totalValorCredito = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.TOTAL_VALOR_CREDITO).doubleValue();
+        double totalValorCredito = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.TOTAL_VALOR_CREDITO).doubleValue();
         //27
-        double totalValoresNaoContabeis = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtrato.TOTAL_VALORES_NAO_CONTABEIS).doubleValue();
+        double totalValoresNaoContabeis = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.TOTAL_VALORES_NAO_CONTABEIS).doubleValue();
         //28
-        String brancos5 = line.getFieldValueString(LineCnab240v05TrailerLoteExtrato.BRANCOS5);
+        String brancos5 = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.BRANCOS5);
         
         System.out.println("01. Código do banco: " + codigoBanco);
         System.out.println("02. Código do lote: " + codigoLote);
