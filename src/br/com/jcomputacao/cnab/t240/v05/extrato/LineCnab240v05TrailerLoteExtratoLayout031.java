@@ -7,7 +7,7 @@ import br.com.jcomputacao.aristoteles.line.LineArchetype;
  *
  * @author Jennifer
  */
-public class LineCnab240v05TrailerLoteExtrato extends LineArchetype{
+public class LineCnab240v05TrailerLoteExtratoLayout031 extends LineArchetype{
     /**
      * 01
      * CODIGO DO BANCO NA COMPENSAÇÃO<br> 
@@ -222,8 +222,8 @@ public class LineCnab240v05TrailerLoteExtrato extends LineArchetype{
      */
     public static final String BRANCOS5 = "BRANCOS5";
     
-    public LineCnab240v05TrailerLoteExtrato() {
-        setName("CNAB 240 v5.0 - Trailer do lote");
+    public LineCnab240v05TrailerLoteExtratoLayout031() {
+        setName("CNAB 240 v5.0 - Trailer do lote - versão do Layout 031");
         //01
         addFieldArchetype(CODIGO_BANCO, new FieldStringFixedLengthArchetype(3));
         //02
@@ -273,11 +273,11 @@ public class LineCnab240v05TrailerLoteExtrato extends LineArchetype{
         //24        
         addFieldArchetype(QTDE_REGISTROS_LOTE, new FieldIntegerFixedLengthArchetype(6));
         //25
-        addFieldArchetype(TOTAL_VALOR_DEBITO, new FieldDecimalFixedLengthArchetype(18, 2));
+        addFieldArchetype(TOTAL_VALOR_DEBITO, new FieldDecimalFixedLengthArchetype(16, 2));
         //26
-        addFieldArchetype(TOTAL_VALOR_CREDITO, new FieldDecimalFixedLengthArchetype(18, 2));
+        addFieldArchetype(TOTAL_VALOR_CREDITO, new FieldDecimalFixedLengthArchetype(16, 2));
         //27
-        addFieldArchetype(TOTAL_VALORES_NAO_CONTABEIS, new FieldDecimalFixedLengthArchetype(18, 2));        
+        addFieldArchetype(TOTAL_VALORES_NAO_CONTABEIS, new FieldDecimalFixedLengthArchetype(16, 2));        
         //28
         addFieldArchetype(BRANCOS5, new FieldStringFixedLengthArchetype(10));
     }
