@@ -7,7 +7,7 @@ import br.com.jcomputacao.aristoteles.line.LineArchetype;
  *
  * @author Jennifer
  */
-public class LineCnab240v05HeaderLoteExtrato  extends LineArchetype{
+public class LineCnab240v05HeaderLoteExtratoLayout031  extends LineArchetype{
 
     
     /**
@@ -272,8 +272,8 @@ public class LineCnab240v05HeaderLoteExtrato  extends LineArchetype{
      */
     public static final String BRANCOS5 = "BRANCOS5";
     
-    public LineCnab240v05HeaderLoteExtrato (){
-        setName("CNAB 240 v5.0 - Header do lote");
+    public LineCnab240v05HeaderLoteExtratoLayout031 (){
+        setName("CNAB 240 v5.0 - Header do lote - layout 031");
         //01
         addFieldArchetype(CODIGO_BANCO, new FieldStringFixedLengthArchetype(3));
         //02
