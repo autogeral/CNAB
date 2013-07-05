@@ -2,7 +2,7 @@ package br.com.jcomputacao.cnab.t240v05.extrato;
 
 import br.com.jcomputacao.aristoteles.line.LineArchetype;
 import br.com.jcomputacao.aristoteles.line.LineModel;
-import br.com.jcomputacao.cnab.t240.v05.extrato.LineCnabv05SegmentoEExtrato;
+import br.com.jcomputacao.cnab.t240.v05.extrato.LineCnabv05SegmentoEExtratoItau;
 import java.text.ParseException;
 import java.util.Date;
 import org.junit.*;
@@ -35,116 +35,116 @@ public class LineCnabSegmentoEExtratoTest {
 
     @Test
     public void LineCnabSegmentoEExtratoTest() throws ParseException {
-        LineArchetype la = new LineCnabv05SegmentoEExtrato();
+        LineArchetype la = new LineCnabv05SegmentoEExtratoItau();
         LineModel line = la.createModel();
         line.setRepresentation("3410001300001E1  212924343000121000000         34201002782000000090749 8WALZLAGER FABRIK DO BR LTDA         DPV                      S        20052013000000000000000601C2050000DESBLOQUEIO JUDICIAL                                      000000");
 
         //01
-        int codigoBanco = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.CODIGO_BANCO).intValue();
+        int codigoBanco = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.CODIGO_BANCO).intValue();
         //02
-        int codigoLote = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.CODIGO_LOTE).intValue();
+        int codigoLote = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.CODIGO_LOTE).intValue();
         //03
-        String tipoRegistro = line.getFieldValueString(LineCnabv05SegmentoEExtrato.TIPO_REGISTRO);
+        String tipoRegistro = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.TIPO_REGISTRO);
         //04
-        int numeroRegistro = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.NUMERO_REGISTRO).intValue();
+        int numeroRegistro = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.NUMERO_REGISTRO).intValue();
         //05
-        String codigoSegmento = line.getFieldValueString(LineCnabv05SegmentoEExtrato.CODIGO_SEGMENTO);
+        String codigoSegmento = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.CODIGO_SEGMENTO);
         //06
-        int identificacaoTipoLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.IDENTIFICACAO_TIPO_LANCAMENTO).intValue();
+        int identificacaoTipoLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.IDENTIFICACAO_TIPO_LANCAMENTO).intValue();
         //07
-        String brancos = line.getFieldValueString(LineCnabv05SegmentoEExtrato.BRANCOS);
+        String brancos = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.BRANCOS);
         //08
-        String tipoInscricaoCliente = line.getFieldValueString(LineCnabv05SegmentoEExtrato.TIPO_INSCRICAO);
+        String tipoInscricaoCliente = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.TIPO_INSCRICAO);
         //09
-        long numeroInscricao = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.NUMERO_INSCRICAO).longValue();
+        long numeroInscricao = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.NUMERO_INSCRICAO).longValue();
         //10
-        String brancos2 = line.getFieldValueString(LineCnabv05SegmentoEExtrato.BRANCOS2);
+        String brancos2 = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.BRANCOS2);
         //11
-        String convenio = line.getFieldValueString(LineCnabv05SegmentoEExtrato.CONVENIO);
+        String convenio = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.CONVENIO);
         //12
-        int zeros = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.ZEROS).intValue();
+        int zeros = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.ZEROS).intValue();
         //13
-        int agenciaMantenedora = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.AGENCIA_MANTENEDORA).intValue();
+        int agenciaMantenedora = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.AGENCIA_MANTENEDORA).intValue();
         //14
-        String digitoVerificadorAgencia = line.getFieldValueString(LineCnabv05SegmentoEExtrato.DIGITO_VER_AGENCIA);
+        String digitoVerificadorAgencia = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.DIGITO_VER_AGENCIA);
         //15
-        int zeros2 = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.ZEROS2).intValue();
+        int zeros2 = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.ZEROS2).intValue();
         //16
-        int numeroContaCorrente = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.NUMERO_CONTA_CORRENTE).intValue();
+        int numeroContaCorrente = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.NUMERO_CONTA_CORRENTE).intValue();
         //17
-        String brancos3 = line.getFieldValueString(LineCnabv05SegmentoEExtrato.BRANCOS3);
+        String brancos3 = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.BRANCOS3);
         //18
-        String digitoVerificadosAgConta = line.getFieldValueString(LineCnabv05SegmentoEExtrato.DIGITO_VER_AG_CONTA);
+        String digitoVerificadosAgConta = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.DIGITO_VER_AG_CONTA);
         //19
-        String nomeEmpresa = line.getFieldValueString(LineCnabv05SegmentoEExtrato.NOME_EMPRESA);
+        String nomeEmpresa = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.NOME_EMPRESA);
         //20
-        String reservadoUsoBranco = line.getFieldValueString(LineCnabv05SegmentoEExtrato.RESERVADO_USO_BANCO);
+        String reservadoUsoBranco = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.RESERVADO_USO_BANCO);
         //21
-        String naturezaLancamento = line.getFieldValueString(LineCnabv05SegmentoEExtrato.NATUREZA_LANCAMENTO);
+        String naturezaLancamento = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.NATUREZA_LANCAMENTO);
         //22
         int tipoComplementoLancamento = 0;
-        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.TIPO_COMPLEMENTO) != null) {
-            tipoComplementoLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.TIPO_COMPLEMENTO).intValue();
+        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.TIPO_COMPLEMENTO) != null) {
+            tipoComplementoLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.TIPO_COMPLEMENTO).intValue();
         }
         //23
         int bancoOrigemLancamento = 0;
-        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.BANCO_ORIGEM_LANCAMENTO) != null) {
-            bancoOrigemLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.BANCO_ORIGEM_LANCAMENTO).intValue();
+        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.BANCO_ORIGEM_LANCAMENTO) != null) {
+            bancoOrigemLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.BANCO_ORIGEM_LANCAMENTO).intValue();
         }
         //24
         int agenciaOrigemLancamento = 0;
-        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.AGENCIA_ORIGEM_LANCAMENTO) != null) {
-            agenciaOrigemLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.AGENCIA_ORIGEM_LANCAMENTO).intValue();
+        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.AGENCIA_ORIGEM_LANCAMENTO) != null) {
+            agenciaOrigemLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.AGENCIA_ORIGEM_LANCAMENTO).intValue();
         }
         //25
         long agenciaContaOrigemLancamento = 0;
-        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.AG_CONTA_ORIGEM_LANCAMENTO) != null) {
-            agenciaContaOrigemLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.AG_CONTA_ORIGEM_LANCAMENTO).longValue();
+        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.AG_CONTA_ORIGEM_LANCAMENTO) != null) {
+            agenciaContaOrigemLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.AG_CONTA_ORIGEM_LANCAMENTO).longValue();
         }
         //26
-        String idenfiticacaoIsencaoCpmf = line.getFieldValueString(LineCnabv05SegmentoEExtrato.IDENTIFICACAO_INSENCAO_CPMF);
+        String idenfiticacaoIsencaoCpmf = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.IDENTIFICACAO_INSENCAO_CPMF);
         //27
-        Date dataContabil = line.getFieldValueDate(LineCnabv05SegmentoEExtrato.DATA_CONTABIL);
+        Date dataContabil = line.getFieldValueDate(LineCnabv05SegmentoEExtratoItau.DATA_CONTABIL);
         //28
-        Date dataLancamento = line.getFieldValueDate(LineCnabv05SegmentoEExtrato.DATA_LANCAMENTO);
+        Date dataLancamento = line.getFieldValueDate(LineCnabv05SegmentoEExtratoItau.DATA_LANCAMENTO);
         //29
-        double valorLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.VALOR_LANCAMENTO).doubleValue();
+        double valorLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.VALOR_LANCAMENTO).doubleValue();
         //30
-        String tipoLancamento = line.getFieldValueString(LineCnabv05SegmentoEExtrato.TIPO_LANCAMENTO);
+        String tipoLancamento = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.TIPO_LANCAMENTO);
         //31
-        int categoriaLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.CATEGORIA_LANCAMENTO).intValue();
+        int categoriaLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.CATEGORIA_LANCAMENTO).intValue();
         //32
-        String codigoLancamento = line.getFieldValueString(LineCnabv05SegmentoEExtrato.CODIGO_LANCAMENTO);
+        String codigoLancamento = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.CODIGO_LANCAMENTO);
         //33
-        String historico = line.getFieldValueString(LineCnabv05SegmentoEExtrato.HISTORICO_LANCAMENTO);
+        String historico = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.HISTORICO_LANCAMENTO);
         //34
         int agenciaDeOrigemLancamento = 0;
-        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.AG_ORIGEM_LANCAMENTO) != null) {
-            agenciaDeOrigemLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.AG_ORIGEM_LANCAMENTO).intValue();
+        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.AG_ORIGEM_LANCAMENTO) != null) {
+            agenciaDeOrigemLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.AG_ORIGEM_LANCAMENTO).intValue();
         }
         //35
         int complemento = 0;
-        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.COMPLEMENTO_REGISTRO) != null) {
-            complemento = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.COMPLEMENTO_REGISTRO).intValue();
+        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.COMPLEMENTO_REGISTRO) != null) {
+            complemento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.COMPLEMENTO_REGISTRO).intValue();
         }
         //36
         int contaDeOrigemLancamento = 0;
-        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.CONTA_ORIGEM_LANCAMENTO) != null) {
-            contaDeOrigemLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.CONTA_ORIGEM_LANCAMENTO).intValue();
+        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.CONTA_ORIGEM_LANCAMENTO) != null) {
+            contaDeOrigemLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.CONTA_ORIGEM_LANCAMENTO).intValue();
         }
         //37
         int dacAgContaOrigem = 0;
-        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.DAC_AG_CONTA_ORIGEM) != null){
-            dacAgContaOrigem = line.getFieldValueNumber(LineCnabv05SegmentoEExtrato.DAC_AG_CONTA_ORIGEM).intValue();
+        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.DAC_AG_CONTA_ORIGEM) != null){
+            dacAgContaOrigem = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.DAC_AG_CONTA_ORIGEM).intValue();
         }
         //38
-        String tipoInscricaoEmitente = line.getFieldValueString(LineCnabv05SegmentoEExtrato.TIPO_INSCRICAO_EMITENTE);
+        String tipoInscricaoEmitente = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.TIPO_INSCRICAO_EMITENTE);
         //39
-        String numeroInscricaoEmitente = line.getFieldValueString(LineCnabv05SegmentoEExtrato.NUMERO_INSCRICAO_EMITENTE);   
+        String numeroInscricaoEmitente = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.NUMERO_INSCRICAO_EMITENTE);   
         //40
-        String brancos4 = line.getFieldValueString(LineCnabv05SegmentoEExtrato.BRANCOS4);
+        String brancos4 = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.BRANCOS4);
         //41
-        String numeroDocumento = line.getFieldValueString(LineCnabv05SegmentoEExtrato.NUMERO_DOCUMENTO);
+        String numeroDocumento = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.NUMERO_DOCUMENTO);
         
         System.out.println("01. Código do banco: " + codigoBanco);
         System.out.println("02. Código do lote: " + codigoLote);
