@@ -190,7 +190,7 @@ public class LineCnab240SegmentoR extends LineArchetype{
         addFieldArchetype(CODIGO_SEGMENTO, new FieldDefaultArchetype("R"));
         addFieldArchetype(EXCLUSIVO_FEBRABAN, new FieldFillerArchetype(1, ' '));
         addFieldArchetype(CODIGO_MOVIMENTO_REMESSA, new FieldIntegerFixedLengthArchetype(2));
-        addFieldArchetype(CODIGO_DESCONTO_2, new FieldDefaultArchetype("1"));
+        addFieldArchetype(CODIGO_DESCONTO_2, new FieldStringFixedLengthArchetype(1));
         addFieldArchetype(DATA_DESCONTO_2, new FieldFillerArchetype(8, '0'));
         addFieldArchetype(VALOR_PERCENTUAL_DESCONTO_2, new FieldFillerArchetype(15, '0'));
         addFieldArchetype(CODIGO_DESCONTO_3, new FieldDefaultArchetype("1"));
