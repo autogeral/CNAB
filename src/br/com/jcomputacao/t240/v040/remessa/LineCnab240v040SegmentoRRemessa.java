@@ -17,7 +17,7 @@ public class LineCnab240v040SegmentoRRemessa extends LineCnab240SegmentoR {
     public static final String RESERVADO = "RESERVADO";
 
     public LineCnab240v040SegmentoRRemessa() {
-        setName("CNAB - Segmento P");
+        setName("CNAB - Segmento R");
 
         removeFieldArchetype(VALOR_PERCENTUAL_DESCONTO_2);
         removeFieldArchetype(CODIGO_DESCONTO_3);
