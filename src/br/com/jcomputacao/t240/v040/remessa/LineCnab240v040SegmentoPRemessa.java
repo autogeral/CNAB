@@ -321,7 +321,7 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
         //14
         addFieldArchetype(RESERVADO_USO_BANCO, new FieldFillerArchetype(2, ' '));
         //15
-        addFieldArchetype(NOSSO_NUMERO, new FieldStringFixedLengthArchetype(13));
+        addFieldArchetype(NOSSO_NUMERO, new FieldIntegerFixedLengthArchetype(13));
         //16
         addFieldArchetype(TIPO_DE_COBRANCA, new FieldIntegerFixedLengthArchetype(1));
         //17
@@ -333,7 +333,7 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
         //20
         addFieldArchetype(RESERVADO_USO_BANCO3, new FieldFillerArchetype(1, ' '));
         //21
-        addFieldArchetype(NUMERO_DOCUMENTO_COBRANCA, new FieldStringFixedLengthArchetype(15));
+        addFieldArchetype(NUMERO_DOCUMENTO_COBRANCA, new FieldIntegerFixedLengthArchetype(15));
         //22
         addFieldArchetype(DATA_VENCIMENTO_TITULO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         //23
