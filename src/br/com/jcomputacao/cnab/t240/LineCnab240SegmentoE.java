@@ -336,7 +336,7 @@ public class LineCnab240SegmentoE extends LineArchetype{
     public static String NUMERO_DOCUMENTO = "NUMERO_DOCUMENTO";
     
     public LineCnab240SegmentoE (){
-        setName("REGISTRO DETALHE - SEGIMENTO 'E' - CNABv5.0");
+        setName("REGISTRO DETALHE - SEGMENTO 'E' - CNABv5.0");
         
         //01
         addFieldArchetype(CODIGO_BANCO, new FieldIntegerFixedLengthArchetype(3));
@@ -349,7 +349,10 @@ public class LineCnab240SegmentoE extends LineArchetype{
         //05
         addFieldArchetype(CODIGO_SEGMENTO, new FieldDefaultArchetype("E"));
         //06
-        addFieldArchetype(IDENTIFICACAO_TIPO_LANCAMENTO, new FieldIntegerFixedLengthArchetype(1));
+        FieldIntegerFixedLengthArchetype fw = new FieldIntegerFixedLengthArchetype(1);
+        fw.setAcceptNullable(true);
+        fw.setNullableRepresentation("   ");
+        addFieldArchetype(IDENTIFICACAO_TIPO_LANCAMENTO, fw);
         //07
         addFieldArchetype(BRANCOS, new FieldStringFixedLengthArchetype(2));
         //08
@@ -381,17 +384,32 @@ public class LineCnab240SegmentoE extends LineArchetype{
         //21
         addFieldArchetype(NATUREZA_LANCAMENTO, new FieldStringFixedLengthArchetype(3));
         //22
-        addFieldArchetype(TIPO_COMPLEMENTO, new FieldIntegerFixedLengthArchetype(2));
+        FieldIntegerFixedLengthArchetype fw2 = new FieldIntegerFixedLengthArchetype(2);
+        fw2.setAcceptNullable(true);
+        fw2.setNullableRepresentation("  ");
+        addFieldArchetype(TIPO_COMPLEMENTO, fw2);
         //23
-        addFieldArchetype(BANCO_ORIGEM_LANCAMENTO, new FieldIntegerFixedLengthArchetype(3));
+        fw2 = new FieldIntegerFixedLengthArchetype(3);
+        fw2.setAcceptNullable(true);
+        fw2.setNullableRepresentation("   ");
+        addFieldArchetype(BANCO_ORIGEM_LANCAMENTO, fw2);
         //24
-        addFieldArchetype(AGENCIA_ORIGEM_LANCAMENTO, new FieldIntegerFixedLengthArchetype(5));
+        fw2 = new FieldIntegerFixedLengthArchetype(5);
+        fw2.setAcceptNullable(true);
+        fw2.setNullableRepresentation("     ");
+        addFieldArchetype(AGENCIA_ORIGEM_LANCAMENTO, fw2);
         //25
-        addFieldArchetype(AG_CONTA_ORIGEM_LANCAMENTO, new FieldIntegerFixedLengthArchetype(12));
+        fw2 = new FieldIntegerFixedLengthArchetype(12);
+        fw2.setAcceptNullable(true);
+        fw2.setNullableRepresentation("            ");
+        addFieldArchetype(AG_CONTA_ORIGEM_LANCAMENTO, fw2);
         //26
         addFieldArchetype(IDENTIFICACAO_INSENCAO_CPMF, new FieldStringFixedLengthArchetype(1));
         //27
-        addFieldArchetype(DATA_CONTABIL, new FieldDateFixedLengthArchetype("ddMMyyyy"));
+        FieldDateFixedLengthArchetype fd = new FieldDateFixedLengthArchetype("ddMMyyyy");
+        fd.setAcceptNullable(true);
+        fd.setNullableRepresentation("00000000");
+        addFieldArchetype(DATA_CONTABIL, fd);
         //28
         addFieldArchetype(DATA_LANCAMENTO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         //29
@@ -405,13 +423,25 @@ public class LineCnab240SegmentoE extends LineArchetype{
         //33
         addFieldArchetype(HISTORICO_LANCAMENTO, new FieldStringFixedLengthArchetype(25));
         //34
-        addFieldArchetype(AG_ORIGEM_LANCAMENTO, new FieldIntegerFixedLengthArchetype(4));
+        fw2 = new FieldIntegerFixedLengthArchetype(4);
+        fw2.setAcceptNullable(true);
+        fw2.setNullableRepresentation("    ");        
+        addFieldArchetype(AG_ORIGEM_LANCAMENTO, fw2);
         //35
-        addFieldArchetype(COMPLEMENTO_REGISTRO, new FieldIntegerFixedLengthArchetype(2));
+        fw2 = new FieldIntegerFixedLengthArchetype(2);
+        fw2.setAcceptNullable(true);
+        fw2.setNullableRepresentation("  ");      
+        addFieldArchetype(COMPLEMENTO_REGISTRO, fw2);
         //36
-        addFieldArchetype(CONTA_ORIGEM_LANCAMENTO, new FieldIntegerFixedLengthArchetype(5));
+        fw2 = new FieldIntegerFixedLengthArchetype(5);
+        fw2.setAcceptNullable(true);
+        fw2.setNullableRepresentation("     "); 
+        addFieldArchetype(CONTA_ORIGEM_LANCAMENTO, fw2);
         //37
-        addFieldArchetype(DAC_AG_CONTA_ORIGEM, new FieldIntegerFixedLengthArchetype(1));
+        fw2 = new FieldIntegerFixedLengthArchetype(1);
+        fw2.setAcceptNullable(true);
+        fw2.setNullableRepresentation(" "); 
+        addFieldArchetype(DAC_AG_CONTA_ORIGEM, fw2);
         //38
         addFieldArchetype(TIPO_INSCRICAO_EMITENTE, new FieldStringFixedLengthArchetype(1));
         //39
