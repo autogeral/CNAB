@@ -313,7 +313,7 @@ public class LineCnab240v05HeaderLoteExtratoLayout031  extends LineArchetype{
         //19
         addFieldArchetype(BRANCOS3, new FieldDefaultArchetype(" "));
         //20
-        addFieldArchetype(DIGITO_VER_AG_CONTA, new FieldIntegerFixedLengthArchetype(1));
+        addFieldArchetype(DIGITO_VER_AG_CONTA, new FieldStringFixedLengthArchetype(1));
         //21
         addFieldArchetype(NOME_EMPRESA, new FieldStringFixedLengthArchetype(30));
         //22

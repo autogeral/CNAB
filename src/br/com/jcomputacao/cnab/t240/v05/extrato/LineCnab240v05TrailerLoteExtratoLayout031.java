@@ -273,11 +273,11 @@ public class LineCnab240v05TrailerLoteExtratoLayout031 extends LineArchetype{
         //24        
         addFieldArchetype(QTDE_REGISTROS_LOTE, new FieldIntegerFixedLengthArchetype(6));
         //25
-        addFieldArchetype(TOTAL_VALOR_DEBITO, new FieldDecimalFixedLengthArchetype(16, 2));
+        addFieldArchetype(TOTAL_VALOR_DEBITO, new FieldDecimalFixedLengthArchetype(18, 2));
         //26
-        addFieldArchetype(TOTAL_VALOR_CREDITO, new FieldDecimalFixedLengthArchetype(16, 2));
+        addFieldArchetype(TOTAL_VALOR_CREDITO, new FieldDecimalFixedLengthArchetype(18, 2));
         //27
-        addFieldArchetype(TOTAL_VALORES_NAO_CONTABEIS, new FieldDecimalFixedLengthArchetype(16, 2));        
+        addFieldArchetype(TOTAL_VALORES_NAO_CONTABEIS, new FieldDecimalFixedLengthArchetype(18, 2));        
         //28
         addFieldArchetype(BRANCOS5, new FieldStringFixedLengthArchetype(10));
     }

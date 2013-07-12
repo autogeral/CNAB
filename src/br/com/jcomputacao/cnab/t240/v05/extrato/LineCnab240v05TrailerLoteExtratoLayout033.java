@@ -42,7 +42,7 @@ public class LineCnab240v05TrailerLoteExtratoLayout033 extends LineCnab240v05Tra
          */
         addFieldArchetype(BRANCOS3, new FieldStringFixedLengthArchetype(1));
         //15
-        addFieldArchetype(DIGITO_VER_AG_CONTA, new FieldIntegerFixedLengthArchetype(1));
+        addFieldArchetype(DIGITO_VER_AG_CONTA, new FieldStringFixedLengthArchetype(1));
         //16
         addFieldArchetype(BRANCOS4, new FieldStringFixedLengthArchetype(16));
         //17

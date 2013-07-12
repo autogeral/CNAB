@@ -206,7 +206,10 @@ public class LineCnab240v05HeaderArquivoExtrato extends LineArchetype {
         //14
         addFieldArchetype(BRANCOS2, new FieldDefaultArchetype(" "));
         //15
-        addFieldArchetype(DIGITO_VER_AG_CONTA, new FieldIntegerFixedLengthArchetype(1));
+        FieldStringFixedLengthArchetype fw = new FieldStringFixedLengthArchetype(1);
+        fw.setAcceptNullable(true);
+        fw.setNullableRepresentation(" ");
+        addFieldArchetype(DIGITO_VER_AG_CONTA, fw);
         //16
         addFieldArchetype(NOME_EMPRESA, new FieldStringFixedLengthArchetype(30));
         //17

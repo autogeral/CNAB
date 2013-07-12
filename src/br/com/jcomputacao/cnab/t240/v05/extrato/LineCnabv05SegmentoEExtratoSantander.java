@@ -45,7 +45,10 @@ public class LineCnabv05SegmentoEExtratoSantander extends LineCnabv05SegmentoEEx
         //21
 //        addFieldArchetype(NATUREZA_LANCAMENTO, new FieldStringFixedLengthArchetype(3));
         //22
-        addFieldArchetype(TIPO_COMPLEMENTO, new FieldStringFixedLengthArchetype(2));
+        FieldIntegerFixedLengthArchetype fw = new FieldIntegerFixedLengthArchetype(2);
+        fw.setAcceptNullable(true);
+        fw.setNullableRepresentation("  ");
+        addFieldArchetype(TIPO_COMPLEMENTO, fw);
         //23
         /**
          * Complemento do lancamento
