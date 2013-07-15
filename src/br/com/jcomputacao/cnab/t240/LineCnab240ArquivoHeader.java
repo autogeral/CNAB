@@ -1,11 +1,6 @@
 package br.com.jcomputacao.cnab.t240;
 
-import br.com.jcomputacao.aristoteles.field.FieldDateFixedLengthArchetype;
-import br.com.jcomputacao.aristoteles.field.FieldDefaultArchetype;
-import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
-import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
-import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
-import br.com.jcomputacao.aristoteles.field.FieldVolatileArchetye;
+import br.com.jcomputacao.aristoteles.field.*;
 import br.com.jcomputacao.aristoteles.line.LineArchetype;
 
 /**
@@ -128,7 +123,7 @@ public class LineCnab240ArquivoHeader extends LineArchetype {
     public static final String RESERVADO_EMPRESA = "RESERVADO_EMPRESA";
     /**
      * EXCLUSIVO FEBRABAN 3 - 29 BRANCOS
-     * POSICAO 103 132
+     * POSICAO 212 240
      */
     public static final String EXCLUSIVO_FEBRABAN_3 = "EXCLUSIVO_FEBRABAN_3";
 
