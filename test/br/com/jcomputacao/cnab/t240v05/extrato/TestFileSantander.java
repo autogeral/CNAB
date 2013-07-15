@@ -45,11 +45,11 @@ public class TestFileSantander {
 
     @Test
     public void TestFileSantander() throws ParseException, IOException {
-        File dir = new File("C:/Users/Cesário/Desktop/ConciliacoesSantander/1");
+        File dir = new File("C:/Users/Cesário/Desktop/testesConcilSantander");
         File[] fs = dir.listFiles(new FilenameFilter() {
 
             public boolean accept(File dir, String name) {
-                return (name.toLowerCase().endsWith(".txt") || name.toLowerCase().startsWith("BL"));
+                return (name.toLowerCase().endsWith(".ret") || name.toLowerCase().startsWith("BL"));
             }
         });
         for (File f : fs) {
@@ -245,7 +245,7 @@ public class TestFileSantander {
         int digitoVerificadorAgConta = 0;
         String teste = line.getFieldValueString(LineCnab240v05HeaderLoteExtratoLayout033.DIGITO_VER_AG_CONTA);
         if (teste != null) {
-            digitoVerificadorAgConta = line.getFieldValueNumber(LineCnab240v05HeaderLoteExtratoLayout033.DIGITO_VER_AG_CONTA).intValue();
+            digitoVerificadorAgConta = Integer.parseInt(teste);
         }
         //21
         String nomeEmpresa = line.getFieldValueString(LineCnab240v05HeaderLoteExtratoLayout033.NOME_EMPRESA);
@@ -344,7 +344,11 @@ public class TestFileSantander {
         //21
         String naturezaLancamento = line.getFieldValueString(LineCnabv05SegmentoEExtratoSantander.NATUREZA_LANCAMENTO);
         //22
-        String tipoComplementoLancamento = line.getFieldValueString(LineCnabv05SegmentoEExtratoSantander.TIPO_COMPLEMENTO);
+        int tipoComplementoLancamento = 0;
+        if (line.getFieldValueNumber(LineCnabv05SegmentoEExtratoSantander.TIPO_COMPLEMENTO) != null) {
+            tipoComplementoLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoSantander.TIPO_COMPLEMENTO).intValue();
+        }
+
         //23
         String complementoLancamento = line.getFieldValueString(LineCnabv05SegmentoEExtratoSantander.BANCO_ORIGEM_LANCAMENTO);
         //24
@@ -485,7 +489,7 @@ public class TestFileSantander {
         String teste = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout033.DIGITO_VER_AG_CONTA);
         int digitoVerificadorAgenciaConta = 0;
         if (teste != null) {
-            digitoVerificadorAgenciaConta = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout033.DIGITO_VER_AG_CONTA).intValue();
+            digitoVerificadorAgenciaConta = Integer.parseInt(teste);
         }
         //16
         String brancos4 = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout033.BRANCOS4);
