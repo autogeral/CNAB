@@ -165,7 +165,7 @@ public class TestFileItau {
         int digitoVerificadorAgenciaConta = 0;
         String teste = line.getFieldValueString(LineCnab240v05HeaderArquivoExtrato.DIGITO_VER_AG_CONTA);
         if (teste != null) {
-            digitoVerificadorAgenciaConta = line.getFieldValueNumber(LineCnab240v05HeaderArquivoExtrato.DIGITO_VER_AG_CONTA).intValue();
+            digitoVerificadorAgenciaConta = Integer.parseInt(teste);
         }
         //16
         //--30
@@ -273,9 +273,9 @@ public class TestFileItau {
         String brancos3 = line.getFieldValueString(LineCnab240v05HeaderLoteExtratoLayout031.BRANCOS3);
         //20
         int digitoVerificadorAgConta = 0;
-        String teste = line.getFieldValueString(LineCnab240v05HeaderArquivoExtrato.DIGITO_VER_AG_CONTA);
+        String teste = line.getFieldValueString(LineCnab240v05HeaderLoteExtratoLayout031.DIGITO_VER_AG_CONTA);
         if (teste != null) {
-            digitoVerificadorAgConta = line.getFieldValueNumber(LineCnab240v05HeaderLoteExtratoLayout031.DIGITO_VER_AG_CONTA).intValue();
+            digitoVerificadorAgConta = Integer.parseInt(teste);
         }
         //21
         String nomeEmpresa = line.getFieldValueString(LineCnab240v05HeaderLoteExtratoLayout031.NOME_EMPRESA);
@@ -342,11 +342,9 @@ public class TestFileItau {
         //05
         String codigoSegmento = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.CODIGO_SEGMENTO);
         //06
-        int identificacaoTipoLancamento = 0;
-        String teste = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.IDENTIFICACAO_TIPO_LANCAMENTO);
-        if (teste != null) {
-            identificacaoTipoLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.IDENTIFICACAO_TIPO_LANCAMENTO).intValue();
-        }
+        int identificacaoTipoLancamento;
+        identificacaoTipoLancamento = line.getFieldValueNumber(LineCnabv05SegmentoEExtratoItau.IDENTIFICACAO_TIPO_LANCAMENTO).intValue();
+
         //07
         String brancos = line.getFieldValueString(LineCnabv05SegmentoEExtratoItau.BRANCOS);
         //08
@@ -523,11 +521,8 @@ public class TestFileItau {
         //14
         String brancos3 = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.BRANCOS3);
         //15
-        String teste = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.DIGITO_VER_AG_CONTA);
-        int digitoVerificadorAgConta = 0;
-        if (teste != null) {
-            digitoVerificadorAgConta = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.DIGITO_VER_AG_CONTA).intValue();
-        }
+        int digitoVerificadorAgConta;
+        digitoVerificadorAgConta = line.getFieldValueNumber(LineCnab240v05TrailerLoteExtratoLayout031.DIGITO_VER_AG_CONTA).intValue();
         //16
         String brancos4 = line.getFieldValueString(LineCnab240v05TrailerLoteExtratoLayout031.BRANCOS4);
         //17
