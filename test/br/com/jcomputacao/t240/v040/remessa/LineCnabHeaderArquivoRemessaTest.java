@@ -2,6 +2,9 @@ package br.com.jcomputacao.t240.v040.remessa;
 
 import br.com.jcomputacao.aristoteles.line.LineArchetype;
 import br.com.jcomputacao.aristoteles.line.LineModel;
+import br.com.jcomputacao.cnab.t240.v040.LineCnab240v040ArquivoHeader;
+import br.com.jcomputacao.cnab.t240.v060.LineCnab240v060ArquivoHeader;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -14,27 +17,8 @@ import org.junit.*;
  */
 public class LineCnabHeaderArquivoRemessaTest {
 
-    public LineCnabHeaderArquivoRemessaTest() {
-    }
-
-    @BeforeClass
-    public static void setUpClass() throws Exception {
-    }
-
-    @AfterClass
-    public static void tearDownClass() throws Exception {
-    }
-
-    @Before
-    public void setUp() {
-    }
-
-    @After
-    public void tearDown() {
-    }
-
     @Test
-    public void LineCnabHeaderArquivoRemessaTest() throws ParseException {
+    public void testaHeaderConvivere() throws ParseException {
         LineArchetype la = new LineCnab240v040HeaderArquivo();
         LineModel lm = la.createModel();
         SimpleDateFormat sdf2 = new SimpleDateFormat("ddMMyyyy");
@@ -81,5 +65,41 @@ public class LineCnabHeaderArquivoRemessaTest {
 	String expected = "03300000        2010276553000125006500005534372                         CONVIVERE EMPREENDIMENTOS IMOBBanco Santander                         126062013      000001040                                                                          ";
         System.out.println(expected);
 	assertEquals (expected, sb.toString());
+    }
+    
+    @Test
+    public void testaHeaderAutoGeral() throws ParseException {
+        LineArchetype la = new LineCnab240v040ArquivoHeader();
+        //LineArchetype la = new LineCnab240v060ArquivoHeader();
+        LineModel lm = la.createModel();
+        String expected = "03300000         2054375370001370033006500490028050300065 0000480000414 AUTO GERAL DE ITU LTDA        BANCO SANTANDER                         10612201210573500004706000000                                        G4016PF00528               G4";
+        lm.setRepresentation(expected);
+        
+        System.out.println("CODIGO_BANCO           : " + lm.getFieldValueString(LineCnab240v040HeaderArquivo.CODIGO_BANCO));
+        System.out.println("TIPO_INSCRICAO         : " + lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.TIPO_INSCRICAO));
+        System.out.println("NUMERO_INSCRICAO       : " + lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.NUMERO_INSCRICAO));
+        System.out.println("CODIGO_TRASMISSAO      : " + lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.CODIGO_TRASMISSAO));
+        System.out.println("NOME_EMPRESA           : " + lm.getFieldValueString(LineCnab240v040HeaderArquivo.NOME_EMPRESA));
+        System.out.println("NOME_BANCO             : " + lm.getFieldValueString(LineCnab240v040HeaderArquivo.NOME_BANCO));
+        System.out.println("CODIGO_REM_RET         : " + lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.CODIGO_REM_RET));
+        System.out.println("DATA_GERACAO_ARQUIVO   : " + DateFormat.getDateInstance(DateFormat.SHORT).format(lm.getFieldValueDate(LineCnab240v040HeaderArquivo.DATA_GERACAO_ARQUIVO)));
+        System.out.println("NUM_SEQUENCIAL_ARQUIVO : " + lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.NUM_SEQUENCIAL_ARQUIVO));
+        System.out.println("VERSAO_LAYOUT          : " + lm.getFieldValueString(LineCnab240v040HeaderArquivo.VERSAO_LAYOUT));
+        
+        assertEquals("033", lm.getFieldValueString(LineCnab240v040HeaderArquivo.CODIGO_BANCO));
+//        assertEquals(0, lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.TIPO_INSCRICAO));
+//        assertEquals(0, lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.NUMERO_INSCRICAO));
+//        assertEquals(0, lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.CODIGO_TRASMISSAO));
+//        assertEquals(0, lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.NOME_EMPRESA));
+//        assertEquals(0, lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.NOME_BANCO));
+//        assertEquals(0, lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.CODIGO_REM_RET));
+//        assertEquals(0, lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.DATA_GERACAO_ARQUIVO));
+//        assertEquals(0, lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.NUM_SEQUENCIAL_ARQUIVO));
+//        assertEquals(0, lm.getFieldValueNumber(LineCnab240v040HeaderArquivo.VERSAO_LAYOUT));
+        
+        String result = lm.getRepresentation().toString();
+        assertEquals(expected, result);
+        
+        
     }
 }

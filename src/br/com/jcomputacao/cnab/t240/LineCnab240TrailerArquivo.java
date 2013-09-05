@@ -1,5 +1,6 @@
 package br.com.jcomputacao.cnab.t240;
 
+import br.com.jcomputacao.aristoteles.field.FieldDefaultArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
@@ -69,8 +70,7 @@ public class LineCnab240TrailerArquivo extends LineArchetype{
          addFieldArchetype(CODIGO_BANCO_COMPENSACAO, new FieldStringFixedLengthArchetype(3));
          //new FieldDefaultArchetype("99999") - não é adequado para a leitura do arquivo
          //02 e 03
-         FieldStringFixedLengthArchetype f02 = new FieldStringFixedLengthArchetype(5);
-         addFieldArchetype(LOTE_TIPO_REGISTRO, f02);
+         addFieldArchetype(LOTE_TIPO_REGISTRO, new FieldDefaultArchetype("99999"));
          //04
          addFieldArchetype(EXCLUSIVO_FEBRABAN, new FieldFillerArchetype(9, ' '));
          //05

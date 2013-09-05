@@ -40,7 +40,7 @@ public class LineCnab240SegmentoA extends LineArchetype {
      * '10' = Alteracao do Pagamento Liberado para Bloqueado (Bloqueio)
      * '11' = Alteracao do Pagamento Bloqueado para Liberado (Liberacao)
      * '19' = Alteracao da Data de Pagamento
-     * '33' = Estorno por Devolucao da Câmara Centralizadora (somente para Tipo de Movimento = '3')
+     * '33' = Estorno por Devolucao da Camara Centralizadora (somente para Tipo de Movimento = '3')
      * '99' = Exclusao do Registro Detalhe Incluido Anteriormente
      */
     public static final String CODIGO_MOVIMENTO = "CODIGO_MOVIMENTO";
@@ -124,7 +124,7 @@ public class LineCnab240SegmentoA extends LineArchetype {
         addFieldArchetype(DIGITO_VER_AGENCIA, ccc);
         addFieldArchetype(NUMERO_CONTA_COR, new FieldIntegerFixedLengthArchetype(12));
         addFieldArchetype(DIGITO_VER_CONTA, new FieldStringFixedLengthArchetype(1));
-        addFieldArchetype(DIGITO_VER_AGENCIA_CONTA, new FieldStringFixedLengthArchetype(1));
+        addFieldArchetype(DIGITO_VER_AGENCIA_CONTA, ccc);
         addFieldArchetype(NOME_PAGADOR_FAVORECIDO, new FieldStringFixedLengthArchetype(30));
         addFieldArchetype(SEU_NUMERO, new FieldStringFixedLengthArchetype(20));
         addFieldArchetype(DATA_LANCAMENTO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
