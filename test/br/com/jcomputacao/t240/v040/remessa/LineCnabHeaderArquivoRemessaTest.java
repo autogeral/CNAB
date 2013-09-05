@@ -2,18 +2,17 @@ package br.com.jcomputacao.t240.v040.remessa;
 
 import br.com.jcomputacao.aristoteles.line.LineArchetype;
 import br.com.jcomputacao.aristoteles.line.LineModel;
-import br.com.jcomputacao.cnab.t240.v040.LineCnab240v040ArquivoHeader;
-import br.com.jcomputacao.cnab.t240.v060.LineCnab240v060ArquivoHeader;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import org.junit.*;
 
 /**
  *
  * @author Jennifer
+ * @version 
  */
 public class LineCnabHeaderArquivoRemessaTest {
 
@@ -64,12 +63,14 @@ public class LineCnabHeaderArquivoRemessaTest {
 
 	String expected = "03300000        2010276553000125006500005534372                         CONVIVERE EMPREENDIMENTOS IMOBBanco Santander                         126062013      000001040                                                                          ";
         System.out.println(expected);
-	assertEquals (expected, sb.toString());
+        String result = sb.toString();
+	assertEquals (expected, result);
+        assertTrue (result.contains("10276553000125"));
     }
     
     @Test
     public void testaHeaderAutoGeral() throws ParseException {
-        LineArchetype la = new LineCnab240v040ArquivoHeader();
+        LineArchetype la = new LineCnab240v040HeaderArquivo();
         //LineArchetype la = new LineCnab240v060ArquivoHeader();
         LineModel lm = la.createModel();
         String expected = "03300000         2054375370001370033006500490028050300065 0000480000414 AUTO GERAL DE ITU LTDA        BANCO SANTANDER                         10612201210573500004706000000                                        G4016PF00528               G4";
