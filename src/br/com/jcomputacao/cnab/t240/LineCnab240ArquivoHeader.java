@@ -180,7 +180,7 @@ public class LineCnab240ArquivoHeader extends LineArchetype {
         FieldIntegerFixedLengthArchetype fc = new FieldIntegerFixedLengthArchetype(5);
         fc.setNullableRepresentation("00000");
         //21
-        addFieldArchetype(DENSIDADE_GRAVACAO, fa);
+        addFieldArchetype(DENSIDADE_GRAVACAO, fc);
         //22
         addFieldArchetype(RESERVADO_BANCO, new FieldFillerArchetype(20, ' '));
         //23
