@@ -103,7 +103,7 @@ public class LineCnab240SegmentoN extends LineArchetype {
         addFieldArchetype(DATA_PAGAMENTO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         addFieldArchetype(VALOR_PAGAMENTO, new FieldDecimalFixedLengthArchetype(15, 2));
         //A definicao do N vai ate o valor do pagamento
-        addFieldArchetype(RECEITA, new FieldStringFixedLengthArchetype(6));
+        addFieldArchetype(RECEITA, new FieldStringFixedLengthArchetype(4));
         addFieldArchetype(TIPO_IDENTIFICACAO_CONTRIBUINTE, new FieldIntegerFixedLengthArchetype(2));
         addFieldArchetype(IDENTIFICACAO_CONTRIBUINTE, new FieldIntegerFixedLengthArchetype(14));
         addFieldArchetype(IDENTIFICACAO_TRIBUTO, new FieldIntegerFixedLengthArchetype(2));
