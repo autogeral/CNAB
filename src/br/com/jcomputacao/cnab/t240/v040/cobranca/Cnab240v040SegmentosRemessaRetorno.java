@@ -13,7 +13,8 @@ import java.util.Date;
  * @author maria.fernanda
  */
 public class Cnab240v040SegmentosRemessaRetorno {
-
+    
+    private String codSegmento;
     private String codBancoString;
     private int codBanco;
     private int numeroLote;
@@ -34,7 +35,7 @@ public class Cnab240v040SegmentosRemessaRetorno {
     private String identificacaoTituloEmpresa; //P e T
     private int codMoeda; //P e T
     private int tipoInscricaoSacado; //Q e T
-    private int numeroInscricaoSacado; //Q e T
+    private long numeroInscricaoSacado; //Q e T
     private String nomeSacado; //Q e T
     private String contaCobrancaString; //P e T
     private int contaCobranca;
@@ -115,6 +116,14 @@ public class Cnab240v040SegmentosRemessaRetorno {
     private double valOcorrenciaSacado;
     private String complementoOcorrencia;
     private int codBancoCorrespondente;
+
+    public String getCodSegmento() {
+        return codSegmento;
+    }
+
+    public void setCodSegmento(String codSegmento) {
+        this.codSegmento = codSegmento;
+    }
 
     public String getDigAgenciaCedenteString() {
         return digAgenciaCedenteString;
@@ -276,11 +285,11 @@ public class Cnab240v040SegmentosRemessaRetorno {
         this.tipoInscricaoSacado = tipoInscricaoSacado;
     }
 
-    public int getNumeroInscricaoSacado() {
+    public long getNumeroInscricaoSacado() {
         return numeroInscricaoSacado;
     }
 
-    public void setNumeroInscricaoSacado(int numeroInscricaoSacado) {
+    public void setNumeroInscricaoSacado(long numeroInscricaoSacado) {
         this.numeroInscricaoSacado = numeroInscricaoSacado;
     }
 
@@ -827,7 +836,7 @@ public class Cnab240v040SegmentosRemessaRetorno {
     public void setDataEfetivacaoCredito(Date dataEfetivacaoCredito) {
         this.dataEfetivacaoCredito = dataEfetivacaoCredito;
     }
-
+    
     public String getCodOcorrenciaSacado() {
         return codOcorrenciaSacado;
     }
