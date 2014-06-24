@@ -38,14 +38,14 @@ public class Cnab240v040HeaderTraillerLote {
     private String codBanco;
     private int loteServico;
     private int quantidadeRegistros;
-    private String cobrancaSimples;
-    private String valorCobrancaSimples;
-    private String cobrancaVinculada;
-    private String valorCobrancaVinculada;
-    private String cobrancaCaucionada;
-    private String valorCobrancaCaucionada;
-    private String cobrancaDescontada;
-    private String valorCobrancaDescontada;
+    private int cobrancaSimples;
+    private double valorCobrancaSimples;
+    private int cobrancaVinculada;
+    private double valorCobrancaVinculada;
+    private int cobrancaCaucionada;
+    private double valorCobrancaCaucionada;
+    private int cobrancaDescontada;
+    private double valorCobrancaDescontada;
     private String numAviso;
 
     public String getTipoOperacao() {
@@ -228,67 +228,67 @@ public class Cnab240v040HeaderTraillerLote {
         this.quantidadeRegistros = quantidadeRegistros;
     }
 
-    public String getCobrancaSimples() {
+    public int getCobrancaSimples() {
         return cobrancaSimples;
     }
 
-    public void setCobrancaSimples(String cobrancaSimples) {
+    public void setCobrancaSimples(int cobrancaSimples) {
         this.cobrancaSimples = cobrancaSimples;
     }
 
-    public String getValorCobrancaSimples() {
+    public double getValorCobrancaSimples() {
         return valorCobrancaSimples;
     }
 
-    public void setValorCobrancaSimples(String valorCobrancaSimples) {
+    public void setValorCobrancaSimples(double valorCobrancaSimples) {
         this.valorCobrancaSimples = valorCobrancaSimples;
     }
 
-    public String getCobrancaVinculada() {
+    public int getCobrancaVinculada() {
         return cobrancaVinculada;
     }
 
-    public void setCobrancaVinculada(String cobrancaVinculada) {
+    public void setCobrancaVinculada(int cobrancaVinculada) {
         this.cobrancaVinculada = cobrancaVinculada;
     }
 
-    public String getValorCobrancaVinculada() {
+    public double getValorCobrancaVinculada() {
         return valorCobrancaVinculada;
     }
 
-    public void setValorCobrancaVinculada(String valorCobrancaVinculada) {
+    public void setValorCobrancaVinculada(double valorCobrancaVinculada) {
         this.valorCobrancaVinculada = valorCobrancaVinculada;
     }
 
-    public String getCobrancaCaucionada() {
+    public int getCobrancaCaucionada() {
         return cobrancaCaucionada;
     }
 
-    public void setCobrancaCaucionada(String cobrancaCaucionada) {
+    public void setCobrancaCaucionada(int cobrancaCaucionada) {
         this.cobrancaCaucionada = cobrancaCaucionada;
     }
 
-    public String getValorCobrancaCaucionada() {
+    public double getValorCobrancaCaucionada() {
         return valorCobrancaCaucionada;
     }
 
-    public void setValorCobrancaCaucionada(String valorCobrancaCaucionada) {
+    public void setValorCobrancaCaucionada(double valorCobrancaCaucionada) {
         this.valorCobrancaCaucionada = valorCobrancaCaucionada;
     }
 
-    public String getCobrancaDescontada() {
+    public int getCobrancaDescontada() {
         return cobrancaDescontada;
     }
 
-    public void setCobrancaDescontada(String cobrancaDescontada) {
+    public void setCobrancaDescontada(int cobrancaDescontada) {
         this.cobrancaDescontada = cobrancaDescontada;
     }
 
-    public String getValorCobrancaDescontada() {
+    public double getValorCobrancaDescontada() {
         return valorCobrancaDescontada;
     }
 
-    public void setValorCobrancaDescontada(String valorCobrancaDescontada) {
+    public void setValorCobrancaDescontada(double valorCobrancaDescontada) {
         this.valorCobrancaDescontada = valorCobrancaDescontada;
     }
 
