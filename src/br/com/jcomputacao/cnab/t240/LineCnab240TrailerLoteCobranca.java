@@ -1,5 +1,6 @@
 package br.com.jcomputacao.cnab.t240;
 
+import br.com.jcomputacao.aristoteles.field.FieldDecimalFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldDefaultArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
@@ -104,22 +105,22 @@ public class LineCnab240TrailerLoteCobranca extends LineArchetype {
         addFieldArchetype(TIPO_REGISTRO, new FieldDefaultArchetype("5"));
         addFieldArchetype(EXCLUSIVO_FEBRABAN, new FieldFillerArchetype(9, ' '));
         addFieldArchetype(QTDE_REGISTROS_LOTE, new FieldIntegerFixedLengthArchetype(6));
-        //addFieldArchetype(QTDE_TITULOS_COBRANCA_SIMPLES, new FieldIntegerFixedLengthArchetype(6));
-        //addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_SIMPLES, new FieldDecimalFixedLengthArchetype(15, 2));
-        addFieldArchetype(QTDE_TITULOS_COBRANCA_SIMPLES, new FieldFillerArchetype(6, '0'));
-        addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_SIMPLES, new FieldFillerArchetype(15, '0'));
-        //addFieldArchetype(QTDE_TITULOS_COBRANCA_VINCULADA, new FieldIntegerFixedLengthArchetype(6));
-        //addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_VINCULADA, new FieldDecimalFixedLengthArchetype(15, 2));
-        addFieldArchetype(QTDE_TITULOS_COBRANCA_VINCULADA, new FieldFillerArchetype(6, '0'));
-        addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_VINCULADA, new FieldFillerArchetype(15, '0'));
-        //addFieldArchetype(QTDE_TITULOS_COBRANCA_CAUCIONADA, new FieldIntegerFixedLengthArchetype(6));
-        //addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_CAUCIONADA, new FieldDecimalFixedLengthArchetype(15, 2));
-        addFieldArchetype(QTDE_TITULOS_COBRANCA_CAUCIONADA, new FieldFillerArchetype(6, '0'));
-        addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_CAUCIONADA, new FieldFillerArchetype(15, '0'));
-        //addFieldArchetype(QTDE_TITULOS_COBRANCA_DESCONTADA, new FieldIntegerFixedLengthArchetype(6));
-        //addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_DESCONTADA, new FieldDecimalFixedLengthArchetype(15, 2));
-        addFieldArchetype(QTDE_TITULOS_COBRANCA_DESCONTADA, new FieldFillerArchetype(6, '0'));
-        addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_DESCONTADA, new FieldFillerArchetype(15, '0'));
+        addFieldArchetype(QTDE_TITULOS_COBRANCA_SIMPLES, new FieldIntegerFixedLengthArchetype(6));
+        addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_SIMPLES, new FieldDecimalFixedLengthArchetype(15, 2));
+//        addFieldArchetype(QTDE_TITULOS_COBRANCA_SIMPLES, new FieldFillerArchetype(6, '0'));
+//        addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_SIMPLES, new FieldFillerArchetype(15, '0'));
+        addFieldArchetype(QTDE_TITULOS_COBRANCA_VINCULADA, new FieldIntegerFixedLengthArchetype(6));
+        addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_VINCULADA, new FieldDecimalFixedLengthArchetype(15, 2));
+//        addFieldArchetype(QTDE_TITULOS_COBRANCA_VINCULADA, new FieldFillerArchetype(6, '0'));
+//        addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_VINCULADA, new FieldFillerArchetype(15, '0'));
+        addFieldArchetype(QTDE_TITULOS_COBRANCA_CAUCIONADA, new FieldIntegerFixedLengthArchetype(6));
+        addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_CAUCIONADA, new FieldDecimalFixedLengthArchetype(15, 2));
+//        addFieldArchetype(QTDE_TITULOS_COBRANCA_CAUCIONADA, new FieldFillerArchetype(6, '0'));
+//        addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_CAUCIONADA, new FieldFillerArchetype(15, '0'));
+        addFieldArchetype(QTDE_TITULOS_COBRANCA_DESCONTADA, new FieldIntegerFixedLengthArchetype(6));
+        addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_DESCONTADA, new FieldDecimalFixedLengthArchetype(15, 2));
+//        addFieldArchetype(QTDE_TITULOS_COBRANCA_DESCONTADA, new FieldFillerArchetype(6, '0'));
+//        addFieldArchetype(VALOR_TOTAL_TITULOS_COBRANCA_DESCONTADA, new FieldFillerArchetype(15, '0'));
         addFieldArchetype(NUMERO_AVISO, new FieldFillerArchetype(8, ' '));
         addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(117, ' '));
     }
