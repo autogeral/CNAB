@@ -108,7 +108,7 @@ public class LineCnabCaixaEconomicaHeaderArquivo extends LineArchetype{
      * Nome do Banco <br>
      * POSICAO 0103 0132 <br>
      */
-    public static final String NOME_BANCO = "NOME_EMPRESA";
+    public static final String NOME_BANCO = "NOME_BANCO";
     
     /**
      * 015 <br>
@@ -185,7 +185,7 @@ public class LineCnabCaixaEconomicaHeaderArquivo extends LineArchetype{
      * Uso Exclusivo FEBRABAN / CNAB <br>
      * POSICAO 0216 0240 <br>
      */
-    public static final String USO_EXCLUSIVO_FEBRABAN = "USO_EXCLUSIVO_FEBRABAN";
+    public static final String USO_EXCLUSIVO_FEBRABAN3 = "USO_EXCLUSIVO_FEBRABAN3";
     
     public LineCnabCaixaEconomicaHeaderArquivo(){
         setName("CNAB - Arquivo Header - v240 - Remessa");
@@ -238,7 +238,7 @@ public class LineCnabCaixaEconomicaHeaderArquivo extends LineArchetype{
         //24
         addFieldArchetype(VERSAO_APLICATIVO, new FieldStringFixedLengthArchetype(4));
         //25
-        addFieldArchetype(USO_EXCLUSIVO_FEBRABAN, new FieldFillerArchetype(25, ' '));
+        addFieldArchetype(USO_EXCLUSIVO_FEBRABAN3, new FieldFillerArchetype(25, ' '));
         
     }
     
