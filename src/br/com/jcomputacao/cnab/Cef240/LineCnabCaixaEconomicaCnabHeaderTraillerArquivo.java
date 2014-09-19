@@ -16,15 +16,15 @@ public class LineCnabCaixaEconomicaCnabHeaderTraillerArquivo {
     private int nVersaoLayoutLote;
     private String febrabanCnabString;
     private int tipoInscricaoEmpresa;
-    private int numeroInscriçãoEmpresa;
+    private String numeroInscriçãoEmpresa;
     private int codigoCedenteBanco;
-    private int usoExclusivoCAIXA;
+    private String usoExclusivoCAIXA;
     private int agenciaMantenedoraConta;
     private String digitoVerificadorConta;
     private int codigoConvenioBanco;
     private int codigoModeloPersonalizado;
-    private int usoExclusivoCAIXA2;
-    private int usoExclusivoCAIXA3;
+    private String usoExclusivoCAIXA2;
+    private String usoExclusivoCAIXA3;
     private String nomeEmpresa; 
     private String mensagem1;
     private String mensagem2;
@@ -214,11 +214,11 @@ public class LineCnabCaixaEconomicaCnabHeaderTraillerArquivo {
         this.tipoInscricaoEmpresa = tipoInscricaoEmpresa;
     }
 
-    public int getNumeroInscriçãoEmpresa() {
+    public String getNumeroInscriçãoEmpresa() {
         return numeroInscriçãoEmpresa;
     }
 
-    public void setNumeroInscriçãoEmpresa(int numeroInscriçãoEmpresa) {
+    public void setNumeroInscriçãoEmpresa(String numeroInscriçãoEmpresa) {
         this.numeroInscriçãoEmpresa = numeroInscriçãoEmpresa;
     }
 
@@ -230,11 +230,11 @@ public class LineCnabCaixaEconomicaCnabHeaderTraillerArquivo {
         this.codigoCedenteBanco = codigoCedenteBanco;
     }
 
-    public int getUsoExclusivoCAIXA() {
+    public String getUsoExclusivoCAIXA() {
         return usoExclusivoCAIXA;
     }
 
-    public void setUsoExclusivoCAIXA(int usoExclusivoCAIXA) {
+    public void setUsoExclusivoCAIXA(String usoExclusivoCAIXA) {
         this.usoExclusivoCAIXA = usoExclusivoCAIXA;
     }
 
@@ -270,11 +270,11 @@ public class LineCnabCaixaEconomicaCnabHeaderTraillerArquivo {
         this.codigoModeloPersonalizado = codigoModeloPersonalizado;
     }
 
-    public int getUsoExclusivoCAIXA2() {
+    public String getUsoExclusivoCAIXA2() {
         return usoExclusivoCAIXA2;
     }
 
-    public void setUsoExclusivoCAIXA2(int usoExclusivoCAIXA2) {
+    public void setUsoExclusivoCAIXA2(String usoExclusivoCAIXA2) {
         this.usoExclusivoCAIXA2 = usoExclusivoCAIXA2;
     }
 
@@ -334,11 +334,11 @@ public class LineCnabCaixaEconomicaCnabHeaderTraillerArquivo {
         this.UsoExclusivoFEBRABANCNAB2 = UsoExclusivoFEBRABANCNAB;
     }
 
-    public int getUsoExclusivoCAIXA3() {
+    public String getUsoExclusivoCAIXA3() {
         return usoExclusivoCAIXA3;
     }
 
-    public void setUsoExclusivoCAIXA3(int usoExclusivoCAIXA3) {
+    public void setUsoExclusivoCAIXA3(String usoExclusivoCAIXA3) {
         this.usoExclusivoCAIXA3 = usoExclusivoCAIXA3;
     }
 

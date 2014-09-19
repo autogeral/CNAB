@@ -228,7 +228,7 @@ public class LineCnabCaixaEconomicaHeaderArquivo extends LineArchetype{
         //19
         addFieldArchetype(NUMERO_SEQUENCIAL_ARQUIVO, new FieldIntegerFixedLengthArchetype(6));
         //20
-        addFieldArchetype(NUMERO_VERSAO_ARQUIVO, new FieldIntegerFixedLengthArchetype(3));
+        addFieldArchetype(NUMERO_VERSAO_ARQUIVO, new FieldStringFixedLengthArchetype(3));
         //21
         addFieldArchetype(DENSIDADE_GRAVACAO_ARQUIVO, new FieldIntegerFixedLengthArchetype(5));
         //22

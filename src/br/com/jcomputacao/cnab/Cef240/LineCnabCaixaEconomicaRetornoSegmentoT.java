@@ -11,7 +11,7 @@ public class LineCnabCaixaEconomicaRetornoSegmentoT {
 
     private int LOTE_SERVICO;
 
-    private int TIPO_REGISTRO;
+    private String TIPO_REGISTRO;
 
     private int NUMERO_SEQUENCIAL_REG_LOTE;
 
@@ -21,23 +21,23 @@ public class LineCnabCaixaEconomicaRetornoSegmentoT {
 
     private int CODIGO_MOVIMENTO_RETORNO;
 
-    private int USO_EXCLUSIVO_CAIXA1;
+    private String USO_EXCLUSIVO_CAIXA1;
 
-    private int USO_EXCLUSIVO_CAIXA2;
+    private String USO_EXCLUSIVO_CAIXA2;
 
     private int CODIGO_CONVENIO_BANCO;
 
-    private int USO_EXCLUSIVO_CAIXA3;
+    private String USO_EXCLUSIVO_CAIXA3;
 
-    private int NUMERO_BANCO_SACADOS;
+    private String NUMERO_BANCO_SACADOS;
 
-    private int USO_EXCLUSIVO_CAIXA4;
+    private String USO_EXCLUSIVO_CAIXA4;
 
     private int MODALIDADE_NOSSO_NUMERO;
 
-    private int IDENTIFICACAO_TITULO_BANCO;
+    private String IDENTIFICACAO_TITULO_BANCO;
 
-    private int USO_EXCLUSIVO_CAIXA5;
+    private String USO_EXCLUSIVO_CAIXA5;
 
     private int CODIGO_CARTEIRA;
 
@@ -47,7 +47,7 @@ public class LineCnabCaixaEconomicaRetornoSegmentoT {
 
     private int VENCIMENTO;
 
-    private int VALOR_NOMINAL_TITULO;
+    private double VALOR_NOMINAL_TITULO;
 
     private int CODIGO_BANCO_COBRADOR;
 
@@ -67,7 +67,7 @@ public class LineCnabCaixaEconomicaRetornoSegmentoT {
 
     private String USO_EXCLUSIVO_CAIXA7;
 
-    private int VALOR_TARIFA;
+    private double VALOR_TARIFA;
 
     private String MOTIVO_OCORRENCIA;
 
@@ -89,11 +89,11 @@ public class LineCnabCaixaEconomicaRetornoSegmentoT {
         this.LOTE_SERVICO = LOTE_SERVICO;
     }
 
-    public int getTIPO_REGISTRO() {
+    public String getTIPO_REGISTRO() {
         return TIPO_REGISTRO;
     }
 
-    public void setTIPO_REGISTRO(int TIPO_REGISTRO) {
+    public void setTIPO_REGISTRO(String TIPO_REGISTRO) {
         this.TIPO_REGISTRO = TIPO_REGISTRO;
     }
 
@@ -129,19 +129,19 @@ public class LineCnabCaixaEconomicaRetornoSegmentoT {
         this.CODIGO_MOVIMENTO_RETORNO = CODIGO_MOVIMENTO_RETORNO;
     }
 
-    public int getUSO_EXCLUSIVO_CAIXA1() {
+    public String getUSO_EXCLUSIVO_CAIXA1() {
         return USO_EXCLUSIVO_CAIXA1;
     }
 
-    public void setUSO_EXCLUSIVO_CAIXA1(int USO_EXCLUSIVO_CAIXA1) {
+    public void setUSO_EXCLUSIVO_CAIXA1(String USO_EXCLUSIVO_CAIXA1) {
         this.USO_EXCLUSIVO_CAIXA1 = USO_EXCLUSIVO_CAIXA1;
     }
 
-    public int getUSO_EXCLUSIVO_CAIXA2() {
+    public String getUSO_EXCLUSIVO_CAIXA2() {
         return USO_EXCLUSIVO_CAIXA2;
     }
 
-    public void setUSO_EXCLUSIVO_CAIXA2(int USO_EXCLUSIVO_CAIXA2) {
+    public void setUSO_EXCLUSIVO_CAIXA2(String USO_EXCLUSIVO_CAIXA2) {
         this.USO_EXCLUSIVO_CAIXA2 = USO_EXCLUSIVO_CAIXA2;
     }
 
@@ -153,27 +153,27 @@ public class LineCnabCaixaEconomicaRetornoSegmentoT {
         this.CODIGO_CONVENIO_BANCO = CODIGO_CONVENIO_BANCO;
     }
 
-    public int getUSO_EXCLUSIVO_CAIXA3() {
+    public String getUSO_EXCLUSIVO_CAIXA3() {
         return USO_EXCLUSIVO_CAIXA3;
     }
 
-    public void setUSO_EXCLUSIVO_CAIXA3(int USO_EXCLUSIVO_CAIXA3) {
+    public void setUSO_EXCLUSIVO_CAIXA3(String USO_EXCLUSIVO_CAIXA3) {
         this.USO_EXCLUSIVO_CAIXA3 = USO_EXCLUSIVO_CAIXA3;
     }
 
-    public int getNUMERO_BANCO_SACADOS() {
+    public String getNUMERO_BANCO_SACADOS() {
         return NUMERO_BANCO_SACADOS;
     }
 
-    public void setNUMERO_BANCO_SACADOS(int NUMERO_BANCO_SACADOS) {
+    public void setNUMERO_BANCO_SACADOS(String NUMERO_BANCO_SACADOS) {
         this.NUMERO_BANCO_SACADOS = NUMERO_BANCO_SACADOS;
     }
 
-    public int getUSO_EXCLUSIVO_CAIXA4() {
+    public String getUSO_EXCLUSIVO_CAIXA4() {
         return USO_EXCLUSIVO_CAIXA4;
     }
 
-    public void setUSO_EXCLUSIVO_CAIXA4(int USO_EXCLUSIVO_CAIXA4) {
+    public void setUSO_EXCLUSIVO_CAIXA4(String USO_EXCLUSIVO_CAIXA4) {
         this.USO_EXCLUSIVO_CAIXA4 = USO_EXCLUSIVO_CAIXA4;
     }
 
@@ -185,19 +185,19 @@ public class LineCnabCaixaEconomicaRetornoSegmentoT {
         this.MODALIDADE_NOSSO_NUMERO = MODALIDADE_NOSSO_NUMERO;
     }
 
-    public int getIDENTIFICACAO_TITULO_BANCO() {
+    public String getIDENTIFICACAO_TITULO_BANCO() {
         return IDENTIFICACAO_TITULO_BANCO;
     }
 
-    public void setIDENTIFICACAO_TITULO_BANCO(int IDENTIFICACAO_TITULO_BANCO) {
+    public void setIDENTIFICACAO_TITULO_BANCO(String IDENTIFICACAO_TITULO_BANCO) {
         this.IDENTIFICACAO_TITULO_BANCO = IDENTIFICACAO_TITULO_BANCO;
     }
 
-    public int getUSO_EXCLUSIVO_CAIXA5() {
+    public String getUSO_EXCLUSIVO_CAIXA5() {
         return USO_EXCLUSIVO_CAIXA5;
     }
 
-    public void setUSO_EXCLUSIVO_CAIXA5(int USO_EXCLUSIVO_CAIXA5) {
+    public void setUSO_EXCLUSIVO_CAIXA5(String USO_EXCLUSIVO_CAIXA5) {
         this.USO_EXCLUSIVO_CAIXA5 = USO_EXCLUSIVO_CAIXA5;
     }
 
@@ -233,11 +233,11 @@ public class LineCnabCaixaEconomicaRetornoSegmentoT {
         this.VENCIMENTO = VENCIMENTO;
     }
 
-    public int getVALOR_NOMINAL_TITULO() {
+    public double getVALOR_NOMINAL_TITULO() {
         return VALOR_NOMINAL_TITULO;
     }
 
-    public void setVALOR_NOMINAL_TITULO(int VALOR_NOMINAL_TITULO) {
+    public void setVALOR_NOMINAL_TITULO(double VALOR_NOMINAL_TITULO) {
         this.VALOR_NOMINAL_TITULO = VALOR_NOMINAL_TITULO;
     }
 
@@ -313,11 +313,11 @@ public class LineCnabCaixaEconomicaRetornoSegmentoT {
         this.USO_EXCLUSIVO_CAIXA7 = USO_EXCLUSIVO_CAIXA7;
     }
 
-    public int getVALOR_TARIFA() {
+    public double getVALOR_TARIFA() {
         return VALOR_TARIFA;
     }
 
-    public void setVALOR_TARIFA(int VALOR_TARIFA) {
+    public void setVALOR_TARIFA(double VALOR_TARIFA) {
         this.VALOR_TARIFA = VALOR_TARIFA;
     }
 

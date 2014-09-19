@@ -142,7 +142,7 @@ public class LineCnabCaixaEconomicaRegistroTrailerLote  extends LineArchetype{
         //03
         addFieldArchetype(TIPO_REGISTRO, new FieldFillerArchetype(1,'5'));
         //04
-        addFieldArchetype(TIPO_REGISTRO, new FieldFillerArchetype(1,' '));
+         addFieldArchetype(USO_EXCLUSIVO_FEBRABAN1, new FieldFillerArchetype(9,' '));
         //05
         addFieldArchetype(QUANTIDADE_REGISTROS_LOTE, new FieldIntegerFixedLengthArchetype(6));
         //06

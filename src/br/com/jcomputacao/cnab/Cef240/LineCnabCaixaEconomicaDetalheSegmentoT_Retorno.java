@@ -112,7 +112,7 @@ public class LineCnabCaixaEconomicaDetalheSegmentoT_Retorno extends LineArchetyp
      * POSICAO 033 035 <br>
      * tamanho 3 Numérico
      */
-    public static final String NUMERO_BANCO_SACADOS = "USO_EXCLUSIVO_CAIXA3";
+    public static final String NUMERO_BANCO_SACADOS = "NUMERO_BANCO_SACADOS";
 
     /**
      * 12 <br>
@@ -308,13 +308,13 @@ public class LineCnabCaixaEconomicaDetalheSegmentoT_Retorno extends LineArchetyp
         //11
         addFieldArchetype(USO_EXCLUSIVO_CAIXA3, new FieldFillerArchetype(3, '0'));
         //11.2
-        addFieldArchetype(NUMERO_BANCO_SACADOS, new FieldIntegerFixedLengthArchetype(3));
+        addFieldArchetype(NUMERO_BANCO_SACADOS, new FieldStringFixedLengthArchetype(3));
         //12
         addFieldArchetype(USO_EXCLUSIVO_CAIXA4, new FieldFillerArchetype(4, '0'));
         //13.1
         addFieldArchetype(MODALIDADE_NOSSO_NUMERO, new FieldIntegerFixedLengthArchetype(2));
         //13.2
-        addFieldArchetype(IDENTIFICACAO_TITULO_BANCO, new FieldIntegerFixedLengthArchetype(15));
+        addFieldArchetype(IDENTIFICACAO_TITULO_BANCO, new FieldStringFixedLengthArchetype(15));
         //13.3
         addFieldArchetype(USO_EXCLUSIVO_CAIXA5, new FieldFillerArchetype(1,'0'));
         //14

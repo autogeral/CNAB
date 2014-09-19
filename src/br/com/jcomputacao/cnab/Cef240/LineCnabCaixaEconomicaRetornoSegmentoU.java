@@ -9,25 +9,25 @@ public class LineCnabCaixaEconomicaRetornoSegmentoU {
 
     int CODIGO_BANCO_COMPENSACA;
     int LOTE_SERVIC;
-    int TIPO_REGISTRO;
+    String TIPO_REGISTRO;
     int SEQUENCIAL_REGISTRO;
     String CODIGO_SEGMENTO_REGISTRO;
     String USO_EXCLUSIVO_FEBRABAN1;
     int CODIGO_MOVIMENTO_REMESS;
     int JUROS_MULTA_ENCARGO;
-    int VALOR_DESCONTO_CONCEDIDO;
-    int VALOR_ABATIMENTO_CONCEDIDO;
-    int VALOR_IOF_RECOLHIDO;
-    int VALOR_PAGO_SACADO;
-    int VALOR_LIQUIDO_CREDITAR;
-    int VALOR_OUTRAS_DESPESAS;
-    int VALOR_OUTROS_CREDITOS;
+    double VALOR_DESCONTO_CONCEDIDO;
+    double VALOR_ABATIMENTO_CONCEDIDO;
+    double VALOR_IOF_RECOLHIDO;
+    double VALOR_PAGO_SACADO;
+    double VALOR_LIQUIDO_CREDITAR;
+    double VALOR_OUTRAS_DESPESAS;
+    double VALOR_OUTROS_CREDITOS;
     int DATA_OCORRENCI;
     int DATA_EFETIVACAO_CREDIT;
-    int USO_EXCLUSIVO_FEBRABAN2;
+    String USO_EXCLUSIVO_FEBRABAN2;
     int DATA_DEBITO_TARIF;
     int CODIGO_SACADO_BANCO;
-    int USO_EXCLUSIVO_FEBRABAN3;
+    String USO_EXCLUSIVO_FEBRABAN3;
     int CODIGO_BANCO_CORRESPONDENTE_COMPENSACA;
     int NOSSO_NUMERO_BANCO_CORRESPONDENTE_COMPENSACAO;
     String USO_EXCLUSIVO_FEBRABAN4;
@@ -48,11 +48,11 @@ public class LineCnabCaixaEconomicaRetornoSegmentoU {
         this.LOTE_SERVIC = LOTE_SERVIC;
     }
 
-    public int getTIPO_REGISTRO() {
+    public String getTIPO_REGISTRO() {
         return TIPO_REGISTRO;
     }
 
-    public void setTIPO_REGISTRO(int TIPO_REGISTRO) {
+    public void setTIPO_REGISTRO(String TIPO_REGISTRO) {
         this.TIPO_REGISTRO = TIPO_REGISTRO;
     }
 
@@ -96,59 +96,59 @@ public class LineCnabCaixaEconomicaRetornoSegmentoU {
         this.JUROS_MULTA_ENCARGO = JUROS_MULTA_ENCARGO;
     }
 
-    public int getVALOR_DESCONTO_CONCEDIDO() {
+    public double getVALOR_DESCONTO_CONCEDIDO() {
         return VALOR_DESCONTO_CONCEDIDO;
     }
 
-    public void setVALOR_DESCONTO_CONCEDIDO(int VALOR_DESCONTO_CONCEDIDO) {
+    public void setVALOR_DESCONTO_CONCEDIDO(double VALOR_DESCONTO_CONCEDIDO) {
         this.VALOR_DESCONTO_CONCEDIDO = VALOR_DESCONTO_CONCEDIDO;
     }
 
-    public int getVALOR_ABATIMENTO_CONCEDIDO() {
+    public double getVALOR_ABATIMENTO_CONCEDIDO() {
         return VALOR_ABATIMENTO_CONCEDIDO;
     }
 
-    public void setVALOR_ABATIMENTO_CONCEDIDO(int VALOR_ABATIMENTO_CONCEDIDO) {
+    public void setVALOR_ABATIMENTO_CONCEDIDO(double VALOR_ABATIMENTO_CONCEDIDO) {
         this.VALOR_ABATIMENTO_CONCEDIDO = VALOR_ABATIMENTO_CONCEDIDO;
     }
 
-    public int getVALOR_IOF_RECOLHIDO() {
+    public double getVALOR_IOF_RECOLHIDO() {
         return VALOR_IOF_RECOLHIDO;
     }
 
-    public void setVALOR_IOF_RECOLHIDO(int VALOR_IOF_RECOLHIDO) {
+    public void setVALOR_IOF_RECOLHIDO(double VALOR_IOF_RECOLHIDO) {
         this.VALOR_IOF_RECOLHIDO = VALOR_IOF_RECOLHIDO;
     }
 
-    public int getVALOR_PAGO_SACADO() {
+    public double getVALOR_PAGO_SACADO() {
         return VALOR_PAGO_SACADO;
     }
 
-    public void setVALOR_PAGO_SACADO(int VALOR_PAGO_SACADO) {
+    public void setVALOR_PAGO_SACADO(double VALOR_PAGO_SACADO) {
         this.VALOR_PAGO_SACADO = VALOR_PAGO_SACADO;
     }
 
-    public int getVALOR_LIQUIDO_CREDITAR() {
+    public double getVALOR_LIQUIDO_CREDITAR() {
         return VALOR_LIQUIDO_CREDITAR;
     }
 
-    public void setVALOR_LIQUIDO_CREDITAR(int VALOR_LIQUIDO_CREDITAR) {
+    public void setVALOR_LIQUIDO_CREDITAR(double VALOR_LIQUIDO_CREDITAR) {
         this.VALOR_LIQUIDO_CREDITAR = VALOR_LIQUIDO_CREDITAR;
     }
 
-    public int getVALOR_OUTRAS_DESPESAS() {
+    public double getVALOR_OUTRAS_DESPESAS() {
         return VALOR_OUTRAS_DESPESAS;
     }
 
-    public void setVALOR_OUTRAS_DESPESAS(int VALOR_OUTRAS_DESPESAS) {
+    public void setVALOR_OUTRAS_DESPESAS(double VALOR_OUTRAS_DESPESAS) {
         this.VALOR_OUTRAS_DESPESAS = VALOR_OUTRAS_DESPESAS;
     }
 
-    public int getVALOR_OUTROS_CREDITOS() {
+    public double getVALOR_OUTROS_CREDITOS() {
         return VALOR_OUTROS_CREDITOS;
     }
 
-    public void setVALOR_OUTROS_CREDITOS(int VALOR_OUTROS_CREDITOS) {
+    public void setVALOR_OUTROS_CREDITOS(double VALOR_OUTROS_CREDITOS) {
         this.VALOR_OUTROS_CREDITOS = VALOR_OUTROS_CREDITOS;
     }
 
@@ -168,11 +168,11 @@ public class LineCnabCaixaEconomicaRetornoSegmentoU {
         this.DATA_EFETIVACAO_CREDIT = DATA_EFETIVACAO_CREDIT;
     }
 
-    public int getUSO_EXCLUSIVO_FEBRABAN2() {
+    public String getUSO_EXCLUSIVO_FEBRABAN2() {
         return USO_EXCLUSIVO_FEBRABAN2;
     }
 
-    public void setUSO_EXCLUSIVO_FEBRABAN2(int USO_EXCLUSIVO_FEBRABAN2) {
+    public void setUSO_EXCLUSIVO_FEBRABAN2(String USO_EXCLUSIVO_FEBRABAN2) {
         this.USO_EXCLUSIVO_FEBRABAN2 = USO_EXCLUSIVO_FEBRABAN2;
     }
 
@@ -192,11 +192,11 @@ public class LineCnabCaixaEconomicaRetornoSegmentoU {
         this.CODIGO_SACADO_BANCO = CODIGO_SACADO_BANCO;
     }
 
-    public int getUSO_EXCLUSIVO_FEBRABAN3() {
+    public String getUSO_EXCLUSIVO_FEBRABAN3() {
         return USO_EXCLUSIVO_FEBRABAN3;
     }
 
-    public void setUSO_EXCLUSIVO_FEBRABAN3(int USO_EXCLUSIVO_FEBRABAN3) {
+    public void setUSO_EXCLUSIVO_FEBRABAN3(String USO_EXCLUSIVO_FEBRABAN3) {
         this.USO_EXCLUSIVO_FEBRABAN3 = USO_EXCLUSIVO_FEBRABAN3;
     }
 

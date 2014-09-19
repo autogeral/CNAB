@@ -30,7 +30,7 @@ public class LineCnabCaixaEconomicaRetornoSegmentoP {
     public String NUMERO_DOCUMENTO_COBRANCA;
     public String USO_EXCLUSIVO_CAIXA3;
     public int DATA_VENCIMENTO_TITULO;
-    public int VALOR_NOMINAL_TITULO;
+    public double VALOR_NOMINAL_TITULO;
     public int AGENCIA_ENCARREGADA_COBRANCA;
     public String DIGITO_VERIFICADOR_AGENCIA;
     public int ESPECIE_TITULO;
@@ -41,9 +41,9 @@ public class LineCnabCaixaEconomicaRetornoSegmentoP {
     public int JUROS_MORA_DIA;
     public int CODIGO_DESCONTO1;
     public int DATA_DESCONTO1;
-    public int VALOR_PERC_DESCONTO1;
-    public int VALOR_IOF;
-    public int VALOR_ABATIMENTO;
+    public double VALOR_PERC_DESCONTO1;
+    public double VALOR_IOF;
+    public double VALOR_ABATIMENTO;
     public String IDENTIFICACAO_TITULO_EMPRESA;
     public int CODIGO_PROTESTO;
     public int DIAS_PROTESTO;
@@ -238,11 +238,11 @@ public class LineCnabCaixaEconomicaRetornoSegmentoP {
         this.DATA_VENCIMENTO_TITULO = DATA_VENCIMENTO_TITULO;
     }
 
-    public int getVALOR_NOMINAL_TITULO() {
+    public double getVALOR_NOMINAL_TITULO() {
         return VALOR_NOMINAL_TITULO;
     }
 
-    public void setVALOR_NOMINAL_TITULO(int VALOR_NOMINAL_TITULO) {
+    public void setVALOR_NOMINAL_TITULO(double VALOR_NOMINAL_TITULO) {
         this.VALOR_NOMINAL_TITULO = VALOR_NOMINAL_TITULO;
     }
 
@@ -326,27 +326,27 @@ public class LineCnabCaixaEconomicaRetornoSegmentoP {
         this.DATA_DESCONTO1 = DATA_DESCONTO1;
     }
 
-    public int getVALOR_PERC_DESCONTO1() {
+    public double getVALOR_PERC_DESCONTO1() {
         return VALOR_PERC_DESCONTO1;
     }
 
-    public void setVALOR_PERC_DESCONTO1(int VALOR_PERC_DESCONTO1) {
+    public void setVALOR_PERC_DESCONTO1(double VALOR_PERC_DESCONTO1) {
         this.VALOR_PERC_DESCONTO1 = VALOR_PERC_DESCONTO1;
     }
 
-    public int getVALOR_IOF() {
+    public double getVALOR_IOF() {
         return VALOR_IOF;
     }
 
-    public void setVALOR_IOF(int VALOR_IOF) {
+    public void setVALOR_IOF(double VALOR_IOF) {
         this.VALOR_IOF = VALOR_IOF;
     }
 
-    public int getVALOR_ABATIMENTO() {
+    public double getVALOR_ABATIMENTO() {
         return VALOR_ABATIMENTO;
     }
 
-    public void setVALOR_ABATIMENTO(int VALOR_ABATIMENTO) {
+    public void setVALOR_ABATIMENTO(double VALOR_ABATIMENTO) {
         this.VALOR_ABATIMENTO = VALOR_ABATIMENTO;
     }
 

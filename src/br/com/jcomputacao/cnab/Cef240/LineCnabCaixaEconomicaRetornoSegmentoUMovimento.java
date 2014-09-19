@@ -15,13 +15,13 @@ public class LineCnabCaixaEconomicaRetornoSegmentoUMovimento {
     String USO_EXCLUSIVO_FEBRABAN1;
     int CODIGO_MOVIMENTO_REMESS;
     int JUROS_MULTA_ENCARGO;
-    int VALOR_DESCONTO_CONCEDIDO;
-    int VALOR_ABATIMENTO_CONCEDIDO;
-    int VALOR_IOF_RECOLHIDO;
-    int VALOR_PAGO_SACADO;
-    int VALOR_LIQUIDO_CREDITAR;
-    int VALOR_OUTRAS_DESPESAS;
-    int VALOR_OUTROS_CREDITOS;
+    double VALOR_DESCONTO_CONCEDIDO;
+    double VALOR_ABATIMENTO_CONCEDIDO;
+    double VALOR_IOF_RECOLHIDO;
+    double VALOR_PAGO_SACADO;
+    double VALOR_LIQUIDO_CREDITAR;
+    double VALOR_OUTRAS_DESPESAS;
+    double VALOR_OUTROS_CREDITOS;
     int DATA_OCORRENCI;
     int DATA_EFETIVACAO_CREDITO;
     int NUMERO_BANCO_SACADOS;
@@ -101,63 +101,63 @@ public class LineCnabCaixaEconomicaRetornoSegmentoUMovimento {
         this.JUROS_MULTA_ENCARGO = JUROS_MULTA_ENCARGO;
     }
 
-    public int getVALOR_DESCONTO_CONCEDIDO() {
+    public double getVALOR_DESCONTO_CONCEDIDO() {
         return VALOR_DESCONTO_CONCEDIDO;
     }
 
-    public void setVALOR_DESCONTO_CONCEDIDO(int VALOR_DESCONTO_CONCEDIDO) {
+    public void setVALOR_DESCONTO_CONCEDIDO(double VALOR_DESCONTO_CONCEDIDO) {
         this.VALOR_DESCONTO_CONCEDIDO = VALOR_DESCONTO_CONCEDIDO;
     }
 
-    public int getVALOR_ABATIMENTO_CONCEDIDO() {
+    public double getVALOR_ABATIMENTO_CONCEDIDO() {
         return VALOR_ABATIMENTO_CONCEDIDO;
     }
 
-    public void setVALOR_ABATIMENTO_CONCEDIDO(int VALOR_ABATIMENTO_CONCEDIDO) {
+    public void setVALOR_ABATIMENTO_CONCEDIDO(double VALOR_ABATIMENTO_CONCEDIDO) {
         this.VALOR_ABATIMENTO_CONCEDIDO = VALOR_ABATIMENTO_CONCEDIDO;
     }
 
-    public int getVALOR_IOF_RECOLHIDO() {
+    public double getVALOR_IOF_RECOLHIDO() {
         return VALOR_IOF_RECOLHIDO;
     }
 
-    public void setVALOR_IOF_RECOLHIDO(int VALOR_IOF_RECOLHIDO) {
+    public void setVALOR_IOF_RECOLHIDO(double VALOR_IOF_RECOLHIDO) {
         this.VALOR_IOF_RECOLHIDO = VALOR_IOF_RECOLHIDO;
     }
 
-    public int getVALOR_PAGO_SACADO() {
+    public double getVALOR_PAGO_SACADO() {
         return VALOR_PAGO_SACADO;
     }
 
-    public void setVALOR_PAGO_SACADO(int VALOR_PAGO_SACADO) {
+    public void setVALOR_PAGO_SACADO(double VALOR_PAGO_SACADO) {
         this.VALOR_PAGO_SACADO = VALOR_PAGO_SACADO;
     }
 
-    public int getVALOR_LIQUIDO_CREDITAR() {
+    public double getVALOR_LIQUIDO_CREDITAR() {
         return VALOR_LIQUIDO_CREDITAR;
     }
 
-    public void setVALOR_LIQUIDO_CREDITAR(int VALOR_LIQUIDO_CREDITAR) {
+    public void setVALOR_LIQUIDO_CREDITAR(double VALOR_LIQUIDO_CREDITAR) {
         this.VALOR_LIQUIDO_CREDITAR = VALOR_LIQUIDO_CREDITAR;
     }
 
-    public int getVALOR_OUTRAS_DESPESAS() {
+    public double getVALOR_OUTRAS_DESPESAS() {
         return VALOR_OUTRAS_DESPESAS;
     }
 
-    public void setVALOR_OUTRAS_DESPESAS(int VALOR_OUTRAS_DESPESAS) {
+    public void setVALOR_OUTRAS_DESPESAS(double VALOR_OUTRAS_DESPESAS) {
         this.VALOR_OUTRAS_DESPESAS = VALOR_OUTRAS_DESPESAS;
     }
 
-    public int getVALOR_OUTROS_CREDITOS() {
+    public double getVALOR_OUTROS_CREDITOS() {
         return VALOR_OUTROS_CREDITOS;
     }
 
-    public void setVALOR_OUTROS_CREDITOS(int VALOR_OUTROS_CREDITOS) {
+    public void setVALOR_OUTROS_CREDITOS(double VALOR_OUTROS_CREDITOS) {
         this.VALOR_OUTROS_CREDITOS = VALOR_OUTROS_CREDITOS;
     }
 
-    public int getDATA_OCORRENCI() {
+    public double getDATA_OCORRENCI() {
         return DATA_OCORRENCI;
     }
 
@@ -269,7 +269,4 @@ public class LineCnabCaixaEconomicaRetornoSegmentoUMovimento {
         this.USO_EXCLUSIVO_FEBRABAN3 = USO_EXCLUSIVO_FEBRABAN3;
     }
     
-    
-    
-
 }
