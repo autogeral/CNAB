@@ -1,5 +1,6 @@
 package br.com.jcomputacao.cnab.contaEletronica;
 
+import br.com.jcomputacao.aristoteles.field.FieldArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldDateFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldDecimalFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
@@ -38,11 +39,6 @@ public class ContaEletronicaBilhetacao extends LineArchetype {
      * Tamanho 5
      */
     public static final String CODIGO_NACIONAL_LOCALIDADE = "CNL";
-
-    /**
-     * Tamanho 25
-     */
-    public static final String NOME_LOCALIDADE = "NOME_LOCALIDADE";
     public static final String DDD = "DDD";
     public static final String TELEFONE_NUMERO = "TELEFONE_NUMERO";
     /**
@@ -76,7 +72,7 @@ public class ContaEletronicaBilhetacao extends LineArchetype {
      * Data da ligação<br/>
      * Padrao AAAAMMDD
      */
-    public static final String LIGACAO_DATA = "LIGACAO_DATA";
+    public static final String CHAMADA_DATA = "CHAMADA_DATA";
     public static final String CHAMADA_LOCALIDADE_CNL = "CHAMADA_LOCALIDADE_CNL"; //5
     public static final String CHAMADA_LOCALIDADE_NOME = "CHAMADA_LOCALIDADE_NOME"; //25
     public static final String CHAMADA_LOCALIDADE_UF = "CHAMADA_LOCALIDADE_UF"; //2
@@ -155,20 +151,21 @@ public class ContaEletronicaBilhetacao extends LineArchetype {
         addFieldArchetype(EMISSAO, new FieldDateFixedLengthArchetype("yyyyMMdd"));
         
         addFieldArchetype(IDENTIFICADOR_UNICO_RECURSO, new FieldStringFixedLengthArchetype(25));
-        addFieldArchetype(CODIGO_NACIONAL_LOCALIDADE, new FieldIntegerFixedLengthArchetype(5));
-        addFieldArchetype(NOME_LOCALIDADE, new FieldStringFixedLengthArchetype(25));
+        FieldArchetype fa = new FieldIntegerFixedLengthArchetype(5);
+        fa.setNullableRepresentation("     ");
+        addFieldArchetype(CODIGO_NACIONAL_LOCALIDADE, fa);
         addFieldArchetype(DDD, new FieldStringFixedLengthArchetype(2));
         addFieldArchetype(TELEFONE_NUMERO, new FieldStringFixedLengthArchetype(10));
 
         addFieldArchetype(RECURSO_CARACTERISTICA, new FieldStringFixedLengthArchetype(15));
         addFieldArchetype(RECURSO_DEGRAU, new FieldStringFixedLengthArchetype(2));
-        addFieldArchetype(LIGACAO_DATA, new FieldDateFixedLengthArchetype("yyyyMMdd"));
-        addFieldArchetype(CHAMADA_LOCALIDADE_CNL, new FieldStringFixedLengthArchetype(5));
+        addFieldArchetype(CHAMADA_DATA, new FieldDateFixedLengthArchetype("yyyyMMdd"));
+        addFieldArchetype(CHAMADA_LOCALIDADE_CNL, fa);
         addFieldArchetype(CHAMADA_LOCALIDADE_NOME, new FieldStringFixedLengthArchetype(25));
         addFieldArchetype(CHAMADA_LOCALIDADE_UF, new FieldStringFixedLengthArchetype(2));
         addFieldArchetype(CHAMADA_NACIONAL_INTERNACIONAL, new FieldStringFixedLengthArchetype(2));
         addFieldArchetype(CHAMADA_OPERADORA_CODIGO, new FieldStringFixedLengthArchetype(2));
-        addFieldArchetype(CHAMADA_OPERADORA_NOME, new FieldStringFixedLengthArchetype(2));
+        addFieldArchetype(CHAMADA_OPERADORA_NOME, new FieldStringFixedLengthArchetype(20));
         addFieldArchetype(CHAMADA_PAIS_CODIGO, new FieldStringFixedLengthArchetype(3));
         
         addFieldArchetype(CHAMADA_DDD, new FieldStringFixedLengthArchetype(4));
@@ -178,15 +175,19 @@ public class ContaEletronicaBilhetacao extends LineArchetype {
         addFieldArchetype(CHAMADA_CATEGORIA, new FieldStringFixedLengthArchetype(3));
         addFieldArchetype(CHAMADA_CATEGORIA_DESCRICAO, new FieldStringFixedLengthArchetype(50));
         
-        addFieldArchetype(CHAMADA_HORARIO, new FieldTimeFixedLengthArchetype());
+        fa = new FieldTimeFixedLengthArchetype();
+        fa.setNullableRepresentation("      ");
+        addFieldArchetype(CHAMADA_HORARIO, fa);
         addFieldArchetype(CHAMADA_TIPO, new FieldStringFixedLengthArchetype(1));
         addFieldArchetype(CHAMADA_HORARIO_GRUPO, new FieldStringFixedLengthArchetype(1));
-        addFieldArchetype(CHAMADA_HORARIO_DESCRICAO, new FieldStringFixedLengthArchetype(50));
+        addFieldArchetype(CHAMADA_HORARIO_DESCRICAO, new FieldStringFixedLengthArchetype(25));
         addFieldArchetype(CHAMADA_DEGRAU, new FieldStringFixedLengthArchetype(2));
         addFieldArchetype(CHAMADA_VALOR_SINAL, new FieldStringFixedLengthArchetype(1));
         addFieldArchetype(ICMS_ALIQUOTA, new FieldDecimalFixedLengthArchetype(5,2));
         addFieldArchetype(VALOR_COM_IMPOSTOS, new FieldDecimalFixedLengthArchetype(13,2));
-        addFieldArchetype(CHAMADA_CLASSE_SERVICO, new FieldIntegerFixedLengthArchetype(5));
+        fa = new FieldIntegerFixedLengthArchetype(5);
+        fa.setNullableRepresentation("     ");
+        addFieldArchetype(CHAMADA_CLASSE_SERVICO, fa);
         addFieldArchetype(FILLER, new FieldFillerArchetype(61, ' '));
     }
 }

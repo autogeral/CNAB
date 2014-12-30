@@ -1,11 +1,13 @@
 package br.com.jcomputacao.cnab.contaEletronica;
 
+import br.com.jcomputacao.aristoteles.field.FieldArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldDateFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldDecimalFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.line.LineArchetype;
+import static br.com.jcomputacao.cnab.contaEletronica.ContaEletronicaBilhetacao.CODIGO_NACIONAL_LOCALIDADE;
 
 /**
  * 29/12/2014 10:30:08
@@ -179,7 +181,9 @@ public class ContaEletronicaResumo extends LineArchetype {
         addFieldArchetype(EMISSAO, new FieldDateFixedLengthArchetype("yyyyMMdd"));
         
         addFieldArchetype(IDENTIFICADOR_UNICO_RECURSO, new FieldStringFixedLengthArchetype(25));
-        addFieldArchetype(CODIGO_NACIONAL_LOCALIDADE, new FieldIntegerFixedLengthArchetype(5));
+        FieldArchetype fa = new FieldIntegerFixedLengthArchetype(5);
+        fa.setNullableRepresentation("     ");
+        addFieldArchetype(CODIGO_NACIONAL_LOCALIDADE, fa);
         addFieldArchetype(NOME_LOCALIDADE, new FieldStringFixedLengthArchetype(25));
         addFieldArchetype(DDD, new FieldStringFixedLengthArchetype(2));
         addFieldArchetype(TELEFONE_NUMERO, new FieldStringFixedLengthArchetype(10));
@@ -188,10 +192,12 @@ public class ContaEletronicaResumo extends LineArchetype {
         addFieldArchetype(SERVICO_DESCRICAO, new FieldStringFixedLengthArchetype(35));
         addFieldArchetype(RECURSO_CARACTERISTICA, new FieldStringFixedLengthArchetype(15));
         addFieldArchetype(RECURSO_DEGRAU, new FieldStringFixedLengthArchetype(2));
-        addFieldArchetype(RECURSO_VELOCIDADE, new FieldStringFixedLengthArchetype(2));
+        addFieldArchetype(RECURSO_VELOCIDADE, new FieldStringFixedLengthArchetype(5));
         addFieldArchetype(RECURSO_VELOCIDADE_UNIDADE, new FieldStringFixedLengthArchetype(4));
-        addFieldArchetype(ASSINATURA_PERIODO_INICIO, new FieldDateFixedLengthArchetype("yyyyMMdd"));
-        addFieldArchetype(ASSINATURA_PERIODO_FIM, new FieldDateFixedLengthArchetype("yyyyMMdd"));
+        fa = new FieldDateFixedLengthArchetype("yyyyMMdd");
+        fa.setNullableRepresentation("        ");
+        addFieldArchetype(ASSINATURA_PERIODO_INICIO, fa);
+        addFieldArchetype(ASSINATURA_PERIODO_FIM, fa);
         addFieldArchetype(SERVICO_PERIODO_INICIO, new FieldDateFixedLengthArchetype("yyyyMMdd"));
         addFieldArchetype(SERVICO_PERIODO_FIM, new FieldDateFixedLengthArchetype("yyyyMMdd"));
         addFieldArchetype(CONSUMO_UNIDADE, new FieldStringFixedLengthArchetype(5));
