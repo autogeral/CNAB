@@ -69,8 +69,6 @@ public class ContaEletronicaDesconto extends LineArchetype {
         addFieldArchetype(TELEFONE_NUMERO, new FieldStringFixedLengthArchetype(10));
         addFieldArchetype(CATEGORIA, new FieldStringFixedLengthArchetype(3));
         addFieldArchetype(CATEGORIA_DESCRICAO, new FieldStringFixedLengthArchetype(80));
-        
-        
         addFieldArchetype(VALOR_SINAL, new FieldStringFixedLengthArchetype(1));
         addFieldArchetype(VALOR_BASE, new FieldDecimalFixedLengthArchetype(13,2));
         addFieldArchetype(DESCONTO_PERCENTUAL, new FieldDecimalFixedLengthArchetype(5,2));

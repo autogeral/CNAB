@@ -7,7 +7,6 @@ import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.line.LineArchetype;
-import static br.com.jcomputacao.cnab.contaEletronica.ContaEletronicaBilhetacao.CODIGO_NACIONAL_LOCALIDADE;
 
 /**
  * 29/12/2014 10:30:08
