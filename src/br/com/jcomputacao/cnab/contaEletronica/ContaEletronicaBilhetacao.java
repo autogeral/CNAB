@@ -1,12 +1,13 @@
 package br.com.jcomputacao.cnab.contaEletronica;
 
-import br.com.jcomputacao.aristoteles.field.FieldArchetype;
+import br.com.jcomputacao.aristoteles.field.FieldAlignment;
 import br.com.jcomputacao.aristoteles.field.FieldDateFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldDecimalFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldTimeFixedLengthArchetype;
+import br.com.jcomputacao.aristoteles.field.FieldVolatileArchetye;
 import br.com.jcomputacao.aristoteles.line.LineArchetype;
 
 /**
@@ -151,7 +152,7 @@ public class ContaEletronicaBilhetacao extends LineArchetype {
         addFieldArchetype(EMISSAO, new FieldDateFixedLengthArchetype("yyyyMMdd"));
         
         addFieldArchetype(IDENTIFICADOR_UNICO_RECURSO, new FieldStringFixedLengthArchetype(25));
-        FieldArchetype fa = new FieldIntegerFixedLengthArchetype(5);
+        FieldVolatileArchetye fa = new FieldIntegerFixedLengthArchetype(5);
         fa.setNullableRepresentation("     ");
         addFieldArchetype(CODIGO_NACIONAL_LOCALIDADE, fa);
         addFieldArchetype(DDD, new FieldStringFixedLengthArchetype(2));
@@ -168,7 +169,9 @@ public class ContaEletronicaBilhetacao extends LineArchetype {
         addFieldArchetype(CHAMADA_OPERADORA_NOME, new FieldStringFixedLengthArchetype(20));
         addFieldArchetype(CHAMADA_PAIS_CODIGO, new FieldStringFixedLengthArchetype(3));
         
-        addFieldArchetype(CHAMADA_DDD, new FieldStringFixedLengthArchetype(4));
+        fa = new FieldStringFixedLengthArchetype(4);
+        fa.setAlignment(FieldAlignment.RIGTH);
+        addFieldArchetype(CHAMADA_DDD, fa);
         addFieldArchetype(CHAMADA_TELEFONE, new FieldStringFixedLengthArchetype(10));
         addFieldArchetype(CHAMADA_CONJUGADO, new FieldStringFixedLengthArchetype(2));
         addFieldArchetype(CHAMADA_DURACAO, new FieldDecimalFixedLengthArchetype(6,1));

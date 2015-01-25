@@ -73,8 +73,10 @@ public class ContaEletronicaDesconto extends LineArchetype {
         addFieldArchetype(VALOR_BASE, new FieldDecimalFixedLengthArchetype(13,2));
         addFieldArchetype(DESCONTO_PERCENTUAL, new FieldDecimalFixedLengthArchetype(5,2));
         addFieldArchetype(VALOR_LIQUIDO, new FieldDecimalFixedLengthArchetype(13,2));
-        addFieldArchetype(ACERTO_INICIO, new FieldDateTimeFixedLengthArchetype());
-        addFieldArchetype(ACERTO_FIM, new FieldDateTimeFixedLengthArchetype());
+        FieldDateTimeFixedLengthArchetype fa = new FieldDateTimeFixedLengthArchetype();
+        fa.setNullableRepresentation("              ");
+        addFieldArchetype(ACERTO_INICIO, fa);
+        addFieldArchetype(ACERTO_FIM, fa);
         addFieldArchetype(SERVICO_CLASSE, new FieldStringFixedLengthArchetype(5));
         addFieldArchetype(FILLER, new FieldFillerArchetype(106, ' '));
     }
