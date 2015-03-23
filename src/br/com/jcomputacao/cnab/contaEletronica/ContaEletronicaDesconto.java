@@ -14,7 +14,7 @@ import br.com.jcomputacao.aristoteles.line.LineArchetype;
  */
 public class ContaEletronicaDesconto extends LineArchetype {
     /**
-     * Tipo de Registro - Valor 4 para serviços
+     * Tipo de Registro - Valor 5 para descontos
      */
     public static final String TIPO_REGISTRO = "TIPO_REGISTRO";
     /**
