@@ -1,6 +1,7 @@
 package br.com.jcomputacao.cnab.t240.v060.pagamentos;
 
 import br.com.jcomputacao.aristoteles.field.FieldArchetype;
+import br.com.jcomputacao.aristoteles.field.FieldDefaultArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldIntegerFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldStringFixedLengthArchetype;
@@ -36,6 +37,7 @@ public class LineCnab240v060SegmentoB extends LineCnab240SegmentoB {
      */
     public static final String CODIGO_HISTORICO = "CODIGO_HISTORICO";
     public static final String EXCLUSIVO_FEBRABAN_3 = "EXCLUSIVO_FEBRABAN_3";
+    public static final String TED_INSTITUICAO_FINANCEIRA = "TED_INSTITUICAO_FINANCEIRA";
 
     /**
      * Podem haver ate 5 ocorrencias</br>
@@ -168,9 +170,10 @@ public class LineCnab240v060SegmentoB extends LineCnab240SegmentoB {
         addFieldArchetype(HORARIO_ENVIO_TED, fa);
         addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(11, ' '));
         addFieldArchetype(CODIGO_HISTORICO, new FieldIntegerFixedLengthArchetype(4));
-        addFieldArchetype(EXCLUSIVO_FEBRABAN_3, new FieldFillerArchetype(1, ' '));
+        addFieldArchetype(EXCLUSIVO_FEBRABAN_3, new FieldFillerArchetype(2, ' '));
+        addFieldArchetype(TED_INSTITUICAO_FINANCEIRA, new FieldDefaultArchetype("N"));
         
-        fa = new FieldStringFixedLengthArchetype(10);
+        fa = new FieldStringFixedLengthArchetype(8);
         fa.setNullableRepresentation("          ");
         addFieldArchetype(OCORRENCIAS_RETORNO, fa);
     }

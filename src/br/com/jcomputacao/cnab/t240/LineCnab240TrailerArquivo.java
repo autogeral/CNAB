@@ -78,10 +78,10 @@ public class LineCnab240TrailerArquivo extends LineArchetype{
          //06
          addFieldArchetype(QTDE_REGISTROS_ARQUIVO, new FieldIntegerFixedLengthArchetype(6));
          //07
-         FieldIntegerFixedLengthArchetype fa = new FieldIntegerFixedLengthArchetype(6);
-         fa.setAcceptNullable(true);
-         addFieldArchetype(QTDE_CONTAS_CONCIL, fa);
+//         FieldIntegerFixedLengthArchetype fa = new FieldIntegerFixedLengthArchetype(6);
+//         fa.setAcceptNullable(true);
+//         addFieldArchetype(QTDE_CONTAS_CONCIL, fa);
          //08
-         addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(205, ' '));
+         addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(211, ' '));
     }
 }

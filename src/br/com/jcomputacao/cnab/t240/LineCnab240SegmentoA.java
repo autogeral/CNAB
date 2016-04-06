@@ -45,7 +45,11 @@ public class LineCnab240SegmentoA extends LineArchetype {
      */
     public static final String CODIGO_MOVIMENTO = "CODIGO_MOVIMENTO";
     /**
-     * Atribuir "" se nao for utilizar
+     * 000 = CC
+     * 018 = TED CIP
+     * 810 = TED STR
+     * 700 = DOC 888 =TED CIP ou STR. Utilizado quando a Instituição Financeira de crédito não possuir Código na Câmara de Compensação. (Nota G030)
+     * No caso do Favorecido/Beneficiário da TED ser uma Instituição Financeira, utilizar 810-TED STR.
      */
     public static final String CODIGO_CAMARA_CENTRALIZADORA = "CODIGO_CAMARA_CENTRALIZADORA";
     public static final String CODIGO_BANCO_PAGADOR_FAVORECIDO = "CODIGO_BANCO_PAGADOR_FAVORECIDO";
@@ -134,7 +138,7 @@ public class LineCnab240SegmentoA extends LineArchetype {
         ccc = new FieldStringFixedLengthArchetype(20);
         ccc.setNullableRepresentation("");
         addFieldArchetype(NOSSO_NUMERO, ccc);
-        addFieldArchetype(DATA_REAL, new FieldDateFixedLengthArchetype("ddMMyyyy"));
+        addFieldArchetype(DATA_REAL, new FieldDefaultArchetype("00000000"));
         addFieldArchetype(VALOR_REAL, new FieldDecimalFixedLengthArchetype(15, 2));
         ccc = new FieldStringFixedLengthArchetype(40);
         ccc.setNullableRepresentation("");
