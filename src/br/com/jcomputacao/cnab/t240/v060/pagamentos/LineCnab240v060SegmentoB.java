@@ -170,8 +170,12 @@ public class LineCnab240v060SegmentoB extends LineCnab240SegmentoB {
         addFieldArchetype(HORARIO_ENVIO_TED, fa);
         addFieldArchetype(EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(11, ' '));
         addFieldArchetype(CODIGO_HISTORICO, new FieldIntegerFixedLengthArchetype(4));
-        addFieldArchetype(EXCLUSIVO_FEBRABAN_3, new FieldFillerArchetype(2, ' '));
-        addFieldArchetype(TED_INSTITUICAO_FINANCEIRA, new FieldDefaultArchetype("N"));
+        fa = new FieldIntegerFixedLengthArchetype(2);
+        fa.setNullableRepresentation("  ");
+        addFieldArchetype(EXCLUSIVO_FEBRABAN_3, fa);
+        addFieldArchetype(TED_INSTITUICAO_FINANCEIRA, new FieldStringFixedLengthArchetype(1));
+//        addFieldArchetype(EXCLUSIVO_FEBRABAN_3, new FieldFillerArchetype(2, ' '));
+//        addFieldArchetype(TED_INSTITUICAO_FINANCEIRA, new FieldDefaultArchetype("N"));
         
         fa = new FieldStringFixedLengthArchetype(8);
         fa.setNullableRepresentation("          ");
