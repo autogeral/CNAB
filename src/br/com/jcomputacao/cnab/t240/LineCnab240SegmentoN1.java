@@ -23,7 +23,7 @@ public class LineCnab240SegmentoN1 extends LineCnab240SegmentoN {
         addFieldArchetype(VALOR_TRIBUTO, new FieldDecimalFixedLengthArchetype(15, 2));
         addFieldArchetype(VALOR_OUTRAS_ENTIDADES, new FieldDecimalFixedLengthArchetype(15, 2));
         addFieldArchetype(ATUALIZACAO_MONETARIA, new FieldDecimalFixedLengthArchetype(15, 2));
-        addFieldArchetype(CNAB, new FieldFillerArchetype(3, ' '));
+        addFieldArchetype(CNAB, new FieldFillerArchetype(45, ' '));
         addFieldArchetype(OCORRENCIAS, new FieldStringFixedLengthArchetype(10));
     }
 }
