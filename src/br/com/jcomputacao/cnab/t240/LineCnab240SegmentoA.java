@@ -138,7 +138,10 @@ public class LineCnab240SegmentoA extends LineArchetype {
         ccc = new FieldStringFixedLengthArchetype(20);
         ccc.setNullableRepresentation("");
         addFieldArchetype(NOSSO_NUMERO, ccc);
-        addFieldArchetype(DATA_REAL, new FieldDefaultArchetype("00000000"));
+        FieldDateFixedLengthArchetype d = new FieldDateFixedLengthArchetype("ddMMyyyy");
+        d.setNullableRepresentation("00000000");
+        addFieldArchetype(DATA_REAL, d);
+//        addFieldArchetype(DATA_REAL, new FieldDefaultArchetype("00000000"));
         addFieldArchetype(VALOR_REAL, new FieldDecimalFixedLengthArchetype(15, 2));
         ccc = new FieldStringFixedLengthArchetype(40);
         ccc.setNullableRepresentation("");
