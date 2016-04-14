@@ -30,7 +30,7 @@ public class LineCnab240SegmentoN4  extends LineCnab240SegmentoN {
         addFieldArchetype(DIVIDA_ATIVA_ETIQUETA, new FieldIntegerFixedLengthArchetype(13));
         addFieldArchetype(REFERENCIA, new FieldIntegerFixedLengthArchetype(6));
         addFieldArchetype(PARCELA_NOTIFICACAO, new FieldIntegerFixedLengthArchetype(13));
-        addFieldArchetype(VALOR_RECEITA, new FieldDecimalFixedLengthArchetype(13, 2));
+        addFieldArchetype(VALOR_RECEITA, new FieldDecimalFixedLengthArchetype(15, 2));
         addFieldArchetype(VALOR_JUROS, new FieldDecimalFixedLengthArchetype(14, 2));
         addFieldArchetype(VALOR_MULTA, new FieldDecimalFixedLengthArchetype(14, 2));
         addFieldArchetype(CNAB, new FieldFillerArchetype(1, ' '));
