@@ -1,5 +1,6 @@
 package br.com.jcomputacao.cnab.t240;
 
+import br.com.jcomputacao.aristoteles.field.FieldArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldDateFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldDecimalFixedLengthArchetype;
 import br.com.jcomputacao.aristoteles.field.FieldFillerArchetype;
@@ -30,6 +31,8 @@ public class LineCnab240SegmentoN2 extends LineCnab240SegmentoN {
         addFieldArchetype(JUROS_ENCARGOS, new FieldDecimalFixedLengthArchetype(15, 2));
         addFieldArchetype(VENCIMENTO, new FieldDateFixedLengthArchetype("ddMMyyyy"));
         addFieldArchetype(CNAB, new FieldFillerArchetype(18, ' '));
-        addFieldArchetype(OCORRENCIAS, new FieldStringFixedLengthArchetype(10));
+        FieldArchetype fa = new FieldStringFixedLengthArchetype(10);
+        fa.setNullableRepresentation("");
+        addFieldArchetype(OCORRENCIAS, fa);
     }
 }
