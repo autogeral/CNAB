@@ -66,22 +66,22 @@ public class LineCnabCaixaEconomicaDetalheSegmentoQRemessa extends LineArchetype
     public static final String USO_EXCLUSIVO_FEBRABAN1 = "USO_EXCLUSIVO_FEBRABAN1";
     
     /**
-     * 7<br>
-     * CODIGO DO MOVIMENTO DE REMESSA - NUMERICO<br>
-     * Códigos de Movimento para Remessa tratados pelo Banco do Brasil:<br>
-     * 01 – Entrada de títulos
-     * 02 – Pedido de baixa
-     * 04 – Concessão de Abatimento
-     * 05 – Cancelamento de Abatimento
-     * 06 – Alteração de Vencimento
-     * 07 – Concessão de Desconto
-     * 08 – Cancelamento de Desconto
-     * 09 – Protestar
-     * 10 – Cancela/Sustação da Instrução de protesto
-     * 30 – Recusa da Alegação do Sacado
-     * 31 – Alteração de Outros Dados
-     * 40 – Alteração de Modalidade.
-     * POSICAO 016 017<br>
+     * 7<br/>
+     * CODIGO DO MOVIMENTO DE REMESSA - NUMERICO<br/>
+     * Códigos de Movimento para Remessa tratados pelo Banco do Brasil:<br/>
+     * 01 – Entrada de títulos<br/>
+     * 02 – Pedido de baixa<br/>
+     * 04 – Concessão de Abatimento<br/>
+     * 05 – Cancelamento de Abatimento<br/>
+     * 06 – Alteração de Vencimento<br/>
+     * 07 – Concessão de Desconto<br/>
+     * 08 – Cancelamento de Desconto<br/>
+     * 09 – Protestar<br/>
+     * 10 – Cancela/Sustação da Instrução de protesto<br/>
+     * 30 – Recusa da Alegação do Sacado<br/>
+     * 31 – Alteração de Outros Dados<br/>
+     * 40 – Alteração de Modalidade.<br/>
+     * POSICAO 016 017<br/>
      * 
      * tamanho 2
      */
