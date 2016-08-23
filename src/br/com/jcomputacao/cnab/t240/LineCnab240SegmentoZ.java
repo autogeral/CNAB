@@ -45,13 +45,29 @@ public class LineCnab240SegmentoZ extends LineArchetype {
      */
     public static final String CODIGO_SEGMENTO = "CODIGO_SEGMENTO";
 
+    /**
+     * AUTENTICACAO DO PAGAMENTO
+     * POSICAO 015 078
+     */
+    
+    public static final String PAGAMENTO_AUTENTICACAO = "PAGAMENTO_AUTENTICACAO";
+    
+    /**
+     * PROTOCOLO DO PAGAMENTO
+     * POSICAO 079 103
+     */
+    
+    public static final String PROTOCOLO_PAGAMENTO = "PROTOCOLO_PAGAMENTO";
+
     public LineCnab240SegmentoZ() {
         setName("CNAB 240v084 - Segmento Z");
         addFieldArchetype(CODIGO_BANCO_COMPENSACAO, new FieldStringFixedLengthArchetype(3));
         addFieldArchetype(CODIGO_LOTE, new FieldIntegerFixedLengthArchetype(4));
         addFieldArchetype(TIPO_REGISTRO, new FieldDefaultArchetype("3"));
         addFieldArchetype(SEQUENCIAL_REGISTRO, new FieldIntegerFixedLengthArchetype(5));
-        addFieldArchetype(CODIGO_SEGMENTO, new FieldDefaultArchetype("S"));
+        addFieldArchetype(CODIGO_SEGMENTO, new FieldDefaultArchetype("Z"));
+        addFieldArchetype(PAGAMENTO_AUTENTICACAO, new FieldStringFixedLengthArchetype(64));
+        addFieldArchetype(PROTOCOLO_PAGAMENTO, new FieldStringFixedLengthArchetype(25));
 
     }
 
