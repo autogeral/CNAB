@@ -59,11 +59,11 @@ public class LineCnabHeaderLoteRemessaTest {
         //09
         lm.setFieldValue(LineCnab240v040HeaderLote.TIPO_INSCRICAO, 2);
         //10
-        lm.setFieldValue(LineCnab240v040HeaderLote.NUMERO_INSCRICAO, "10276553000125");
+        lm.setFieldValue(LineCnab240v040HeaderLote.NUMERO_INSCRICAO, 10276553000125L);
         //11
         lm.setFieldValue(LineCnab240v040HeaderLote.RESERVADO_USO_BANCO3, "                    ");
         //12
-        lm.setFieldValue(LineCnab240v040HeaderLote.CODIGO_TRASMISSAO, "006500005534372");
+        lm.setFieldValue(LineCnab240v040HeaderLote.CODIGO_TRASMISSAO, 6500005534372L);
         //13
         lm.setFieldValue(LineCnab240v040HeaderLote.RESERVADO_USO_BANCO4, "     ");
         //14
