@@ -106,10 +106,20 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
      */
     public static final String NOSSO_NUMERO = "NOSSO_NUMERO";
     /**
+     * <br>'1' = Cobrança Simples (Eletrônica com Registro)</br>
+     * <br>'2' = Cobrança Simples (Rápida com Registro, Eletrônica com Registro e Convencional com Registro)</br>
+     * <br>'3' = Cobrança Caucionada (Eletrônica com Registro e Convencional com Registro)</br>
+     * <br>'4' = Cobrança Descontada (Eletrônica com Registro)</br>
+     * <br>'5' = Cobrança Simples (Rápida com Registro)</br>
+     * <br>'6' = Cobrança Caucionada (Rápida com Registro)</br>
+     * <br>'7' = Transferência de Titularidade - Sem Devolução (Cobrança Simples - Eletrônica com Registro e Rápida com Registro)*</br>
+     * <br>'8' = Cobrança Cessão (Eletrônica com Registro)</br>
+     * <br>'9' = Transferência de Titularidade - Com Devolução (Cobrança Simples - Eletrônica com Registro e Rápida com Registro)</br>
      * POSICAO 58
      **/
     public static final String TIPO_DE_COBRANCA = "TIPO_DE_COBRANCA";
     /**
+     * <br>'1' = Cobrança Registrada (Rápida e Eletrônica com Registro)</br>
      * POSICAO 59
      **/
     public static final String FORMA_CADASTRO_TITULO_BANCO = "FORMA_CADASTRO_TITULO_BANCO";
@@ -209,9 +219,12 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
     public static final String DATA_EMISSAO_TITULO = "DATA_EMISSAO_TITULO";
     /**
      * POSICAO 118
-     * '1' = Valor por Dia
-     * '2' = Taxa Mensal
-     * '3' = Isento
+     * <br>'1' = Valor por Dia</br>
+     * <br>'2' = Taxa Mensal</br>
+     * <br>'3' = Isento</br>
+     * <br>'4' = Utilizar comissão permanência do Banco por dia de atraso, o campo “taxa mensal” não deverá conter informação</br>
+     * <br>'5' = Tolerância valor por dia (cobrar juros a partir de)</br>
+     * <br>'6' = Tolerância taxa mensal (cobrar juros a partir de)</br>
      */
     public static final String CODIGO_JUROS_MORA = "CODIGO_JUROS_MORA";
     /**
@@ -221,14 +234,22 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
     public static final String DATA_JUROS_MORA = "DATA_JUROS_MORA";
     // 127 A 141
     public static final String JUROS_MORA_POR_DIA = "JUROS_MORA_POR_DIA";
-    //142
+    /**
+     * 142
+     * <br>'1' = Valor Fixo Até a Data Informada</br>
+     * <br>'2' = Percentual Até a Data Informada</br>
+     * <br>'3' = Valor por Antecipação Dia Corrido</br>
+     * <br>'4' = Valor por antecipação dia útil - Informar o valor no campo "valor de desconto a ser concedido"</br>
+     * <br>Para os código 1 e 2 será obrigatório a informação da "data"</br>
+     * </br>NOTA: é possível informar até duas ocorrências de desconto, por ex.:</br>
+     * <br>Segmento P : Valor do titulo R$ 100,00 Vencimento 30/09/1998</br>
+     * <br>( Desconto 1 R$ 10,00 p/ pagamento até 25/09/1998</br>
+     * <br>Segmento R: < Desconto 2 R$ 8,00 p/ pagamento até 20/09/1998</br>
+     */
     public static final String CODIGO_DESCONTO_1 = "CODIGO_DESCONTO_1";
     /**
      * DATA_DESCONTO_1
      * 143 A 150
-     * '1' = Valor Fixo Até a Data Informada
-     * '2' = Percentual Até a Data Informada
-     * '3' = Valor por Antecipação Dia Corrido
      **/
     public static final String DATA_DESCONTO_1 = "DATA_DESCONTO_1";
     //151 A 165
