@@ -154,11 +154,11 @@ public class LineCnab240v040HeaderLote extends LineArchetype{
         //09
         addFieldArchetype(TIPO_INSCRICAO, new FieldIntegerFixedLengthArchetype(1));
         //10
-        addFieldArchetype(NUMERO_INSCRICAO, new FieldStringFixedLengthArchetype(15));
+        addFieldArchetype(NUMERO_INSCRICAO, new FieldIntegerFixedLengthArchetype(15));
         //11
         addFieldArchetype(RESERVADO_USO_BANCO3, new FieldFillerArchetype(20, ' '));
         //12
-        addFieldArchetype(CODIGO_TRASMISSAO, new FieldStringFixedLengthArchetype(15));
+        addFieldArchetype(CODIGO_TRASMISSAO, new FieldIntegerFixedLengthArchetype(15));
         //13
         addFieldArchetype(RESERVADO_USO_BANCO4, new FieldFillerArchetype(5, ' '));
         //14

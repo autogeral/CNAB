@@ -18,8 +18,8 @@ public class Cnab240v040HeaderTraillerLote {
     private int versaoLayout;
     private final String servicoDescricao = "COBRANCA";
     private int tipoInscricao;
-    private int numeroInscricao;
-    private String numeroDaInscricao;
+    private long numeroInscricao;
+    private Long numeroDaInscricao;
     private String codTransmissao;
     private int codCedente;
     private String nomeCedente;
@@ -84,19 +84,19 @@ public class Cnab240v040HeaderTraillerLote {
         this.tipoInscricao = tipoInscricao;
     }
     
-    public int getNumeroInscricao() {
+    public long getNumeroInscricao() {
         return numeroInscricao;
     }
 
-    public void setNumeroInscricao(int numeroInscricao) {
+    public void setNumeroInscricao(long numeroInscricao) {
         this.numeroInscricao = numeroInscricao;
     }
 
-    public String getNumeroDaInscricao() {
+    public Long getNumeroDaInscricao() {
         return numeroDaInscricao;
     }
 
-    public void setNumeroDaInscricao(String numeroDaInscricao) {
+    public void setNumeroDaInscricao(Long numeroDaInscricao) {
         this.numeroDaInscricao = numeroDaInscricao;
     }
 
