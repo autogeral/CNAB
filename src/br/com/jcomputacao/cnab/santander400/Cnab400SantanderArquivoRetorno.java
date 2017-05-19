@@ -9,6 +9,9 @@ import br.com.jcomputacao.aristoteles.line.LineModel;
 import br.com.jcomputacao.cnab.LineCnabRegistroHeaderRetorno;
 import br.com.jcomputacao.cnab.LineCnabRegistroMovimentoRetorno;
 import br.com.jcomputacao.cnab.LineCnabRegistroTraillerRetorno;
+import br.com.jcomputacao.cnab.bb400.LineCnabBBRegistroHeaderRetorno;
+import br.com.jcomputacao.cnab.bb400.LineCnabBBRegistroMovimentoRetorno;
+import br.com.jcomputacao.cnab.bb400.LineCnabBBRegistroTraillerRetorno;
 import br.com.jcomputacao.cnab.util.NumberUtil;
 import java.text.ParseException;
 import java.util.Date;
@@ -19,14 +22,33 @@ import java.util.Date;
  */
 public class Cnab400SantanderArquivoRetorno {
 
+    private int bancoCodigo = 33;
+
+    public int getBancoCodigo() {
+        return bancoCodigo;
+    }
+
+    public void setBancoCodigo(int bancoCodigo) {
+        this.bancoCodigo = bancoCodigo;
+    }
+
     public void trataLinha(Cnab400SantanderLoteRetorno retorno, String buf) throws ParseException {
         if (buf == null) {
             return;
         }
         if (buf.startsWith("0")) {
-            trataHeaderRetorno(buf, retorno);
+            setBancoCodigo(Integer.parseInt(buf.substring(76, 79)));
+            if (getBancoCodigo() == 33) {
+                trataHeaderRetorno(buf, retorno);
+            } else {
+                trataHeaderRetornoBB(buf, retorno);
+            }
         } else if (buf.startsWith("9")) {
-            trataTraillerRetorno(buf, retorno);
+            if (getBancoCodigo() == 33) {
+                trataTraillerRetorno(buf, retorno);
+            } else {
+                trataTraillerRetornoBB(buf, retorno);
+            }
         }
     }
 
@@ -191,6 +213,126 @@ public class Cnab400SantanderArquivoRetorno {
         field = (FieldVolatile) lineModel.getField(LineCnabRegistroTraillerRetorno.NUMERO_VERSAO);
         retorno.setNumeroVersao((Long) field.getValue());
         field = (FieldVolatile) lineModel.getField(LineCnabRegistroTraillerRetorno.NUMERO_SEQUENCIAL_REGISTRO_ARQUIVO);
+        retorno.setNumeroSequencialRegistroArquivo((Long) field.getValue());
+    }
+
+    private void trataHeaderRetornoBB(String buf, Cnab400SantanderLoteRetorno retorno) throws ParseException {
+        LineCnabBBRegistroHeaderRetorno lar = new LineCnabBBRegistroHeaderRetorno();
+        LineModel lineModel = lar.createModel();
+        lineModel.setRepresentation(buf);
+//        FieldVolatile field = (FieldVolatile) lineModel.getField(LineCnabRegistroHeaderRetorno.CODIGO_REGISTRO);
+//        retorno.setCodigoRegistro((Long) field.getValue());
+        FieldVolatile field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroHeaderRetorno.CODIGO_REMESSA);
+        retorno.setCodigoRemessa((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroHeaderRetorno.LITERAL_TRANSMISSAO);
+        retorno.setLiteralTransmissao((String) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroHeaderRetorno.CODIGO_SERVICO);
+        retorno.setCodigoServico((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroHeaderRetorno.LITERAL_SERVICO);
+        retorno.setLiteralServico((String) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroHeaderRetorno.NOME_CEDENTE);
+        retorno.setNomeCedente((String) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroHeaderRetorno.CODIGO_BANCO);
+        retorno.setCodigoBanco((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroHeaderRetorno.NOME_BANCO);
+        retorno.setNomeBanco((String) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroHeaderRetorno.DATA_GRAVACAO_ARQUIVO);
+        retorno.setDataMovimento((Date) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroHeaderRetorno.NUMERO_SEQUENCIAL_REGISTRO_ARQUIVO);
+        retorno.setNumeroSequencialRegistroArquivo((Long) field.getValue());
+    }
+
+    public Cnab400SantanderMovimentoRetorno trataMovimentoRetornoBB (String buf, Cnab400SantanderMovimentoRetorno movimentoRetorno) throws ParseException {
+        LineCnabBBRegistroMovimentoRetorno lar = new LineCnabBBRegistroMovimentoRetorno();
+        LineModel lineModel = lar.createModel();
+        lineModel.setRepresentation(buf);
+
+        FieldVolatile field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.CODIGO_REGISTRO);
+        movimentoRetorno.setCodigoRegistro((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.TIPO_INSCRICAO_CEDENTE);
+        movimentoRetorno.setTipoInscricaoCedente((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.CGC_CPF_CEDENTE);
+        movimentoRetorno.setCgcCpfCedente((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.INDENTIFICACAO_CEDENTE);        
+        String identificacaoCedente = (String) field.getValue();
+        movimentoRetorno.setCodigoAgenciaCedente(Long.parseLong(identificacaoCedente.substring(5, 9)));        
+        movimentoRetorno.setContaMovimentoCedente(Long.parseLong(identificacaoCedente.substring(9, 17)));        
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.NUMERO_CONTROLE_PARTICIPANTE);
+        movimentoRetorno.setNumeroControleParticipante((String) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.NOSSO_NUMERO_1);
+        movimentoRetorno.setNossoNumero1((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.CODIGO_CARTEIRA);
+        movimentoRetorno.setCodigoCarteira((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.CODIGO_OCORRENCIA);
+        movimentoRetorno.setCodigoOcorrencia((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.DATA_OCORRENCIA);
+        movimentoRetorno.setDataOcorrencia((Date) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.SEU_NUMERO);
+        movimentoRetorno.setSeuNumero((String) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.NOSO_NUMERO_2);
+        movimentoRetorno.setNossoNumero2((Long) field.getValue());                
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.MOTIVO_REJEICAO_OCORRENCIA);     
+        //segundo o layout do Bradesco, o codigo do motivo tem no máximo 3 dígitos
+        String motivoRejeicao = Long.toString((Long) field.getValue());
+        if(!motivoRejeicao.isEmpty() && motivoRejeicao.length() > 3) {
+            motivoRejeicao = motivoRejeicao.substring(0, 3);
+        }
+        movimentoRetorno.setCodigoErroPrimeiraOcorrencia(motivoRejeicao);
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.DATA_VENCIMENTO_TITULO);
+        movimentoRetorno.setDataVencimentoTitulo((Date) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.VALOR_TITULO);
+        movimentoRetorno.setValorTitulo(NumberUtil.asDouble(field.getValue()));
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.NUMERO_BANCO_COBRADOR);
+        movimentoRetorno.setNumeroBancoCobrador((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.CODIGO_AGENCIA_RECEBEDORA_TITULO);
+        movimentoRetorno.setCodigoAgenciaRecebedoraTitulo((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.ESPECIE_DOCUMENTO);
+        movimentoRetorno.setEspecieDocumento((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.VALOR_TARIFA_COBRADA);
+        movimentoRetorno.setValorTarifaCobrada(NumberUtil.asDouble(field.getValue()));
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.VALOR_OUTRAS_DESPESAS);
+        movimentoRetorno.setValorOutrasDespesas(NumberUtil.asDouble(field.getValue()));
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.VALOR_JUROS_ATRASO);
+        movimentoRetorno.setValorJurosAtraso(NumberUtil.asDouble(field.getValue()));
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.VALOR_IOF_DEVIDO);
+        movimentoRetorno.setValorIofDevido(NumberUtil.asDouble(field.getValue()));
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.VALOR_ABATIMENTO_CONCEDIDO);
+        movimentoRetorno.setValorAbatimentoConcedido(NumberUtil.asDouble(field.getValue()));
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.VALOR_DESCONTO_CONCEDIDO);
+        movimentoRetorno.setValorDescontoConcedido(NumberUtil.asDouble(field.getValue()));
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.VALOR_TOTAL_RECEBIDO);
+        movimentoRetorno.setValorTotalRecebido(NumberUtil.asDouble(field.getValue()));
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.VALOR_JUROS_MORA);
+        movimentoRetorno.setValorJurosMora(NumberUtil.asDouble(field.getValue()));
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.VALOR_OUTROS_CREDITOS);
+        movimentoRetorno.setValorOutrosCreditos(NumberUtil.asDouble(field.getValue()));        
+        movimentoRetorno.setCodigoAceite("N");
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.DATA_CREDITO);
+        movimentoRetorno.setDataCredito((Date) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroMovimentoRetorno.NUMERO_SEQUENCIAL_REGISTRO_ARQUIVO);
+        movimentoRetorno.setNumeroSequencialRegistroArquivo((Long) field.getValue());
+        return movimentoRetorno;
+    }
+
+    private void trataTraillerRetornoBB(String buf, Cnab400SantanderLoteRetorno retorno) throws ParseException {
+        LineCnabBBRegistroTraillerRetorno lar = new LineCnabBBRegistroTraillerRetorno();
+        LineModel lineModel = lar.createModel();
+        lineModel.setRepresentation(buf);
+//        FieldVolatile field = (FieldVolatile) lineModel.getField(LineCnabRegistroTraillerRetorno.CODIGO_REGISTRO);
+//        retorno.setCodigoRegistro((Long) field.getValue());
+        FieldVolatile field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroTraillerRetorno.CODIGO_REMESSA);
+        retorno.setCodigoRemessa((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroTraillerRetorno.CODIGO_SERVICO);
+        retorno.setCodigoServico((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroTraillerRetorno.CODIGO_BANCO);
+        retorno.setCodigoBanco((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroTraillerRetorno.QUANTIDADE_REGISTROS_COBRANCAS_SIMPLES_REFERENTE_CEDENTE);
+        retorno.setQuantidadeRegistrosCobrancasSimplesReferenteCedente((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroTraillerRetorno.VALOR_TITULOS_COBRANCA_SIMPLES_REFERENTE_CEDENTE);
+        retorno.setValorTitulosCobrancaSimplesReferenteCedente(NumberUtil.asDouble(field.getValue()));
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroTraillerRetorno.NUMERO_AVISO_COBRANCA_SIMPLES);
+        retorno.setNumeroAvisoCobrancaSimples((Long) field.getValue());
+        field = (FieldVolatile) lineModel.getField(LineCnabBBRegistroTraillerRetorno.NUMERO_SEQUENCIAL_REGISTRO_ARQUIVO);
         retorno.setNumeroSequencialRegistroArquivo((Long) field.getValue());
     }
 }
