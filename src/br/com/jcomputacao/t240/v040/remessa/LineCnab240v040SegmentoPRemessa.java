@@ -262,12 +262,10 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
     public static final String IDENTIFICACAO_TITULO_EMPRESA = "IDENTIFICACAO_TITULO_EMPRESA";
     /**
      * CODIGO_PARA_PROTESTO
+     * '0' = Não Protestar
      * '1' = Protestar Dias Corridos
      * '2' = Protestar Dias Úteis
-     * '3' = Não Protestar
-     * ‘4’ = Protestar Fim Falimentar - Dias Úteis
-     * ‘5’ = Protestar Fim Falimentar - Dias Corridos
-     * ‘8’ = Negativação sem Protesto
+     * '3' = Utilizar Perfil Cedente     
      * '9' = Cancelamento Protesto Automático (somente válido p/ CódigoMovimento Remessa = '31' - Descrição C004)
      * 221
      **/
@@ -279,7 +277,7 @@ public class LineCnab240v040SegmentoPRemessa extends LineArchetype {
      * Posicao 224
      * '1' = Baixar / Devolver
      * '2' = Não Baixar / Não Devolver
-     * '3' = Cancelar Prazo para Baixa / Devolução (somente válido p/ CódigoMovimento Remessa = '31' - Descrição C004)
+     * '3' = Utilizar Perfil Cedente
      */
     
     public static final String CODIGO_PARA_BAIXA_DEVOLUCAO = "CODIGO_PARA_BAIXA_DEVOLUCAO";
