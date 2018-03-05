@@ -1,11 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.jcomputacao.cnab.t240.v040.cobranca;
 
-import br.com.jcomputacao.cnab.util.NumberUtil;
 import java.util.Date;
 
 /**
@@ -162,7 +156,7 @@ public class Cnab240v040SegmentosRemessaRetorno {
     }
 
     public void setCodBancoString(String codBanco) {
-        this.codBancoString = codBancoString;
+        this.codBancoString = codBanco;
     }
 
     public int getCodBanco() {
@@ -876,4 +870,37 @@ public class Cnab240v040SegmentosRemessaRetorno {
     public void setCodBancoCorrespondente(int codBancoCorrespondente) {
         this.codBancoCorrespondente = codBancoCorrespondente;
     }   
+
+    /**
+     * Quem deve executar este metodo eh o segmento U
+     * @param ultimoSegmentoT 
+     */
+    public void unirSegmentosUeT(Cnab240v040SegmentosRemessaRetorno segT) {
+        String tipoSegmentoU = this.getCodSegmento();
+        String tipoSegmentoT = segT.getCodSegmento();
+        if (!"U".equals(tipoSegmentoU) || !"T".equals(tipoSegmentoT)) {
+            throw new IllegalArgumentException("Metodo unirSegmentosUeT() so deve ser chamado a partir de um objeto de segmento U com um ojeto segmento T como parametro");
+        }
+        this.setAgenciaDoCedente(segT.getAgenciaDoCedente());
+        this.setDigAgenciaCedente(segT.getDigAgenciaCedente());
+        this.setNumContaCorrente(segT.getNumContaCorrente());
+        this.setDigVerificadorConta(segT.getDigVerificadorConta());
+        this.setNossoNumero(segT.getNossoNumero());
+        this.setNossoNumero(segT.getNossoNumeroString());
+        this.setCodCarteira(segT.getCodCarteira());
+        this.setNumeroCobranca(segT.getNumeroCobranca());
+        this.setDataVencimentoTitulo(segT.getDataVencimentoTitulo());
+        this.setValorTitulo(segT.getValorTitulo());
+        this.setNumeroBanco(segT.getNumeroBanco());
+        this.setNumAgencia(segT.getNumAgencia());
+        this.setDigVerificadorAgCedente(segT.getDigVerificadorAgCedente());
+        this.setIdentificacaoTituloEmpresa(segT.getIdentificacaoTituloEmpresa());
+        this.setCodMoeda(segT.getCodMoeda());
+        this.setTipoInscricaoSacado(segT.getTipoInscricaoSacado());
+        this.setNumeroInscricaoSacado(segT.getNumeroInscricaoSacado());
+        this.setNomeSacado(segT.getNomeSacado());
+        this.setContaCobranca(segT.getContaCobranca());
+        this.setValorTarifa(segT.getValorTarifa());
+        this.setMotivoOcorrencia(segT.getMotivoOcorrencia());
+    }
 }
