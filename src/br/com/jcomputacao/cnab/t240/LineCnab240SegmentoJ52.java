@@ -69,55 +69,55 @@ public class LineCnab240SegmentoJ52 extends LineArchetype {
       * TIPO DE INSCRICAO
       * POSICAO 020 A 020
       */
-     public static final String TIPO_INSCRICAO_1 = "TIPO_INSCRICAO_1";
+     public static final String TIPO_INSCRICAO_PAGADOR = "TIPO_INSCRICAO_PAGADOR";
      
      /*
       * NUMERO DE INSCRICAO
       * POSICAO 021 A 035
       */
-     public static final String NUMERO_INSCRICAO_1 = "NUMERO_INSCRICAO_1";
+     public static final String NUMERO_INSCRICAO_PAGADOR = "NUMERO_INSCRICAO_PAGADOR";
      
      /*
       * NOME
       * POSICAO 036 A 075 
       */
-     public static final String NOME_1 = "NOME_1";
+     public static final String NOME_PAGADOR = "NOME_PAGADOR";
      
           /* 
       * TIPO DE INSCRICAO
       * POSICAO 076 A 076
       */
-     public static final String TIPO_INSCRICAO_2 = "TIPO_INSCRICAO_2";
+     public static final String TIPO_INSCRICAO_BENEFICIARIO = "TIPO_INSCRICAO_BENEFICIARIO";
      
      /*
       * NUMERO DE INSCRICAO
       * POSICAO 077 A 091
       */
-     public static final String NUMERO_INSCRICAO_2 = "NUMERO_INSCRICAO_2";
+     public static final String NUMERO_INSCRICAO_BENEFICIARIO = "NUMERO_INSCRICAO_BENEFICIARIO";
      
      /*
       * NOME
       * POSICAO 092 A 131 
       */
-     public static final String NOME_2 = "NOME_2";
+     public static final String NOME_BENEFICIARIO = "NOME_BENEFICIARIO";
      
           /* 
       * TIPO DE INSCRICAO
       * POSICAO 132 A 132
       */
-     public static final String TIPO_INSCRICAO_3 = "TIPO_INSCRICAO_3";
+     public static final String TIPO_INSCRICAO_SACADOR = "TIPO_INSCRICAO_SACADOR";
      
      /*
       * NUMERO DE INSCRICAO
       * POSICAO 133 A 147
       */
-     public static final String NUMERO_INSCRICAO_3 = "NUMERO_INSCRICAO_3";
+     public static final String NUMERO_INSCRICAO_SACADOR = "NUMERO_INSCRICAO_SACADOR";
      
      /*
       * NOME
       * POSICAO 148 A 187 
       */
-     public static final String NOME_3 = "NOME_3";
+     public static final String NOME_SACADOR = "NOME_SACADOR";
      
       /*
       * USO EXCLUSIVO FEBRABAN - PADRAO BRANCOS
@@ -134,16 +134,16 @@ public class LineCnab240SegmentoJ52 extends LineArchetype {
          addFieldArchetype(CODIGO_SEGMENTO, new FieldDefaultArchetype("J"));
          addFieldArchetype(USO_EXCLUSIVO_FEBRABAN_1, new FieldFillerArchetype(1, ' '));
          addFieldArchetype(CODIGO_MOVIMENTO, new FieldIntegerFixedLengthArchetype(2));
-         addFieldArchetype(IDENTIFICACAO_REGISTRO_OPCIONAL, new FieldIntegerFixedLengthArchetype(2));
-         addFieldArchetype(TIPO_INSCRICAO_1, new FieldIntegerFixedLengthArchetype(1));
-         addFieldArchetype(NUMERO_INSCRICAO_1, new FieldIntegerFixedLengthArchetype(15));
-         addFieldArchetype(NOME_1, new FieldStringFixedLengthArchetype(40));
-         addFieldArchetype(TIPO_INSCRICAO_2, new FieldIntegerFixedLengthArchetype(1));
-         addFieldArchetype(NUMERO_INSCRICAO_2, new FieldIntegerFixedLengthArchetype(15));
-         addFieldArchetype(NOME_2, new FieldStringFixedLengthArchetype(40));
-         addFieldArchetype(TIPO_INSCRICAO_3, new FieldIntegerFixedLengthArchetype(1));
-         addFieldArchetype(NUMERO_INSCRICAO_3, new FieldIntegerFixedLengthArchetype(15));
-         addFieldArchetype(NOME_3, new FieldStringFixedLengthArchetype(40));
+         addFieldArchetype(IDENTIFICACAO_REGISTRO_OPCIONAL, new FieldDefaultArchetype("52"));
+         addFieldArchetype(TIPO_INSCRICAO_PAGADOR, new FieldIntegerFixedLengthArchetype(1));
+         addFieldArchetype(NUMERO_INSCRICAO_PAGADOR, new FieldIntegerFixedLengthArchetype(15));
+         addFieldArchetype(NOME_PAGADOR, new FieldStringFixedLengthArchetype(40));
+         addFieldArchetype(TIPO_INSCRICAO_BENEFICIARIO, new FieldIntegerFixedLengthArchetype(1));
+         addFieldArchetype(NUMERO_INSCRICAO_BENEFICIARIO, new FieldIntegerFixedLengthArchetype(15));
+         addFieldArchetype(NOME_BENEFICIARIO, new FieldStringFixedLengthArchetype(40));
+         addFieldArchetype(TIPO_INSCRICAO_SACADOR, new FieldIntegerFixedLengthArchetype(1));
+         addFieldArchetype(NUMERO_INSCRICAO_SACADOR, new FieldIntegerFixedLengthArchetype(15));
+         addFieldArchetype(NOME_SACADOR, new FieldStringFixedLengthArchetype(40));
          addFieldArchetype(USO_EXCLUSIVO_FEBRABAN_2, new FieldFillerArchetype(53, ' '));
      }    
 }
