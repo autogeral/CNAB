@@ -133,7 +133,7 @@ public class LineCnab240SegmentoJ52 extends LineArchetype {
          addFieldArchetype(SEQUENCIAL_REGISTRO, new FieldIntegerFixedLengthArchetype(5));
          addFieldArchetype(CODIGO_SEGMENTO, new FieldDefaultArchetype("J"));
          addFieldArchetype(USO_EXCLUSIVO_FEBRABAN_1, new FieldFillerArchetype(1, ' '));
-         addFieldArchetype(CODIGO_MOVIMENTO, new FieldIntegerFixedLengthArchetype(2));
+         addFieldArchetype(CODIGO_MOVIMENTO, new FieldStringFixedLengthArchetype(2));
          addFieldArchetype(IDENTIFICACAO_REGISTRO_OPCIONAL, new FieldDefaultArchetype("52"));
          addFieldArchetype(TIPO_INSCRICAO_PAGADOR, new FieldIntegerFixedLengthArchetype(1));
          addFieldArchetype(NUMERO_INSCRICAO_PAGADOR, new FieldIntegerFixedLengthArchetype(15));
