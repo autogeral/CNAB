@@ -13,40 +13,40 @@ import com.ancientprogramming.fixedformat4j.annotation.Record;
  */
 @Record
 public class LineCnabRetornoRegistroTrailer {
-    private String codigoRegistro;
-    private String codigoRetorno;
+    private String codigoRegistroTrailer;
+    private String codigoRetornoTrailer;
     private String tipoRegisro;
-    private String codigoBanco;
-    private String branco1;
+    private String codigoBancoTrailer;
+    private String brancoTrailer;
     private String qtdRegistros1;
-    private String branco2;
+    private String brancoTrailer2;
     private String qtdRegistros2;
     private String valorRegistros1;
-    private String branco3;
+    private String brancoTrailer3;
     private String qtdRegistros3;
-    private String branco4;
+    private String brancoTrailer4;
     private String qtdRegistros4;
     private String valorRegistros2;
-    private String branco5;
-    private String sequencialRegistro;
+    private String brancoTrailer5;
+    private String sequencialRegistroTrailer;
    
     
     //Identificação de registro = 9
     @Field(offset = 1, length = 1)
-    public String getStringCodigoRegistro() {
-        return codigoRegistro;
+    public String getCodigoRegistroTrailer() {
+        return codigoRegistroTrailer;
     }
-    public void setStringCodigoRegistro(String codigoRegistro) {
-        this.codigoRegistro = codigoRegistro;
+    public void setCodigoRegistroTrailer(String codigoRegistroTrailer) {
+        this.codigoRegistroTrailer = codigoRegistroTrailer;
     }
 
     // Identificação do retorno = 2
     @Field(offset = 2, length = 1)
-    public String getStringcodigoRetorno() {
-        return codigoRetorno;
+    public String getCodigoRetornoTrailer() {
+        return codigoRetornoTrailer;
     }
-    public void setStringcodigoRetorno(String codigoRetorno) {
-        this.codigoRetorno = codigoRetorno;
+    public void setCodigoRetornoTrailer(String codigoRetornoTrailer) {
+        this.codigoRetornoTrailer = codigoRetornoTrailer;
     }
 
     // Identificação do tipo de registro = 01
@@ -60,20 +60,20 @@ public class LineCnabRetornoRegistroTrailer {
 
     // Código banco = 077
     @Field(offset = 5, length = 3)
-    public String getStringcodigoBanco() {
-        return codigoBanco;
+    public String getCodigoBancoTrailer() {
+        return codigoBancoTrailer;
     }
-    public void setStringcodigoBanco(String codigoBanco) {
-        this.codigoBanco = codigoBanco;
+    public void setCodigoBancoTrailer(String codigoBancoTrailer) {
+        this.codigoBancoTrailer = codigoBancoTrailer;
     }
     
     //Identificação da empresa beneficiária no Inter = Carteira (112), Agência (0001) e Conta corrente 
     @Field(offset = 8, length = 10)
-    public String getStringbranco1() {
-        return branco1;
+    public String getBrancoTrailer() {
+        return brancoTrailer;
     }
-    public void setStringbranco1(String branco1) {
-        this.branco1 = branco1;
+    public void setBrancoTrailer(String brancoTrailer) {
+        this.brancoTrailer = brancoTrailer;
     }
     
     //Nº Controle de participante=  Uso da empresa
@@ -87,11 +87,11 @@ public class LineCnabRetornoRegistroTrailer {
     
     // Zeros
     @Field(offset = 26, length = 32)
-    public String getStringbranco2() {
-        return branco2;
+    public String getBrancoTrailer2() {
+        return brancoTrailer2;
     }
-    public void setStringbranco2(String branco2) {
-        this.branco2 = branco2;
+    public void setBrancoTrailer2(String brancoTrailer2) {
+        this.brancoTrailer2 = brancoTrailer2;
     }
     
     //Identificação do título no banco= ("Nosso número")
@@ -114,11 +114,11 @@ public class LineCnabRetornoRegistroTrailer {
 
     // Carteira = 112
     @Field(offset = 75, length = 12)
-    public String getStringbranco3() {
-        return branco3;
+    public String getBrancoTrailer3() {
+        return brancoTrailer3;
     }
-    public void setStringbranco3(String branco3) {
-        this.branco3 = branco3;
+    public void setBrancoTrailer3(String brancoTrailer3) {
+        this.brancoTrailer3 = brancoTrailer3;
     }
 
     //Identificação de ocorrência = 02. Entrada confirmada (verificar motivo na posição XXX a XXX)
@@ -134,11 +134,11 @@ public class LineCnabRetornoRegistroTrailer {
     
     //Data ocorrência no banco = DDMMAA
     @Field(offset =92 , length = 24)
-    public String getStringbranco4() {
-        return branco4;
+    public String getBrancoTrailer4() {
+        return brancoTrailer4;
     }
-    public void setStringbranco4(String branco4) {
-        this.branco4 = branco4;
+    public void setBrancoTrailer4(String brancoTrailer4) {
+        this.brancoTrailer4 = brancoTrailer4;
     }
     
     // Nº do Documento = Seu número
@@ -160,24 +160,24 @@ public class LineCnabRetornoRegistroTrailer {
     }  
     // Branco
     @Field(offset =133 , length = 262)
-    public String getStringbranco5() {
-        return branco5;
+    public String getBrancoTrailer5() {
+        return brancoTrailer5;
     }
-    public void setStringbranco5(String branco5) {
-        this.branco5 = branco5;
+    public void setBrancoTrailer5(String brancoTrailer5) {
+        this.brancoTrailer5 = brancoTrailer5;
     }
     
     // Nº Sequencial registro
     @Field(offset =395 , length = 6)
-    public String getStringsequencialRegistro() {
-        return sequencialRegistro;
+    public String getSequencialRegistroTrailer() {
+        return sequencialRegistroTrailer;
     }
-    public void setStringsequencialRegistro(String sequencialRegistro) {
-        this.sequencialRegistro = sequencialRegistro;
+    public void setSequencialRegistroTrailer(String sequencialRegistroTrailer) {
+        this.sequencialRegistroTrailer = sequencialRegistroTrailer;
     }
     
     @Override
     public String toString() {
-        return "Registro0002HeaderArquivo{" + "codigoRegistro=" + codigoRegistro + ", codigoRetorno=" + codigoRetorno + ", tipoRegisro=" + tipoRegisro + ", codigoBanco=" + codigoBanco + ", branco1=" + branco1 + ", qtdRegistros1=" + qtdRegistros1 + ", branco2=" + branco2 + ", qtdRegistros2=" + qtdRegistros2 + ", valorRegistros1=" + valorRegistros1 + ", branco3=" + branco3 + ", qtdRegistros3=" + qtdRegistros3 + ",branco4= " + branco4 + ",qtdRegistros4= " + qtdRegistros4 + ",valorRegistros2= " + valorRegistros2 + ",branco5= " + branco5 + ",sequencialRegistro= " + sequencialRegistro + "}";
+        return "Registro0002HeaderArquivo{" + "codigoRegistro=" + codigoRegistroTrailer + ", codigoRetornoTrailer=" + codigoRetornoTrailer + ", tipoRegisro=" + tipoRegisro + ", codigoBancoTrailer=" + codigoBancoTrailer + ", brancoTrailer=" + brancoTrailer + ", qtdRegistros1=" + qtdRegistros1 + ", brancoTrailer2=" + brancoTrailer2 + ", qtdRegistros2=" + qtdRegistros2 + ", valorRegistros1=" + valorRegistros1 + ", brancoTrailer3=" + brancoTrailer3 + ", qtdRegistros3=" + qtdRegistros3 + ",brancoTrailer4= " + brancoTrailer4 + ",qtdRegistros4= " + qtdRegistros4 + ",valorRegistros2= " + valorRegistros2 + ",brancoTrailer5= " + brancoTrailer5 + ",sequencialRegistroTrailer= " + sequencialRegistroTrailer + "}";
     }
 }

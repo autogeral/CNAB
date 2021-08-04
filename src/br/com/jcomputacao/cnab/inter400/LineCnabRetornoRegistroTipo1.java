@@ -14,7 +14,7 @@ import com.ancientprogramming.fixedformat4j.annotation.Record;
  */
 @Record
 public class LineCnabRetornoRegistroTipo1 {
-    private String codigoRegistro;
+    private String codigoRegistroTipo;
     private String tipoInscricao;
     private String numeroInscricao;
     private String zeros1;
@@ -22,7 +22,7 @@ public class LineCnabRetornoRegistroTipo1 {
     private String controleParticipante;
     private String zeros2;
     private String nossoNumero1;
-    private String branco1;
+    private String brancoTipo1;
     private String carteira;
     private String identificacaoOcorrencia;
     private String dataOcorrencia;
@@ -33,7 +33,7 @@ public class LineCnabRetornoRegistroTipo1 {
     private String bancoCobrador;
     private String agenciaCobradora;
     private String especieTitulo;
-    private String branco2;
+    private String brancoTipo2;
     private String valorPago;
     private String dataCredito;
     private String branco3;
@@ -42,96 +42,96 @@ public class LineCnabRetornoRegistroTipo1 {
     private String inscricaoPagador;
     private String motivoOcorrencia;
     private String branco5;
-    private String sequencialRegistro;
+    private String sequencialRegistroTipo;
    
     
     // Identificação de registro = 1
     @Field(offset = 1, length = 1)
-    public String getStringCodigoRegistro() {
-        return codigoRegistro;
+    public String getCodigoRegistroTipo() {
+        return codigoRegistroTipo;
     }
-    public void setStringCodigoRegistro(String codigoRegistro) {
-        this.codigoRegistro = codigoRegistro;
+    public void setCodigoRegistroTipo(String codigoRegistroTipo) {
+        this.codigoRegistroTipo = codigoRegistroTipo;
     }
 
     // Tipo de inscrição da empresa = 1 Pessoa física (CPF) e 02 Pessoa jurídica (CNPJ) 
     @Field(offset = 2, length = 2)
-    public String getStringtipoInscricao() {
+    public String getTipoInscricao() {
         return tipoInscricao;
     }
-    public void setStringtipoInscricao(String tipoInscricao) {
+    public void setTiipoInscricao(String tipoInscricao) {
         this.tipoInscricao = tipoInscricao;
     }
 
     // Nº Inscrição da empresa = CNPJ ou CPF 
     @Field(offset = 4, length = 14)
-    public String getStringnumeroInscricao() {
+    public String getNumeroInscricao() {
         return numeroInscricao;
     }
-    public void setStringnumeroInscricao(String numeroInscricao) {
+    public void setNumeroInscricao(String numeroInscricao) {
         this.numeroInscricao = numeroInscricao;
     }
 
     // Zeros
     @Field(offset = 18, length = 3)
-    public String getStringzeros1() {
+    public String getZeros1() {
         return zeros1;
     }
-    public void setStringzeros1(String zeros1) {
+    public void setZeros1(String zeros1) {
         this.zeros1 = zeros1;
     }
     
     //Identificação da empresa beneficiária no Inter = Carteira (112), Agência (0001) e Conta corrente 
     @Field(offset = 21, length = 17)
-    public String getStringidentificacaoEmpresa() {
+    public String getIdentificacaoEmpresa() {
         return identificacaoEmpresa;
     }
-    public void setStringidentificacaoEmpresa(String identificacaoEmpresa) {
+    public void setIdentificacaoEmpresa(String identificacaoEmpresa) {
         this.identificacaoEmpresa = identificacaoEmpresa;
     }
     
     //Nº Controle de participante=  Uso da empresa
     @Field(offset = 38, length = 25)
-    public String getStringcontroleParticipante() {
+    public String getControleParticipante() {
         return controleParticipante;
     }
-    public void setStringcontroleParticipante(String controleParticipante) {
+    public void setControleParticipante(String controleParticipante) {
         this.controleParticipante = controleParticipante;
     }
     
     // Zeros
     @Field(offset = 63, length = 8)
-    public String getStringzeros2() {
+    public String getZeros2() {
         return zeros2;
     }
-    public void setStringzeros2(String zeros2) {
+    public void setZeros2(String zeros2) {
         this.zeros2 = zeros2;
     }
     
     //Identificação do título no banco= ("Nosso número")
     @Field(offset = 71, length = 11)
-    public String getStringnossoNumero1() {
+    public String getNossoNumero1() {
         return nossoNumero1;
     }
-    public void setStringnossoNumero1(String nossoNumero1) {
+    public void setNossoNumero1(String nossoNumero1) {
         this.nossoNumero1 = nossoNumero1;
     }
     
     // Branco
     @Field(offset = 82, length = 5)
-    public String getStringbranco1() {
-        return branco1;
+    public String getBrancoTipo1() {
+        return brancoTipo1;
     }
-    public void setStringbranco1(String branco1) {
-        this.branco1 = branco1;
+    public void setBrancoTipo1(String brancoTipo1) {
+        this.brancoTipo1 = brancoTipo1;
     }
 
     // Carteira = 112
     @Field(offset = 87, length = 3)
-    public String getStringcarteira() {
+    public String getCarteira() {
         return carteira;
     }
-    public void setStringcarteira(String carteira) {
+    public void setCarteira(String carteira) {
         this.carteira = carteira;
     }
 
@@ -139,177 +139,177 @@ public class LineCnabRetornoRegistroTipo1 {
     //03. Entrada rejeitada (verificar motivo na posição XXX a XXX)
     // 04. Liquidação normal (sem motivo)
     @Field(offset = 90, length = 2)
-    public String getStringidentificacaoOcorrencia() {
+    public String getIdentificacaoOcorrencia() {
         return identificacaoOcorrencia;
     }
-    public void setStringidentificacaoOcorrencia(String identificacaoOcorrencia) {
+    public void setIdentificacaoOcorrencia(String identificacaoOcorrencia) {
         this.identificacaoOcorrencia = identificacaoOcorrencia;
     }
     
     //Data ocorrência no banco = DDMMAA
     @Field(offset =92 , length = 6)
-    public String getStringdataOcorrencia() {
+    public String getDataOcorrencia() {
         return dataOcorrencia;
     }
-    public void setStringdataOcorrencia(String dataOcorrencia) {
+    public void setDataOcorrencia(String dataOcorrencia) {
         this.dataOcorrencia = dataOcorrencia;
     }
     
     // Nº do Documento = Seu número
    @Field(offset =98 , length = 10)
-    public String getStringseuNumero() {
+    public String getSeuNumero() {
         return seuNumero;
     }
-    public void setStringseuNumero(String seuNumero) {
+    public void setSeuNumero(String seuNumero) {
         this.seuNumero = seuNumero;
     }
      
     // Identificação do título no Inter = Nº banco (nosso número)
     @Field(offset =108 , length = 11)
-    public String getStringnossoNumero2() {
+    public String getNossoNumero2() {
         return nossoNumero2;
     }
-    public void setStringnossoNumero2(String nossoNumero2) {
+    public void setNossoNumero2(String nossoNumero2) {
         this.nossoNumero2 = nossoNumero2;
     }
     
     // Data vencimento do titulo= DDMMAA
     @Field(offset =119 , length = 6)
-    public String getStringdataVencimentoTitulo() {
+    public String getDataVencimentoTitulo() {
         return dataVencimentoTitulo;
     }
-    public void setStringdataVencimentoTitulo(String dataVencimentoTitulo) {
+    public void setDataVencimentoTitulo(String dataVencimentoTitulo) {
         this.dataVencimentoTitulo = dataVencimentoTitulo;
     }
     
     // Valor do titulo = R$ XXX,XXX
     @Field(offset =125 , length = 13)
-    public String getStringvalorTitulo() {
+    public String getValorTitulo() {
         return valorTitulo;
     }
-    public void setStringvalorTitulo(String valorTitulo) {
+    public void setValorTitulo(String valorTitulo) {
         this.valorTitulo = valorTitulo;
     }
     
     // Banco cobrador = 077
     @Field(offset =138 , length = 3)
-    public String getStringbancoCobrador() {
+    public String getBancoCobrador() {
         return bancoCobrador;
     }
-    public void setStringbancoCobrador(String bancoCobrador) {
+    public void setBancoCobrador(String bancoCobrador) {
         this.bancoCobrador = bancoCobrador;
     }
     
     // Agencia cobradora = 0001
     @Field(offset =141 , length = 4)
-    public String getStringagenciaCobradora() {
+    public String getAgenciaCobradora() {
         return agenciaCobradora;
     }
-    public void setStringagenciaCobradora(String agenciaCobradora) {
+    public void setAgenciaCobradora(String agenciaCobradora) {
         this.agenciaCobradora = agenciaCobradora;
     }
     
     // Especie do titulo = 99- Outros
     @Field(offset =145 , length = 2)
-    public String getStringespecieTitulo() {
+    public String getEspecieTitulo() {
         return especieTitulo;
     }
-    public void setStringespecieTitulo(String especieTitulo) {
+    public void setEspecieTitulo(String especieTitulo) {
         this.especieTitulo = especieTitulo;
     }
     
     // Branco
     @Field(offset =147 , length = 13)
-    public String getStringbranco2() {
-        return branco2;
+    public String getBrancoTipo2() {
+        return brancoTipo2;
     }
-    public void setStringbranco2(String branco2) {
-        this.branco2 = branco2;
+    public void setBrancoTipo2(String brancoTipo2) {
+        this.brancoTipo2 = brancoTipo2;
     }
     
     // Valor pago 
     @Field(offset =160 , length = 13)
-    public String getStringvalorPago() {
+    public String getValorPago() {
         return valorPago;
     }
-    public void setStringvalorPago(String valorPago) {
+    public void setValorPago(String valorPago) {
         this.valorPago = valorPago;
     }  
     
     // Data do crédito = DDMMAA
     @Field(offset =173 , length = 6)
-    public String getStringdataCredito() {
+    public String getDataCredito() {
         return dataCredito;
     }
-    public void setStringdataCredito(String dataCredito) {
+    public void setDataCredito(String dataCredito) {
         this.dataCredito = dataCredito;
     } 
     
     // Branco
    @Field(offset =179 , length = 3)
-    public String getStringbranco3() {
+    public String getBranco3() {
         return branco3;
     }
-    public void setStringbranco3(String branco3) {
+    public void setBranco3(String branco3) {
         this.branco3 = branco3;
     }
     
     // Nome do pagador = 
     @Field(offset =182 , length = 40)
-    public String getStringnomePagador() {
+    public String getNomePagador() {
         return nomePagador;
     }
-    public void setStringnomePagador(String nomePagador) {
+    public void setNomePagador(String nomePagador) {
         this.nomePagador = nomePagador;
     }
     
     // Branco 
     @Field(offset =222 , length = 5)
-    public String getStringbranco4() {
+    public String getBranco4() {
         return branco4;
     }
-    public void setStringbranco4(String branco4) {
+    public void setBranco4(String branco4) {
         this.branco4 = branco4;
     }
     
     // N] inscrição do pagador = CNPJ ou CPF
    @Field(offset =227 , length = 14)
-    public String getStringinscricaoPagador() {
+    public String getInscricaoPagador() {
         return inscricaoPagador;
     }
-    public void setStringinscricaoPagador(String inscricaoPagador) {
+    public void setInscricaoPagador(String inscricaoPagador) {
         this.inscricaoPagador = inscricaoPagador;
     }
    
     //Motivos das rejeições para o código de ocorrência 03 da posição 090 a 091 = Motivo para ocorrência 03- Entrada rejeitada
    @Field(offset =241 , length = 140)
-    public String getStringmotivoOcorrencia() {
+    public String getMotivoOcorrencia() {
         return motivoOcorrencia;
     }
-    public void setStringmotivoOcorrencia(String motivoOcorrencia) {
+    public void setMotivoOcorrencia(String motivoOcorrencia) {
         this.motivoOcorrencia = motivoOcorrencia;
     }
     
     // Branco
     @Field(offset =381 , length = 14)
-    public String getStringbranco5() {
+    public String getBranco5() {
         return branco5;
     }
-    public void setStringbranco5(String branco5) {
+    public void setBranco5(String branco5) {
         this.branco5 = branco5;
     }
     
     // Nº Sequencial registro
     @Field(offset =395 , length = 6)
-    public String getStringsequencialRegistro() {
-        return sequencialRegistro;
+    public String getSequencialRegistroTipo() {
+        return sequencialRegistroTipo;
     }
-    public void setStringsequencialRegistro(String sequencialRegistro) {
-        this.sequencialRegistro = sequencialRegistro;
+    public void setSequencialRegistroTipo(String sequencialRegistroTipo) {
+        this.sequencialRegistroTipo = sequencialRegistroTipo;
     }
     
     @Override
     public String toString() {
-        return "Registro0002HeaderArquivo{" + "codigoRegistro=" + codigoRegistro + ", tipoInscricao=" + tipoInscricao + ", numeroInscricao=" + numeroInscricao + ", zeros1=" + zeros1 + ", identificacaoEmpresa=" + identificacaoEmpresa + ", controleParticipante=" + controleParticipante + ", zeros2=" + zeros2 + ", nossoNumero1=" + nossoNumero1 + ", branco1=" + branco1 + ", carteira=" + carteira + ", identificacaoOcorrencia=" + identificacaoOcorrencia + ",dataOcorrencia= " + dataOcorrencia + ",seuNumero= " + seuNumero + ",nossoNumero2= " + nossoNumero2 + ",dataVencimentoTitulo= " + dataVencimentoTitulo + ",valorTitulo= " + valorTitulo + ",agenciaCobradora= " + agenciaCobradora + ",especieTitulo= " + especieTitulo + ",especieTitulo= " + especieTitulo + ",branco2= " + branco2 +", valorPago= " + valorPago + ", dataCredito= " + dataCredito +", branco3= " + branco3 + ",nomePagador= " +nomePagador + ", branco4= " + branco4 +", inscricaoPagador= " + inscricaoPagador + ", motivoOcorrencia= " + motivoOcorrencia + ", branco5= " + branco5 +", sequencialRegistro= " + sequencialRegistro + "}";
+        return "Registro0002HeaderArquivo{" + "codigoRegistroTipo=" + codigoRegistroTipo + ", tipoInscricao=" + tipoInscricao + ", numeroInscricao=" + numeroInscricao + ", zeros1=" + zeros1 + ", identificacaoEmpresa=" + identificacaoEmpresa + ", controleParticipante=" + controleParticipante + ", zeros2=" + zeros2 + ", nossoNumero1=" + nossoNumero1 + ", brancoTipo1=" + brancoTipo1 + ", carteira=" + carteira + ", identificacaoOcorrencia=" + identificacaoOcorrencia + ",dataOcorrencia= " + dataOcorrencia + ",seuNumero= " + seuNumero + ",nossoNumero2= " + nossoNumero2 + ",dataVencimentoTitulo= " + dataVencimentoTitulo + ",valorTitulo= " + valorTitulo + ",agenciaCobradora= " + agenciaCobradora + ",especieTitulo= " + especieTitulo + ",especieTitulo= " + especieTitulo + ",brancoTipo2= " + brancoTipo2 +", valorPago= " + valorPago + ", dataCredito= " + dataCredito +", branco3= " + branco3 + ",nomePagador= " +nomePagador + ", branco4= " + branco4 +", inscricaoPagador= " + inscricaoPagador + ", motivoOcorrencia= " + motivoOcorrencia + ", branco5= " + branco5 +", sequencialRegistroTipo= " + sequencialRegistroTipo + "}";
     }
 }

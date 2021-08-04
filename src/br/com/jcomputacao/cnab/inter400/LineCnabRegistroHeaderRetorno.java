@@ -28,10 +28,10 @@ public class LineCnabRegistroHeaderRetorno {
     private String sequencialRegistro;
 
     @Field(offset = 1, length = 1)
-    public String getIntegerCodigoRegistro() {
+    public String getCodigoRegistro() {
         return codigoRegistro;
     }
-    public void setStringCodigoRegistro(String codigoRegistro) {
+    public void setCodigoRegistro(String codigoRegistro) {
         this.codigoRegistro = codigoRegistro;
     }
 
@@ -68,57 +68,57 @@ public class LineCnabRegistroHeaderRetorno {
     }
     
     @Field(offset = 27, length = 20)
-    public String getStringbranco1() {
+    public String getBranco1() {
         return branco1;
     }
-    public void setStringbranco1(String branco1) {
+    public void setBranco1(String branco1) {
         this.branco1 = branco1;
     }
     
     @Field(offset = 47, length = 30)
-    public String getStringNomeEmpresa() {
+    public String getNomeEmpresa() {
         return nomeEmpresa;
     }
-    public void setStringNomeEmpresa(String nomeEmpresa) {
+    public void setNomeEmpresa(String nomeEmpresa) {
         this.nomeEmpresa = nomeEmpresa;
     }
     
     @Field(offset = 77, length = 3)
-    public String getStringCodigoBanco() {
+    public String getCodigoBanco() {
         return codigoBanco;
     }
-    public void setStringCodigoBanco(String codigoBanco) {
+    public void setCodigoBanco(String codigoBanco) {
         this.codigoBanco = codigoBanco;
     }
     
     @Field(offset = 80, length = 15)
-    public String getStringNomeBanco() {
+    public String getNomeBanco() {
         return nomeBanco;
     }
-    public void setStringNomeBanco(String nomeBanco) {
+    public void setNomeBanco(String nomeBanco) {
         this.nomeBanco = nomeBanco;
     }
 
     @Field(offset = 95, length = 6)
-    public Integer getIntegerDataGravacao() {
+    public Integer getDataGravacao() {
         return dataGravacao;
     }
-    public void setIntegerDataGravacao(Integer dataGravacao) {
+    public void setDataGravacao(Integer dataGravacao) {
         this.dataGravacao = dataGravacao;
     }
 
     @Field(offset = 101, length = 294)
-    public String getStringBranco2() {
+    public String getBranco2() {
         return branco2;
     }
-    public void setStringBranco2(String branco2) {
+    public void setBranco2(String branco2) {
         this.branco2 = branco2;
     }
     @Field(offset =395 , length = 6)
-    public String getStringSequencialRegistro() {
+    public String getSequencialRegistro() {
         return sequencialRegistro;
     }
-    public void setStringSequencialRegistro(String sequencialRegistro) {
+    public void setSequencialRegistro(String sequencialRegistro) {
         this.sequencialRegistro = sequencialRegistro;
     }
     @Override
