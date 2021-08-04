@@ -20,22 +20,22 @@ public class LineCnabRetornoRegistroTrailerTest {
   public void gerarHeaderRetorno() throws ParseException {
       
     LineCnabRetornoRegistroTrailer record = new LineCnabRetornoRegistroTrailer();
-    record.setStringCodigoRegistro("9");
-    record.setStringcodigoRetorno("2");
+    record.setCodigoRegistroTrailer("9");
+    record.setCodigoRetornoTrailer("2");
     record.setStringtipoRegisro("01");
-    record.setStringcodigoBanco("077");
-    record.setStringbranco1("");
+    record.setCodigoBancoTrailer("077");
+    record.setBrancoTrailer("");
     record.setStringqtdRegistros1("");
-    record.setStringbranco2("");
+    record.setBrancoTrailer2("");
     record.setStringqtdRegistros2("");
     record.setStringvalorRegistros1("");
-    record.setStringbranco3("");
+    record.setBrancoTrailer3("");
     record.setStringqtdRegistros3("");
-    record.setStringbranco4("");
+    record.setBrancoTrailer4("");
     record.setStringqtdRegistros4(""); 
     record.setStringvalorRegistros2(""); 
-    record.setStringbranco5("");
-    record.setStringsequencialRegistro("000007");
+    record.setBrancoTrailer5("");
+    record.setSequencialRegistroTrailer("000007");
     
     
     FixedFormatManager manager = new FixedFormatManagerImpl();
@@ -46,22 +46,22 @@ public class LineCnabRetornoRegistroTrailerTest {
     assertEquals(expected, result);
     assertTrue (result.contains(""));
     
-    System.out.println("\nIdentificação d Registro: " + record.getStringCodigoRegistro());
-    System.out.println("Identificação do retorno: " + record.getStringcodigoRetorno());
+    System.out.println("\nIdentificação d Registro: " + record.getCodigoRegistroTrailer());
+    System.out.println("Identificação do retorno: " + record.getCodigoRetornoTrailer());
     System.out.println("Identificação tipo registro: " + record.getStringtipoRegisro());
-    System.out.println("Código do banco: " + record.getStringcodigoBanco());
-    System.out.println("Campo em branco: " + record.getStringbranco1());
+    System.out.println("Código do banco: " + record.getCodigoBancoTrailer());
+    System.out.println("Campo em branco: " + record.getBrancoTrailer());
     System.out.println("Quantidade de registros no arquivo: " + record.getStringqtdRegistros1());
-    System.out.println("Campo em branco: " + record.getStringbranco2());
+    System.out.println("Campo em branco: " + record.getBrancoTrailer2());
     System.out.println("Quantidade de registros: " + record.getStringqtdRegistros2());
     System.out.println("Valor dos registros: " + record.getStringvalorRegistros1());
-    System.out.println("Campo em branco: " + record.getStringbranco3());
+    System.out.println("Campo em branco: " + record.getBrancoTrailer3());
     System.out.println("Quantidade dos registros: " + record.getStringqtdRegistros3());   
-    System.out.println("Campo em branco: " + record.getStringbranco4());
+    System.out.println("Campo em branco: " + record.getBrancoTrailer4());
     System.out.println("Quantidade dos registros: " + record.getStringqtdRegistros4());
     System.out.println("Valor dos registros: " + record.getStringvalorRegistros2());
-    System.out.println("Campo em branco: " + record.getStringbranco5());
-    System.out.println("Nºsequencial do registro: " + record.getStringsequencialRegistro());
+    System.out.println("Campo em branco: " + record.getBrancoTrailer5());
+    System.out.println("Nºsequencial do registro: " + record.getSequencialRegistroTrailer());
    
     System.out.println("Resultado: " + manager.export(record));  
   }

@@ -17,8 +17,11 @@ public class ProcessaArquivoRetornoInterTest {
         FileReader fr = new FileReader("C:/Users/larissa.camargo/Documents/IntegracaoBancoInter/CI400_260721143346669_001.ret");
         BufferedReader br = new BufferedReader(fr);
         String linha;
+        Cnab400InterLoteRetorno loteRetorno = new Cnab400InterLoteRetorno();
+        Cnab400InterArquivoRetorno retorno = new Cnab400InterArquivoRetorno();
         while ((linha= br.readLine()) != null) {
-             System.out.println(linha);
+             System.out.println(linha); 
+             retorno.tratarLinha(loteRetorno, linha);
        }
    }
 }
