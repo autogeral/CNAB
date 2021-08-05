@@ -1,11 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.jcomputacao.cnab.inter400;
 
-import br.com.jcomputacao.cnab.inter400.LineCnabRegistroHeaderRetorno;
 import com.ancientprogramming.fixedformat4j.format.FixedFormatManager;
 import com.ancientprogramming.fixedformat4j.format.impl.FixedFormatManagerImpl;
 import java.text.ParseException;
@@ -25,18 +19,18 @@ public class LineCnabRegistroHeaderRetornoTest {
   public void gerarHeaderRetorno() throws ParseException {
       
     LineCnabRegistroHeaderRetorno record = new LineCnabRegistroHeaderRetorno();
-    record.setCodigoRegistro("0");
-    record.setStringcodigoRetorno("2");
-    record.setStringliteralRetorno("RETORNO");
-    record.setStringCodigoServico("01");
-    record.setStringLiteralServico("COBRANCA");
-    record.setBranco1("");
-    record.setNomeEmpresa("AUTO GERAL AUTOPECAS LTDA.");
-    record.setCodigoBanco("077");
-    record.setNomeBanco("INTER");
-    record.setDataGravacao(300721);
-    record.setBranco2("");
-    record.setSequencialRegistro("000001");
+    record.setCodigoRegistroHeaderRetorno("0");
+    record.setCodigoRetorno("2");
+    record.setLiteralRetorno("RETORNO");
+    record.setCodigoServicoRetorno("01");
+    record.setLiteralServicoRetorno("COBRANCA");
+    record.setBranco1Retorno("");
+    record.setNomeEmpresaRetorno("AUTO GERAL AUTOPECAS LTDA.");
+    record.setCodigoBancoRetorno("077");
+    record.setNomeBancoRetorno("INTER");
+    record.setDataGravacaoRetorno(300721);
+    record.setBranco2Retorno("");
+    record.setSequencialRegistroRetorno("000001");
     
     
     FixedFormatManager manager = new FixedFormatManagerImpl();
@@ -47,18 +41,18 @@ public class LineCnabRegistroHeaderRetornoTest {
     assertEquals(expected, result);
     assertTrue (result.contains(""));
     
-    System.out.println("\nCódigo de Registro: " + record.getCodigoRegistro());
-    System.out.println("Código de Retorno: " + record.getIntegercodigoRetorno());
-    System.out.println("Literal Retorno: " + record.getStringliteralRetorno());
-    System.out.println("Código Serviço: " + record.getStringCodigoServico());
-    System.out.println("Literal Serviço: " + record.getStringLiteralServico());
-    System.out.println("Campo em branco: " + record.getBranco1());
-    System.out.println("Nome da Empresa: " + record.getNomeEmpresa());
-    System.out.println("Código do Banco: " + record.getCodigoBanco());
-    System.out.println("Nome do Banco: " + record.getNomeBanco());
-    System.out.println("Data da Gravação: " + record.getDataGravacao());
-    System.out.println("Campo em branco: " + record.getBranco2());   
-    System.out.println("Sequencial Registro: " + record.getSequencialRegistro());
+    System.out.println("\nCódigo de Registro: " + record.getCodigoRegistroHeaderRetorno());
+    System.out.println("Código de Retorno: " + record.getCodigoRetorno());
+    System.out.println("Literal Retorno: " + record.getLiteralRetorno());
+    System.out.println("Código Serviço: " + record.getCodigoServicoRetorno());
+    System.out.println("Literal Serviço: " + record.getLiteralServicoRetorno());
+    System.out.println("Campo em branco: " + record.getBranco1Retorno());
+    System.out.println("Nome da Empresa: " + record.getNomeEmpresaRetorno());
+    System.out.println("Código do Banco: " + record.getCodigoBancoRetorno());
+    System.out.println("Nome do Banco: " + record.getNomeBancoRetorno());
+    System.out.println("Data da Gravação: " + record.getDataGravacaoRetorno());
+    System.out.println("Campo em branco: " + record.getBranco2Retorno());   
+    System.out.println("Sequencial Registro: " + record.getSequencialRegistroRetorno());
     System.out.println("Resultado: " + manager.export(record));  
   }
 }

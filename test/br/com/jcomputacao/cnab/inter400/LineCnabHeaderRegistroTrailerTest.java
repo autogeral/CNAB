@@ -1,10 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.jcomputacao.cnab.inter400;
-import br.com.jcomputacao.cnab.inter400.LineCnabHeaderRegistroTrailer;
+
 import com.ancientprogramming.fixedformat4j.format.FixedFormatManager;
 import com.ancientprogramming.fixedformat4j.format.impl.FixedFormatManagerImpl;
 import java.text.ParseException;
@@ -24,10 +19,10 @@ public class LineCnabHeaderRegistroTrailerTest {
   public void gerarHeader() throws ParseException {
       
     LineCnabHeaderRegistroTrailer record = new LineCnabHeaderRegistroTrailer();
-    record.setStringidentificacaoRegistro("9");
-    record.setStringqtdBoletos("");
-    record.setStringbranco("");
-    record.setStrinsequencialRegistro("000005");
+    record.setIdentificacaoRegistroTrailer("9");
+    record.setQtdBoletosTrailer("");
+    record.setBrancoTrailer("");
+    record.setSequencialRegistroTrailer("000005");
  
     FixedFormatManager manager = new FixedFormatManagerImpl();
     String expected = "9                                                                                                                                                                                                                                                                                                                                                                                                         000005";
@@ -37,10 +32,10 @@ public class LineCnabHeaderRegistroTrailerTest {
     assertEquals(expected, result);
     assertTrue (result.contains(""));
     
-    System.out.println("\nIdentificação de Registro: " + record.getStringidentificacaoRegistro());
-    System.out.println("Quantidade de Boletos: " + record.getStringqtdBoletos());
-    System.out.println("Campo em Branco: " + record.getStringbranco());
-    System.out.println("Nº Sequencial Registto 4: " + record.getStrinsequencialRegistro());
+    System.out.println("\nIdentificação de Registro: " + record.getIdentificacaoRegistroTrailer());
+    System.out.println("Quantidade de Boletos: " + record.getQtdBoletosTrailer());
+    System.out.println("Campo em Branco: " + record.getBrancoTrailer());
+    System.out.println("Nº Sequencial Registto 4: " + record.getSequencialRegistroTrailer());
     System.out.println("\nResultado: " + manager.export(record));  
   } 
 }

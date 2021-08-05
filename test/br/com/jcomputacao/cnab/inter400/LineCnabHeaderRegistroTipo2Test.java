@@ -1,10 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.jcomputacao.cnab.inter400;
-import br.com.jcomputacao.cnab.inter400.LineCnabHeaderRegistroTipo2;
 import com.ancientprogramming.fixedformat4j.format.FixedFormatManager;
 import com.ancientprogramming.fixedformat4j.format.impl.FixedFormatManagerImpl;
 import java.text.ParseException;
@@ -24,22 +18,22 @@ public class LineCnabHeaderRegistroTipo2Test {
   public void gerarHeader() throws ParseException {
       
     LineCnabHeaderRegistroTipo2 record = new LineCnabHeaderRegistroTipo2();
-    record.setStringtipoRegistro("2");
-    record.setStringmenssagem2(" Menssagem livre(Opcional)");
-    record.setStringmenssagem3(" Menssagem livre(Opcional)");
-    record.setStringmenssagem4(" Menssagem livre(Opcional)");
-    record.setStringmenssagem5(" Menssagem livre(Opcional)");
-    record.setStringdataLimiteConcessaoDesconto2("300721");
-    record.setStringvalorDesconto2("");
-    record.setStringpercentualDesconto2("");
-    record.setStringbranco1("");
-    record.setSStringdataLimiteConcessaoDesconto3("010821");
-    record.setStringvalorDesconto("");
-    record.setStringpercentualDesconto("");
-    record.setStringBranco2("");
-    record.setStringnossoNumero("00000000000");
-    record.setStringBranco3("");
-    record.setStrinsequencialRegistro("000003");
+    record.seTipoRegistro("2");
+    record.setMenssagem2(" Menssagem livre(Opcional)");
+    record.setMenssagem3(" Menssagem livre(Opcional)");
+    record.setMenssagem4(" Menssagem livre(Opcional)");
+    record.setMenssagem5(" Menssagem livre(Opcional)");
+    record.setDataLimiteConcessaoDesconto2("300721");
+    record.setValorDesconto2("");
+    record.setPercentualDesconto2("");
+    record.setBranco1("");
+    record.setDataLimiteConcessaoDesconto3("010821");
+    record.setValorDesconto("");
+    record.setPercentualDesconto("");
+    record.setBranco2("");
+    record.setNossoNumero("00000000000");
+    record.setBranco3("");
+    record.setSequencialRegistro("000003");
  
     FixedFormatManager manager = new FixedFormatManagerImpl();
     String expected = "2 Menssagem livre(Opcional)                                                     Menssagem livre(Opcional)                                                     Menssagem livre(Opcional)                                                     Menssagem livre(Opcional)                                                    300721                           010821                           00000000000    000003";
@@ -49,22 +43,22 @@ public class LineCnabHeaderRegistroTipo2Test {
     assertEquals(expected, result);
     assertTrue (result.contains(""));
     
-    System.out.println("\nTipo de Registro: " + record.getStringtipoRegistro());
-    System.out.println("Menssagem 2: " + record.getStringmenssagem2());
-    System.out.println("Menssagem 3: " + record.getStringmenssagem3());
-    System.out.println("Menssagem 4: " + record.getStringmenssagem4());
-    System.out.println("Menssagem 5: " + record.getStringmenssagem5());
-    System.out.println("Data limite para concessão desconto 2: " + record.getStringdataLimiteConcessaoDesconto2());
-    System.out.println("Valor do desconto 2: " + record.getStringvalorDesconto2());
-    System.out.println("Percentual do desconto 2: " + record.getStringpercentualDesconto2());
-    System.out.println("Campo em branco: " + record.getStringbranco1());
-    System.out.println("Data limite para concessão desconto 3: " + record.getStringdataLimiteConcessaoDesconto3());
-    System.out.println("Valor de desconto 3: " + record.getStringvalorDesconto());
-    System.out.println("Percentual de desconto 3: " + record.getStringpercentualDesconto());
-    System.out.println("Campo em branco: " + record.getStringbranco2());
-    System.out.println("Nosso número: " + record.getStringnossoNumero());
-    System.out.println("Campo em branco: " + record.getStringbranco3());
-    System.out.println("Nº sequencia de registro: " + record.getStrinsequencialRegistro());
+    System.out.println("\nTipo de Registro: " + record.getTipoRegistro());
+    System.out.println("Menssagem 2: " + record.getMenssagem2());
+    System.out.println("Menssagem 3: " + record.getMenssagem3());
+    System.out.println("Menssagem 4: " + record.getMenssagem4());
+    System.out.println("Menssagem 5: " + record.getMenssagem5());
+    System.out.println("Data limite para concessão desconto 2: " + record.getDataLimiteConcessaoDesconto2());
+    System.out.println("Valor do desconto 2: " + record.getValorDesconto2());
+    System.out.println("Percentual do desconto 2: " + record.getPercentualDesconto2());
+    System.out.println("Campo em branco: " + record.getBranco1());
+    System.out.println("Data limite para concessão desconto 3: " + record.getDataLimiteConcessaoDesconto3());
+    System.out.println("Valor de desconto 3: " + record.getValorDesconto());
+    System.out.println("Percentual de desconto 3: " + record.getPercentualDesconto());
+    System.out.println("Campo em branco: " + record.getBranco2());
+    System.out.println("Nosso número: " + record.getNossoNumero());
+    System.out.println("Campo em branco: " + record.getBranco3());
+    System.out.println("Nº sequencia de registro: " + record.getSequencialRegistro());
     System.out.println("\nResultado: " + manager.export(record));  
   }
 }

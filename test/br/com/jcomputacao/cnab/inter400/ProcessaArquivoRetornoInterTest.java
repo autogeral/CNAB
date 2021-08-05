@@ -1,4 +1,5 @@
 package br.com.jcomputacao.cnab.inter400;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -19,9 +20,25 @@ public class ProcessaArquivoRetornoInterTest {
         String linha;
         Cnab400InterLoteRetorno loteRetorno = new Cnab400InterLoteRetorno();
         Cnab400InterArquivoRetorno retorno = new Cnab400InterArquivoRetorno();
-        while ((linha= br.readLine()) != null) {
-             System.out.println(linha); 
+        while ((linha= br.readLine()) != null) {             
              retorno.tratarLinha(loteRetorno, linha);
        }
+       mostraLoteRetorno(loteRetorno);
    }
+
+    private void mostraLoteRetorno(Cnab400InterLoteRetorno loteRetorno) {
+        System.out.println("Header do arquivo");
+        System.out.println(loteRetorno.getLiteralRetorno());
+        if(loteRetorno.getTipo1Retorno() != null 
+                && !loteRetorno.getTipo1Retorno().isEmpty()) {
+            for(Cnab400InterTipo1Retorno c : loteRetorno.getTipo1Retorno()){
+                System.out.println("Registro Tipo1");
+                System.out.println(c.getNomePagador());
+                System.out.println(c.getValorPago());
+            }
+        }
+        System.out.println("Trailler do arquivo");
+        System.out.println(loteRetorno.getCodigoBancoTrailer());
+    }
 }
+
