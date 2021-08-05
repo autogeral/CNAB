@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.jcomputacao.cnab.inter400;
 
 import com.ancientprogramming.fixedformat4j.annotation.Field;
@@ -58,331 +53,331 @@ public class LineCnabHeaderRegistroTipo1 {
     
     // Uso livre da empresa = 1
     @Field(offset = 1, length = 1)
-    public String getStringCodigoRegistro() {
+    public String getCodigoRegistro() {
         return codigoRegistro;
     }
-    public void setStringCodigoRegistro(String codigoRegistro) {
+    public void setCodigoRegistro(String codigoRegistro) {
         this.codigoRegistro = codigoRegistro;
     }
 
     
     @Field(offset = 2, length = 19  ) 
-    public String getStringbranco1() {
+    public String getBranco1() {
         return branco1;
     }
-    public void setStringbranco1(String branco1) {
+    public void setBranco1(String branco1) {
         this.branco1 = branco1;
     }
     
     // Preencher na sequencia com: carteira (112), agência (0001) e o número da conta corrente PJ (se menor que 10 caracteres, preencher com zeros a esquerda).
     @Field(offset = 21, length = 17)
-    public String getStringcarteira() {
+    public String getCarteira() {
         return carteira;
     }
-    public void setStringcarteira(String carteira) {
+    public void setCarteira(String carteira) {
         this.carteira = carteira;
     }
     
     // Uso livre da empresa
     @Field(offset = 38, length = 25)
-    public String getStringcontroleParticipante() {
+    public String getControleParticipante() {
         return controleParticipante;
     }
-    public void setStringcontroleParticipante(String controleParticipante) {
+    public void setControleParticipante(String controleParticipante) {
         this.controleParticipante = controleParticipante;
     }
     
     @Field(offset = 63, length = 3)
-    public String getStringbranco2() {
+    public String getBranco2() {
         return branco2;
     }
-    public void setStringbranco2(String branco2) {
+    public void setBranco2(String branco2) {
         this.branco2 = branco2;
     }
     
     //Se = 0, sem multa; Se = 1, valor fixo de multa ; Se = 2, percentual de multa;
     @Field(offset = 66, length = 1)
-    public String getStringmulta() {
+    public String getMulta() {
         return multa;
     }
-    public void setStringmulta(String multa) {
+    public void setMulta(String multa) {
         this.multa = multa;
     }
     
     // Valor da multa, caso 1 no campo 66. Do contrário, preencher com zeros.
     @Field(offset = 67, length = 13)
-    public String getStringvalorMulta() {
+    public String getValorMulta() {
         return valorMulta;
     }
-    public void setStringvalorMulta(String valorMulta) {
+    public void setValorMulta(String valorMulta) {
         this.valorMulta = valorMulta;
     }
     
     // Percentual de multa com 2 casas decimais, caso 2 no campo 66. Do contrário, preencher com zeros.
     @Field(offset = 80, length = 4)
-    public String getStringpercentualMulta() {
+    public String getPercentualMulta() {
         return percentualMulta;
     }
-    public void setStringpercentualMulta(String percentualMulta) {
+    public void setPercentualMulta(String percentualMulta) {
         this.percentualMulta = percentualMulta;
     }
     
     
     @Field(offset = 84, length = 6)
-    public String getStringdataMulta() {
+    public String getDataMulta() {
         return dataMulta;
     }
-    public void setStringdataMulta(String dataMulta) {
+    public void setDataMulta(String dataMulta) {
         this.dataMulta = dataMulta;
     }
     
     //será preenchido pelo Inter no arquivo retorno
     @Field(offset = 90, length = 11)
-    public String getStringnossoNumero() {
+    public String getNossoNumero() {
         return nossoNumero;
     }
-    public void setStringnossoNumero(String nossoNumero) {
+    public void setNossoNumero(String nossoNumero) {
         this.nossoNumero = nossoNumero;
     }
     
   
     @Field(offset = 101, length = 8)
-    public String getStringbranco3() {
+    public String getBranco3() {
         return branco3;
     }
-    public void setStringBranco3(String branco3) {
+    public void setBranco3(String branco3) {
         this.branco3 = branco3;
     }
     
     // 01 - Remessa
     @Field(offset = 109, length = 2)
-    public String getStringidentificacaoOcorrencia() {
+    public String getIdentificacaoOcorrencia() {
         return identificacaoOcorrencia;
     }
-    public void setSStringidentificacaoOcorrencia(String identificacaoOcorrencia) {
+    public void setIdentificacaoOcorrencia(String identificacaoOcorrencia) {
         this.identificacaoOcorrencia = identificacaoOcorrencia;
     }
     
     //Retorna o mesmo conteúdo no arquivo de retorno
     @Field(offset = 111, length = 10)
-    public String getStringnumeroDocumento() {
+    public String getNumeroDocumento() {
         return numeroDocumento;
     }
-    public void setStringnumeroDocumento(String numeroDocumento) {
+    public void setNumeroDocumento(String numeroDocumento) {
         this.numeroDocumento = numeroDocumento;
     }
     
     @Field(offset =121 , length = 6)
-    public String getStringdataVencimentoTitulo() {
+    public String getDataVencimentoTitulo() {
         return dataVencimentoTitulo;
     }
-    public void setStringdataVencimentoTitulo(String dataVencimentoTitulo) {
+    public void setDataVencimentoTitulo(String dataVencimentoTitulo) {
         this.dataVencimentoTitulo = dataVencimentoTitulo;
     }
     
      @Field(offset =127 , length = 13)
-    public String getStringvalorTitulo() {
+    public String getValorTitulo() {
         return valorTitulo;
     }
-    public void setStringvalorTitulo(String valorTitulo) {
+    public void setValorTitulo(String valorTitulo) {
         this.valorTitulo = valorTitulo;
     }
     
     //Informar "30" ou "60". Esses são os dias decorridos da data de vencimento do título em que ainda será possível o pagamento
     @Field(offset =140 , length = 2)
-    public String getStringdataLimitePagamento() {
+    public String getDataLimitePagamento() {
         return dataLimitePagamento;
     }
-    public void setStringdataLimitePagamento(String dataLimitePagamento) {
+    public void setDataLimitePagamento(String dataLimitePagamento) {
         this.dataLimitePagamento = dataLimitePagamento;
     }
 
     
     @Field(offset =142 , length = 6)
-    public String getStringbranco4() {
+    public String getBranco4() {
         return branco4;
     }
-    public void setStringbranco4(String branco4) {
+    public void setBranco4(String branco4) {
         this.branco4 = branco4;
     }
     
     // 99 - Outros
     @Field(offset =148 , length = 2)
-    public String getStringespecieTitulo() {
+    public String getEspecieTitulo() {
         return especieTitulo;
     }
-    public void setStringespecieTitulo(String especieTitulo) {
+    public void setEspecieTitulo(String especieTitulo) {
         this.especieTitulo = especieTitulo;
     }
     
     // Sempre = N
     @Field(offset =150 , length = 1)
-    public String getStringcodigoIdentificacao() {
+    public String getCodigoIdentificacao() {
         return codigoIdentificacao;
     }
-    public void setStringcodigoIdentificacao(String codigoIdentificacao) {
+    public void setCodigoIdentificacao(String codigoIdentificacao) {
         this.codigoIdentificacao = codigoIdentificacao;
     }
     
     //Arquivo retorno informará sempre a data que o boleto foi registrado
     @Field(offset =151 , length = 6)
-    public String getStringdataEmissaoTitulo() {
+    public String getDataEmissaoTitulo() {
         return dataEmissaoTitulo;
     }
-    public void setStringdataEmissaoTitulo(String dataEmissaoTitulo) {
+    public void setDataEmissaoTitulo(String dataEmissaoTitulo) {
         this.dataEmissaoTitulo = dataEmissaoTitulo;
     }
     
     @Field(offset =157 , length = 3)
-    public String getStringbranco5() {
+    public String getBranco5() {
         return branco5;
     }
-    public void setStringbranco5(String branco5) {
+    public void setBranco5(String branco5) {
         this.branco5 = branco5;
     }
     
     //Se = 0, sem juros/mora Se = 1, valor fixo de juros/mora  Se = 2, percentual de juros/mora
     @Field(offset =160 , length = 1)
-    public String getStringjurosMora() {
+    public String getJurosMora() {
         return jurosMora;
     }
-    public void setStringjurosMora(String jurosMora) {
+    public void setJurosMora(String jurosMora) {
         this.jurosMora = jurosMora;
     }
     
     //Mora por dia de atraso, se campo "160" é igual a "1" (um). Do contrário, preencher com zeros.
     @Field(offset =161 , length = 13)
-    public String getStringvalorAtraso() {
+    public String getValorAtraso() {
         return valorAtraso;
     }
-    public void setStringvalorAtraso(String valorAtraso) {
+    public void setValorAtraso(String valorAtraso) {
         this.valorAtraso = valorAtraso;
     }
     
     // Percentual a ser cobrado por atraso, caso campo "160" é igual a "2" (dois). Do contrário, preencher com zeros.
     @Field(offset =174 , length = 4)
-    public String getStringpercentualAtraso() {
+    public String getPercentualAtraso() {
         return percentualAtraso;
     }
-    public void setStringpercentualAtraso(String percentualAtraso) {
+    public void setPercentualAtraso(String percentualAtraso) {
         this.percentualAtraso = percentualAtraso;
     }
     
     
     @Field(offset =178 , length = 6)
-    public String getStringdataMora() {
+    public String getDataMora() {
         return dataMora;
     }
-    public void setStringdataMora(String dataMora) {
+    public void setDataMora(String dataMora) {
         this.dataMora = dataMora;
     }
    
     //Se = 0, título não tem desconto Para códigos de desconto, vide notas - pag 16
    @Field(offset =184 , length = 1)
-    public String getStringdescontos() {
+    public String getDescontos() {
         return descontos;
     }
-    public void setStringdescontos(String descontos) {
+    public void setDescontos(String descontos) {
         this.descontos = descontos;
     }
     
     //Se 1, 2 ou 3 no campo 184. Do contrário, preencher com zeros.
     @Field(offset =185 , length = 13)
-    public String getStringvalorDescontos1() {
+    public String getValorDescontos1() {
         return valorDescontos1;
     }
-    public void setStringvalorDescontos1(String valorDescontos1) {
+    public void setValorDescontos1(String valorDescontos1) {
         this.valorDescontos1 = valorDescontos1;
     }
     
     
     @Field(offset =198 , length = 4)
-    public String getStringpercentualDesconto1() {
+    public String getPercentualDesconto1() {
         return percentualDesconto1;
     }
-    public void setStringpercentualDesconto1(String percentualDesconto1) {
+    public void setPercentualDesconto1(String percentualDesconto1) {
         this.percentualDesconto1 = percentualDesconto1;
     }
     
     @Field(offset =202 , length = 6)
-    public String getStringdataLimiteConcessao() {
+    public String getDataLimiteConcessao() {
         return dataLimiteConcessao;
     }
-    public void setStringdataLimiteConcessao(String dataLimiteConcessao) {
+    public void setDataLimiteConcessao(String dataLimiteConcessao) {
         this.dataLimiteConcessao = dataLimiteConcessao;
     }
     
     //Valor abatimento. Se não houver, preencher com zeros.
     @Field(offset =208 , length = 13)
-    public String getStringvalorAbtimentoConcessao() {
+    public String getValorAbatimentoConcessao() {
         return valorAbtimentoConcessao;
     }
-    public void setStringvalorAbtimentoConcessao(String valorAbtimentoConcessao) {
+    public void setValorAbatimentoConcessao(String valorAbtimentoConcessao) {
         this.valorAbtimentoConcessao = valorAbtimentoConcessao;
     }
     
     //01 - Pessoa física (CPF)02 - Pessoa jurídica (CNPJ) 
     @Field(offset =221 , length = 2)
-    public String getStringtipoPagador() {
+    public String getTipoPagador() {
         return tipoPagador;
     }
-    public void setStringtipoPagador(String tipoPagador) {
+    public void setTipoPagador(String tipoPagador) {
         this.tipoPagador = tipoPagador;
     }
     
     // CNPJ ou CPF; Preencher com zeros à esquerda, se necessário
     @Field(offset =223 , length = 14)
-    public String getStringinscricaoPagador() {
+    public String getInscricaoPagador() {
         return inscricaoPagador;
     }
-    public void setStringinscricaoPagador(String inscricaoPagador) {
+    public void setInscricaoPagador(String inscricaoPagador) {
         this.inscricaoPagador = inscricaoPagador;
     }
     
     @Field(offset =237 , length = 40)
-    public String getStringnomePagador() {
+    public String getNomePagador() {
         return nomePagador;
     }
-    public void setStringnomePagador(String nomePagador) {
+    public void setNomePagador(String nomePagador) {
         this.nomePagador = nomePagador;
     }
     
     @Field(offset =277 , length = 40)
-    public String getStringenderecoPagador() {
+    public String getEnderecoPagador() {
         return enderecoPagador;
     }
-    public void setStringenderecoPagador(String enderecoPagador) {
+    public void setEnderecoPagador(String enderecoPagador) {
         this.enderecoPagador = enderecoPagador;
     }
         @Field(offset =317 , length = 5)
-    public String getStringcepPagador() {
+    public String getCepPagador() {
         return cepPagador;
     }
-    public void setStringcepPagador(String cepPagador) {
+    public void setCepPagador(String cepPagador) {
         this.cepPagador = cepPagador;
     }
     
     @Field(offset =322 , length = 3)
-    public String getStringsufixoCep() {
+    public String getSufixoCep() {
         return sufixoCep;
     }
-    public void setStringsufixoCep(String sufixoCep) {
+    public void setSufixoCep(String sufixoCep) {
         this.sufixoCep = sufixoCep;
     }
     
     @Field(offset =325 , length = 70)
-    public String getStringmenssagem1() {
+    public String getMenssagem1() {
         return menssagem1;
     }
-    public void setStringmenssagem1(String menssagem1) {
+    public void setMenssagem1(String menssagem1) {
         this.menssagem1 = menssagem1;
     }
     
      @Field(offset =395 , length = 6)
-    public String getStrinsequencialRegistro() {
+    public String getSequencialRegistro() {
         return sequencialRegistro;
     }
-    public void setStrinsequencialRegistro(String sequencialRegistro) {
+    public void setSequencialRegistro(String sequencialRegistro) {
         this.sequencialRegistro = sequencialRegistro;
     }
     

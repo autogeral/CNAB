@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.jcomputacao.cnab.inter400;
 
 import com.ancientprogramming.fixedformat4j.annotation.Field;
@@ -10,12 +5,13 @@ import com.ancientprogramming.fixedformat4j.annotation.Record;
 /**
  *
  * @author larissa.camargo
+ *      02.08.21
  */
 @Record
 public class LineCnabRetornoRegistroTrailer {
     private String codigoRegistroTrailer;
     private String codigoRetornoTrailer;
-    private String tipoRegisro;
+    private String tipoRegistro;
     private String codigoBancoTrailer;
     private String brancoTrailer;
     private String qtdRegistros1;
@@ -51,11 +47,11 @@ public class LineCnabRetornoRegistroTrailer {
 
     // Identificação do tipo de registro = 01
     @Field(offset = 3, length = 2)
-    public String getStringtipoRegisro() {
-        return tipoRegisro;
+    public String getTipoRegistroTrailer() {
+        return tipoRegistro;
     }
-    public void setStringtipoRegisro(String tipoRegisro) {
-        this.tipoRegisro = tipoRegisro;
+    public void setTipoRegistroTrailer(String tipoRegistro) {
+        this.tipoRegistro = tipoRegistro;
     }
 
     // Código banco = 077
@@ -78,10 +74,10 @@ public class LineCnabRetornoRegistroTrailer {
     
     //Nº Controle de participante=  Uso da empresa
     @Field(offset = 18, length = 8)
-    public String getStringqtdRegistros1() {
+    public String getQtdRegistros1Trailer() {
         return qtdRegistros1;
     }
-    public void setStringqtdRegistros1(String qtdRegistros1) {
+    public void setQtdRegistros1Trailer(String qtdRegistros1) {
         this.qtdRegistros1 = qtdRegistros1;
     }
     
@@ -96,19 +92,19 @@ public class LineCnabRetornoRegistroTrailer {
     
     //Identificação do título no banco= ("Nosso número")
     @Field(offset = 58, length = 5)
-    public String getStringqtdRegistros2() {
+    public String getQtdRegistros2Trailer() {
         return qtdRegistros2;
     }
-    public void setStringqtdRegistros2(String qtdRegistros2) {
+    public void setQtdRegistros2Trailer(String qtdRegistros2) {
         this.qtdRegistros2 = qtdRegistros2;
     }
     
     // Branco
     @Field(offset = 63, length = 12)
-    public String getStringvalorRegistros1() {
+    public String getValorRegistros1Trailer() {
         return valorRegistros1;
     }
-    public void setStringvalorRegistros1(String valorRegistros1) {
+    public void setValorRegistros1Trailer(String valorRegistros1) {
         this.valorRegistros1 = valorRegistros1;
     }
 
@@ -125,10 +121,10 @@ public class LineCnabRetornoRegistroTrailer {
     //03. Entrada rejeitada (verificar motivo na posição XXX a XXX)
     // 04. Liquidação normal (sem motivo)
     @Field(offset = 87, length = 5)
-    public String getStringqtdRegistros3() {
+    public String getQtdRegistros3Trailer() {
         return qtdRegistros3;
     }
-    public void setStringqtdRegistros3(String qtdRegistros3) {
+    public void setQtdRegistros3Trailer(String qtdRegistros3) {
         this.qtdRegistros3 = qtdRegistros3;
     }
     
@@ -143,19 +139,19 @@ public class LineCnabRetornoRegistroTrailer {
     
     // Nº do Documento = Seu número
    @Field(offset =116 , length = 5)
-    public String getStringqtdRegistros4() {
+    public String getQtdRegistros4Trailer() {
         return qtdRegistros4;
     }
-    public void setStringqtdRegistros4(String qtdRegistros4) {
+    public void setQtdRegistros4Trailer(String qtdRegistros4) {
         this.qtdRegistros4 = qtdRegistros4;
     }
      
     // Identificação do título no Inter = Nº banco (nosso número)
     @Field(offset =121 , length = 12)
-    public String getStringvalorRegistros2() {
+    public String getValorRegistros2Trailer() {
         return valorRegistros2;
     }
-    public void setStringvalorRegistros2(String valorRegistros2) {
+    public void setValorRegistros2Trailer(String valorRegistros2) {
         this.valorRegistros2 = valorRegistros2;
     }  
     // Branco
@@ -178,6 +174,6 @@ public class LineCnabRetornoRegistroTrailer {
     
     @Override
     public String toString() {
-        return "Registro0002HeaderArquivo{" + "codigoRegistro=" + codigoRegistroTrailer + ", codigoRetornoTrailer=" + codigoRetornoTrailer + ", tipoRegisro=" + tipoRegisro + ", codigoBancoTrailer=" + codigoBancoTrailer + ", brancoTrailer=" + brancoTrailer + ", qtdRegistros1=" + qtdRegistros1 + ", brancoTrailer2=" + brancoTrailer2 + ", qtdRegistros2=" + qtdRegistros2 + ", valorRegistros1=" + valorRegistros1 + ", brancoTrailer3=" + brancoTrailer3 + ", qtdRegistros3=" + qtdRegistros3 + ",brancoTrailer4= " + brancoTrailer4 + ",qtdRegistros4= " + qtdRegistros4 + ",valorRegistros2= " + valorRegistros2 + ",brancoTrailer5= " + brancoTrailer5 + ",sequencialRegistroTrailer= " + sequencialRegistroTrailer + "}";
+        return "Registro0002HeaderArquivo{" + "codigoRegistro=" + codigoRegistroTrailer + ", codigoRetornoTrailer=" + codigoRetornoTrailer + ", tipoRegistro=" + tipoRegistro + ", codigoBancoTrailer=" + codigoBancoTrailer + ", brancoTrailer=" + brancoTrailer + ", qtdRegistros1=" + qtdRegistros1 + ", brancoTrailer2=" + brancoTrailer2 + ", qtdRegistros2=" + qtdRegistros2 + ", valorRegistros1=" + valorRegistros1 + ", brancoTrailer3=" + brancoTrailer3 + ", qtdRegistros3=" + qtdRegistros3 + ",brancoTrailer4= " + brancoTrailer4 + ",qtdRegistros4= " + qtdRegistros4 + ",valorRegistros2= " + valorRegistros2 + ",brancoTrailer5= " + brancoTrailer5 + ",sequencialRegistroTrailer= " + sequencialRegistroTrailer + "}";
     }
 }

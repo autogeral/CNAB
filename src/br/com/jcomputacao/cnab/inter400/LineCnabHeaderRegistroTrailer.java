@@ -1,9 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.jcomputacao.cnab.inter400;
+
 import com.ancientprogramming.fixedformat4j.annotation.Field;
 import com.ancientprogramming.fixedformat4j.annotation.Record;
 /**
@@ -14,45 +10,45 @@ import com.ancientprogramming.fixedformat4j.annotation.Record;
 
 @Record
 public class LineCnabHeaderRegistroTrailer {
-    private String identificacaoRegistro;
+    private String identificacaoRegistroTrailer;
     private String qtdBoletos;
     private String branco;
     private String sequencialRegistro;
 
     @Field(offset = 1, length = 1)
-    public String getStringidentificacaoRegistro() {
-        return identificacaoRegistro;
+    public String getIdentificacaoRegistroTrailer() {
+        return identificacaoRegistroTrailer;
     }
-    public void setStringidentificacaoRegistro(String identificacaoRegistro) {
-        this.identificacaoRegistro = identificacaoRegistro;
+    public void setIdentificacaoRegistroTrailer(String identificacaoRegistroTrailer) {
+        this.identificacaoRegistroTrailer = identificacaoRegistroTrailer;
     }
 
     @Field(offset = 2, length = 6  ) 
-    public String getStringqtdBoletos() {
+    public String getQtdBoletosTrailer() {
         return qtdBoletos;
     }
-    public void setStringqtdBoletos(String qtdBoletos) {
+    public void setQtdBoletosTrailer(String qtdBoletos) {
         this.qtdBoletos = qtdBoletos;
     }
 
     @Field(offset = 8, length = 387)
-    public String getStringbranco() {
+    public String getBrancoTrailer() {
         return branco;
     }
-    public void setStringbranco(String branco) {
+    public void setBrancoTrailer(String branco) {
         this.branco = branco;
     }
     
      @Field(offset =395 , length = 6)
-    public String getStrinsequencialRegistro() {
+    public String getSequencialRegistroTrailer() {
         return sequencialRegistro;
     }
-    public void setStrinsequencialRegistro(String sequencialRegistro) {
+    public void setSequencialRegistroTrailer(String sequencialRegistro) {
         this.sequencialRegistro = sequencialRegistro;
     }
     
     @Override
     public String toString() {
-        return "Registro0002HeaderArquivo{" + "identificacaoRegistro=" + identificacaoRegistro + ", qtdBoletos=" + qtdBoletos + ", branco=" + branco + ", sequencialRegistro=" + sequencialRegistro +"}";
+        return "Registro0002HeaderArquivo{" + "identificacaoRegistroTrailer=" + identificacaoRegistroTrailer + ", qtdBoletos=" + qtdBoletos + ", branco=" + branco + ", sequencialRegistro=" + sequencialRegistro +"}";
     }
 }

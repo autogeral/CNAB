@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.jcomputacao.cnab.inter400;
 
 import com.ancientprogramming.fixedformat4j.annotation.Field;
@@ -32,116 +27,116 @@ public class LineCnabRegistroHeaderRemessa {
     private String sequencialRegistro;
 
     @Field(offset = 1, length = 1)
-    public String getIntegerCodigoRegistro() {
+    public String getCodigoRegistro() {
         return codigoRegistro;
     }
-    public void setStringCodigoRegistro(String codigoRegistro) {
+    public void setCodigoRegistro(String codigoRegistro) {
         this.codigoRegistro = codigoRegistro;
     }
 
     @Field(offset = 2, length = 1)
-    public String getIntegerCodigoRemessa() {
+    public String getCodigoRemessa() {
         return codigoRemessa;
     }
-    public void setStringCodigoRemessa(String codigoRemessa) {
+    public void setCodigoRemessa(String codigoRemessa) {
         this.codigoRemessa = codigoRemessa;
     }
 
     @Field(offset = 3, length = 7)
-    public String getStringLiteralRemessa() {
+    public String getLiteralRemessa() {
         return literalRemessa;
     }
-    public void setStringLiteralRemessa(String literalRemessa) {
+    public void setLiteralRemessa(String literalRemessa) {
         this.literalRemessa = literalRemessa;
     }
 
     @Field(offset = 10, length = 2)
-    public String getStringCodigoServico() {
+    public String getCodigoServico() {
         return codigoServico;
     }
-    public void setStringCodigoServico(String codigoServico) {
+    public void setCodigoServico(String codigoServico) {
         this.codigoServico = codigoServico;
     }
     
     @Field(offset = 12, length = 15)
-    public String getStringLiteralServico() {
+    public String getLiteralServico() {
         return literalServico;
     }
-    public void setStringLiteralServico(String literalServico) {
+    public void setLiteralServico(String literalServico) {
         this.literalServico = literalServico;
     }
     
     @Field(offset = 27, length = 20)
-    public String getStringCodigoEmpresa() {
+    public String getCodigoEmpresa() {
         return codigoEmpresa;
     }
-    public void setStringCodigoEmpresa(String codigoEmpresa) {
+    public void setCodigoEmpresa(String codigoEmpresa) {
         this.codigoEmpresa = codigoEmpresa;
     }
     
     @Field(offset = 47, length = 30)
-    public String getStringNomeEmpresa() {
+    public String getNomeEmpresa() {
         return nomeEmpresa;
     }
-    public void setStringNomeEmpresa(String nomeEmpresa) {
+    public void setNomeEmpresa(String nomeEmpresa) {
         this.nomeEmpresa = nomeEmpresa;
     }
     
     @Field(offset = 77, length = 3)
-    public String getStringCodigoBanco() {
+    public String getCodigoBanco() {
         return codigoBanco;
     }
-    public void setStringCodigoBanco(String codigoBanco) {
+    public void setCodigoBanco(String codigoBanco) {
         this.codigoBanco = codigoBanco;
     }
     
     @Field(offset = 80, length = 15)
-    public String getStringNomeBanco() {
+    public String getNomeBanco() {
         return nomeBanco;
     }
-    public void setStringNomeBanco(String nomeBanco) {
+    public void setNomeBanco(String nomeBanco) {
         this.nomeBanco = nomeBanco;
     }
     
     
     @Field(offset = 95, length = 6)
-    public Integer getIntegerDataGravacao() {
+    public Integer getDataGravacao() {
         return dataGravacao;
     }
-    public void setIntegerDataGravacao(Integer dataGravacao) {
+    public void setDataGravacao(Integer dataGravacao) {
         this.dataGravacao = dataGravacao;
     }
     
   
     @Field(offset = 101, length = 10)
-    public String getStringBranco() {
+    public String getBranco() {
         return branco;
     }
-    public void setStringBranco(String branco) {
+    public void setBranco(String branco) {
         this.branco = branco;
     }
     
     @Field(offset = 111, length = 7)
-    public String getStringSequencialRemessa() {
+    public String getSequencialRemessa() {
         return sequencialRemessa;
     }
-    public void setSStringSequencialRemessa(String sequencialRemessa) {
+    public void setSequencialRemessa(String sequencialRemessa) {
         this.sequencialRemessa = sequencialRemessa;
     }
     
     @Field(offset = 118, length = 277)
-    public String getStringBrancos() {
+    public String getBrancos() {
         return brancos;
     }
-    public void setStringBrancos(String brancos) {
+    public void setBrancos(String brancos) {
         this.brancos = brancos;
     }
     
     @Field(offset =395 , length = 6)
-    public String getStringSequencialRegistro() {
+    public String getSequencialRegistro() {
         return sequencialRegistro;
     }
-    public void setStringSequencialRegistro(String sequencialRegistro) {
+    public void setSequencialRegistro(String sequencialRegistro) {
         this.sequencialRegistro = sequencialRegistro;
     }
     
