@@ -1,10 +1,14 @@
 package br.com.jcomputacao.cnab.itau400;
 
+import com.ancientprogramming.fixedformat4j.annotation.Field;
+import com.ancientprogramming.fixedformat4j.annotation.Record;
+
 /**
  *
  * @author larissa.camargo
  *     26.08.2021
  */
+@Record
 public class LineCnabRegistroTrailerRetorno {
     private String tipoRegistro;
     private String codigoRetorno;
@@ -28,6 +32,7 @@ public class LineCnabRegistroTrailerRetorno {
     private String Brancos4;
     private String numeroSequencial;
 
+    @Field(offset = 1, length = 1)
     public String getTipoRegistro() {
         return tipoRegistro;
     }
@@ -36,6 +41,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.tipoRegistro = tipoRegistro;
     }
 
+    @Field(offset = 2, length = 1)
     public String getCodigoRetorno() {
         return codigoRetorno;
     }
@@ -44,6 +50,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.codigoRetorno = codigoRetorno;
     }
 
+    @Field(offset = 3, length = 2)
     public String getCodigoServico() {
         return codigoServico;
     }
@@ -52,6 +59,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.codigoServico = codigoServico;
     }
 
+    @Field(offset = 5, length = 3)
     public String getCodigoBanco() {
         return codigoBanco;
     }
@@ -60,6 +68,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.codigoBanco = codigoBanco;
     }
 
+    @Field(offset = 8, length = 10)
     public String getBrancos1() {
         return brancos1;
     }
@@ -68,6 +77,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.brancos1 = brancos1;
     }
 
+    @Field(offset = 18, length = 8)
     public String getQtdTitulos1() {
         return qtdTitulos1;
     }
@@ -76,6 +86,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.qtdTitulos1 = qtdTitulos1;
     }
 
+    @Field(offset = 26, length = 14)
     public String getValorTotal1() {
         return valorTotal1;
     }
@@ -84,6 +95,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.valorTotal1 = valorTotal1;
     }
 
+    @Field(offset = 40, length = 8)
     public String getAvisoBancario1() {
         return avisoBancario1;
     }
@@ -92,6 +104,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.avisoBancario1 = avisoBancario1;
     }
 
+    @Field(offset = 48, length = 10)
     public String getBrancos2() {
         return brancos2;
     }
@@ -100,6 +113,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.brancos2 = brancos2;
     }
 
+    @Field(offset = 58, length = 8)
     public String getQtdTitulos2() {
         return qtdTitulos2;
     }
@@ -108,6 +122,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.qtdTitulos2 = qtdTitulos2;
     }
 
+    @Field(offset = 66, length = 14)
     public String getValorTotal2() {
         return valorTotal2;
     }
@@ -116,6 +131,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.valorTotal2 = valorTotal2;
     }
 
+    @Field(offset = 80, length = 8)
     public String getAvisoBancario2() {
         return avisoBancario2;
     }
@@ -124,6 +140,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.avisoBancario2 = avisoBancario2;
     }
 
+    @Field(offset = 88, length = 90)
     public String getBrancos3() {
         return brancos3;
     }
@@ -132,6 +149,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.brancos3 = brancos3;
     }
 
+    @Field(offset = 178, length = 8)
     public String getQtdTitulos3() {
         return qtdTitulos3;
     }
@@ -140,6 +158,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.qtdTitulos3 = qtdTitulos3;
     }
 
+    @Field(offset = 186, length = 14)
     public String getValorTotal3() {
         return valorTotal3;
     }
@@ -148,6 +167,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.valorTotal3 = valorTotal3;
     }
 
+    @Field(offset = 200, length = 8)
     public String getAvisoBancario3() {
         return avisoBancario3;
     }
@@ -156,6 +176,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.avisoBancario3 = avisoBancario3;
     }
 
+    @Field(offset = 208, length = 5)
     public String getControleArquivo() {
         return controleArquivo;
     }
@@ -164,6 +185,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.controleArquivo = controleArquivo;
     }
 
+    @Field(offset = 213, length = 8)
     public String getQtdDetalhes() {
         return qtdDetalhes;
     }
@@ -172,6 +194,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.qtdDetalhes = qtdDetalhes;
     }
 
+    @Field(offset = 221, length = 14)
     public String getValorTotalInformado() {
         return valorTotalInformado;
     }
@@ -180,6 +203,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.valorTotalInformado = valorTotalInformado;
     }
 
+    @Field(offset = 235, length = 160)
     public String getBrancos4() {
         return Brancos4;
     }
@@ -188,6 +212,7 @@ public class LineCnabRegistroTrailerRetorno {
         this.Brancos4 = Brancos4;
     }
 
+    @Field(offset = 395, length = 6)
     public String getNumeroSequencial() {
         return numeroSequencial;
     }
