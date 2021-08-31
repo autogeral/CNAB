@@ -32,7 +32,7 @@ public class LineCnabRegistroHeaderLoteRemessa {
     private String nomeEmpresa;
     private String brancos5;
     private String numSeqArquivoRet;
-    private String dataGeracao;
+    private String dataGravacao;
     private String dataCredito;
     private String brancos6;
 
@@ -227,12 +227,12 @@ public class LineCnabRegistroHeaderLoteRemessa {
     }
 
     @Field(offset = 192, length = 8)
-    public String getDataGeracao() {
-        return dataGeracao;
+    public String getDataGravacao() {
+        return dataGravacao;
     }
 
-    public void setDataGeracao(String dataGeracao) {
-        this.dataGeracao = dataGeracao;
+    public void setDataGravacao(String dataGravacao) {
+        this.dataGravacao = dataGravacao;
     }
 
     @Field(offset = 200, length = 8)
@@ -255,6 +255,6 @@ public class LineCnabRegistroHeaderLoteRemessa {
 
     @Override
     public String toString() {
-        return "LineCnabRegistroHeaderLoteRemessa{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", tipoRegistro=" + tipoRegistro + ", operacao=" + operacao + ", codigoServico=" + codigoServico + ", zeros1=" + zeros1 + ", layoutLote=" + layoutLote + ", brancos1=" + brancos1 + ", codigoInscricao=" + codigoInscricao + ", inscricaoNumero=" + inscricaoNumero + ", brancos2=" + brancos2 + ", zeros2=" + zeros2 + ", agencia=" + agencia + ", brancos3=" + brancos3 + ", zeros3=" + zeros3 + ", conta=" + conta + ", brancos4=" + brancos4 + ", dac=" + dac + ", nomeEmpresa=" + nomeEmpresa + ", brancos5=" + brancos5 + ", numSeqArquivoRet=" + numSeqArquivoRet + ", dataGeracao=" + dataGeracao + ", dataCredito=" + dataCredito + ", brancos6=" + brancos6 + '}';
+        return "LineCnabRegistroHeaderLoteRemessa{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", tipoRegistro=" + tipoRegistro + ", operacao=" + operacao + ", codigoServico=" + codigoServico + ", zeros1=" + zeros1 + ", layoutLote=" + layoutLote + ", brancos1=" + brancos1 + ", codigoInscricao=" + codigoInscricao + ", inscricaoNumero=" + inscricaoNumero + ", brancos2=" + brancos2 + ", zeros2=" + zeros2 + ", agencia=" + agencia + ", brancos3=" + brancos3 + ", zeros3=" + zeros3 + ", conta=" + conta + ", brancos4=" + brancos4 + ", dac=" + dac + ", nomeEmpresa=" + nomeEmpresa + ", brancos5=" + brancos5 + ", numSeqArquivoRet=" + numSeqArquivoRet + ", dataGeracao=" + dataGravacao + ", dataCredito=" + dataCredito + ", brancos6=" + brancos6 + '}';
     }
 }
