@@ -38,7 +38,7 @@ public class LineCnabRegistroHeaderLoteRemessaTest {
         record.setNomeEmpresa("AUTO GERAL AUTOPECAS LTDA");
         record.setBrancos5("BRANCOS");
         record.setNumSeqArquivoRet("");
-        record.setDataGeracao("27082021");
+        record.setDataGravacao("27082021");
         record.setDataCredito("");
         record.setBrancos6("");
         
