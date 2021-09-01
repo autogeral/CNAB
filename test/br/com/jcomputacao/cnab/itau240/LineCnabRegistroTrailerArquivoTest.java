@@ -13,10 +13,10 @@ import org.junit.Test;
  *    30.08.2021
  */
 
-public class LineCnabRegistroTrailerRetornoTest {
+public class LineCnabRegistroTrailerArquivoTest {
     @Test
     public void gerarRegistroTrailer() throws ParseException {
-        LineCnabRegistroTrailerRetorno record = new LineCnabRegistroTrailerRetorno();
+        LineCnabRegistroTrailerArquivo record = new LineCnabRegistroTrailerArquivo();
         record.setCodigoBanco("341");
         record.setCodigoLote("9999");
         record.setRegistro("9");
