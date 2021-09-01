@@ -10,7 +10,7 @@ import com.ancientprogramming.fixedformat4j.annotation.Record;
  */
 
 @Record
-public class LineCnabRegistroTrailerLoteRetorno {
+public class LineCnabRegistroTrailerLote {
     private String codigoBanco;
     private String codigoLote;
     private String tipoRegistro;
