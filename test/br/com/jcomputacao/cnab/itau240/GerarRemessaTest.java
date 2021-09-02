@@ -17,7 +17,7 @@ public class GerarRemessaTest {
     public void gerarRemessa() throws ParseException, IOException {
         LineCnabRegistroHeaderRemessa header  = new LineCnabRegistroHeaderRemessa();
         header.setCodigoBanco("341");
-        header.setCodigoLote("0000");
+        header.setCodigoLote("0000");//sempre vai ser esse número
         header.setTipoRegistro("0");
         header.setBrancos1("");
         header.setCodigoInscricao("2");
@@ -45,7 +45,7 @@ public class GerarRemessaTest {
         
         LineCnabRegistroHeaderLoteRemessa headerLote = new LineCnabRegistroHeaderLoteRemessa();
         headerLote.setCodigoBanco("341");
-        headerLote.setCodigoLote("0001");
+        headerLote.setCodigoLote("0001"); 
         headerLote.setTipoRegistro("1");
         headerLote.setOperacao("R");
         headerLote.setCodigoServico("01");
@@ -77,19 +77,19 @@ public class GerarRemessaTest {
         segmentoP.setSegmento("P");
         segmentoP.setBrancos1("");
         segmentoP.setCodOcorrencia("01");
-        segmentoP.setZeros("0");
+        segmentoP.setZeros1("0");
         segmentoP.setAgencia("0278");
         segmentoP.setBrancos2("");
-        segmentoP.setZeros1("0000000");
+        segmentoP.setZeros2("0000000");
         segmentoP.setConta("92471");
         segmentoP.setBrancos3("");
         segmentoP.setDac1("7");
         segmentoP.setNumCarteira("109");
-        segmentoP.setNossoNumero("92471");
-        segmentoP.setDac2("7");
+        segmentoP.setNossoNumero("00000001");
+        segmentoP.setDac2("6");
         segmentoP.setBrancos4("");
-        segmentoP.setZeros2("00000");
-        segmentoP.setNumDocumento("1");
+        segmentoP.setZeros3("00000");
+        segmentoP.setNumDocumento("0000000001");
         segmentoP.setBrancos5("");
         segmentoP.setVencimento("15092021");
         segmentoP.setValorTitulo("20");
@@ -98,10 +98,10 @@ public class GerarRemessaTest {
         segmentoP.setEspecieTitulo("01");
         segmentoP.setAceite("N");
         segmentoP.setDataEmissaoTitulo("01092021");
-        segmentoP.setZeros3("0");
+        segmentoP.setZeros4("0");
         segmentoP.setDataJurosMora("");
         segmentoP.setJuros1Dia("");
-        segmentoP.setZeros4("0");
+        segmentoP.setZeros5("0");
         segmentoP.setData1Desconto("");
         segmentoP.setValor1Desconto("");
         segmentoP.setValorIof("");
@@ -111,14 +111,14 @@ public class GerarRemessaTest {
         segmentoP.setPrazoNegativacaoProtesto("");
         segmentoP.setCodBaixa("");
         segmentoP.setPrazoBaixa("");
-        segmentoP.setZeros5("0000000000000");
+        segmentoP.setZeros6("0000000000000");
         segmentoP.setBrancos6("");
         
         LineCnabRegistroSegmentoQRemessa segmentoQ = new LineCnabRegistroSegmentoQRemessa();
         segmentoQ.setCodigoBanco("341");
         segmentoQ.setCodigoLote("0001");
         segmentoQ.setTipoRegistro("3");
-        segmentoQ.setNumRegistro("00001");
+        segmentoQ.setNumRegistro("00002");
         segmentoQ.setSegmento("Q");
         segmentoQ.setBrancos1("");
         segmentoQ.setCodOcorrencia("01");
@@ -142,10 +142,10 @@ public class GerarRemessaTest {
         
         LineCnabRegistroTrailerLote trailerLote = new LineCnabRegistroTrailerLote();
         trailerLote.setCodigoBanco("341");
-        trailerLote.setCodigoLote("0001");
+        trailerLote.setCodigoLote("0001");// soma do tipo 1
         trailerLote.setTipoRegistro("5");
         trailerLote.setBrancos1("");
-        trailerLote.setQtdeRegistros("");
+        trailerLote.setQtdeRegistros("000004");//soma dos tipos 1,3 e 5
         trailerLote.setQtdeCobrancaSimples("");
         trailerLote.setQtdeCobrancaVinculada("");
         trailerLote.setValorCobrancaVinculada("");
@@ -155,11 +155,11 @@ public class GerarRemessaTest {
         
         LineCnabRegistroTrailerArquivo trailerArquivo = new LineCnabRegistroTrailerArquivo ();
         trailerArquivo.setCodigoBanco("341");
-        trailerArquivo.setCodigoLote("9999");
+        trailerArquivo.setCodigoLote("9999");//sempre vai ser esse
         trailerArquivo.setRegistro("9");
         trailerArquivo.setBrancos1("");
-        trailerArquivo.setTotalLotes("");
-        trailerArquivo.setTotalRegistros("");
+        trailerArquivo.setTotalLotes("1");// soma do tipo 1
+        trailerArquivo.setTotalRegistros("000006");// soma dos tipos 0,1,3,5 e 9
         trailerArquivo.setZeros("000000");
         trailerArquivo.setBrancos2("");          
               
@@ -191,7 +191,7 @@ public class GerarRemessaTest {
         gravar.println(manager.export(segmentoP));
         gravar.println(manager.export(segmentoQ));
         gravar.println(manager.export(trailerLote));
-        gravar.print(manager.export(trailerArquivo));
+        gravar.println(manager.export(trailerArquivo));
         
         gravar.close();        
        }

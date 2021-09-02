@@ -23,7 +23,7 @@ public class LineCnabRegistroSegmentoPRemessaTest{
         record.setSegmento("P");
         record.setBrancos1("");
         record.setCodOcorrencia("");
-        record.setZeros("0");
+        record.setZeros6("0");
         record.setAgencia("");
         record.setBrancos2("");
         record.setZeros1("0000000");
