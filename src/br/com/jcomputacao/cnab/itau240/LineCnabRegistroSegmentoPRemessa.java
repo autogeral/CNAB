@@ -51,7 +51,7 @@ public class LineCnabRegistroSegmentoPRemessa {
     private String prazoNegativacaoProtesto;
     private String codBaixa;
     private String prazoBaixa;
-    private String zeros;
+    private String zeros6;
     private String brancos6;
 
     
@@ -361,7 +361,7 @@ public class LineCnabRegistroSegmentoPRemessa {
         this.valor1Desconto = valor1Desconto;
     }
 
-    @Field(offset = 166, length = 14)
+    @Field(offset = 166, length = 15)
     public String getValorIof() {
         return valorIof;
     }
@@ -425,12 +425,12 @@ public class LineCnabRegistroSegmentoPRemessa {
     }
 
   @Field(offset = 227, length = 13)
-    public String getZeros() {
-        return zeros;
+    public String getZeros6() {
+        return zeros6;
     }
 
-    public void setZeros(String zeros) {
-        this.zeros = zeros;
+    public void setZeros6(String zeros6) {
+        this.zeros6 = zeros6;
     }
 
   @Field(offset = 240, length = 1)
@@ -444,7 +444,7 @@ public class LineCnabRegistroSegmentoPRemessa {
 
     @Override
     public String toString() {
-        return "LineCnabRegistroSegmentoPRemessa{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", tipoRegistro=" + tipoRegistro + ", numRegistro=" + numRegistro + ", segmento=" + segmento + ", brancos1=" + brancos1 + ", codOcorrencia=" + codOcorrencia + ", zeros1=" + zeros1 + ", agencia=" + agencia + ", brancos2=" + brancos2 + ", zeros2=" + zeros2 + ", conta=" + conta + ", brancos3=" + brancos3 + ", dac1=" + dac1 + ", numCarteira=" + numCarteira + ", nossoNumero=" + nossoNumero + ", dac2=" + dac2 + ", brancos4=" + brancos4 + ", zeros3=" + zeros3 + ", numDocumento=" + numDocumento + ", brancos5=" + brancos5 + ", vencimento=" + vencimento + ", valorTitulo=" + valorTitulo + ", agCobradora=" + agCobradora + ", dac3=" + dac3 + ", especieTitulo=" + especieTitulo + ", aceite=" + aceite + ", dataEmissaoTitulo=" + dataEmissaoTitulo + ", zeros4=" + zeros4 + ", dataJurosMora=" + dataJurosMora + ", juros1Dia=" + juros1Dia + ", zeros5=" + zeros5 + ", data1Desconto=" + data1Desconto + ", valor1Desconto=" + valor1Desconto + ", valorIof=" + valorIof + ", valorAbatimento=" + valorAbatimento + ", usoEmpresa=" + usoEmpresa + ", codigoNegativacaoProtesto=" + codigoNegativacaoProtesto + ", prazoNegativacaoProtesto=" + prazoNegativacaoProtesto + ", codBaixa=" + codBaixa + ", prazoBaixa=" + prazoBaixa + ", zeros=" + zeros + ", brancos6=" + brancos6 + '}';
+        return "LineCnabRegistroSegmentoPRemessa{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", tipoRegistro=" + tipoRegistro + ", numRegistro=" + numRegistro + ", segmento=" + segmento + ", brancos1=" + brancos1 + ", codOcorrencia=" + codOcorrencia + ", zeros1=" + zeros1 + ", agencia=" + agencia + ", brancos2=" + brancos2 + ", zeros2=" + zeros2 + ", conta=" + conta + ", brancos3=" + brancos3 + ", dac1=" + dac1 + ", numCarteira=" + numCarteira + ", nossoNumero=" + nossoNumero + ", dac2=" + dac2 + ", brancos4=" + brancos4 + ", zeros3=" + zeros3 + ", numDocumento=" + numDocumento + ", brancos5=" + brancos5 + ", vencimento=" + vencimento + ", valorTitulo=" + valorTitulo + ", agCobradora=" + agCobradora + ", dac3=" + dac3 + ", especieTitulo=" + especieTitulo + ", aceite=" + aceite + ", dataEmissaoTitulo=" + dataEmissaoTitulo + ", zeros4=" + zeros4 + ", dataJurosMora=" + dataJurosMora + ", juros1Dia=" + juros1Dia + ", zeros5=" + zeros5 + ", data1Desconto=" + data1Desconto + ", valor1Desconto=" + valor1Desconto + ", valorIof=" + valorIof + ", valorAbatimento=" + valorAbatimento + ", usoEmpresa=" + usoEmpresa + ", codigoNegativacaoProtesto=" + codigoNegativacaoProtesto + ", prazoNegativacaoProtesto=" + prazoNegativacaoProtesto + ", codBaixa=" + codBaixa + ", prazoBaixa=" + prazoBaixa + ", zeros=" + zeros6 + ", brancos6=" + brancos6 + '}';
     }
 
     
