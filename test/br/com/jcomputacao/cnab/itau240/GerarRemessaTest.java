@@ -11,6 +11,7 @@ import org.junit.Test;
 /**
  *
  * @author larissa.camargo
+ *    01.09.2021
  */
 public class GerarRemessaTest {
     @Test
@@ -23,7 +24,7 @@ public class GerarRemessaTest {
         header.setCodigoInscricao("2");
         header.setInscricaoNumero("05437537000137");
         header.setBrancos2("");
-        header.setZeros2("0");
+        header.setZeros1("0");
         header.setAgencia("0278");
         header.setBrancos3("");
         header.setZeros2("0000000");
@@ -36,7 +37,7 @@ public class GerarRemessaTest {
         header.setCodigoArquivo("1");
         header.setDataGeracao("01092021");
         header.setHoraGeracao("174427");
-        header.setNumSeqArquivoRetorno("");
+        header.setNumSeqArquivoRetorno("000001");
         header.setLayoutArquivo("040");
         header.setZeros3("00000");
         header.setBranco6("");
@@ -64,7 +65,7 @@ public class GerarRemessaTest {
         headerLote.setDac("7");
         headerLote.setNomeEmpresa("AUTO GERAL AUTOPECAS LTDA");
         headerLote.setBrancos5("");
-        headerLote.setNumSeqArquivoRet("");
+        headerLote.setNumSeqArquivoRet("00000001");
         headerLote.setDataGravacao("01092021");
         headerLote.setDataCredito("");
         headerLote.setBrancos6("");
@@ -92,25 +93,25 @@ public class GerarRemessaTest {
         segmentoP.setNumDocumento("0000000001");
         segmentoP.setBrancos5("");
         segmentoP.setVencimento("15092021");
-        segmentoP.setValorTitulo("20");
+        segmentoP.setValorTitulo("000000000002000");
         segmentoP.setAgCobradora("00000");
         segmentoP.setDac3("0");
         segmentoP.setEspecieTitulo("01");
         segmentoP.setAceite("N");
         segmentoP.setDataEmissaoTitulo("01092021");
         segmentoP.setZeros4("0");
-        segmentoP.setDataJurosMora("");
-        segmentoP.setJuros1Dia("");
+        segmentoP.setDataJurosMora("01102021");
+        segmentoP.setJuros1Dia("000000000000034");
         segmentoP.setZeros5("0");
-        segmentoP.setData1Desconto("");
-        segmentoP.setValor1Desconto("");
-        segmentoP.setValorIof("");
-        segmentoP.setValorAbatimento("");
+        segmentoP.setData1Desconto("15092021");
+        segmentoP.setValor1Desconto("000000000000200");
+        segmentoP.setValorIof("000000000000000");
+        segmentoP.setValorAbatimento("000000000000000");
         segmentoP.setUsoEmpresa("");
-        segmentoP.setCodigoNegativacaoProtesto("");
-        segmentoP.setPrazoNegativacaoProtesto("");
-        segmentoP.setCodBaixa("");
-        segmentoP.setPrazoBaixa("");
+        segmentoP.setCodigoNegativacaoProtesto("0");
+        segmentoP.setPrazoNegativacaoProtesto("0");
+        segmentoP.setCodBaixa("0");
+        segmentoP.setPrazoBaixa("00");
         segmentoP.setZeros6("0000000000000");
         segmentoP.setBrancos6("");
         
@@ -139,6 +140,34 @@ public class GerarRemessaTest {
         segmentoQ.setZeros("000");
         segmentoQ.setBrancos4("");
         
+        LineCnabRegistroSegmentoRRemessa segmentoR = new LineCnabRegistroSegmentoRRemessa();
+        segmentoR.setCodigoBanco("341");
+        segmentoR.setCodigoLote("0001");
+        segmentoR.setTipoRegistro("3");
+        segmentoR.setNumRegistro("00003");
+        segmentoR.setSegmento("R");
+        segmentoR.setBrancos1("");
+        segmentoR.setCodOcorrencia("01");
+        segmentoR.setZeros1("0");
+        segmentoR.setData2Desconto("");
+        segmentoR.setValor2Desconto("");
+        segmentoR.setZeros2("0");
+        segmentoR.setData3Desconto("");
+        segmentoR.setValor3Desconto("");
+        segmentoR.setCodMulta("");
+        segmentoR.setDataMulta("");
+        segmentoR.setMulta("");
+        segmentoR.setBrancos2("");
+        segmentoR.setInfoPagador("");
+        segmentoR.setBrancos3("");
+        segmentoR.setCodOcPagador("");
+        segmentoR.setZeros3("00000000");
+        segmentoR.setBrancos4("");
+        segmentoR.setZeros4("000000000000");
+        segmentoR.setBranco5("");
+        segmentoR.setZeros5("0");
+        segmentoR.setBrancos6("");
+
         
         LineCnabRegistroTrailerLote trailerLote = new LineCnabRegistroTrailerLote();
         trailerLote.setCodigoBanco("341");
@@ -176,13 +205,15 @@ public class GerarRemessaTest {
         String resultQ = manager.export(segmentoQ);
         System.out.println(resultQ);
         
+        String resultR = manager.export(segmentoR);
+        System.out.println(resultR);
+ 
         String resultTrailerLote = manager.export(trailerLote);
         System.out.println(resultTrailerLote);
         
         String resultTrailerArquivo = manager.export(trailerArquivo);
         System.out.println(resultTrailerArquivo);
         
- 
         FileWriter text = new FileWriter("C:\\Users\\larissa.camargo\\Documents\\IntegracaoBancoItau\\CI240_R.txt");
         PrintWriter gravar = new PrintWriter(text);
         
@@ -190,10 +221,10 @@ public class GerarRemessaTest {
         gravar.println(manager.export(headerLote));
         gravar.println(manager.export(segmentoP));
         gravar.println(manager.export(segmentoQ));
+        gravar.println(manager.export(segmentoR));
         gravar.println(manager.export(trailerLote));
         gravar.println(manager.export(trailerArquivo));
         
         gravar.close();        
        }
     }
-
