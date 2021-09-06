@@ -13,36 +13,38 @@ import org.junit.Test;
  * @author larissa.camargo
  *    01.09.2021
  */
+
 public class GerarRemessaTest {
     @Test
     public void gerarRemessa() throws ParseException, IOException {
-        LineCnabRegistroHeaderRemessa header  = new LineCnabRegistroHeaderRemessa();
-        header.setCodigoBanco("341");
-        header.setCodigoLote("0000");//sempre vai ser esse número
-        header.setTipoRegistro("0");
-        header.setBrancos1("");
-        header.setCodigoInscricao("2");
-        header.setInscricaoNumero("05437537000137");
-        header.setBrancos2("");
-        header.setZeros1("0");
-        header.setAgencia("0278");
-        header.setBrancos3("");
-        header.setZeros2("0000000");
-        header.setConta("92471");
-        header.setBrancos4("");
-        header.setDac("7");
-        header.setNomeEmpresa("AUTO GERAL AUTOPECAS LTDA");
-        header.setNomeBanco("BANCO ITAU SA");
-        header.setBrancos5("");
-        header.setCodigoArquivo("1");
-        header.setDataGeracao("01092021");
-        header.setHoraGeracao("174427");
-        header.setNumSeqArquivoRetorno("000001");
-        header.setLayoutArquivo("040");
-        header.setZeros3("00000");
-        header.setBranco6("");
-        header.setZeros4("000");
-        header.setBrancos7("");
+        LineCnabRegistroHeaderRemessa headerArquivo  = new LineCnabRegistroHeaderRemessa();
+        headerArquivo.setCodigoBanco("341");
+        headerArquivo.setCodigoLote("0000");//SEMPRE VAI SER ESSE CÓDIGO
+        headerArquivo.setTipoRegistro("0");
+        headerArquivo.setBrancos1("");
+        headerArquivo.setCodigoInscricao("2");
+        headerArquivo.setInscricaoNumero("05437537000137");
+        headerArquivo.setBrancos2("");
+        headerArquivo.setZeros1("0");
+        headerArquivo.setAgencia("0278");
+        headerArquivo.setBrancos3("");
+        headerArquivo.setZeros2("0000000");
+        headerArquivo.setConta("92471");
+        headerArquivo.setBrancos4("");
+        headerArquivo.setDac("7");
+        headerArquivo.setNomeEmpresa("AUTO GERAL AUTOPECAS LTDA");
+        headerArquivo.setNomeBanco("BANCO ITAU SA");
+        headerArquivo.setBrancos5("");
+        headerArquivo.setCodigoArquivo("1");
+        headerArquivo.setDataGeracao("01092021");
+        headerArquivo.setHoraGeracao("174427");
+        headerArquivo.setNumSeqArquivoRetorno("000001");
+        headerArquivo.setLayoutArquivo("040");
+        headerArquivo.setZeros3("00000");
+        headerArquivo.setBranco6("");
+        headerArquivo.setZeros4("000");
+        headerArquivo.setBrancos7("");
+        
         
         LineCnabRegistroHeaderLoteRemessa headerLote = new LineCnabRegistroHeaderLoteRemessa();
         headerLote.setCodigoBanco("341");
@@ -51,7 +53,7 @@ public class GerarRemessaTest {
         headerLote.setOperacao("R");
         headerLote.setCodigoServico("01");
         headerLote.setZeros1("00");
-        headerLote.setLayoutLote("030");
+        headerLote.setLayoutLote("030"); // CONTEÚDO FIXO
         headerLote.setBrancos1("");
         headerLote.setCodigoInscricao("2");
         headerLote.setInscricaoNumero("05437537000137");
@@ -62,13 +64,14 @@ public class GerarRemessaTest {
         headerLote.setZeros3("0000000");
         headerLote.setConta("92471");
         headerLote.setBrancos4("");
-        headerLote.setDac("7");
+        headerLote.setDac("7"); 
         headerLote.setNomeEmpresa("AUTO GERAL AUTOPECAS LTDA");
         headerLote.setBrancos5("");
         headerLote.setNumSeqArquivoRet("00000001");
         headerLote.setDataGravacao("01092021");
-        headerLote.setDataCredito("");
+        headerLote.setDataCredito("01092021");
         headerLote.setBrancos6("");
+        
         
         LineCnabRegistroSegmentoPRemessa segmentoP = new LineCnabRegistroSegmentoPRemessa();
         segmentoP.setCodigoBanco("341");
@@ -90,7 +93,7 @@ public class GerarRemessaTest {
         segmentoP.setDac2("6");
         segmentoP.setBrancos4("");
         segmentoP.setZeros3("00000");
-        segmentoP.setNumDocumento("0000000001");
+        segmentoP.setNumDocumento("0000000001"); // NÚMERO DO DOCUMENTO (SEU NÚMERO)
         segmentoP.setBrancos5("");
         segmentoP.setVencimento("15092021");
         segmentoP.setValorTitulo("000000000002000");
@@ -100,20 +103,21 @@ public class GerarRemessaTest {
         segmentoP.setAceite("N");
         segmentoP.setDataEmissaoTitulo("01092021");
         segmentoP.setZeros4("0");
-        segmentoP.setDataJurosMora("01102021");
-        segmentoP.setJuros1Dia("000000000000034");
+        segmentoP.setDataJurosMora("15092021"); // O JUROS SERÁ COBRADO A PARTIR DO VENCIMENTO DO DDA 
+        segmentoP.setJuros1Dia("000000000000050"); // JUROS POR DIA
         segmentoP.setZeros5("0");
-        segmentoP.setData1Desconto("15092021");
-        segmentoP.setValor1Desconto("000000000000200");
+        segmentoP.setData1Desconto("00000000");
+        segmentoP.setValor1Desconto("000000000000000");
         segmentoP.setValorIof("000000000000000");
         segmentoP.setValorAbatimento("000000000000000");
         segmentoP.setUsoEmpresa("");
-        segmentoP.setCodigoNegativacaoProtesto("0");
-        segmentoP.setPrazoNegativacaoProtesto("0");
-        segmentoP.setCodBaixa("0");
-        segmentoP.setPrazoBaixa("00");
+        segmentoP.setCodigoNegativacaoProtesto("0"); //0 - SEM INTRUÇÕES0, 1 - PROTESTAR (Dias corridos), 2 - PROTESTAR (Dias Úteis), 7 - NEGATIVAR (Dias Corridos), 8 - NÃO NEGATIVAR, 3 - NÃO PROTESTAR
+        segmentoP.setPrazoNegativacaoProtesto("0"); // A PARTIR DO VENCIMENTO
+        segmentoP.setCodBaixa("0"); // 0 - SEM INSTRUÇÃO, 1 - BAIXAR EM (A partir do vencimento), 2 - BAIXAR APÓS 365 DIAS DO VENCIMENTO  
+        segmentoP.setPrazoBaixa("00"); // A PARTIR DO VENCIMENTO
         segmentoP.setZeros6("0000000000000");
         segmentoP.setBrancos6("");
+        
         
         LineCnabRegistroSegmentoQRemessa segmentoQ = new LineCnabRegistroSegmentoQRemessa();
         segmentoQ.setCodigoBanco("341");
@@ -140,6 +144,7 @@ public class GerarRemessaTest {
         segmentoQ.setZeros("000");
         segmentoQ.setBrancos4("");
         
+        
         LineCnabRegistroSegmentoRRemessa segmentoR = new LineCnabRegistroSegmentoRRemessa();
         segmentoR.setCodigoBanco("341");
         segmentoR.setCodigoLote("0001");
@@ -149,18 +154,18 @@ public class GerarRemessaTest {
         segmentoR.setBrancos1("");
         segmentoR.setCodOcorrencia("01");
         segmentoR.setZeros1("0");
-        segmentoR.setData2Desconto("");
-        segmentoR.setValor2Desconto("");
+        segmentoR.setData2Desconto("01102021");
+        segmentoR.setValor2Desconto("000000000000000");
         segmentoR.setZeros2("0");
-        segmentoR.setData3Desconto("");
-        segmentoR.setValor3Desconto("");
-        segmentoR.setCodMulta("");
-        segmentoR.setDataMulta("");
-        segmentoR.setMulta("");
+        segmentoR.setData3Desconto("00000000");
+        segmentoR.setValor3Desconto("000000000000000");
+        segmentoR.setCodMulta("1");//0 - NÃO REGISTRAR A MULTA, 1 - VALOR EM REAIS (FIXO), 2 - VALOR EM PERCENTUAL COM DUA CASAS DECIMAIS CONFORME ESTRUTURA DO CAMPO
+        segmentoR.setDataMulta("15092021");// A PARTIR DO VENCIMENTO
+        segmentoR.setMulta("0000000000050");
         segmentoR.setBrancos2("");
         segmentoR.setInfoPagador("");
         segmentoR.setBrancos3("");
-        segmentoR.setCodOcPagador("");
+        segmentoR.setCodOcPagador("00000000");
         segmentoR.setZeros3("00000000");
         segmentoR.setBrancos4("");
         segmentoR.setZeros4("000000000000");
@@ -171,29 +176,31 @@ public class GerarRemessaTest {
         
         LineCnabRegistroTrailerLote trailerLote = new LineCnabRegistroTrailerLote();
         trailerLote.setCodigoBanco("341");
-        trailerLote.setCodigoLote("0001");// soma do tipo 1
+        trailerLote.setCodigoLote("0001");// SOMA DO REGISTRO TIPO 1
         trailerLote.setTipoRegistro("5");
         trailerLote.setBrancos1("");
-        trailerLote.setQtdeRegistros("000004");//soma dos tipos 1,3 e 5
-        trailerLote.setQtdeCobrancaSimples("");
-        trailerLote.setQtdeCobrancaVinculada("");
-        trailerLote.setValorCobrancaVinculada("");
+        trailerLote.setQtdeRegistros("000005");//SOMA DOS TIPOS 1,3 e 5
+        trailerLote.setQtdeCobrancaSimples("000000");
+        trailerLote.setValorCobrancaSimples("00000000000000000");
+        trailerLote.setQtdeCobrancaVinculada("000000");
+        trailerLote.setValorCobrancaVinculada("00000000000000000");
         trailerLote.setZeros("000000000000000000000000000000000000000000000");
         trailerLote.setAvisoBancario("");
         trailerLote.setBrancos2("");
         
+        
         LineCnabRegistroTrailerArquivo trailerArquivo = new LineCnabRegistroTrailerArquivo ();
         trailerArquivo.setCodigoBanco("341");
-        trailerArquivo.setCodigoLote("9999");//sempre vai ser esse
+        trailerArquivo.setCodigoLote("9999");//SEMPRE VAI SER ESSE CÓDIGO
         trailerArquivo.setRegistro("9");
         trailerArquivo.setBrancos1("");
-        trailerArquivo.setTotalLotes("1");// soma do tipo 1
-        trailerArquivo.setTotalRegistros("000006");// soma dos tipos 0,1,3,5 e 9
+        trailerArquivo.setTotalLotes("000001");// SOMA DO REGISTRO TIPO 1
+        trailerArquivo.setTotalRegistros("000007");// SOMA DOS TIPOS 0,1,3,5 e 9
         trailerArquivo.setZeros("000000");
         trailerArquivo.setBrancos2("");          
               
         FixedFormatManager manager = new FixedFormatManagerImpl();
-        String resultHeader = manager.export(header);
+        String resultHeader = manager.export(headerArquivo);
         System.out.println(resultHeader);
         
         String resultLote = manager.export(headerLote);
@@ -217,7 +224,7 @@ public class GerarRemessaTest {
         FileWriter text = new FileWriter("C:\\Users\\larissa.camargo\\Documents\\IntegracaoBancoItau\\CI240_R.txt");
         PrintWriter gravar = new PrintWriter(text);
         
-        gravar.println(manager.export(header));
+        gravar.println(manager.export(headerArquivo));
         gravar.println(manager.export(headerLote));
         gravar.println(manager.export(segmentoP));
         gravar.println(manager.export(segmentoQ));
