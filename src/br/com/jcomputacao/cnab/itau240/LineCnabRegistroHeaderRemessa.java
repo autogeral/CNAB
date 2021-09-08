@@ -9,7 +9,7 @@ import com.ancientprogramming.fixedformat4j.annotation.Record;
  *     27.08.2021
  */
 @Record
-public class LineCnabRegistroHeaderRemessa {
+public class LineCnabRegistroHeaderRemessa extends LineModel {
     private String codigoBanco;
     private String codigoLote;
     private String tipoRegistro;
@@ -275,4 +275,6 @@ public class LineCnabRegistroHeaderRemessa {
     public String toString() {
         return "LineCnabRegistroHeaderRemessa{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", tipoRegistro=" + tipoRegistro + ", brancos1=" + brancos1 + ", codigoInscricao=" + codigoInscricao + ", inscricaoNumero=" + inscricaoNumero + ", brancos2=" + brancos2 + ", zeros1=" + zeros1 + ", agencia=" + agencia + ", brancos3=" + brancos3 + ", zeros2=" + zeros2 + ", conta=" + conta + ", brancos4=" + brancos4 + ", dac=" + dac + ", nomeEmpresa=" + nomeEmpresa + ", nomeBanco=" + nomeBanco + ", brancos5=" + brancos5 + ", codigoArquivo=" + codigoArquivo + ", dataGeracao=" + dataGeracao + ", horaGeracao=" + horaGeracao + ", numSeqArquivoRetorno=" + numSeqArquivoRetorno + ", layoutArquivo=" + layoutArquivo + ", zeros3=" + zeros3 + ", branco6=" + branco6 + ", zeros4=" + zeros4 + ", brancos7=" + brancos7 + '}';
     }  
+    
+    
 }
