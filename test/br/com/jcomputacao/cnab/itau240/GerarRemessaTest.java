@@ -199,38 +199,37 @@ public class GerarRemessaTest {
         trailerArquivo.setZeros("000000");
         trailerArquivo.setBrancos2("");          
               
-        FixedFormatManager manager = new FixedFormatManagerImpl();
-        String resultHeader = manager.export(headerArquivo);
+        String resultHeader = headerArquivo.getRepresentation(headerArquivo);
         System.out.println(resultHeader);
         
-        String resultLote = manager.export(headerLote);
-        System.out.println(resultLote);
+        String resultHeaderLote = headerLote.getRepresentation(headerLote);
+        System.out.println(resultHeaderLote);
         
-        String resultP = manager.export(segmentoP);
+        String resultP = segmentoP.getRepresentation(segmentoP);
         System.out.println(resultP);
         
-        String resultQ = manager.export(segmentoQ);
+        String resultQ = segmentoQ.getRepresentation(segmentoQ);
         System.out.println(resultQ);
         
-        String resultR = manager.export(segmentoR);
+        String resultR = segmentoR.getRepresentation(segmentoR);
         System.out.println(resultR);
  
-        String resultTrailerLote = manager.export(trailerLote);
+        String resultTrailerLote = trailerLote.getRepresentation(trailerLote);
         System.out.println(resultTrailerLote);
         
-        String resultTrailerArquivo = manager.export(trailerArquivo);
+        String resultTrailerArquivo = trailerArquivo.getRepresentation(trailerArquivo);
         System.out.println(resultTrailerArquivo);
         
         FileWriter text = new FileWriter("C:\\Users\\larissa.camargo\\Documents\\IntegracaoBancoItau\\CI240_R.txt");
         PrintWriter gravar = new PrintWriter(text);
         
-        gravar.println(manager.export(headerArquivo));
-        gravar.println(manager.export(headerLote));
-        gravar.println(manager.export(segmentoP));
-        gravar.println(manager.export(segmentoQ));
-        gravar.println(manager.export(segmentoR));
-        gravar.println(manager.export(trailerLote));
-        gravar.println(manager.export(trailerArquivo));
+        gravar.println(headerArquivo.getRepresentation(headerArquivo));
+        gravar.println(headerLote.getRepresentation(headerLote));
+        gravar.println(segmentoP.getRepresentation(segmentoP));
+        gravar.println(segmentoQ.getRepresentation(segmentoQ));
+        gravar.println(segmentoR.getRepresentation(segmentoR));
+        gravar.println(trailerLote.getRepresentation(trailerLote));
+        gravar.println(trailerArquivo.getRepresentation(trailerArquivo));
         
         gravar.close();        
        }
