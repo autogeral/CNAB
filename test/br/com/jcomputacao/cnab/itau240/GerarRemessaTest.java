@@ -1,7 +1,5 @@
 package br.com.jcomputacao.cnab.itau240;
 
-import com.ancientprogramming.fixedformat4j.format.FixedFormatManager;
-import com.ancientprogramming.fixedformat4j.format.impl.FixedFormatManagerImpl;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -36,8 +34,8 @@ public class GerarRemessaTest {
         headerArquivo.setNomeBanco("BANCO ITAU SA");
         headerArquivo.setBrancos5("");
         headerArquivo.setCodigoArquivo("1");
-        headerArquivo.setDataGeracao("01092021");
-        headerArquivo.setHoraGeracao("174427");
+        headerArquivo.setDataGeracao("09092021");
+        headerArquivo.setHoraGeracao("145936");
         headerArquivo.setNumSeqArquivoRetorno("000001");
         headerArquivo.setLayoutArquivo("040");
         headerArquivo.setZeros3("00000");
@@ -68,8 +66,8 @@ public class GerarRemessaTest {
         headerLote.setNomeEmpresa("AUTO GERAL AUTOPECAS LTDA");
         headerLote.setBrancos5("");
         headerLote.setNumSeqArquivoRet("00000001");
-        headerLote.setDataGravacao("01092021");
-        headerLote.setDataCredito("01092021");
+        headerLote.setDataGravacao("09092021");
+        headerLote.setDataCredito("09092021");
         headerLote.setBrancos6("");
         
         
@@ -95,7 +93,7 @@ public class GerarRemessaTest {
         segmentoP.setZeros3("00000");
         segmentoP.setNumDocumento("0000000001"); // NÚMERO DO DOCUMENTO (SEU NÚMERO)
         segmentoP.setBrancos5("");
-        segmentoP.setVencimento("15092021");
+        segmentoP.setVencimento("30092021");
         segmentoP.setValorTitulo("000000000002000");
         segmentoP.setAgCobradora("00000");
         segmentoP.setDac3("0");
@@ -103,8 +101,8 @@ public class GerarRemessaTest {
         segmentoP.setAceite("N");
         segmentoP.setDataEmissaoTitulo("01092021");
         segmentoP.setZeros4("0");
-        segmentoP.setDataJurosMora("15092021"); // O JUROS SERÁ COBRADO A PARTIR DO VENCIMENTO DO DDA 
-        segmentoP.setJuros1Dia("000000000000050"); // JUROS POR DIA
+        segmentoP.setDataJurosMora("30092021"); // O JUROS SERÁ COBRADO A PARTIR DO VENCIMENTO DO DDA 
+        segmentoP.setJuros1Dia("000000000000004"); // JUROS POR DIA
         segmentoP.setZeros5("0");
         segmentoP.setData1Desconto("00000000");
         segmentoP.setValor1Desconto("000000000000000");
@@ -160,8 +158,8 @@ public class GerarRemessaTest {
         segmentoR.setData3Desconto("00000000");
         segmentoR.setValor3Desconto("000000000000000");
         segmentoR.setCodMulta("1");//0 - NÃO REGISTRAR A MULTA, 1 - VALOR EM REAIS (FIXO), 2 - VALOR EM PERCENTUAL COM DUA CASAS DECIMAIS CONFORME ESTRUTURA DO CAMPO
-        segmentoR.setDataMulta("15092021");// A PARTIR DO VENCIMENTO
-        segmentoR.setMulta("0000000000050");
+        segmentoR.setDataMulta("30092021");// A PARTIR DO VENCIMENTO
+        segmentoR.setMulta("00000000000004");
         segmentoR.setBrancos2("");
         segmentoR.setInfoPagador("");
         segmentoR.setBrancos3("");
