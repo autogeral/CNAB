@@ -159,7 +159,7 @@ public class GerarRemessaTest {
         segmentoR.setValor3Desconto("000000000000000");
         segmentoR.setCodMulta("1");//0 - NÃO REGISTRAR A MULTA, 1 - VALOR EM REAIS (FIXO), 2 - VALOR EM PERCENTUAL COM DUA CASAS DECIMAIS CONFORME ESTRUTURA DO CAMPO
         segmentoR.setDataMulta("30092021");// A PARTIR DO VENCIMENTO
-        segmentoR.setMulta("00000000000004");
+        segmentoR.setMulta("000000000000004");
         segmentoR.setBrancos2("");
         segmentoR.setInfoPagador("");
         segmentoR.setBrancos3("");
