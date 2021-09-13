@@ -171,7 +171,7 @@ public class LineCnabRegistroSegmentoRRemessa extends LineModel{
         this.dataMulta = dataMulta;
     }
 
-     @Field(offset = 75, length = 13)
+     @Field(offset = 75, length = 15)
     public String getMulta() {
         return multa;
     }
