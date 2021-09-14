@@ -243,7 +243,7 @@ public class LineCnabRegistroSegmentoRRemessa extends LineModel{
         this.zeros4 = zeros4;
     }
     
-   @Field(offset = 231, length = 1)
+   @Field(offset = 229, length = 2)
     public String getBranco5() {
         return branco5;
     }
