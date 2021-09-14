@@ -54,7 +54,7 @@ public class GerarRemessaTest {
         headerLote.setLayoutLote("030"); // CONTEÚDO FIXO
         headerLote.setBrancos1("");
         headerLote.setCodigoInscricao("2");
-        headerLote.setInscricaoNumero("05437537000137");
+        headerLote.setInscricaoNumero("005437537000137");
         headerLote.setBrancos2("");
         headerLote.setZeros2("0");
         headerLote.setAgencia("0278");
@@ -87,7 +87,7 @@ public class GerarRemessaTest {
         segmentoP.setBrancos3("");
         segmentoP.setDac1("7");
         segmentoP.setNumCarteira("109");
-        segmentoP.setNossoNumero("00000001");
+        segmentoP.setNossoNumero("00000002");
         segmentoP.setDac2("6");
         segmentoP.setBrancos4("");
         segmentoP.setZeros3("00000");
@@ -126,7 +126,7 @@ public class GerarRemessaTest {
         segmentoQ.setBrancos1("");
         segmentoQ.setCodOcorrencia("01");
         segmentoQ.setCodigoInscricao1("2");
-        segmentoQ.setInscricaoNumero1("05437537000218");
+        segmentoQ.setInscricaoNumero1("005437537000218");
         segmentoQ.setNome("AUTO GERAL AUTOPECAS LTDA");
         segmentoQ.setBrancos2("");
         segmentoQ.setLogradouro("AV. Dom Pedro II,1090");
@@ -136,7 +136,7 @@ public class GerarRemessaTest {
         segmentoQ.setCidade("SALTO");
         segmentoQ.setUf("SP");
         segmentoQ.setCodigoInscricao2("2");
-        segmentoQ.setInscricaoNumero2("05437537000137");
+        segmentoQ.setInscricaoNumero2("005437537000137");
         segmentoQ.setSacadorAvalista("AUTO GERAL AUTOPECAS LTDA");
         segmentoQ.setBrancos3("");
         segmentoQ.setZeros("000");
@@ -182,7 +182,7 @@ public class GerarRemessaTest {
         trailerLote.setValorCobrancaSimples("00000000000000000");
         trailerLote.setQtdeCobrancaVinculada("000000");
         trailerLote.setValorCobrancaVinculada("00000000000000000");
-        trailerLote.setZeros("000000000000000000000000000000000000000000000");
+        trailerLote.setZeros("0000000000000000000000000000000000000000000000");
         trailerLote.setAvisoBancario("");
         trailerLote.setBrancos2("");
         
