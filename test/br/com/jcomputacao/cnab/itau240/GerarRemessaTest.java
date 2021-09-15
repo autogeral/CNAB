@@ -87,8 +87,8 @@ public class GerarRemessaTest {
         segmentoP.setBrancos3("");
         segmentoP.setDac1("7");
         segmentoP.setNumCarteira("109");
-        segmentoP.setNossoNumero("00000002");
-        segmentoP.setDac2("6");
+        segmentoP.setNossoNumero("00000003");
+        segmentoP.setDac2("2");
         segmentoP.setBrancos4("");
         segmentoP.setZeros3("00000");
         segmentoP.setNumDocumento("0000000001"); // NÚMERO DO DOCUMENTO (SEU NÚMERO)
