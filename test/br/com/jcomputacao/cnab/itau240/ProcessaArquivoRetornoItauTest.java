@@ -37,6 +37,9 @@ public class ProcessaArquivoRetornoItauTest {
             for(LineCnabRegistroSegmentoTRetorno c : loteRetorno.getSegmentoTRetorno()){
                 System.out.println("Segmento T");
                 System.out.println(c.getCodigoBanco());
+                System.out.println(c.getValorTitulo());
+                System.out.println(c.getNossoNumero());
+                System.out.println(c.getVencimento());
             }
             for(LineCnabRegistroSegmentoURetorno c : loteRetorno.getSegmentoURetorno()){
                 System.out.println("Segmento U");
