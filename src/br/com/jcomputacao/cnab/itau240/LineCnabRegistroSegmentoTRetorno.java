@@ -238,7 +238,7 @@ public class LineCnabRegistroSegmentoTRetorno extends LineModel{
         this.vencimento = vencimento;
     }
 
-     @Field(offset = 82, length = 8)
+     @Field(offset = 82, length = 15)
     public String getValorTitulo() {
         return valorTitulo;
     }
