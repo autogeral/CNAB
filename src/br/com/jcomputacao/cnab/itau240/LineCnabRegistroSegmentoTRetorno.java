@@ -377,4 +377,28 @@ public class LineCnabRegistroSegmentoTRetorno extends LineModel{
     public String toString() {
         return "LineCnabRegistroSegmentoTRetorno{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", tipoRegistro=" + tipoRegistro + ", numRegistro=" + numRegistro + ", segmento=" + segmento + ", boletoDda=" + boletoDda + ", codOcorrencia=" + codOcorrencia + ", zeros1=" + zeros1 + ", agencia=" + agencia + ", zeros2=" + zeros2 + ", conta=" + conta + ", zeros3=" + zeros3 + ", dac1=" + dac1 + ", numCarteira=" + numCarteira + ", nossoNumero=" + nossoNumero + ", dac2=" + dac2 + ", brancos1=" + brancos1 + ", zeros4=" + zeros4 + ", seuNumero=" + seuNumero + ", brancos2=" + brancos2 + ", vencimento=" + vencimento + ", valorTitulo=" + valorTitulo + ", zeros5=" + zeros5 + ", agCobradora=" + agCobradora + ", dac3=" + dac3 + ", usoEmpresa=" + usoEmpresa + ", zeros6=" + zeros6 + ", codigoInscricao=" + codigoInscricao + ", inscricaoNumero=" + inscricaoNumero + ", nome=" + nome + ", brancos3=" + brancos3 + ", zeros7=" + zeros7 + ", tarifaCustas=" + tarifaCustas + ", erros=" + erros + ", codLiquidacao=" + codLiquidacao + ", brancos4=" + brancos4 + '}';
     }  
+    
+    public void unirSegmentosUeT(LineCnabRegistroSegmentoTRetorno segT) {
+        LineCnabRegistroSegmentoURetorno tipoSegmentoU = new LineCnabRegistroSegmentoURetorno();
+        tipoSegmentoU.getSegmento();
+        String tipoSegmentoT = segT.getSegmento();
+        if (!"U".equals(tipoSegmentoU) || !"T".equals(tipoSegmentoT)) {
+            throw new IllegalArgumentException("Metodo unirSegmentosUeT() so deve ser chamado a partir de um objeto de segmento U com um ojeto segmento T como parametro");
+        }
+        this.setAgencia(segT.getAgencia());
+        this.setConta(segT.getConta());
+        this.setDac1(segT.getDac1());
+        this.setNossoNumero(segT.getNossoNumero());
+        this.setNumCarteira(segT.getNumCarteira());
+        this.setVencimento(segT.getVencimento());
+        this.setValorTitulo(segT.getValorTitulo());
+        tipoSegmentoU.setCodigoBanco(segT.getCodigoBanco()); // segmento U
+        this.setAgCobradora(segT.getAgCobradora());
+        this.setDac3(segT.getDac3());
+        this.setCodigoInscricao(segT.getCodigoInscricao());
+        this.setInscricaoNumero(segT.getInscricaoNumero());
+        this.setNome(segT.getNome());
+        tipoSegmentoU.setValorIof(segT.getTarifaCustas());
+        tipoSegmentoU.setCodOcorrrencia(segT.getCodOcorrencia());
+    }
 }
