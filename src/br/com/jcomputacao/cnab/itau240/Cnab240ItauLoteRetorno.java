@@ -9,6 +9,7 @@ import java.util.List;
  *    15.09.2021
  */
 public class Cnab240ItauLoteRetorno {
+    private final String servicoDescricao = "COBRANCA";
     private LineCnabRegistroHeaderRemessa headerArquivo;
     private LineCnabRegistroHeaderLoteRemessa headerLote;
     private List<LineCnabRegistroSegmentoTRetorno> segmentoTRetorno = new ArrayList<LineCnabRegistroSegmentoTRetorno>();    
@@ -16,6 +17,10 @@ public class Cnab240ItauLoteRetorno {
     private LineCnabRegistroTrailerLote trailerLote;
     private LineCnabRegistroTrailerArquivo trailerArquivo;
 
+    public String getServicoDescricao() {
+        return servicoDescricao;
+    }
+    
     public LineCnabRegistroHeaderRemessa getHeaderArquivo() {
         return headerArquivo;
     }
@@ -62,5 +67,5 @@ public class Cnab240ItauLoteRetorno {
 
     public void setTrailerArquivo(LineCnabRegistroTrailerArquivo trailerArquivo) {
         this.trailerArquivo = trailerArquivo;
-    }
+    }  
 }
