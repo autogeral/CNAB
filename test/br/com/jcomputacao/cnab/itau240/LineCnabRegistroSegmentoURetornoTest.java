@@ -24,7 +24,7 @@ public class LineCnabRegistroSegmentoURetornoTest {
         record.setNumRegistro("");
         record.setSegmento("U");
         record.setBrancos1("");
-        record.setCodOcorrrencia("");
+        record.setCodOcorrencia("");
         record.setJurosMulta("");
         record.setValorDesconto("");
         record.setValorAbatimento("");
