@@ -17,7 +17,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
     private String numRegistro;
     private String segmento;
     private String brancos1;
-    private String codOcorrrencia;
+    private String codOcorrencia;
     private String jurosMulta;
     private String valorDesconto;
     private String valorAbatimento;
@@ -89,12 +89,12 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
     }
 
      @Field(offset = 16, length = 2)
-    public String getCodOcorrrencia() {
-        return codOcorrrencia;
+    public String getCodOcorrencia() {
+        return codOcorrencia;
     }
 
-    public void setCodOcorrrencia(String codOcorrrencia) {
-        this.codOcorrrencia = codOcorrrencia;
+    public void setCodOcorrencia(String codOcorrencia) {
+        this.codOcorrencia = codOcorrencia;
     }
 
      @Field(offset = 18, length = 15)
@@ -234,6 +234,6 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
 
     @Override
     public String toString() {
-        return "LineCnabRegistroSegmentoURetorno{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", registro=" + registro + ", numRegistro=" + numRegistro + ", segmento=" + segmento + ", brancos1=" + brancos1 + ", codOcorrrencia=" + codOcorrrencia + ", jurosMulta=" + jurosMulta + ", valorDesconto=" + valorDesconto + ", valorAbatimento=" + valorAbatimento + ", valorIof=" + valorIof + ", valorCreditado1=" + valorCreditado1 + ", valorCreditado2=" + valorCreditado2 + ", zeros1=" + zeros1 + ", dataOcorrencia1=" + dataOcorrencia1 + ", dataCredito=" + dataCredito + ", ocorrenciaPagador=" + ocorrenciaPagador + ", dataOcorrencia2=" + dataOcorrencia2 + ", valorOcorrencia=" + valorOcorrencia + ", brancos2=" + brancos2 + ", zeros2=" + zeros2 + ", brancos3=" + brancos3 + '}';
+        return "LineCnabRegistroSegmentoURetorno{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", registro=" + registro + ", numRegistro=" + numRegistro + ", segmento=" + segmento + ", brancos1=" + brancos1 + ", codOcorrrencia=" + codOcorrencia + ", jurosMulta=" + jurosMulta + ", valorDesconto=" + valorDesconto + ", valorAbatimento=" + valorAbatimento + ", valorIof=" + valorIof + ", valorCreditado1=" + valorCreditado1 + ", valorCreditado2=" + valorCreditado2 + ", zeros1=" + zeros1 + ", dataOcorrencia1=" + dataOcorrencia1 + ", dataCredito=" + dataCredito + ", ocorrenciaPagador=" + ocorrenciaPagador + ", dataOcorrencia2=" + dataOcorrencia2 + ", valorOcorrencia=" + valorOcorrencia + ", brancos2=" + brancos2 + ", zeros2=" + zeros2 + ", brancos3=" + brancos3 + '}';
     }
 }

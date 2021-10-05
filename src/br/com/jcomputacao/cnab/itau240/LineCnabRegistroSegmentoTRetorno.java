@@ -399,6 +399,6 @@ public class LineCnabRegistroSegmentoTRetorno extends LineModel{
         this.setInscricaoNumero(segT.getInscricaoNumero());
         this.setNome(segT.getNome());
         tipoSegmentoU.setValorIof(segT.getTarifaCustas());
-        tipoSegmentoU.setCodOcorrrencia(segT.getCodOcorrencia());
+        tipoSegmentoU.setCodOcorrencia(segT.getCodOcorrencia());
     }
 }
