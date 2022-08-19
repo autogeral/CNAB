@@ -78,7 +78,7 @@ public class LineCnabRegistroSegmentoBPagamento extends LineModel{
     }
     
     public void setNumRegistro(String numRegistro){
-        this.numeroLocal = numRegistro;
+        this.numRegistro = numRegistro;
     }
     
     @Field(offset = 14 , length = 1)

@@ -93,12 +93,12 @@ public class LineCnabRegistroHeaderRemessaPagamento  extends LineModel{
         return inscricaoNumero;
     }
     
-    public void setInscricaoNumero(){
+    public void setInscricaoNumero(String inscricaoNumero){
         this.inscricaoNumero = inscricaoNumero;
     }
     
     @Field(offset = 33, length = 20)
-    public String brancos2(){
+    public String getBrancos2(){
         return brancos2;
     }
     
@@ -234,6 +234,6 @@ public class LineCnabRegistroHeaderRemessaPagamento  extends LineModel{
 
     @Override
     public String toString() {
-        return "LineCnabRegistroHeaderRemessaPagamento{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", tipoRegistro=" + tipoRegistro + ", brancos1=" + brancos1 + ", layoutArquivo=" + layoutArquivo + ", empresaInscricao=" + empresaInscricao + ", inscricaoNumero=" + inscricaoNumero + ", brancos2=" + brancos2 + ", agencia=" + agencia + ", brancos3=" + brancos3 + ", agencia=" + agencia + ", contaC=" + contaC + ", brancos4=" + brancos4 + ", dac=" + dac + ", nomeEmpresa=" + nomeEmpresa + ", nomeBanco=" + nomeBanco + ", brancos5=" + brancos5 + ", arquivoCodigo=" + arquivoCodigo + ", dataGeracao=" + dataGeracao + ", horaGeracao=" + horaGeracao + ", zeros=" + zeros + ", unidadeDensidade=" + unidadeDensidade + ", brancos6=" + brancos6 + '}';
+        return "LineCnabRegistroHeaderRemessaPagamento{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", tipoRegistro=" + tipoRegistro + ", brancos1=" + brancos1 + ", layoutArquivo=" + layoutArquivo + ", empresaInscricao=" + empresaInscricao + ", inscricaoNumero=" + inscricaoNumero + ", brancos2=" + brancos2 + ", agencia=" + agencia + ", brancos3=" + brancos3 + ", contaC=" + contaC + ", brancos4=" + brancos4 + ", dac=" + dac + ", nomeEmpresa=" + nomeEmpresa + ", nomeBanco=" + nomeBanco + ", brancos5=" + brancos5 + ", arquivoCodigo=" + arquivoCodigo + ", dataGeracao=" + dataGeracao + ", horaGeracao=" + horaGeracao + ", zeros=" + zeros + ", unidadeDensidade=" + unidadeDensidade + ", brancos6=" + brancos6 + '}';
     }
 }

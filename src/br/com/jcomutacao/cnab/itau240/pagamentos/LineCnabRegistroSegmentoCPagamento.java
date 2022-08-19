@@ -47,7 +47,7 @@ public class LineCnabRegistroSegmentoCPagamento extends LineModel {
         return codigoBanco;
     }
     
-    public void serCodigoBanco(String codigoBanco){
+    public void setCodigoBanco(String codigoBanco){
         this.codigoBanco = codigoBanco;
     }
     

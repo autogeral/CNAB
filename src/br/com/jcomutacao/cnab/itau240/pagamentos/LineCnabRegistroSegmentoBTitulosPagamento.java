@@ -10,7 +10,7 @@ import com.ancientprogramming.fixedformat4j.annotation.Record;
  *    08.08.2022
  */
 @Record
-public class LineCnabRegistroSegmentoBBloquetosPagamento extends LineModel {
+public class LineCnabRegistroSegmentoBTitulosPagamento extends LineModel {
     private String codigoBanco;
     private String codigoLote;
     private String tipoRegistro;

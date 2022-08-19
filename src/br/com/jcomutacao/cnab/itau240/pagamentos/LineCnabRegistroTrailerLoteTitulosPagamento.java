@@ -7,26 +7,25 @@ import com.ancientprogramming.fixedformat4j.annotation.Record;
 /**
  *
  * @author larissa.camargo
- *   08.09.2022
+ *   08.08.2022
  */
 @Record
-public class LineCnabRegistroTrailerLoteContasPagamento extends LineModel{
+public class LineCnabRegistroTrailerLoteTitulosPagamento extends LineModel {
     private String codigoBanco;
     private String codigoLote;
     private String tipoRegistro;
     private String brancos1;
     private String totalQtdRegistros;
-    private String totalValorPgto;
-    private String totalQtdeMoeda;
+    private String totalValorPgtos;
+    private String zeros;
     private String brancos2;
     private String ocorrencias;
     
-    
-    /*
-       REGISTRO TRAILER LOTE
-    P/PAGAMENTOS DE CONTAS DE CONCESSIONARIAS E TRIBUTOS COM CÓDIGO DE BARRAS
+   /*
+        REGISTRO TRAILER DE LOTE
+    P/LIQUIDAÇÃO DE TÍTULOS (BLOQUETOS) EM COBRANÇA NO ITAÚ E EM OUTROS BANCOS
     */
-
+    
     @Field(offset = 1, length = 3)
     public String getCodigoBanco() {
         return codigoBanco;
@@ -54,7 +53,7 @@ public class LineCnabRegistroTrailerLoteContasPagamento extends LineModel{
         this.tipoRegistro = tipoRegistro;
     }
 
-    @Field(offset = 9 , length = 9)
+    @Field(offset = 9, length = 9)
     public String getBrancos1() {
         return brancos1;
     }
@@ -73,24 +72,24 @@ public class LineCnabRegistroTrailerLoteContasPagamento extends LineModel{
     }
 
     @Field(offset = 24, length = 18)
-    public String getTotalValorPgto() {
-        return totalValorPgto;
+    public String getTotalValorPgtos() {
+        return totalValorPgtos;
     }
 
-    public void setTotalValorPgto(String totalValorPgto) {
-        this.totalValorPgto = totalValorPgto;
+    public void setTotalValorPgtos(String totalValorPgtos) {
+        this.totalValorPgtos = totalValorPgtos;
     }
 
-    @Field(offset = 42, length = 9)
-    public String getTotalQtdeMoeda() {
-        return totalQtdeMoeda;
+    @Field(offset = 42, length = 18)
+    public String getZeros() {
+        return zeros;
     }
 
-    public void setTotalQtdeMoeda(String totalQtdeMoeda) {
-        this.totalQtdeMoeda = totalQtdeMoeda;
+    public void setZeros(String zeros) {
+        this.zeros = zeros;
     }
 
-    @Field(offset = 57, length = 174)
+    @Field(offset = 60, length = 171)
     public String getBrancos2() {
         return brancos2;
     }
@@ -110,6 +109,6 @@ public class LineCnabRegistroTrailerLoteContasPagamento extends LineModel{
 
     @Override
     public String toString() {
-        return "LineCnabRegistroTrailerLoteContasPagamento{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", tipoRegistro=" + tipoRegistro + ", brancos1=" + brancos1 + ", totalQtdRegistros=" + totalQtdRegistros + ", totalValorPgto=" + totalValorPgto + ", totalQtdeMoeda=" + totalQtdeMoeda + ", brancos2=" + brancos2 + ", ocorrencias=" + ocorrencias + '}';
+        return "LineCnabRegistroTrailerLoteBloquetoPagamento{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", tipoRegistro=" + tipoRegistro + ", brancos1=" + brancos1 + ", totalQtdRegistros=" + totalQtdRegistros + ", totalValorPgtos=" + totalValorPgtos + ", zeros=" + zeros + ", brancos2=" + brancos2 + ", ocorrencias=" + ocorrencias + '}';
     }
 }

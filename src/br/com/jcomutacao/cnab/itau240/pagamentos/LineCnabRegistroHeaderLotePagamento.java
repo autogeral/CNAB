@@ -235,7 +235,7 @@ public class LineCnabRegistroHeaderLotePagamento extends LineModel {
         return numeroLocal;
     }
     
-    public void setNumetoLocal(String numeroLocal){
+    public void setNumeroLocal(String numeroLocal){
         this.numeroLocal = numeroLocal;
     }
     

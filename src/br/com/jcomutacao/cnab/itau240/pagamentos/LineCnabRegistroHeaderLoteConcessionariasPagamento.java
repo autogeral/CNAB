@@ -7,10 +7,10 @@ import com.ancientprogramming.fixedformat4j.annotation.Record;
 /**
  *
  * @author larissa.camargo
- *    08.08.2022
+ *  08.08.2022
  */
 @Record
-public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
+public class LineCnabRegistroHeaderLoteConcessionariasPagamento extends LineModel{
     private String codigoBanco;
     private String codigoLote;
     private String tipoRegistro;
@@ -39,17 +39,12 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
     private String brancos5;
     private String ocorrencias;
     
-    
     /*
         REGISTRO HEADER DE LOTE 
-    P/ LIQUIDAÇÃO DE TÍTULOS(BLOQUETOS) EM COBRANÇA NO ITAÚ E EM OUTROS BANCOS
-    
-    Quando se tratar de lote para financiamento de Bens e Serviços (COMPROR/FINABS) ou Desconto de
-    NPR (Crédito Rural), previamente contratado junto ao banco, o conteúdo deste campo deve ser
-    identificado pela letra "F". Esta sistemática só se aplica ao Pagamento de Fornecedores, tipo 20.
+    P/PAGAMENTOS DE CONTAS DE CONCESSIONÁRIA E TRIBUTOS COM CÓDIGO DE BARRAS
     */
 
-    @Field(offset = 1, length = 3)
+    @Field(offset = 1 , length = 3)
     public String getCodigoBanco() {
         return codigoBanco;
     }
@@ -58,7 +53,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.codigoBanco = codigoBanco;
     }
 
-    @Field(offset = 4, length = 4)
+    @Field(offset = 4 , length = 4)
     public String getCodigoLote() {
         return codigoLote;
     }
@@ -67,7 +62,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.codigoLote = codigoLote;
     }
 
-    @Field(offset = 8, length = 1)
+    @Field(offset = 8 , length = 1)
     public String getTipoRegistro() {
         return tipoRegistro;
     }
@@ -76,7 +71,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.tipoRegistro = tipoRegistro;
     }
 
-    @Field(offset = 9, length = 1)
+    @Field(offset = 9 , length = 1)
     public String getTipoOperacao() {
         return tipoOperacao;
     }
@@ -94,7 +89,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.tipoPagamento = tipoPagamento;
     }
 
-    @Field(offset = 12, length = 2)
+    @Field(offset = 12 , length = 2)
     public String getFormaPagamento() {
         return formaPagamento;
     }
@@ -103,7 +98,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.formaPagamento = formaPagamento;
     }
 
-    @Field(offset = 14, length = 3)
+    @Field(offset = 14 , length = 3)
     public String getLayoutLote() {
         return layoutLote;
     }
@@ -112,7 +107,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.layoutLote = layoutLote;
     }
 
-    @Field(offset = 17, length = 1)
+    @Field(offset = 17 , length = 1)
     public String getBrancos1() {
         return brancos1;
     }
@@ -121,7 +116,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.brancos1 = brancos1;
     }
 
-    @Field(offset = 18, length = 1)
+    @Field(offset = 18 , length = 1)
     public String getEmpresaInscricao() {
         return empresaInscricao;
     }
@@ -130,7 +125,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.empresaInscricao = empresaInscricao;
     }
 
-    @Field(offset = 19, length = 14)
+    @Field(offset = 19 , length = 14)
     public String getInscricaoNumero() {
         return inscricaoNumero;
     }
@@ -139,7 +134,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.inscricaoNumero = inscricaoNumero;
     }
 
-    @Field(offset = 33, length = 20)
+    @Field(offset = 33 , length = 20)
     public String getBrancos2() {
         return brancos2;
     }
@@ -148,7 +143,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.brancos2 = brancos2;
     }
 
-    @Field(offset = 53, length = 5)
+    @Field(offset = 53 , length = 5)
     public String getAgencia() {
         return agencia;
     }
@@ -157,7 +152,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.agencia = agencia;
     }
 
-    @Field(offset = 58, length = 1)
+    @Field(offset = 58 , length = 1)
     public String getBrancos3() {
         return brancos3;
     }
@@ -166,7 +161,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.brancos3 = brancos3;
     }
 
-     @Field(offset = 59, length = 12)
+    @Field(offset = 59 , length = 12)
     public String getConta() {
         return conta;
     }
@@ -175,7 +170,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.conta = conta;
     }
 
-    @Field(offset = 71, length = 1)
+    @Field(offset = 71 , length = 1)
     public String getBrancos4() {
         return brancos4;
     }
@@ -184,7 +179,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.brancos4 = brancos4;
     }
 
-    @Field(offset = 72 ,length = 1)
+    @Field(offset = 72 , length = 1)
     public String getDac() {
         return dac;
     }
@@ -193,7 +188,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.dac = dac;
     }
 
-    @Field(offset = 73, length = 30)
+    @Field(offset = 73 , length = 30)
     public String getNomeEmpresa() {
         return nomeEmpresa;
     }
@@ -202,7 +197,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.nomeEmpresa = nomeEmpresa;
     }
 
-    @Field(offset = 103, length = 30)
+    @Field(offset = 103 , length = 30)
     public String getFinalidadeLote() {
         return finalidadeLote;
     }
@@ -211,7 +206,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.finalidadeLote = finalidadeLote;
     }
 
-    @Field(offset = 133, length = 10)
+    @Field(offset = 133 , length = 10)
     public String getHistoricoContaCorrente() {
         return historicoContaCorrente;
     }
@@ -220,7 +215,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.historicoContaCorrente = historicoContaCorrente;
     }
 
-    @Field(offset = 143, length = 30)
+    @Field(offset = 143 , length = 30)
     public String getEnderecoEmpresa() {
         return enderecoEmpresa;
     }
@@ -229,7 +224,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.enderecoEmpresa = enderecoEmpresa;
     }
 
-    @Field(offset = 173, length = 5)
+    @Field(offset = 173 , length = 5)
     public String getNumero() {
         return numero;
     }
@@ -238,7 +233,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.numero = numero;
     }
 
-    @Field(offset = 178, length = 15)
+    @Field(offset = 178 , length = 15)
     public String getComplemento() {
         return complemento;
     }
@@ -247,7 +242,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.complemento = complemento;
     }
 
-    @Field(offset = 193, length = 20)
+    @Field(offset = 193 , length = 20)
     public String getCidade() {
         return cidade;
     }
@@ -256,7 +251,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.cidade = cidade;
     }
 
-    @Field(offset = 213, length = 8)
+    @Field(offset = 213 , length = 8)
     public String getCep() {
         return cep;
     }
@@ -265,7 +260,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.cep = cep;
     }
 
-    @Field(offset = 221, length = 2)
+    @Field(offset = 221 , length = 2)
     public String getEstado() {
         return estado;
     }
@@ -274,7 +269,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.estado = estado;
     }
 
-    @Field(offset = 223, length = 8)
+    @Field(offset = 223 , length = 8)
     public String getBrancos5() {
         return brancos5;
     }
@@ -283,7 +278,7 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
         this.brancos5 = brancos5;
     }
 
-    @Field(offset = 231, length = 10)
+    @Field(offset = 231 , length = 10)
     public String getOcorrencias() {
         return ocorrencias;
     }
@@ -294,6 +289,6 @@ public class LineCnabRegistroHeaderLoteBloquetosPagamento extends LineModel {
 
     @Override
     public String toString() {
-        return "LineCnabRegistroHeaderLoteBloquetosPagamento{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", tipoRegistro=" + tipoRegistro + ", tipoOperacao=" + tipoOperacao + ", tipoPagamento=" + tipoPagamento + ", formaPagamento=" + formaPagamento + ", layoutLote=" + layoutLote + ", brancos1=" + brancos1 + ", empresaInscricao=" + empresaInscricao + ", inscricaoNumero=" + inscricaoNumero + ", brancos2=" + brancos2 + ", agencia=" + agencia + ", brancos3=" + brancos3 + ", conta=" + conta + ", brancos4=" + brancos4 + ", dac=" + dac + ", nomeEmpresa=" + nomeEmpresa + ", finalidadeLote=" + finalidadeLote + ", historicoContaCorrente=" + historicoContaCorrente + ", enderecoEmpresa=" + enderecoEmpresa + ", numero=" + numero + ", complemento=" + complemento + ", cidade=" + cidade + ", cep=" + cep + ", estado=" + estado + ", brancos5=" + brancos5 + ", ocorrencias=" + ocorrencias + '}';
+        return "LineCnabRegistroHeaderLoteContasPagamento{" + "codigoBanco=" + codigoBanco + ", codigoLote=" + codigoLote + ", tipoRegistro=" + tipoRegistro + ", tipoOperacao=" + tipoOperacao + ", tipoPagamento=" + tipoPagamento + ", formaPagamento=" + formaPagamento + ", layoutLote=" + layoutLote + ", brancos1=" + brancos1 + ", empresaInscricao=" + empresaInscricao + ", inscricaoNumero=" + inscricaoNumero + ", brancos2=" + brancos2 + ", agencia=" + agencia + ", brancos3=" + brancos3 + ", conta=" + conta + ", brancos4=" + brancos4 + ", dac=" + dac + ", nomeEmpresa=" + nomeEmpresa + ", finalidadeLote=" + finalidadeLote + ", historicoContaCorrente=" + historicoContaCorrente + ", enderecoEmpresa=" + enderecoEmpresa + ", numero=" + numero + ", complemento=" + complemento + ", cidade=" + cidade + ", cep=" + cep + ", estado=" + estado + ", brancos5=" + brancos5 + ", ocorrencias=" + ocorrencias + '}';
     }
 }

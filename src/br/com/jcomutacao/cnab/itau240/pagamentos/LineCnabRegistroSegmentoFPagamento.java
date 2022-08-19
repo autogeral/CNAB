@@ -1,13 +1,16 @@
 package br.com.jcomutacao.cnab.itau240.pagamentos;
 
+import br.com.jcomputacao.cnab.itau240.LineModel;
 import com.ancientprogramming.fixedformat4j.annotation.Field;
+import com.ancientprogramming.fixedformat4j.annotation.Record;
 
 /**
  *
  * @author larissa.camargo
  *   05.08.2022
  */
-public class LineCnabRegistroSegmentoFPagamento {
+@Record
+public class LineCnabRegistroSegmentoFPagamento extends LineModel {
     private String codigoBanco;
     private String codigoLote;
     private String tipoRegistro;
@@ -100,7 +103,7 @@ public class LineCnabRegistroSegmentoFPagamento {
         this.brancos2 = brancos2;
     }
     
-    @Field(offset = 1, length = 3)
+    @Field(offset = 231, length = 10)
     public String getOcorrencias(){
         return ocorrencias;
     }

@@ -11,7 +11,7 @@ import static java.time.Clock.offset;
  *   05.08.2022
  */
 @Record
-public class LineCnabRegistroSegmentoAPagamentoNotaFiscal extends LineModel{
+public class LineCnabRegistroSegmentoANotaFiscalPagamento extends LineModel{
     private String codigoBanco;
     private String codigoLote;
     private String tipoRegistro;
@@ -60,7 +60,7 @@ public class LineCnabRegistroSegmentoAPagamentoNotaFiscal extends LineModel{
     }
     
     public void setCodigoLote(String codigoLote){
-        this.codigoSegmento = codigoLote;
+        this.codigoLote = codigoLote;
     }
     
     @Field(offset = 8, length = 1)
@@ -185,7 +185,7 @@ public class LineCnabRegistroSegmentoAPagamentoNotaFiscal extends LineModel{
         return nossoNumero;
     }
     
-    public void setNossoNumero(){
+    public void setNossoNumero(String nossoNumero){
         this.nossoNumero = nossoNumero;
     }
     
@@ -217,11 +217,11 @@ public class LineCnabRegistroSegmentoAPagamentoNotaFiscal extends LineModel{
     }
     
     @Field(offset = 178, length = 14)
-    public String NumeroNotaFiscal(){
+    public String getNumeroNotaFiscal(){
         return numeroNotaFiscal;
     }
     
-    public void setNumeroNotaFiscal(){
+    public void setNumeroNotaFiscal(String numeroNotaFiscal){
         this.numeroNotaFiscal = numeroNotaFiscal;
     }
     

@@ -132,7 +132,7 @@ public class LineCnabRegistroSegmentoDPagamento extends LineModel{
         return cargo;
     }
     
-    public void setCargo(){
+    public void setCargo(String cargo){
         this.cargo = cargo;
     }
     
