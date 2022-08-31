@@ -71,8 +71,8 @@ public class GerarRemessa {
         headerArquivo.setNomeBanco("BANCO ITAU SA");
         headerArquivo.setBrancos5("");
         headerArquivo.setArquivoCodigo("1");
-        headerArquivo.setDataGeracao("19082022");
-        headerArquivo.setHoraGeracao("121150");
+        headerArquivo.setDataGeracao("22082022");
+        headerArquivo.setHoraGeracao("151150");
         headerArquivo.setZeros("000000000");
         headerArquivo.setUnidadeDensidade("00000");
         headerArquivo.setBrancos6("");
@@ -88,7 +88,7 @@ public class GerarRemessa {
             60-Desp Viajante em Transito, 80-Representantes Autorizados, 90-Beneficios e 98-Diversos
         */
         headerLote.setTipoPagamento("30"); 
-        headerLote.setFormaPagamento("6");
+        headerLote.setFormaPagamento("01");
         headerLote.setLayoutLote("040");
         headerLote.setBrancos1("");
         headerLote.setEmpresaInscricao("2");
@@ -121,14 +121,14 @@ public class GerarRemessa {
         segmentoA.setTipoMovimento("000");
         segmentoA.setCodigoCamara("000");
         segmentoA.setBancoFavorecido("341");
-        segmentoA.setAgenciaFavorecido("00278 000000092471 7");
-        segmentoA.setNomeFavorecido("AUTO GERAL AUTOPECAS LTDA");
+        segmentoA.setAgenciaFavorecido("00278 000000095123 1");
+        segmentoA.setNomeFavorecido("RANILORI SANTOS NASCIMENTO");
         segmentoA.setSeuNumero("00000000000000000001");
-        segmentoA.setDataPgto("");
+        segmentoA.setDataPgto("30082022");
         segmentoA.setTipoMoeda("REA");
         segmentoA.setCodigoIspb("00000000");
         segmentoA.setZeros1("0000000");
-        segmentoA.setValorPgto("");
+        segmentoA.setValorPgto("000000000000500");
         segmentoA.setNossoNumero("");
         segmentoA.setBrancos1("");
         segmentoA.setDataEfetivaPgto("");
@@ -136,7 +136,7 @@ public class GerarRemessa {
         segmentoA.setFinalidadeDetalhe("01");
         segmentoA.setBrancos2("");
         segmentoA.setNumeroDoc("");
-        segmentoA.setNumeroInscricao("05437537000137");
+        segmentoA.setNumeroInscricao("00025186129801");
         segmentoA.setFinalidadeDocStatus("21");
         segmentoA.setFinalidadeTed("00004");
         segmentoA.setBrancos3("");
@@ -147,13 +147,13 @@ public class GerarRemessa {
         segmentoANotaFiscal.setCodigoBanco("341");
         segmentoANotaFiscal.setCodigoLote("0001");
         segmentoANotaFiscal.setTipoRegistro("3");
-        segmentoANotaFiscal.setNumRegistro("00001");
+        segmentoANotaFiscal.setNumRegistro("00002");
         segmentoANotaFiscal.setCodigoSegmento("A");
         segmentoANotaFiscal.setTipoMovimento("000");
         segmentoANotaFiscal.setZeros1("000");
         segmentoANotaFiscal.setBancoFavorecido("341");
-        segmentoANotaFiscal.setAgenciaFavorecido("00278 000000092471 7");
-        segmentoANotaFiscal.setNomeFavorecido("AUTO GERAL AUTOPECAS LTDA");
+        segmentoANotaFiscal.setAgenciaFavorecido("00278 000000095123 1");
+        segmentoANotaFiscal.setNomeFavorecido("RANILORI SANTOS NASCIMENTO");
         segmentoANotaFiscal.setSeuNumero("00000000000000000002");
         segmentoANotaFiscal.setDataPgto("30082022");
         segmentoANotaFiscal.setTipoMoeda("REA");
@@ -166,7 +166,7 @@ public class GerarRemessa {
         segmentoANotaFiscal.setNumeroNotaFiscal("");
         segmentoANotaFiscal.setBrancos2("");
         segmentoANotaFiscal.setNumDoc("000001");
-        segmentoANotaFiscal.setNumInscricao("05437537000137");
+        segmentoANotaFiscal.setNumInscricao("00025186129801");
         segmentoANotaFiscal.setTipoIdentificacao("1");
         segmentoANotaFiscal.setBrancos3("");
         segmentoANotaFiscal.setAvisoFavorecido("0");
@@ -192,28 +192,28 @@ public class GerarRemessa {
 //        segmentoB.setBrancos2("");
 //        segmentoB.setOcorrencias("");
         
-        LineCnabRegistroSegmentoCPagamento segmentoC = new LineCnabRegistroSegmentoCPagamento();
-        segmentoC.setCodigoBanco("341");
-        segmentoC.setCodigoLote("0001");
-        segmentoC.setTipoRegistro("3");
-        segmentoC.setNumRegistro("00001");
-        segmentoC.setCodigoSegmento("C");
-        segmentoC.setValorContribuicaoLucro("000000000000000");
-        segmentoC.setBrancos1("");
-        segmentoC.setVencimento("30082022");
-        segmentoC.setValorDoc("000000000000500");
-        segmentoC.setValorPIS("000000000000000");
-        segmentoC.setValorIR("000000000000000");
-        segmentoC.setValorISS("000000000000000");
-        segmentoC.setValorCofins("000000000000000");
-        segmentoC.setValorDesconto("000000000000000");
-        segmentoC.setAbatimento("000000000000000");
-        segmentoC.setOutrasDeducoes("000000000000000");
-        segmentoC.setMora("000000000000000");
-        segmentoC.setMulta("000000000000000");
-        segmentoC.setOutrosAcrescimos("000000000000000");
-        segmentoC.setFaturaDocumento("");
-        segmentoC.setBrancos2("");
+//        LineCnabRegistroSegmentoCPagamento segmentoC = new LineCnabRegistroSegmentoCPagamento();
+//        segmentoC.setCodigoBanco("341");
+//        segmentoC.setCodigoLote("0001");
+//        segmentoC.setTipoRegistro("3");
+//        segmentoC.setNumRegistro("00003");
+//        segmentoC.setCodigoSegmento("C");
+//        segmentoC.setValorContribuicaoLucro("000000000000000");
+//        segmentoC.setBrancos1("");
+//        segmentoC.setVencimento("30082022");
+//        segmentoC.setValorDoc("000000000000500");
+//        segmentoC.setValorPIS("000000000000000");
+//        segmentoC.setValorIR("000000000000000");
+//        segmentoC.setValorISS("000000000000000");
+//        segmentoC.setValorCofins("000000000000000");
+//        segmentoC.setValorDesconto("000000000000000");
+//        segmentoC.setAbatimento("000000000000000");
+//        segmentoC.setOutrasDeducoes("000000000000000");
+//        segmentoC.setMora("000000000000000");
+//        segmentoC.setMulta("000000000000000");
+//        segmentoC.setOutrosAcrescimos("000000000000000");
+//        segmentoC.setFaturaDocumento("");
+//        segmentoC.setBrancos2("");
         
 //        LineCnabRegistroSegmentoDPagamento segmentoD = new LineCnabRegistroSegmentoDPagamento();
 //        segmentoD.setCodigoBanco("341");
@@ -243,49 +243,49 @@ public class GerarRemessa {
 //        segmentoD.setBrancos2("");
 //        segmentoD.setOcorrencias("");
         
-        LineCnabRegistroSegmentoEPagamento segmentoE = new LineCnabRegistroSegmentoEPagamento();
-        segmentoE.setCodigoBanco("341");
-        segmentoE.setCodigoLote("0001");
-        segmentoE.setTipoRegistro("3");
-        segmentoE.setNumRegistro("00001");
-        segmentoE.setCodigoSegmento("E");
-        segmentoE.setBrancos1("");
-        segmentoE.setTipoMovimento("1");
-        segmentoE.setInfoComplementares("");
-        segmentoE.setBrancos2("");
-        segmentoE.setOcorrencias("");
+//        LineCnabRegistroSegmentoEPagamento segmentoE = new LineCnabRegistroSegmentoEPagamento();
+//        segmentoE.setCodigoBanco("341");
+//        segmentoE.setCodigoLote("0001");
+//        segmentoE.setTipoRegistro("3");
+//        segmentoE.setNumRegistro("00004");
+//        segmentoE.setCodigoSegmento("E");
+//        segmentoE.setBrancos1("");
+//        segmentoE.setTipoMovimento("1");
+//        segmentoE.setInfoComplementares("");
+//        segmentoE.setBrancos2("");
+//        segmentoE.setOcorrencias("");
         
         
-        LineCnabRegistroSegmentoFPagamento segmentoF = new LineCnabRegistroSegmentoFPagamento();
-        segmentoF.setCodigoBanco("341");
-        segmentoF.setCodigoLote("0001");
-        segmentoF.setTipoRegistro("3");
-        segmentoF.setNumRegistro("00001");
-        segmentoF.setCodigoSegmento("F");
-        segmentoF.setBrancos1("");
-        segmentoF.setMsgInformacoes("");
-        segmentoF.setBrancos2("");
-        segmentoF.setOcorrencias("");
+//        LineCnabRegistroSegmentoFPagamento segmentoF = new LineCnabRegistroSegmentoFPagamento();
+//        segmentoF.setCodigoBanco("341");
+//        segmentoF.setCodigoLote("0001");
+//        segmentoF.setTipoRegistro("3");
+//        segmentoF.setNumRegistro("00005");
+//        segmentoF.setCodigoSegmento("F");
+//        segmentoF.setBrancos1("");
+//        segmentoF.setMsgInformacoes("");
+//        segmentoF.setBrancos2("");
+//        segmentoF.setOcorrencias("");
         
         
-        LineCnabRegistroSegmentoZPagamento segmentoZ = new LineCnabRegistroSegmentoZPagamento();
-        segmentoZ.setCodigoBanco("341");
-        segmentoZ.setCodigoLote("0001");
-        segmentoZ.setTipoRegistro("3");
-        segmentoZ.setNumRegistro("00001");
-        segmentoZ.setCodigoSegmento("Z");
-        segmentoZ.setAutenticacaoEletronica("");
-        segmentoZ.setSeuNumero("00000000000000000001");
-        segmentoZ.setBrancos1("");
-        segmentoZ.setNossoNumero("");
-        segmentoZ.setBrancos2("");
+//        LineCnabRegistroSegmentoZPagamento segmentoZ = new LineCnabRegistroSegmentoZPagamento();
+//        segmentoZ.setCodigoBanco("341");
+//        segmentoZ.setCodigoLote("0001");
+//        segmentoZ.setTipoRegistro("3");
+//        segmentoZ.setNumRegistro("00006");
+//        segmentoZ.setCodigoSegmento("Z");
+//        segmentoZ.setAutenticacaoEletronica("");
+//        segmentoZ.setSeuNumero("00000000000000000003");
+//        segmentoZ.setBrancos1("");
+//        segmentoZ.setNossoNumero("");
+//        segmentoZ.setBrancos2("");
         
         LineCnabRegistroTrailerLotePagamento trailerLote = new LineCnabRegistroTrailerLotePagamento();
         trailerLote.setCodigoBanco("341");
         trailerLote.setCodigoLote("0001");
         trailerLote.setTipoRegistro("5");
         trailerLote.setBrancos1("");
-        trailerLote.setTotalQtdRegistros("000008"); // Soma do total de registros do tipo 1,3 e 5.
+        trailerLote.setTotalQtdRegistros("000004"); // Soma do total de registros do tipo 1,3 e 5.
         trailerLote.setTotalValorPgto("000000000000000500"); // Soma do valor total de pagamentos 
         trailerLote.setZeros("000000000000000000");
         trailerLote.setBrancos2("");
@@ -295,8 +295,8 @@ public class GerarRemessa {
         headerLoteTitulos.setCodigoBanco("341");
         headerLoteTitulos.setCodigoLote("0002");
         headerLoteTitulos.setTipoRegistro("1");
-        headerLoteTitulos.setTipoOperacao("");
-        headerLoteTitulos.setTipoPagamento("98");
+        headerLoteTitulos.setTipoOperacao("C");
+        headerLoteTitulos.setTipoPagamento("20");
         headerLoteTitulos.setFormaPagamento("30");
         headerLoteTitulos.setLayoutLote("030");
         headerLoteTitulos.setBrancos1("");
@@ -324,16 +324,16 @@ public class GerarRemessa {
         segmentoJ.setCodigoBanco("341");
         segmentoJ.setCodigoLote("0002");
         segmentoJ.setTipoRegistro("3");
-        segmentoJ.setNumeroRegistro("00002");
+        segmentoJ.setNumeroRegistro("00001");
         segmentoJ.setCodigoSegmento("J");
         segmentoJ.setTipoMovimento("000");
-        segmentoJ.setBancoFavorecido("341");
-        segmentoJ.setCodigoMoeda("9");
-        segmentoJ.setDigitoVerificador("6");
-        segmentoJ.setVencimento("1667");
-        segmentoJ.setValor("0000012345");
-        segmentoJ.setCampoLivre("1101234567880057123457000");
-        segmentoJ.setNomeFavorecido("AUTO GERAL AUTOPECAS LTDA");
+        segmentoJ.setBancoFavorecido("");
+        segmentoJ.setCodigoMoeda("");
+        segmentoJ.setDigitoVerificador("");
+        segmentoJ.setVencimento("");
+        segmentoJ.setValor("");
+        segmentoJ.setCampoLivre("");
+        segmentoJ.setNomeFavorecido("RANILORI SANTOS NASCIMENTO");
         segmentoJ.setDataVencimento("30082022");
         segmentoJ.setValorTitulo("000000000000500");
         segmentoJ.setDescontos("000000000000000");
@@ -341,7 +341,7 @@ public class GerarRemessa {
         segmentoJ.setDataPgto("30082022");
         segmentoJ.setValorPgto("000000000000500");
         segmentoJ.setZeros("000000000000000");
-        segmentoJ.setSeuNumero("00000000000000000000");
+        segmentoJ.setSeuNumero("00000000000000000004");
         segmentoJ.setBrancos("");
         segmentoJ.setNossoNumero("");
         segmentoJ.setOcorrencias("");
@@ -354,9 +354,9 @@ public class GerarRemessa {
         segmentoJ52.setCodigoSegmento("J");
         segmentoJ52.setTipoMovimento("000");
         segmentoJ52.setCodigoRegistro("52");
-        segmentoJ52.setTipoInscricaoPagador("2");
-        segmentoJ52.setNumeroInscricaoPagador("05437537000137");
-        segmentoJ52.setNomePagador("AUTO GERAL AUTOPECAS LTDA");
+        segmentoJ52.setTipoInscricaoPagador("1");
+        segmentoJ52.setNumeroInscricaoPagador("00025186129801");
+        segmentoJ52.setNomePagador("RANILORI SANTOS NASCIMENTO");
         segmentoJ52.setTipoInscricaoBeneficiario("2");
         segmentoJ52.setNumeroInscricaoBeneficiario("05437537000137");
         segmentoJ52.setNomeBeneficiario("AUTO GERAL AUTOPECAS LTDA");
@@ -365,59 +365,59 @@ public class GerarRemessa {
         segmentoJ52.setNomeSacador("");
         segmentoJ52.setBrancos("");
         
-        LineCnabRegistroSegmentoBTitulosPagamento segmentoBTitulos = new LineCnabRegistroSegmentoBTitulosPagamento();
-        segmentoBTitulos.setCodigoBanco("341");
-        segmentoBTitulos.setCodigoLote("0002");
-        segmentoBTitulos.setTipoRegistro("3");
-        segmentoBTitulos.setNumeroRegistro("00002");
-        segmentoBTitulos.setCodigoSegmento("B");
-        segmentoBTitulos.setEmpresaInscricao("2");
-        segmentoBTitulos.setNumeroInscricao("05437537000137");
-        segmentoBTitulos.setEndereco("AV DR OTAVIANO PEREIRA MENDES");
-        segmentoBTitulos.setNumero("1333");
-        segmentoBTitulos.setComplemento("LOJA MATRIZ");
-        segmentoBTitulos.setBairro("CENTRO");
-        segmentoBTitulos.setCidade("ITU");
-        segmentoBTitulos.setCep("13301909");
-        segmentoBTitulos.setEstado("SP");
-        segmentoBTitulos.setEmail("LARISSA.CAMARGO@AUTOGERAL.COM.BR");
-        segmentoBTitulos.setBrancos2("");
-        segmentoBTitulos.setOcorrencias("");
+//        LineCnabRegistroSegmentoBTitulosPagamento segmentoBTitulos = new LineCnabRegistroSegmentoBTitulosPagamento();
+//        segmentoBTitulos.setCodigoBanco("341");
+//        segmentoBTitulos.setCodigoLote("0002");
+//        segmentoBTitulos.setTipoRegistro("3");
+//        segmentoBTitulos.setNumeroRegistro("00003");
+//        segmentoBTitulos.setCodigoSegmento("B");
+//        segmentoBTitulos.setEmpresaInscricao("1");
+//        segmentoBTitulos.setNumeroInscricao("00025186129801");
+//        segmentoBTitulos.setEndereco("RUA ABRAHAO MENEGHINI");
+//        segmentoBTitulos.setNumero("80");
+//        segmentoBTitulos.setComplemento("APTO");
+//        segmentoBTitulos.setBairro("VILA SAO JOSE");
+//        segmentoBTitulos.setCidade("ITU");
+//        segmentoBTitulos.setCep("13310284");
+//        segmentoBTitulos.setEstado("SP");
+//        segmentoBTitulos.setEmail("");
+//        segmentoBTitulos.setBrancos2("");
+//        segmentoBTitulos.setOcorrencias("");
         
-        LineCnabRegistroSegmentoCTitulosPagamento segmentoCTitulos = new LineCnabRegistroSegmentoCTitulosPagamento();
-        segmentoCTitulos.setCodigoBanco("341");
-        segmentoCTitulos.setCodigoLote("0002");
-        segmentoCTitulos.setTipoRegistro("3");
-        segmentoCTitulos.setNumeroRegistro("00002");
-        segmentoCTitulos.setCodigoSegmento("C");
-        segmentoCTitulos.setValorContribuicao("000000000000000");
-        segmentoCTitulos.setBrancos1("");
-        segmentoCTitulos.setVencimento("30082022");
-        segmentoCTitulos.setValorDoc("000000000000500");
-        segmentoCTitulos.setValorPIS("000000000000000");
-        segmentoCTitulos.setValorIR("000000000000000");
-        segmentoCTitulos.setValorISS("000000000000000");
-        segmentoCTitulos.setValorContribuicaoFinalidadeSocial("000000000000000"); // Cofins
-        segmentoCTitulos.setDesconto("00000000000000");
-        segmentoCTitulos.setAbatimento("000000000000000");
-        segmentoCTitulos.setOutrasDeducoes("000000000000000");
-        segmentoCTitulos.setMora("000000000000000");
-        segmentoCTitulos.setMulta("000000000000000");
-        segmentoCTitulos.setOutrasAcrescimos("000000000000000");
-        segmentoCTitulos.setFaturaDocumento("");
-        segmentoCTitulos.setOcorrencias("");
+//        LineCnabRegistroSegmentoCTitulosPagamento segmentoCTitulos = new LineCnabRegistroSegmentoCTitulosPagamento();
+//        segmentoCTitulos.setCodigoBanco("341");
+//        segmentoCTitulos.setCodigoLote("0002");
+//        segmentoCTitulos.setTipoRegistro("3");
+//        segmentoCTitulos.setNumeroRegistro("00004");
+//        segmentoCTitulos.setCodigoSegmento("C");
+//        segmentoCTitulos.setValorContribuicao("000000000000000");
+//        segmentoCTitulos.setBrancos1("");
+//        segmentoCTitulos.setVencimento("30082022");
+//        segmentoCTitulos.setValorDoc("000000000000500");
+//        segmentoCTitulos.setValorPIS("000000000000000");
+//        segmentoCTitulos.setValorIR("000000000000000");
+//        segmentoCTitulos.setValorISS("000000000000000");
+//        segmentoCTitulos.setValorContribuicaoFinalidadeSocial("000000000000000"); // Cofins
+//        segmentoCTitulos.setDesconto("00000000000100");
+//        segmentoCTitulos.setAbatimento("000000000000000");
+//        segmentoCTitulos.setOutrasDeducoes("000000000000000");
+//        segmentoCTitulos.setMora("000000000000000");
+//        segmentoCTitulos.setMulta("000000000000000");
+//        segmentoCTitulos.setOutrasAcrescimos("000000000000000");
+//        segmentoCTitulos.setFaturaDocumento("");
+//        segmentoCTitulos.setOcorrencias("");
         
-        LineCnabRegistroSegmentoZTitulosPagamento segmentoZTitulos = new LineCnabRegistroSegmentoZTitulosPagamento();
-        segmentoZTitulos.setCodigoBanco("341");
-        segmentoZTitulos.setCodigoLote("0002");
-        segmentoZTitulos.setTipoRegistro("3");
-        segmentoZTitulos.setNumeroRegistro("00002");
-        segmentoZTitulos.setCodigoSegmento("Z");
-        segmentoZTitulos.setAutenticacaoEletronica("");
-        segmentoZTitulos.setSeuNumero("00000000000000000002");
-        segmentoZTitulos.setBrancos1("");
-        segmentoZTitulos.setNossoNumero("");
-        segmentoZTitulos.setBrancos2("");
+//        LineCnabRegistroSegmentoZTitulosPagamento segmentoZTitulos = new LineCnabRegistroSegmentoZTitulosPagamento();
+//        segmentoZTitulos.setCodigoBanco("341");
+//        segmentoZTitulos.setCodigoLote("0002");
+//        segmentoZTitulos.setTipoRegistro("3");
+//        segmentoZTitulos.setNumeroRegistro("00005");
+//        segmentoZTitulos.setCodigoSegmento("Z");
+//        segmentoZTitulos.setAutenticacaoEletronica("");
+//        segmentoZTitulos.setSeuNumero("00000000000000000005");
+//        segmentoZTitulos.setBrancos1("");
+//        segmentoZTitulos.setNossoNumero("");
+//        segmentoZTitulos.setBrancos2("");
         
         
         LineCnabRegistroTrailerLoteTitulosPagamento trailerLoteTitulos = new LineCnabRegistroTrailerLoteTitulosPagamento();
@@ -425,7 +425,7 @@ public class GerarRemessa {
         trailerLoteTitulos.setCodigoLote("0002");
         trailerLoteTitulos.setTipoRegistro("5");
         trailerLoteTitulos.setBrancos1("");
-        trailerLoteTitulos.setTotalQtdRegistros("000007"); // Soma total dos registros do tipo 1, 3 e 5 
+        trailerLoteTitulos.setTotalQtdRegistros("000004"); // Soma total dos registros do tipo 1, 3 e 5 
         trailerLoteTitulos.setTotalValorPgtos("000000000000000500"); // Soma total dos valores do doc
         trailerLoteTitulos.setZeros("000000000000000000");
         trailerLoteTitulos.setBrancos2("");
@@ -436,8 +436,8 @@ public class GerarRemessa {
         headerLoteConcessionarias.setCodigoLote("0003");
         headerLoteConcessionarias.setTipoRegistro("1");
         headerLoteConcessionarias.setTipoOperacao("C");
-        headerLoteConcessionarias.setTipoPagamento("30");
-        headerLoteConcessionarias.setFormaPagamento("98");
+        headerLoteConcessionarias.setTipoPagamento("98");
+        headerLoteConcessionarias.setFormaPagamento("13");
         headerLoteConcessionarias.setLayoutLote("030");
         headerLoteConcessionarias.setBrancos1("");
         headerLoteConcessionarias.setEmpresaInscricao("2");
@@ -465,36 +465,36 @@ public class GerarRemessa {
         segmentoO.setCodigoBanco("341");
         segmentoO.setCodigoLote("0003");
         segmentoO.setTipoRegistro("3");
-        segmentoO.setNumeroRegistro("00003");
+        segmentoO.setNumeroRegistro("00001");
         segmentoO.setCodigoSegmento("O");
         segmentoO.setTipoMovimento("000");
         segmentoO.setCodigoBarras("");
-        segmentoO.setNomeConcessionaria("CPFL-COMPANHIA PIRATININGA");
-        segmentoO.setDataVencimento("30092022");
+        segmentoO.setNomeConcessionaria("RANILORI SANTOS NASCIMENTO");
+        segmentoO.setDataVencimento("30082022");
         segmentoO.setTipoMoeda("REA");
         segmentoO.setQtdMoeda("");
-        segmentoO.setValorPagar("");
-        segmentoO.setDataPgto("15082022");
-        segmentoO.setValorPago("");
+        segmentoO.setValorPagar("000000000000500");
+        segmentoO.setDataPgto("30082022");
+        segmentoO.setValorPago("000000000000000");
         segmentoO.setBrancos1("");
         segmentoO.setNotaFiscal("");
         segmentoO.setBrancos2("");
-        segmentoO.setSeuNumero("");
+        segmentoO.setSeuNumero("00000000000000000006");
         segmentoO.setBrancos3("");
         segmentoO.setNossoNumero("");
         segmentoO.setOcorrencias("");
         
-        LineCnabRegistroSegmentoZConcessionariasPagamento segmentoZConcessionarias = new LineCnabRegistroSegmentoZConcessionariasPagamento();
-        segmentoZConcessionarias.setCodigoBanco("341");
-        segmentoZConcessionarias.setCodigoLote("0003");
-        segmentoZConcessionarias.setTipoRegistro("3");
-        segmentoZConcessionarias.setNumeroRegistro("00003");
-        segmentoZConcessionarias.setCodigoSegmento("Z");
-        segmentoZConcessionarias.setAutenticacaoEletronica("");
-        segmentoZConcessionarias.setSeuNumero("");
-        segmentoZConcessionarias.setBrancos1("");
-        segmentoZConcessionarias.setNossoNumero("");
-        segmentoZConcessionarias.setBrancos2("");
+//        LineCnabRegistroSegmentoZConcessionariasPagamento segmentoZConcessionarias = new LineCnabRegistroSegmentoZConcessionariasPagamento();
+//        segmentoZConcessionarias.setCodigoBanco("341");
+//        segmentoZConcessionarias.setCodigoLote("0003");
+//        segmentoZConcessionarias.setTipoRegistro("3");
+//        segmentoZConcessionarias.setNumeroRegistro("00002");
+//        segmentoZConcessionarias.setCodigoSegmento("Z");
+//        segmentoZConcessionarias.setAutenticacaoEletronica("");
+//        segmentoZConcessionarias.setSeuNumero("00000000000000000007");
+//        segmentoZConcessionarias.setBrancos1("");
+//        segmentoZConcessionarias.setNossoNumero("");
+//        segmentoZConcessionarias.setBrancos2("");
         
         LineCnabRegistroTrailerLoteConcessionariasPagamento trailerLoteConcessionarias = new LineCnabRegistroTrailerLoteConcessionariasPagamento();
         trailerLoteConcessionarias.setCodigoBanco("341");
@@ -511,7 +511,7 @@ public class GerarRemessa {
         headerLoteTributos.setCodigoBanco("341");
         headerLoteTributos.setCodigoLote("0004");
         headerLoteTributos.setTipoRegistro("1");
-        headerLoteTributos.setTipoOperacao("");
+        headerLoteTributos.setTipoOperacao("C");
         headerLoteTributos.setTipoPagamento("22");
         headerLoteTributos.setFormaPagamento("91");
         headerLoteTributos.setLayoutLote("030");
@@ -524,7 +524,7 @@ public class GerarRemessa {
         headerLoteTributos.setConta("000000092471");
         headerLoteTributos.setBrancos4("");
         headerLoteTributos.setDac("7");
-        headerLoteTributos.setEnderecoEmpresa("AUTO GERAL AUTOPECAS LTDA");
+        headerLoteTributos.setNomeEmpresa("AUTO GERAL AUTOPECAS LTDA");
         headerLoteTributos.setFinalidadeLote("");
         headerLoteTributos.setHistoricoContaCorrente("");
         headerLoteTributos.setEnderecoEmpresa("AV DR OTAVIANO PEREIRA MENDES");
@@ -536,72 +536,96 @@ public class GerarRemessa {
         headerLoteTributos.setBrancos5("");
         headerLoteTributos.setOcorrencias("");
         
-        LineCnabRegistroSegmentoNTributosPagamento segmentoN = new LineCnabRegistroSegmentoNTributosPagamento();
-        segmentoN.setCodigoBanco("341");
-        segmentoN.setCodigoLote("0004");
-        segmentoN.setTipoRegistro("3");
-        segmentoN.setNumeroRegistro("00004");
-        segmentoN.setCodigoSegmento("N");
-        segmentoN.setTipoMovimento("000");
-        segmentoN.setDadosTributo("");
-        segmentoN.setSeuNumero("");
-        segmentoN.setNossoNumero("");
-        segmentoN.setOcorrencias("");
         
-        LineCnabRegistroSegmentoBTributosPagamento segmentoBTributos = new LineCnabRegistroSegmentoBTributosPagamento();
-        segmentoBTributos.setCodigoBanco("341");
-        segmentoBTributos.setCodigoLote("0004");
-        segmentoBTributos.setTipoRegistro("3");
-        segmentoBTributos.setNumeroRegistro("00004");
-        segmentoBTributos.setCodigoSegmento("B");
-        segmentoBTributos.setBrancos1("");
-        segmentoBTributos.setEndereco("AV DR OTAVIANO PEREIRA MENDES");
-        segmentoBTributos.setNumero("1333");
-        segmentoBTributos.setComplemento("LOJA MATRIZ");
-        segmentoBTributos.setBairro("CENTRO");
-        segmentoBTributos.setCidade("ITU");
-        segmentoBTributos.setCep("13301909");
-        segmentoBTributos.setEstado("SP");
-        segmentoBTributos.setTelefone("");
-        segmentoBTributos.setValorAcrescimos("");
-        segmentoBTributos.setValorHonorario("");
-        segmentoBTributos.setBrancos2("");
+        LineCnabRegistroSegmentoOConcessionariasPagamento segmentoOTributos = new LineCnabRegistroSegmentoOConcessionariasPagamento();
+        segmentoOTributos.setCodigoBanco("341");
+        segmentoOTributos.setCodigoLote("0004");
+        segmentoOTributos.setTipoRegistro("3");
+        segmentoOTributos.setNumeroRegistro("00001");
+        segmentoOTributos.setCodigoSegmento("O");
+        segmentoOTributos.setTipoMovimento("000");
+        segmentoOTributos.setCodigoBarras("");
+        segmentoOTributos.setNomeConcessionaria("RANILORI SANTOS NASCIMENTO");
+        segmentoOTributos.setDataVencimento("30082022");
+        segmentoOTributos.setTipoMoeda("REA");
+        segmentoOTributos.setQtdMoeda("");
+        segmentoOTributos.setValorPagar("000000000000500");
+        segmentoOTributos.setDataPgto("30082022");
+        segmentoOTributos.setValorPago("000000000000000");
+        segmentoOTributos.setBrancos1("");
+        segmentoOTributos.setNotaFiscal("");
+        segmentoOTributos.setBrancos2("");
+        segmentoOTributos.setSeuNumero("00000000000000000006");
+        segmentoOTributos.setBrancos3("");
+        segmentoOTributos.setNossoNumero("");
+        segmentoOTributos.setOcorrencias("");
         
-        LineCnabRegistroSegmentoWTributosPagamento segmentoW = new LineCnabRegistroSegmentoWTributosPagamento();
-        segmentoW.setCodigoBanco("341");
-        segmentoW.setCodigoLote("0004");
-        segmentoW.setTipoRegistro("3");
-        segmentoW.setNumeroRegistro("00004");
-        segmentoW.setCodigoSegmento("W");
-        segmentoW.setBrancos1("");
-        segmentoW.setInformacao1("");
-        segmentoW.setInformacao2("");
-        segmentoW.setInformacao3("");
-        segmentoW.setInformacao4("");
-        segmentoW.setBrancos2("");
+//        LineCnabRegistroSegmentoNTributosPagamento segmentoN = new LineCnabRegistroSegmentoNTributosPagamento();
+//        segmentoN.setCodigoBanco("341");
+//        segmentoN.setCodigoLote("0004");
+//        segmentoN.setTipoRegistro("3");
+//        segmentoN.setNumeroRegistro("00001");
+//        segmentoN.setCodigoSegmento("N");
+//        segmentoN.setTipoMovimento("000");
+//        segmentoN.setDadosTributo("");
+//        segmentoN.setSeuNumero("00000000000000000008");
+//        segmentoN.setNossoNumero("");
+//        segmentoN.setOcorrencias("");
         
-        LineCnabRegistroSegmentoZTributosPagamento segmentoZTributos = new LineCnabRegistroSegmentoZTributosPagamento();
-        segmentoZTributos.setCodigoBanco("341");
-        segmentoZTributos.setCodigoLote("0004");
-        segmentoZTributos.setTipoRegistro("3");
-        segmentoZTributos.setNumeroRegistro("00004");
-        segmentoZTributos.setCodigoSegmento("Z");
-        segmentoZTributos.setAutenticacaoEletronica("");
-        segmentoZTributos.setSeuNumero("00000000000000000000");
-        segmentoZTributos.setBrancos1("");
-        segmentoZTributos.setNossoNumero("");
-        segmentoZTributos.setBrancos2("");
+//        LineCnabRegistroSegmentoBTributosPagamento segmentoBTributos = new LineCnabRegistroSegmentoBTributosPagamento();
+//        segmentoBTributos.setCodigoBanco("341");
+//        segmentoBTributos.setCodigoLote("0004");
+//        segmentoBTributos.setTipoRegistro("3");
+//        segmentoBTributos.setNumeroRegistro("00002");
+//        segmentoBTributos.setCodigoSegmento("B");
+//        segmentoBTributos.setBrancos1("");
+//        segmentoBTributos.setEndereco("RUA ABRAHAO MENEGHINI");
+//        segmentoBTributos.setNumero("80");
+//        segmentoBTributos.setComplemento("APTO");
+//        segmentoBTributos.setBairro("VILA SAO JOSE");
+//        segmentoBTributos.setCidade("ITU");
+//        segmentoBTributos.setCep("13310284");
+//        segmentoBTributos.setEstado("SP");
+//        segmentoBTributos.setTelefone("");
+//        segmentoBTributos.setValorAcrescimos("");
+//        segmentoBTributos.setValorHonorario("");
+//        segmentoBTributos.setBrancos2("");
+        
+//        LineCnabRegistroSegmentoWTributosPagamento segmentoW = new LineCnabRegistroSegmentoWTributosPagamento();
+//        segmentoW.setCodigoBanco("341");
+//        segmentoW.setCodigoLote("0004");
+//        segmentoW.setTipoRegistro("3");
+//        segmentoW.setNumeroRegistro("00003");
+//        segmentoW.setCodigoSegmento("W");
+//        segmentoW.setBrancos1("");
+//        segmentoW.setInformacao1("");
+//        segmentoW.setInformacao2("");
+//        segmentoW.setInformacao3("");
+//        segmentoW.setInformacao4("");
+//        segmentoW.setBrancos2("");
+        
+//        LineCnabRegistroSegmentoZTributosPagamento segmentoZTributos = new LineCnabRegistroSegmentoZTributosPagamento();
+//        segmentoZTributos.setCodigoBanco("341");
+//        segmentoZTributos.setCodigoLote("0004");
+//        segmentoZTributos.setTipoRegistro("3");
+//        segmentoZTributos.setNumeroRegistro("00004");
+//        segmentoZTributos.setCodigoSegmento("Z");
+//        segmentoZTributos.setAutenticacaoEletronica("");
+//        segmentoZTributos.setSeuNumero("00000000000000000009");
+//        segmentoZTributos.setBrancos1("");
+//        segmentoZTributos.setNossoNumero("");
+//        segmentoZTributos.setBrancos2("");
         
         LineCnabRegistroTrailerLoteTributosPagamento trailerLoteTributos = new LineCnabRegistroTrailerLoteTributosPagamento();
         trailerLoteTributos.setCodigoBanco("341");
         trailerLoteTributos.setCodigoLote("0004");
         trailerLoteTributos.setTipoRegistro("5");
         trailerLoteTributos.setBrancos1("");
-        trailerLoteTributos.setTotalQtdRegistros("000006"); // Soma dos registros do tipo 1,3, 5 
+        trailerLoteTributos.setTotalQtdRegistros("000003"); // Soma dos registros do tipo 1,3, 5 
         trailerLoteTributos.setTotalValorPrincipal("00000000000500");
         trailerLoteTributos.setTotalOutrasEntidades("00000000000000");
         trailerLoteTributos.setTotalValorAcrescimos("00000000000000");
-        trailerLoteTributos.setTotalValorArrecad("00000000000500");
+        trailerLoteTributos.setTotalValorArrecad("00000000000000");
         trailerLoteTributos.setBrancos2("");
         trailerLoteTributos.setOcorrencias("");
         
@@ -611,7 +635,7 @@ public class GerarRemessa {
         trailerArquivo.setTipoRegistro("9");
         trailerArquivo.setBrancos1("");
         trailerArquivo.setTotalQtdLotes("000004");
-        trailerArquivo.setTotalQtdRegistros("000027");
+        trailerArquivo.setTotalQtdRegistros("000015"); // Somatória dos registros tipo 0, 1, 3, 5 e 9.
         trailerArquivo.setBrancos2("");
        
         String resultHeader = headerArquivo.getRepresentation(headerArquivo);
@@ -624,16 +648,16 @@ public class GerarRemessa {
         System.out.println(resultANotaFiscal);       
 //        String resultB = segmentoB.getRepresentation(segmentoB);
 //        System.out.println(resultB);
-        String resultC = segmentoC.getRepresentation(segmentoC);
-        System.out.println(resultC);
+//        String resultC = segmentoC.getRepresentation(segmentoC);
+//        System.out.println(resultC);
 //        String resultD = segmentoD.getRepresentation(segmentoD);
 //        System.out.println(resultD);
-        String resultE = segmentoE.getRepresentation(segmentoE);
-        System.out.println(resultE);        
-        String resultF = segmentoF.getRepresentation(segmentoF);
-        System.out.println(resultF);
-        String resultZ = segmentoZ.getRepresentation(segmentoZ);
-        System.out.println(resultZ);
+//        String resultE = segmentoE.getRepresentation(segmentoE);
+//        System.out.println(resultE);        
+//        String resultF = segmentoF.getRepresentation(segmentoF);
+//        System.out.println(resultF);
+//        String resultZ = segmentoZ.getRepresentation(segmentoZ);
+//        System.out.println(resultZ);
         String resultTrailerLote = trailerLote.getRepresentation(trailerLote);
         System.out.println(resultTrailerLote);
                 
@@ -643,12 +667,12 @@ public class GerarRemessa {
         System.out.println(resultJ);
         String resultJ52 = segmentoJ52.getRepresentation(segmentoJ52);
         System.out.println(resultJ52);
-        String resultBTitulos = segmentoBTitulos.getRepresentation(segmentoBTitulos);
-        System.out.println(resultBTitulos);
-        String resultCTitulos = segmentoCTitulos.getRepresentation(segmentoCTitulos);
-        System.out.println(resultCTitulos);
-        String resultZTitulos = segmentoZTitulos.getRepresentation(segmentoZTitulos);
-        System.out.println(resultZTitulos);
+//        String resultBTitulos = segmentoBTitulos.getRepresentation(segmentoBTitulos);
+//        System.out.println(resultBTitulos);
+//        String resultCTitulos = segmentoCTitulos.getRepresentation(segmentoCTitulos);
+//        System.out.println(resultCTitulos);
+//        String resultZTitulos = segmentoZTitulos.getRepresentation(segmentoZTitulos);
+//        System.out.println(resultZTitulos);
         String resultTrailerLoteTitulos = trailerLoteTitulos.getRepresentation(trailerLoteTitulos);
         System.out.println(resultTrailerLoteTitulos);
         
@@ -656,65 +680,65 @@ public class GerarRemessa {
         System.out.println(resultHeaderLoteConcessionarias);
         String resultO = segmentoO.getRepresentation(segmentoO);
         System.out.println(resultO);
-        String resultZConcessionarias = segmentoZConcessionarias.getRepresentation(segmentoZConcessionarias);
-        System.out.println(resultZConcessionarias);
+//        String resultZConcessionarias = segmentoZConcessionarias.getRepresentation(segmentoZConcessionarias);
+//        System.out.println(resultZConcessionarias);
         String resultTrailerLoteConcessionarias = trailerLoteConcessionarias.getRepresentation(trailerLoteConcessionarias);
         System.out.println(resultTrailerLoteConcessionarias);
 
         String resultHeaderLoteTributos = headerLoteTributos.getRepresentation(headerLoteTributos);
         System.out.println(resultHeaderLoteTributos);
-        String resultN = segmentoN.getRepresentation(segmentoN);
-        System.out.println(resultN);
-        String resultBTributos = segmentoBTributos.getRepresentation(segmentoBTributos);
-        System.out.println(resultBTributos);
-        String resultW = segmentoW.getRepresentation(segmentoW);
-        System.out.println(resultW);
-        String resultZTributos = segmentoZTributos.getRepresentation(segmentoZTributos);
-        System.out.println(resultZTributos);
+//        String resultN = segmentoN.getRepresentation(segmentoN);
+//        System.out.println(resultN);
+//        String resultBTributos = segmentoBTributos.getRepresentation(segmentoBTributos);
+//        System.out.println(resultBTributos);
+//        String resultW = segmentoW.getRepresentation(segmentoW);
+//        System.out.println(resultW);
+//        String resultZTributos = segmentoZTributos.getRepresentation(segmentoZTributos);
+//        System.out.println(resultZTributos);
         String resulTtrailerLoteTributos = trailerLoteTributos.getRepresentation(trailerLoteTributos);
         System.out.println(resulTtrailerLoteTributos);
         
         String resultTrailerArquivo = trailerArquivo.getRepresentation(trailerArquivo);
         System.out.println(resultTrailerArquivo);
         
-        FileWriter text = new FileWriter("C:\\Users\\larissa.camargo\\Documents\\IntegracaoBancoItau\\ITAU1908.txt");
+        FileWriter text = new FileWriter("C:\\Users\\larissa.camargo\\Documents\\IntegracaoBancoItau\\ITAU2708.txt");
         PrintWriter gravar = new PrintWriter(text);
         
-        
+  
         // Para gravar os registro do tipo de pagamentos de contas
         gravar.println(headerArquivo.getRepresentation(headerArquivo));
         gravar.println(headerLote.getRepresentation(headerLote));
         gravar.println(segmentoA.getRepresentation(segmentoA));
         gravar.println(segmentoANotaFiscal.getRepresentation(segmentoANotaFiscal));
 //        gravar.println(segmentoB.getRepresentation(segmentoB));
-        gravar.println(segmentoC.getRepresentation(segmentoC));
+//        gravar.println(segmentoC.getRepresentation(segmentoC));
 //        gravar.println(segmentoD.getRepresentation(segmentoD));
-        gravar.println(segmentoE.getRepresentation(segmentoE));
-        gravar.println(segmentoF.getRepresentation(segmentoF));
-        gravar.println(segmentoZ.getRepresentation(segmentoZ));
+//        gravar.println(segmentoE.getRepresentation(segmentoE));
+//        gravar.println(segmentoF.getRepresentation(segmentoF));
+//        gravar.println(segmentoZ.getRepresentation(segmentoZ));
         gravar.println(trailerLote.getRepresentation(trailerLote));
         
         // Para gravar os registros do tipo de pagamento de titulos
         gravar.println(headerLoteTitulos.getRepresentation(headerLoteTitulos));
         gravar.println(segmentoJ.getRepresentation(segmentoJ));
         gravar.println(segmentoJ52.getRepresentation(segmentoJ52));
-        gravar.println(segmentoBTitulos.getRepresentation(segmentoBTitulos));
-        gravar.println(segmentoCTitulos.getRepresentation(segmentoCTitulos));
-        gravar.println(segmentoZTitulos.getRepresentation(segmentoZTitulos));
+//        gravar.println(segmentoBTitulos.getRepresentation(segmentoBTitulos));
+//        gravar.println(segmentoCTitulos.getRepresentation(segmentoCTitulos));
+//        gravar.println(segmentoZTitulos.getRepresentation(segmentoZTitulos));
         gravar.println(trailerLoteTitulos.getRepresentation(trailerLoteTitulos));
         
         //Para gravar os registros do tipo de pagamento de concessionarias
         gravar.println(headerLoteConcessionarias.getRepresentation(headerLoteConcessionarias));
         gravar.println(segmentoO.getRepresentation(segmentoO));
-        gravar.println(segmentoZConcessionarias.getRepresentation(segmentoZConcessionarias));
+//        gravar.println(segmentoZConcessionarias.getRepresentation(segmentoZConcessionarias));
         gravar.println(trailerLoteConcessionarias.getRepresentation(trailerLoteConcessionarias));
         
         //Para gravar os registros do tipo de pagamento de tributos
         gravar.println(headerLoteTributos.getRepresentation(headerLoteTributos));
-        gravar.println(segmentoN.getRepresentation(segmentoN));
-        gravar.println(segmentoBTributos.getRepresentation(segmentoBTributos));
-        gravar.println(segmentoW.getRepresentation(segmentoW));
-        gravar.println(segmentoZTributos.getRepresentation(segmentoZTributos));
+//        gravar.println(segmentoN.getRepresentation(segmentoN));
+//        gravar.println(segmentoBTributos.getRepresentation(segmentoBTributos));
+//        gravar.println(segmentoW.getRepresentation(segmentoW));
+//        gravar.println(segmentoZTributos.getRepresentation(segmentoZTributos));
         gravar.println(trailerLoteTributos.getRepresentation(trailerLoteTributos));
         
         gravar.println(trailerArquivo.getRepresentation(trailerArquivo));
