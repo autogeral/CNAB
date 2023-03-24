@@ -1,3 +1,14 @@
 /nbproject/private/
 /build/
 /dist/
+
+### VsCode ###
+.vscode
+
+
+### Mac ###
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
