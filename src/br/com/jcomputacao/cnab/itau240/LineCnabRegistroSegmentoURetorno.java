@@ -5,12 +5,12 @@ import com.ancientprogramming.fixedformat4j.annotation.Record;
 
 /**
  *
- * @author larissa.camargo
- *      27.08.2021
- * 
+ * @author larissa.camargo 27.08.2021
+ *
  */
 @Record
-public class LineCnabRegistroSegmentoURetorno extends LineModel{
+public class LineCnabRegistroSegmentoURetorno extends LineModel {
+
     private String codigoBanco;
     private String codigoLote;
     private String registro;
@@ -52,7 +52,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.codigoLote = codigoLote;
     }
 
-     @Field(offset = 8, length = 1)
+    @Field(offset = 8, length = 1)
     public String getRegistro() {
         return registro;
     }
@@ -61,7 +61,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.registro = registro;
     }
 
-     @Field(offset = 9, length = 5)
+    @Field(offset = 9, length = 5)
     public String getNumRegistro() {
         return numRegistro;
     }
@@ -70,16 +70,16 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.numRegistro = numRegistro;
     }
 
-     @Field(offset = 14, length = 1)
+    @Field(offset = 14, length = 1)
     public String getSegmento() {
         return segmento;
     }
-    
+
     public void setSegmento(String segmento) {
         this.segmento = segmento;
     }
 
-     @Field(offset = 15, length = 1)
+    @Field(offset = 15, length = 1)
     public String getBrancos1() {
         return brancos1;
     }
@@ -88,7 +88,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.brancos1 = brancos1;
     }
 
-     @Field(offset = 16, length = 2)
+    @Field(offset = 16, length = 2)
     public String getCodOcorrencia() {
         return codOcorrencia;
     }
@@ -97,7 +97,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.codOcorrencia = codOcorrencia;
     }
 
-     @Field(offset = 18, length = 15)
+    @Field(offset = 18, length = 15)
     public String getJurosMulta() {
         return jurosMulta;
     }
@@ -106,7 +106,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.jurosMulta = jurosMulta;
     }
 
-     @Field(offset = 33, length = 15)
+    @Field(offset = 33, length = 15)
     public String getValorDesconto() {
         return valorDesconto;
     }
@@ -115,7 +115,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.valorDesconto = valorDesconto;
     }
 
-     @Field(offset = 48, length = 15)
+    @Field(offset = 48, length = 15)
     public String getValorAbatimento() {
         return valorAbatimento;
     }
@@ -124,7 +124,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.valorAbatimento = valorAbatimento;
     }
 
-     @Field(offset = 63, length = 15)
+    @Field(offset = 63, length = 15)
     public String getValorIof() {
         return valorIof;
     }
@@ -133,7 +133,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.valorIof = valorIof;
     }
 
-     @Field(offset = 78, length = 15)
+    @Field(offset = 78, length = 15)
     public String getValorCreditado1() {
         return valorCreditado1;
     }
@@ -151,7 +151,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.valorCreditado2 = valorCreditado2;
     }
 
-     @Field(offset = 108, length = 30)
+    @Field(offset = 108, length = 30)
     public String getZeros1() {
         return zeros1;
     }
@@ -160,7 +160,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.zeros1 = zeros1;
     }
 
-     @Field(offset = 138, length = 8)
+    @Field(offset = 138, length = 8)
     public String getDataOcorrencia1() {
         return dataOcorrencia1;
     }
@@ -169,7 +169,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.dataOcorrencia1 = dataOcorrencia1;
     }
 
-     @Field(offset = 146, length = 8)
+    @Field(offset = 146, length = 8)
     public String getDataCredito() {
         return dataCredito;
     }
@@ -178,7 +178,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.dataCredito = dataCredito;
     }
 
-     @Field(offset = 154, length = 4)
+    @Field(offset = 154, length = 4)
     public String getOcorrenciaPagador() {
         return ocorrenciaPagador;
     }
@@ -187,7 +187,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.ocorrenciaPagador = ocorrenciaPagador;
     }
 
-     @Field(offset = 158, length = 8)
+    @Field(offset = 158, length = 8)
     public String getDataOcorrencia2() {
         return dataOcorrencia2;
     }
@@ -196,7 +196,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.dataOcorrencia2 = dataOcorrencia2;
     }
 
-     @Field(offset = 166, length = 15)
+    @Field(offset = 166, length = 15)
     public String getValorOcorrencia() {
         return valorOcorrencia;
     }
@@ -205,7 +205,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.valorOcorrencia = valorOcorrencia;
     }
 
-     @Field(offset = 181, length = 30)
+    @Field(offset = 181, length = 30)
     public String getBrancos2() {
         return brancos2;
     }
@@ -214,7 +214,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.brancos2 = brancos2;
     }
 
-     @Field(offset = 211, length = 23)
+    @Field(offset = 211, length = 23)
     public String getZeros2() {
         return zeros2;
     }
@@ -223,7 +223,7 @@ public class LineCnabRegistroSegmentoURetorno extends LineModel{
         this.zeros2 = zeros2;
     }
 
-     @Field(offset = 234, length = 7)
+    @Field(offset = 234, length = 7)
     public String getBrancos3() {
         return brancos3;
     }

@@ -47,14 +47,12 @@ public class Cnab240ItauArquivoRetorno {
     }
     private void trataHeaderRemessa(String linha, Cnab240ItauLoteRetorno loteRetorno) {
         FixedFormatManager manager = new FixedFormatManagerImpl();
-        LineCnabRegistroHeaderRemessa lr = new LineCnabRegistroHeaderRemessa();
-        lr = manager.load(LineCnabRegistroHeaderRemessa.class, linha);        
+        LineCnabRegistroHeaderRemessa lr = manager.load(LineCnabRegistroHeaderRemessa.class, linha);        
         loteRetorno.setHeaderArquivo(lr);
     }
      private void trataHeaderLote(String linha, Cnab240ItauLoteRetorno loteRetorno) {
         FixedFormatManager manager = new FixedFormatManagerImpl();
-        LineCnabRegistroHeaderLoteRemessa lr = new LineCnabRegistroHeaderLoteRemessa();
-        lr = manager.load(LineCnabRegistroHeaderLoteRemessa.class, linha);        
+        LineCnabRegistroHeaderLoteRemessa lr = manager.load(LineCnabRegistroHeaderLoteRemessa.class, linha);        
         loteRetorno.setHeaderLote(lr);  
      }
     private void trataSegmento(String linha, Cnab240ItauLoteRetorno loteRetorno) {
@@ -68,27 +66,23 @@ public class Cnab240ItauArquivoRetorno {
     }
     private void trataSegmentoT(String linha, Cnab240ItauLoteRetorno loteRetorno) {
         FixedFormatManager manager = new FixedFormatManagerImpl();
-        LineCnabRegistroSegmentoTRetorno lr = new LineCnabRegistroSegmentoTRetorno();
-        lr = manager.load(LineCnabRegistroSegmentoTRetorno.class, linha);
+        LineCnabRegistroSegmentoTRetorno lr = manager.load(LineCnabRegistroSegmentoTRetorno.class, linha);
         List<LineCnabRegistroSegmentoTRetorno> tipo1Lista = loteRetorno.getSegmentoTRetorno();     
         tipo1Lista.add(lr);        
     }
     private void trataSegmentoU(String linha, Cnab240ItauLoteRetorno loteRetorno) {
         FixedFormatManager manager = new FixedFormatManagerImpl();
-        LineCnabRegistroSegmentoURetorno lr = new LineCnabRegistroSegmentoURetorno();
-        lr = manager.load(LineCnabRegistroSegmentoURetorno.class, linha);        
+        LineCnabRegistroSegmentoURetorno lr = manager.load(LineCnabRegistroSegmentoURetorno.class, linha);        
         loteRetorno.getSegmentoURetorno().add(lr);
     }
     private void trataTrailerLote(String linha, Cnab240ItauLoteRetorno loteRetorno) {
         FixedFormatManager manager = new FixedFormatManagerImpl();
-        LineCnabRegistroTrailerLote lr = new LineCnabRegistroTrailerLote();
-        lr = manager.load(LineCnabRegistroTrailerLote.class, linha);      
+        LineCnabRegistroTrailerLote lr = manager.load(LineCnabRegistroTrailerLote.class, linha);      
         loteRetorno.setTrailerLote(lr); 
     }
     private void trataTrailerArquivo(String linha, Cnab240ItauLoteRetorno loteRetorno) {
         FixedFormatManager manager = new FixedFormatManagerImpl();
-        LineCnabRegistroTrailerArquivo lr = new LineCnabRegistroTrailerArquivo();
-        lr = manager.load(LineCnabRegistroTrailerArquivo.class, linha); 
+        LineCnabRegistroTrailerArquivo lr = manager.load(LineCnabRegistroTrailerArquivo.class, linha); 
         loteRetorno.setTrailerArquivo(lr);
     }
 }
